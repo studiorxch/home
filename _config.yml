@@ -56,7 +56,7 @@ exclude:
 favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you want one
 
 # Google Analytics (optional, add only if you have GA setup)
-# google_analytics: "UA-XXXXXXXXX-X"
+google_analytics: "G-E5KN2YJJKF"
 
 
 # Exclude from processing.
