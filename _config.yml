@@ -18,21 +18,42 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Site settings
+title: "StudioRich | Lo-Fi Experiences"
+email: "your-email@example.com"
+description: "Explore the world of Lo-Fi vibes, music experiences, and spa therapies with StudioRich."
+baseurl: ""  # If you're using a subpath like /blog, add it here (leave blank for root)
+url: "https://studiorich.shop"  # Your actual base domain
+twitter_username: "studiorxch"
+github_username: "studiorxch"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Add custom collections if needed (example: Blog, Music, etc.)
+collections:
+  blog:
+    output: true
+
+# Exclude unnecessary files from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - _site/
+  
+# Add custom settings as needed
+favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you want one
+
+# Google Analytics (optional, add only if you have GA setup)
+# google_analytics: "UA-XXXXXXXXX-X"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
