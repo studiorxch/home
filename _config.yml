@@ -34,7 +34,11 @@ plugins:
 
 # Add custom collections if needed (example: Blog, Music, etc.)
 collections:
-  blog:
+  blog: # Studio Overview
+    output: true
+  music: # Music Library 
+    output: true
+  events: # Stranger Vibes, Spa Therapy, Ramen Town
     output: true
 
 # Exclude unnecessary files from processing
