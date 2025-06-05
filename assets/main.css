@@ -1,33 +1,5 @@
-.site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  padding: 1rem 2rem;
-  border-bottom: none;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.main-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: 500;
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -42,21 +14,98 @@ h1, h2, h3 {
     font-family: 'Trirong', serif;
 }
 
+.logo img {
+  height: 50px;
+}
+
+.main-nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-header {
+  position: absolute;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header-icons {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+}
+
+.main-nav ul,
+.header-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-icons img {
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .header-icons {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
 .header-icons a {
   margin-left: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.header-icons img {
-  height: 28px;
-  margin-left: 1rem;
-  filter: brightness(0) invert(1);
-  transition: 0.3s ease;
-}
 .header-icons img:hover {
   filter: brightness(1.5);
 }
+
+
 
 .hero {
   padding-top: 6rem;
@@ -80,7 +129,6 @@ h1, h2, h3 {
   color: #f0f0f0;
   line-height: 1.1;
 }
-
 
 
 .social-icons {
