@@ -1,18 +1,19 @@
 ---
-layout: page
-title: About
+layout: default
+title: About StudioRich- Origins
 permalink: /about/
 ---
+{% include components/hero.html 
+  image="/assets/img/hero.webp" 
+  title="About StudioRich: Origins" %}
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+StudioRich is a Brooklyn-based creative lab blending lo-fi music, graffiti culture, and rebellious design with a hint of kung fu spirit. Our work lives at the intersection of analog and AI—merging sound experiments, field recordings, and character-driven visual storytelling into collectible experiences.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+From chill Twitch streams to raw NYC soundscapes and nostalgic merch drops, StudioRich is redefining what a street-born studio can be.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+🎧 Music | 🖌️ Design | 🚇 Subways | 🤖 AI | 🐾 Lucky Claw Lives Here
+
+Like our work? Support on Ko-fi!
 
 
-[jekyll-organization]: https://github.com/jekyll
+[Listen Now ]: https://studiorich.shop/links/
