@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Music Library
-permalink: /Music_Library/
+permalink: /library/
 ---
 {% include components/hero.html 
   image="/assets/img/hero.webp" 
