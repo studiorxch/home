@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About StudioRich- Origins
-permalink: /origin/
+permalink: /about/
 ---
 {% include components/hero.html 
   image="/assets/img/hero.webp" 

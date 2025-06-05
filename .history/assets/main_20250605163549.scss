@@ -3,21 +3,13 @@
 
 html, body {
   overflow-x: hidden;
-    background: #0a0a0a;
 }
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  font-weight: 100;
-  font-size: 1.125rem;
-  line-height: 1.4;
-
+  margin: 0;
+  background: #0a0a0a;
   color: #f0f0f0;
-}
-
-p {
-  letter-spacing: 0.01em;
-  font-weight: 100;
 }
 
 h1, h2, h3 {
@@ -141,7 +133,6 @@ h1, h2, h3 {
   display: flex;
   align-items: flex-end;
   padding-left: 4rem;
-    padding-right: 10rem;
   padding-bottom: 3rem;
   color: #f0f0f0;
   text-align: left;
