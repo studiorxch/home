@@ -1,10 +1,26 @@
-{{ content }}
 
 
 
-<footer>
-  <p>&copy; 2025 StudioRich · Lo-Fi Lives Here · 
-    <a href="/links">Links</a> · 
-    <a href="https://ko-fi.com/studiorich">Support on Ko-fi</a>
-  </p>
-</footer>
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/main.css?v={{ site.time | date: '%s' }}">
+
+</head>
+<body>
+  {% include components/nav.html %}
+
+
+
+
+  {{ content }}
+
+  {% include components/footer.html %}
+</body>
+</html>
+
+

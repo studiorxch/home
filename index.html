@@ -1,25 +1,14 @@
 ---
-layout: home
+layout: default
 title: StudioRich | Lo-Fi Experiences
+permalink: /
 ---
+{% include components/hero.html 
+  image="/assets/img/hero.webp" 
+  title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.." %}
 
-<!-- Homepage hero section -->
-<section class="hero">
-  <div class="hero-overlay">
-    <h1>Tap In.<br>Stay Weird.<br>Broadcast the Vibe..</h1>
-  </div>
-</section>
+<!-- Stream Banner and Features go here -->
 
-<!-- Navigation -->
-<nav class="nav">
-  <ul>
-    <li><a href="/library">Library</a></li>
-    <li><a href="/events">Events</a></li>
-    <li><a href="/shop">Shop</a></li>
-    <li><a href="https://calendly.com/hello-studiorich/studiorich-spa-therapy-book-your-lo-fi-session">Book</a></li>
-    <li><a href="/games">Games</a></li>
-  </ul>
-</nav>
 
 <!-- Stream Banner -->
 <section class="stream">
@@ -43,54 +32,15 @@ title: StudioRich | Lo-Fi Experiences
   </div>
 </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 StudioRich · Lo-Fi Lives Here · <a href="https://ko-fi.com/studiorich">Support on Ko-fi</a></p>
-</footer>
 
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
 
 <style>
-  body {
-    font-family: 'Red Hat Display', sans-serif;
-    margin: 0;
-    background: #0a0a0a;
-    color: #f0f0f0;
-  }
-  h1, h2, h3 {
-    font-family: 'Trirong', serif;
-  }
-  .hero {
-    background: url('/assets/img/hero.webp') center/cover no-repeat;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .hero-overlay {
-    background: rgba(0,0,0,0.5);
-    padding: 2rem;
-  }
-  .hero h1 {
-    font-size: 88px;
-    line-height: 1.1;
-    margin: 0;
-  }
-  .nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background: #111;
-    margin: 0;
-    padding: 1rem;
-  }
-  .nav a {
-    color: #f0f0f0;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
+
+
+
+
   .stream {
     background: #1a1a1a;
     text-align: center;
@@ -108,10 +58,5 @@ title: StudioRich | Lo-Fi Experiences
     border: 1px solid #333;
     border-radius: 8px;
   }
-  footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
-    background: #111;
-  }
+
 </style>

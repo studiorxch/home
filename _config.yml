@@ -31,6 +31,8 @@ github_username: "studiorxch"
 theme: minima
 plugins:
   - jekyll-feed
+include:
+  - assets/main.css
 
 # Add custom collections if needed (example: Blog, Music, etc.)
 collections:
