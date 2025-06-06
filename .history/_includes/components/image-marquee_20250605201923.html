@@ -1,0 +1,54 @@
+<div class="image-marquee" onmouseover="pauseMarquee()" onmouseout="startMarquee()">
+  <div class="image-track" id="imageTrack">
+    <a href="#"><img src="/assets/img/cover1.jpg" alt="Cover 1" /></a>
+    <a href="#"><img src="/assets/img/cover2.jpg" alt="Cover 2" /></a>
+    <a href="#"><img src="/assets/img/cover3.jpg" alt="Cover 3" /></a>
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+<style>
+.image-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 200px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.image-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-marquee 30s linear infinite;
+}
+
+.image-track img {
+  height: 180px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.image-track img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+
+<script>
+let track = document.getElementById('imageTrack');
+
+function pauseMarquee() {
+  track.style.animationPlayState = 'paused';
+}
+
+function startMarquee() {
+  track.style.animationPlayState = 'running';
+}
+</script>

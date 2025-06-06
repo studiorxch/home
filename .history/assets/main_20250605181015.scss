@@ -6,7 +6,7 @@ html, body {
     background: #0a0a0a;
 }
 a {
-  color: #aaa; /* Off-white base color */
+  color: #ccc; /* Off-white base color */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -42,13 +42,7 @@ h1, h2, h3 {
   color: #f0f0f0;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
-
-.main-nav a:hover {
-  color: #ff0000;
-}
-
 
 .site-header {
   position: absolute;
@@ -60,7 +54,6 @@ h1, h2, h3 {
   padding: 1rem 2rem;
   width: 100%;
   box-sizing: border-box;
-  min-width: 1024px;
 }
 
 .main-nav ul {
@@ -114,8 +107,6 @@ h1, h2, h3 {
     width: 100%;
     justify-content: center;
     margin-top: 0.5rem;
-    display: flex;
-    gap: 0.25rem;
   }
 }
 
@@ -126,10 +117,7 @@ h1, h2, h3 {
 }
 
 .header-icons img:hover {
-  filter: brightness(2.5);
-    margin: 0; /* make sure no default margin is added */
-  padding: 0;
-    height: 26px;
+  filter: brightness(1.5);
 }
 
 .hero {
