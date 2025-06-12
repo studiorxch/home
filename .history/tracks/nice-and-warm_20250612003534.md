@@ -1,0 +1,32 @@
+---
+layout: default
+title: Nice and Warm (Lo-Fi Nights)
+permalink: /tracks/nice-and-warm/
+description: "A cozy, nostalgic lo-fi groove from the StudioRich Spa Therapy stream."
+image: /assets/covers/nice-and-warm.webp
+date: 2025-05-20
+mood: ["Chill", "Comforting", "Nostalgic"]
+duration: "PT2M45S" # ISO 8601 format
+album: Spa Therapy
+---
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MusicRecording",
+  "name": "Nice and Warm (Lo-Fi Nights)",
+  "url": "https://www.studiorich.shop/tracks/nice-and-warm/",
+  "image": "https://www.studiorich.shop/assets/covers/nice-and-warm.webp",
+  "datePublished": "2025-05-20",
+  "duration": "PT2M45S",
+  "inAlbum": {
+    "@type": "MusicAlbum",
+    "name": "Spa Therapy"
+  },
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "StudioRich"
+  },
+  "genre": ["Lo-Fi", "Chillhop"],
+  "description": "A cozy, nostalgic lo-fi groove from the StudioRich Spa Therapy stream."
+}
+</script>

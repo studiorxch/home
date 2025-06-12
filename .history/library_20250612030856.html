@@ -1,0 +1,31 @@
+---
+layout: default
+title: Music Library
+permalink: /library/
+description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
+image: /assets/img/hero-library.webp
+---
+{% include components/hero.html 
+  image=page.image 
+  title="Music Library" %}
+
+
+<!-- /library/index.html -->
+<ul class="track-list">
+  {% for track in site.tracks %}
+    <li>
+      <a href="{{ track.url }}">
+        {{ track.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+{% include components/youtube-carousel.html video_urls="
+https://www.youtube.com/embed/iAkZZ6_Ht00?si=DnOfGHxhwAPS6yzj, 
+https://www.youtube.com/embed/FbJx6KpauRg?si=D9du4C2K1filL7OO,
+https://www.youtube.com/embed/y5A6pb0z8rY?si=s0iBTpCMGVdnDD61,
+https://www.youtube.com/embed/rvexT2C0cTo?si=Hsr-TIt8hc0lnMp_
+" %}

@@ -1,0 +1,37 @@
+---
+layout: default
+title: Music Library
+permalink: /library/
+description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
+image: /assets/img/hero-library.webp
+---
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MusicRecording",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "image": "{{ site.url }}{{ page.image }}",
+  "inAlbum": {
+    "@type": "MusicAlbum",
+    "name": "Stranger Vibes"
+  },
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "StudioRich"
+  }
+}
+</script>
+
+{% include components/hero.html 
+  image="/assets/img/hero-library.webp" 
+  title="Music Library" %}
+
+
+{% include components/youtube-carousel.html video_urls="
+https://www.youtube.com/embed/iAkZZ6_Ht00?si=DnOfGHxhwAPS6yzj, 
+https://www.youtube.com/embed/FbJx6KpauRg?si=D9du4C2K1filL7OO,
+https://www.youtube.com/embed/y5A6pb0z8rY?si=s0iBTpCMGVdnDD61,
+https://www.youtube.com/embed/rvexT2C0cTo?si=Hsr-TIt8hc0lnMp_
+" %}
