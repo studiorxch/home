@@ -399,10 +399,6 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-.track-card.featured {
-  position: relative;
-}
-
 .track-card.featured:hover {
   transform: scale(1.04);
 }
@@ -413,24 +409,6 @@ h1, h2, h3 {
   box-shadow: 0 0 12px rgba(241, 196, 15, 0.5);
 }
 
-.track-card.featured::before {
-  content: "🔥";
-  position: absolute;
-  top: 0.4rem;
-  left: 0.4rem;
-  background-color: #f1c40f;
-  color: #000;
-  font-size: 0.8rem;
-  font-weight: bold;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-  z-index: 2;
-}
 
 .track-card.new::after {
   content: "NEW";

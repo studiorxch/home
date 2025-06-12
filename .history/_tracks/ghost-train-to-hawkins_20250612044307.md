@@ -9,6 +9,4 @@ duration: "121.71"
 album: "Stranger Vibes"
 mood: [Aggressive, nan, nan]
 genre: [lo-fi hip hop, downtempo, chillhop]
-new: true
-
 ---

@@ -9,6 +9,4 @@ duration: "132.19"
 album: "Stranger Vibes"
 mood: [Energetic, Aggressive, nan]
 genre: [lo-fi, synthwave, soul]
-featured: true
-
 ---
