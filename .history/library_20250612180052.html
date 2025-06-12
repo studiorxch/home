@@ -9,21 +9,28 @@ image: /assets/img/hero-music-library.webp
   image=page.image 
   title="Music Library" %}
 
-    <div class="filter-bar">
+<div class="filter-bar">
+  <button data-filter="all">All</button>
+  <button data-filter="dreamy">Dreamy</button>
+  <button data-filter="chill">Chill</button>
+  <button data-filter="nostalgic">Nostalgic</button>
+  <button data-filter="aggressive">Aggressive</button>
+
+  <div class="dropdown">
+    <button class="dropdown-toggle">More ▾</button>
+    <div class="dropdown-menu moods-dropdown">
+      {% assign default_moods = "dreamy,chill,nostalgic,aggressive" | split: "," %}
       {% assign all_moods = "" | split: "" %}
       {% for track in site.tracks %}
         {% assign all_moods = all_moods | concat: track.mood %}
       {% endfor %}
       {% assign unique_moods = all_moods | uniq | sort %}
-
       {% for mood in unique_moods %}
-        {% unless mood == "nan" %}
+        {% unless default_moods contains mood %}
           <button data-filter="{{ mood | downcase }}">{{ mood }}</button>
         {% endunless %}
       {% endfor %}
     </div>
-
-
   </div>
 </div>
 
@@ -43,34 +50,25 @@ image: /assets/img/hero-music-library.webp
 </section>
 
 <script>
-    const filterButtons = document.querySelectorAll('[data-filter]');
-    const cards = document.querySelectorAll('.track-card');
+  const filterButtons = document.querySelectorAll('.filter-bar button');
+  const cards = document.querySelectorAll('.track-card');
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.dataset.filter;
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
 
-        cards.forEach(card => {
-          const mood = card.dataset.mood || '';
-          if (filter === 'all' || mood.includes(filter)) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        // UI feedback
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+      cards.forEach(card => {
+        const mood = card.dataset.mood || '';
+        if (filter === 'all' || mood.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
       });
+
+      // UI feedback (optional)
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
     });
-
-    // Toggle dropdown menu
-    document.querySelector('.dropdown-toggle').addEventListener('click', () => {
-      document.querySelector('.dropdown').classList.toggle('open');
-    });
-
-    // Set default filter
-    document.querySelector('[data-filter="all"]').click();
-
+  });
 </script>

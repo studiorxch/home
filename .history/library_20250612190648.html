@@ -9,20 +9,30 @@ image: /assets/img/hero-music-library.webp
   image=page.image 
   title="Music Library" %}
 
-    <div class="filter-bar">
-      {% assign all_moods = "" | split: "" %}
-      {% for track in site.tracks %}
-        {% assign all_moods = all_moods | concat: track.mood %}
-      {% endfor %}
-      {% assign unique_moods = all_moods | uniq | sort %}
-
-      {% for mood in unique_moods %}
-        {% unless mood == "nan" %}
-          <button data-filter="{{ mood | downcase }}">{{ mood }}</button>
-        {% endunless %}
-      {% endfor %}
+  <div class="main-filters">
+    <button data-filter="all">All</button>
+    <button data-filter="dreamy">Dreamy</button>
+    <button data-filter="chill">Chill</button>
+    <button data-filter="nostalgic">Nostalgic</button>
+    <button data-filter="aggressive">Aggressive</button>
+    <div class="dropdown">
+      <button class="dropdown-toggle">More ▾</button>
     </div>
+  </div>
+  <div class="dropdown-menu moods-dropdown">
+        {% assign default_moods = "dreamy,chill,nostalgic,aggressive" | split: "," %}
+        {% assign all_moods = "" | split: "" %}
+        {% for track in site.tracks %}
+          {% assign all_moods = all_moods | concat: track.mood %}
+        {% endfor %}
+        {% assign unique_moods = all_moods | uniq | sort %}
 
+        {% for mood in unique_moods %}
+          {% unless default_moods contains mood or mood == "nan" %}
+            <button data-filter="{{ mood | downcase }}">{{ mood }}</button>
+          {% endunless %}
+        {% endfor %}
+      </div>
 
   </div>
 </div>
@@ -69,6 +79,7 @@ image: /assets/img/hero-music-library.webp
     document.querySelector('.dropdown-toggle').addEventListener('click', () => {
       document.querySelector('.dropdown').classList.toggle('open');
     });
+
 
     // Set default filter
     document.querySelector('[data-filter="all"]').click();

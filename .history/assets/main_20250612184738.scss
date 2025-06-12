@@ -451,23 +451,16 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin: 2rem auto;
-  max-width: 960px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
-.main-filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-}
 
 .filter-bar button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
   background: #222;
   border: 1px solid #444;
   color: #f0f0f0;
-  padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.2s ease;
@@ -483,7 +476,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .dropdown.open .dropdown-menu {

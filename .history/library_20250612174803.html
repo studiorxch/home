@@ -1,0 +1,33 @@
+---
+layout: default
+title: Music Library
+permalink: /library/
+description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
+image: /assets/img/hero-music-library.webp
+---
+{% include components/hero.html 
+  image=page.image 
+  title="Music Library" %}
+
+<div class="filter-bar">
+  <button data-filter="all">All</button>
+  <button data-filter="dreamy">Dreamy</button>
+  <button data-filter="aggressive">Aggressive</button>
+  <button data-filter="chill">Chill</button>
+  <button data-filter="nostalgic">Nostalgic</button>
+</div>
+
+
+<section class="track-grid">
+  {% for track in site.tracks %}
+    <a
+      class="track-card {% if track.featured %}featured{% endif %}"
+      href="{{ track.url }}"
+      data-mood="{{ track.mood | join: ' ' | downcase }}"
+      data-genre="{{ track.genre | join: ' ' | downcase }}">
+      <img src="{{ track.image }}" alt="{{ track.title }} cover">
+      <div class="track-title">{{ track.title }}</div>
+    </a>
+  {% endfor %}
+</section>
+
