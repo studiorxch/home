@@ -100,13 +100,15 @@
   <a href="/library" class="library-link">← Back to Music Library</a>
 </p>
 </main>
+
 <script>
   const coverBtn = document.querySelector('.track-cover-button');
   let loopAudio = null;
   const bars = document.querySelectorAll('.waveform-bar .bar');
   const circle = document.querySelector('.loop-progress');
   const waveform = document.querySelector('.waveform-bar');
-  const urlParams = new URLSearchParams(window.location.search);
+
+
 
   function toggleWaveform(isPlaying) {
     if (waveform) {
@@ -137,14 +139,17 @@
       coverBtn.classList.remove('playing');
       toggleWaveform(false);
     }
+
+// Autoplay if ?autoplay=1 is present in the URL
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('autoplay') === '1' && coverBtn) {
+  coverBtn.click();  // triggers the same logic as manual click
+}
+
+
+
   });
-
-  // ✅ Trigger autoplay after event listener is defined
-  if (urlParams.get('autoplay') === '1' && coverBtn) {
-    coverBtn.click();
-  }
 </script>
-
 
 {% include components/footer.html %}
 </body>

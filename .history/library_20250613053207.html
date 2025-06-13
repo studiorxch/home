@@ -48,6 +48,13 @@ image: /assets/img/hero-music-library.webp
     const filterButtons = document.querySelectorAll('[data-filter]');
     const cards = document.querySelectorAll('.track-card');
 
+    // Check if ?autoplay=1 is in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('autoplay') === '1') {
+      loopAudio.play();
+      coverBtn.classList.add('playing');
+      toggleWaveform(true);
+    }
 
 
     filterButtons.forEach(button => {
