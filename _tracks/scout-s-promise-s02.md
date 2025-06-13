@@ -7,6 +7,6 @@ image: /assets/covers/scout-s-promise-s02.webp
 date: 2025-01-01
 duration: "130.36"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi, chillhop, electronic]
 ---

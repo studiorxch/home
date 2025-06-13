@@ -7,6 +7,6 @@ image: /assets/covers/mirror-shard.webp
 date: 2025-01-01
 duration: "145.91"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic, nan]
+mood: [Dreamy, Nostalgic]
 genre: [lo-fi, experimental, ambient]
 ---

@@ -7,6 +7,6 @@ image: /assets/covers/nowhere-shortcut-s01.webp
 date: 2025-01-01
 duration: "131.94"
 album: "Stranger Vibes"
-mood: [Dreamy, nan, nan]
+mood: [Dreamy]
 genre: [lo-fi, experimental]
 ---

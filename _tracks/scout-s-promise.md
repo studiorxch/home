@@ -7,6 +7,6 @@ image: /assets/covers/scout-s-promise.webp
 date: 2025-01-01
 duration: "152.81"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, chillhop, electronic]
 ---

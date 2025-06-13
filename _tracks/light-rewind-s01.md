@@ -7,6 +7,6 @@ image: /assets/covers/light-rewind-s01.webp
 date: 2025-01-01
 duration: "185.53"
 album: "Stranger Vibes"
-mood: [Playful, nan, nan]
+mood: [Playful]
 genre: [lo-fi, chillhop, soul]
 ---

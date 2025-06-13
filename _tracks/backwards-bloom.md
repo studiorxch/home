@@ -7,6 +7,6 @@ image: /assets/covers/backwards-bloom.webp
 date: 2025-01-01
 duration: "213.0"
 album: "Stranger Vibes"
-mood: [Tense, nan, nan]
+mood: [Tense]
 genre: [ambient, electronic, experimental]
 ---

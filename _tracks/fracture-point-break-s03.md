@@ -7,6 +7,6 @@ image: /assets/covers/fracture-point-break-s03.webp
 date: 2025-01-01
 duration: "131.08"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, glitch-fusion]
 ---

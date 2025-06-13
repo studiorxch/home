@@ -7,6 +7,6 @@ image: /assets/covers/midnight-court.webp
 date: 2025-01-01
 duration: "156.39"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi hip hop, jazztronica, chillout]
 ---

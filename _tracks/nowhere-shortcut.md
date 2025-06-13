@@ -7,6 +7,6 @@ image: /assets/covers/nowhere-shortcut.webp
 date: 2025-01-01
 duration: "114.92"
 album: "Stranger Vibes"
-mood: [Hopeful, Playful, nan]
+mood: [Hopeful, Playful]
 genre: [lo-fi, experimental]
 ---

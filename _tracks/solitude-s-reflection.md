@@ -7,6 +7,6 @@ image: /assets/covers/solitude-s-reflection.webp
 date: 2025-01-01
 duration: "106.0"
 album: "Stranger Vibes"
-mood: [Chill, Weightless, nan]
+mood: [Chill, Weightless]
 genre: [lo-fi]
 ---

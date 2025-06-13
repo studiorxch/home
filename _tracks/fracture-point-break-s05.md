@@ -7,6 +7,6 @@ image: /assets/covers/fracture-point-break-s05.webp
 date: 2025-01-01
 duration: "148.08"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi, glitch-fusion, experimental]
 ---

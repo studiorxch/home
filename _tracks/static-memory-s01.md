@@ -7,6 +7,6 @@ image: /assets/covers/static-memory-s01.webp
 date: 2025-01-01
 duration: "147.44"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, synthwave, ambient]
 ---

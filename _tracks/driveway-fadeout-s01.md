@@ -7,6 +7,6 @@ image: /assets/covers/driveway-fadeout-s01.webp
 date: 2025-01-01
 duration: "91.68"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, glitch, electronic]
 ---

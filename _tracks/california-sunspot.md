@@ -7,6 +7,6 @@ image: /assets/covers/california-sunspot.webp
 date: 2025-01-01
 duration: "110.71"
 album: "Stranger Vibes"
-mood: [Chill, Weightless, nan]
+mood: [Chill, Weightless]
 genre: [lo-fi, glitch, electronic]
 ---

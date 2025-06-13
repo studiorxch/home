@@ -7,6 +7,6 @@ image: /assets/covers/solo-stand.webp
 date: 2025-01-01
 duration: "202.42"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic, nan]
+mood: [Dreamy, Nostalgic]
 genre: [lo-fi, chillhop, cinematic]
 ---

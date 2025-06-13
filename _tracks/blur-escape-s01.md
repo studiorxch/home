@@ -7,6 +7,6 @@ image: /assets/covers/blur-escape-s01.webp
 date: 2025-01-01
 duration: "140.59"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi, experimental, ambient]
 ---

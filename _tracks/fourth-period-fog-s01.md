@@ -7,6 +7,6 @@ image: /assets/covers/fourth-period-fog-s01.webp
 date: 2025-01-01
 duration: "143.29"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi, indie, dream pop]
 ---

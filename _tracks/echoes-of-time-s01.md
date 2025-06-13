@@ -7,6 +7,6 @@ image: /assets/covers/echoes-of-time-s01.webp
 date: 2025-01-01
 duration: "180.2"
 album: "Stranger Vibes"
-mood: [Tense, nan, nan]
+mood: [Tense]
 genre: [ambient, electronic, experimental]
 ---

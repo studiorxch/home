@@ -7,6 +7,6 @@ image: /assets/covers/light-rewind-s03.webp
 date: 2025-01-01
 duration: "107.11"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-filo-fi, chillhop, soul]
 ---

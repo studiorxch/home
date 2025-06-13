@@ -7,6 +7,6 @@ image: /assets/covers/fade-out-glow-s01.webp
 date: 2025-01-01
 duration: "110.08"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, downtempo, chillhop]
 ---

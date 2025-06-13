@@ -7,6 +7,6 @@ image: /assets/covers/revival-of-the-flame.webp
 date: 2025-01-01
 duration: "214.0"
 album: "Stranger Vibes"
-mood: [Tense, nan, nan]
+mood: [Tense]
 genre: [lo-fi]
 ---

@@ -7,6 +7,6 @@ image: /assets/covers/lucas-loop-s01.webp
 date: 2025-01-01
 duration: "134.61"
 album: "Stranger Vibes"
-mood: [Melancholy, nan, nan]
+mood: [Melancholy]
 genre: [lo-fi, chillhop, ambient]
 ---

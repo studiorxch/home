@@ -7,6 +7,6 @@ image: /assets/covers/neon-crush.webp
 date: 2025-01-01
 duration: "212.68"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, synthwave, chillwave]
 ---

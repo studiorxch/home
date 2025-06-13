@@ -7,6 +7,6 @@ image: /assets/covers/soft-return.webp
 date: 2025-01-01
 duration: "150.41"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, ambient]
 ---

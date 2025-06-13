@@ -7,6 +7,6 @@ image: /assets/covers/cassette-crush.webp
 date: 2025-01-01
 duration: "117.5"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi]
 ---

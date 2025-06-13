@@ -7,6 +7,6 @@ image: /assets/covers/lucas-loop-s04.webp
 date: 2025-01-01
 duration: "182.89"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi, chillhop, ambient]
 ---

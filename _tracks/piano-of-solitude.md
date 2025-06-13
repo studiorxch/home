@@ -7,6 +7,6 @@ image: /assets/covers/piano-of-solitude.webp
 date: 2025-01-01
 duration: "152.04"
 album: "Stranger Vibes"
-mood: [Tense, nan, nan]
+mood: [Tense]
 genre: [lo-fi]
 ---

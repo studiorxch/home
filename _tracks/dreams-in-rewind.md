@@ -7,6 +7,6 @@ image: /assets/covers/dreams-in-rewind.webp
 date: 2025-01-01
 duration: "135.57"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi]
 ---

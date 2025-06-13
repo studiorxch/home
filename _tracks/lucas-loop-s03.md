@@ -7,6 +7,6 @@ image: /assets/covers/lucas-loop-s03.webp
 date: 2025-01-01
 duration: "95.92"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi, chillhop, ambient]
 ---

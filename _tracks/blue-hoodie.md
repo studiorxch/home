@@ -7,6 +7,6 @@ image: /assets/covers/blue-hoodie.webp
 date: 2025-01-01
 duration: "148.02"
 album: "Stranger Vibes"
-mood: [Melancholy, nan, nan]
+mood: [Melancholy]
 genre: [lo-fi, chillwave, ambient]
 ---

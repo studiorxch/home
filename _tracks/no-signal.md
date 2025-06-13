@@ -7,6 +7,6 @@ image: /assets/covers/no-signal.webp
 date: 2025-01-01
 duration: "119.92"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, experimental, electronic]
 ---

@@ -1,0 +1,154 @@
+<!-- _layouts/track.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }} | StudioRich</title>
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Style & Fonts -->
+  <link rel="stylesheet" href="/assets/main.css?v={{ site.time | date: '%s' }}">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Schema for Music -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "MusicRecording",
+    "name": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "image": "{{ site.url }}{{ page.image }}",
+    "inAlbum": {
+      "@type": "MusicAlbum",
+      "name": "{{ page.album }}"
+    },
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "StudioRich"
+    },
+    "duration": "{{ page.duration }}",
+    "genre": {{ page.genre | jsonify }}
+  }
+  </script>
+</head>
+
+<body>
+  {% include components/nav.html %}
+
+<main class="track-page">
+{% if page.loop %}
+  <div class="track-cover-button" data-src="{{ page.loop }}" title="Play Loop">
+    <img src="{{ page.image }}" alt="{{ page.title }} cover" class="track-cover">
+    <div class="loop-overlay">
+      <svg class="loop-indicator" width="64" height="64" viewBox="0 0 36 36">
+        <circle class="loop-track" cx="18" cy="18" r="16" fill="none" stroke="#333" stroke-width="4"/>
+        <circle class="loop-progress" cx="18" cy="18" r="16" fill="none" stroke="#f1c40f" stroke-width="4"
+          stroke-dasharray="100" stroke-dashoffset="100" />
+      </svg>
+      <img class="loop-icon-svg" src="/assets/icons/play.svg" alt="Play" />
+    </div>
+  </div>
+{% else %}
+  <img src="{{ page.image }}" alt="{{ page.title }} cover" class="track-cover">
+{% endif %}
+
+</div>
+
+
+  <div class="track-meta">
+    <h1>{{ page.title }}</h1>
+    <p class="description">{{ page.description }}</p>
+    <ul class="metadata">
+      <li><strong>Album:</strong> {{ page.album }}</li>
+      <li><strong>Genre:</strong> {{ page.genre | join: ', ' }}</li>
+      <li><strong>Mood:</strong> {{ page.mood | reject: 'nan' | join: ', ' }}</li>
+      <li><strong>Duration:</strong> {{ page.duration }}</li>
+    </ul>
+  </div>
+{% if page.loop %}
+  <button class="play-loop" data-src="{{ page.loop }}">▶️ Play Loop</button>
+{% endif %}
+
+<div class="share-buttons">
+  <p><strong>Share this track:</strong></p>
+  <a href="https://www.threads.net/intent/post?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Threads">
+    <img src="/assets/icons/threads.svg" alt="Threads" height="32">
+  </a>
+  <a href="https://bsky.app/intent/compose?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Bluesky">
+    <img src="/assets/icons/bluesky.svg" alt="Bluesky" height="32">
+  </a>
+  <a href="https://x.com/intent/tweet?text={{ page.title }} by StudioRich&url={{ site.url }}{{ page.url }}" target="_blank" title="Share on X">
+    <img src="/assets/icons/x.svg" alt="X" height="32">
+  </a>
+  <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.description }}" target="_blank" title="Pin on Pinterest">
+    <img src="/assets/icons/pinterest.svg" alt="Pinterest" height="32">
+  </a>
+</div>
+
+
+
+<p style="margin-top: 2rem; text-align: center;">
+  <a href="/library" class="library-link">← Back to Music Library</a>
+</p>
+</main>
+
+
+
+
+<script>
+ let loopAudio = null;
+let isPlaying = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.querySelector('.loop-button-wrapper');
+  const progress = document.querySelector('.loop-progress');
+  const icon = document.querySelector('.loop-icon');
+
+  if (!wrapper || !progress) return;
+
+  wrapper.addEventListener('click', () => {
+    if (!loopAudio) {
+      loopAudio = new Audio(wrapper.dataset.src || wrapper.getAttribute('data-src'));
+      loopAudio.loop = true;
+
+      loopAudio.addEventListener('timeupdate', () => {
+        if (loopAudio.duration > 0) {
+          const percent = loopAudio.currentTime / loopAudio.duration;
+          progress.style.strokeDashoffset = 100 - percent * 100;
+        }
+      });
+    }
+
+    if (loopAudio.paused) {
+      loopAudio.play();
+      icon.textContent = '⏸️';
+      wrapper.title = "Pause Loop";
+    } else {
+      loopAudio.pause();
+      icon.textContent = '▶️';
+      wrapper.title = "Play Loop";
+    }
+  });
+});
+
+</script>
+
+
+
+
+  {% include components/footer.html %}
+</body>
+</html>

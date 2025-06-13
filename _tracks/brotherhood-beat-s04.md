@@ -7,6 +7,8 @@ image: /assets/covers/brotherhood-beat-s04.webp
 date: 2025-01-01
 duration: "135.09"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, chillhop, instrumental]
+
+
 ---

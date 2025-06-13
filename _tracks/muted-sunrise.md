@@ -7,6 +7,6 @@ image: /assets/covers/muted-sunrise.webp
 date: 2025-01-01
 duration: "159.96"
 album: "Stranger Vibes"
-mood: [Hopeful, nan, nan]
+mood: [Hopeful]
 genre: [lo-fi, ambient]
 ---

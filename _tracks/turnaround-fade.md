@@ -7,6 +7,6 @@ image: /assets/covers/turnaround-fade.webp
 date: 2025-01-01
 duration: "137.65"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi, ambient, chillwave]
 ---

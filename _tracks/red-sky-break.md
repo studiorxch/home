@@ -7,6 +7,6 @@ image: /assets/covers/red-sky-break.webp
 date: 2025-01-01
 duration: "125.12"
 album: "Stranger Vibes"
-mood: [Melancholy, nan, nan]
+mood: [Melancholy]
 genre: [lo-fi, experimental, ambient]
 ---

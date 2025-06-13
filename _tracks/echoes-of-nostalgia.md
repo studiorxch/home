@@ -7,6 +7,6 @@ image: /assets/covers/echoes-of-nostalgia.webp
 date: 2025-01-01
 duration: "240.0"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi]
 ---

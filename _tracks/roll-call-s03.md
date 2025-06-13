@@ -7,6 +7,6 @@ image: /assets/covers/roll-call-s03.webp
 date: 2025-01-01
 duration: "84.98"
 album: "Stranger Vibes"
-mood: [Melancholy, nan, nan]
+mood: [Melancholy]
 genre: [lo-fi, indie, chill]
 ---

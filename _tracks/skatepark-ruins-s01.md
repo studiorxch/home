@@ -7,6 +7,6 @@ image: /assets/covers/skatepark-ruins-s01.webp
 date: 2025-01-01
 duration: "114.24"
 album: "Stranger Vibes"
-mood: [Hopeful, nan, nan]
+mood: [Hopeful]
 genre: [lo-fi, experimental, melancholic]
 ---

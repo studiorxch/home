@@ -7,6 +7,6 @@ image: /assets/covers/roll-call-s01.webp
 date: 2025-01-01
 duration: "127.62"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic, nan]
+mood: [Dreamy, Nostalgic]
 genre: [lo-fi hip hop, jazz rap]
 ---

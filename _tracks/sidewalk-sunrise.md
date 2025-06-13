@@ -7,6 +7,6 @@ image: /assets/covers/sidewalk-sunrise.webp
 date: 2025-01-01
 duration: "140.19"
 album: "Stranger Vibes"
-mood: [Energetic, Aggressive, nan]
+mood: [Energetic, Aggressive]
 genre: [lo-fi]
 ---

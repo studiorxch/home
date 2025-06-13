@@ -7,6 +7,6 @@ image: /assets/covers/fracture-point-break-s04.webp
 date: 2025-01-01
 duration: "174.88"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic, nan]
+mood: [Dreamy, Nostalgic]
 genre: [lo-fi, glitch-fusion]
 ---

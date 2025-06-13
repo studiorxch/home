@@ -7,6 +7,6 @@ image: /assets/covers/window-fade-s01.webp
 date: 2025-01-01
 duration: "124.2"
 album: "Stranger Vibes"
-mood: [Chill, nan, nan]
+mood: [Chill]
 genre: [lo-fi, cinematic, chill]
 ---

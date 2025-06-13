@@ -7,6 +7,6 @@ image: /assets/covers/half-light-memory.webp
 date: 2025-01-01
 duration: "164.52"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi, ambient]
 ---

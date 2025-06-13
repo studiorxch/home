@@ -7,6 +7,6 @@ image: /assets/covers/remote-ghost-s01.webp
 date: 2025-01-01
 duration: "135.89"
 album: "Stranger Vibes"
-mood: [Aggressive, nan, nan]
+mood: [Aggressive]
 genre: [lo-fi, dream pop, ambient]
 ---

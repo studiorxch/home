@@ -7,7 +7,7 @@ image: /assets/covers/lo-fi-defiance.webp
 date: 2025-01-01
 duration: "138.52"
 album: "Stranger Vibes"
-mood: [nan, nan, nan]
+mood: []
 genre: [lo-fi, ambient, chillhop]
 featured: true
 

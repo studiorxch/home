@@ -7,7 +7,7 @@ image: /assets/covers/weightless-in-the-rain.webp
 date: 2025-01-01
 duration: "132.19"
 album: "Stranger Vibes"
-mood: [Energetic, Aggressive, nan]
+mood: [Energetic, Aggressive]
 genre: [lo-fi, synthwave, soul]
 featured: true
 

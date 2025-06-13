@@ -7,7 +7,7 @@ image: /assets/covers/brotherhood-beat-s01.webp
 date: 2025-01-01
 duration: "123.8"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic, nan]
+mood: [Dreamy, Nostalgic]
 genre: [lo-fi, indie, chill]
 featured: true
 
