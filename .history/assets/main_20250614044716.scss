@@ -80,7 +80,7 @@ h1, h2, h3 {
   /* Show overlay */
   .mobile-overlay.active {
     display: block;
-    opacity: 1;
+    opacity: 0;
   }
   /* Slide-in mobile menu */
   .mobile-menu {
@@ -89,13 +89,13 @@ h1, h2, h3 {
     align-items: center;
     position: fixed;
     top: 0;
-    right: -120%;
+    right: -100%;
     width: 100%;
     height: 100vh;
     background: #111;
     padding: 2rem;
     z-index: 1000;
-    transition: right 0.4s ease;
+    transition: right 0.3s ease;
   }
 
   .mobile-menu.open {

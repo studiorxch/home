@@ -1,6 +1,4 @@
 <header class="site-header">
-  <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
-
   <div class="hamburger" onclick="toggleMenu()">
   <span></span><span></span><span></span>
 </div>
@@ -43,21 +41,6 @@
 </header>
 <script>
   function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    const overlay = document.getElementById('mobileOverlay');
-    const isOpen = menu.classList.toggle('open');
-
-    overlay.classList.toggle('active', isOpen);
-    document.body.classList.toggle('menu-open', isOpen);
+    document.getElementById('mobileMenu').classList.toggle('open');
   }
-
-  // Auto-close on link click
-  document.querySelectorAll('.mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('mobileMenu').classList.remove('open');
-      document.getElementById('mobileOverlay').classList.remove('active');
-      document.body.classList.remove('menu-open');
-    });
-  });
 </script>
-
