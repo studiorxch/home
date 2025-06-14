@@ -42,10 +42,6 @@ h1, h2, h3 {
     display: none;
   }
 
-  .hide-mobile {
-    display: none !important;
-  }
-  
   body.menu-open {
   overflow: hidden;
   }
@@ -166,7 +162,7 @@ h1, h2, h3 {
     width: 100%;
     justify-content: center;
     margin-top: 0.5rem;
-    gap: 0.25rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
