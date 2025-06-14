@@ -52,6 +52,7 @@ image: /assets/img/hero-music-library.webp
 </section>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.track-card');
   const filterButtons = document.querySelectorAll('[data-filter]');
   let selectedMood = null;
@@ -71,7 +72,7 @@ image: /assets/img/hero-music-library.webp
   }
 
   function updateFilters() {
-    // Reset button states
+    // Reset all buttons
     filterButtons.forEach(btn => btn.classList.remove('active'));
 
     if (selectedMood) {
@@ -84,16 +85,16 @@ image: /assets/img/hero-music-library.webp
       document.querySelector(`[data-filter="all"]`)?.classList.add('active');
     }
 
-    // Show matching cards
+    // Filter track cards
     cards.forEach(card => {
       const moods = (card.dataset.mood || '').split(' ');
       const genres = (card.dataset.genre || '').split(' ');
-      const moodMatch = !selectedMood || moods.includes(selectedMood);
-      const genreMatch = !selectedGenre || genres.includes(selectedGenre);
-      card.style.display = (moodMatch && genreMatch) ? '' : 'none';
+      const matchMood = !selectedMood || moods.includes(selectedMood);
+      const matchGenre = !selectedGenre || genres.includes(selectedGenre);
+      card.style.display = (matchMood && matchGenre) ? '' : 'none';
     });
 
-    // Update genre buttons to reflect what's available for selected mood
+    // Dim genres not applicable for current mood
     if (selectedMood) {
       updateGenreButtonsForMood(selectedMood);
     } else {
@@ -106,31 +107,31 @@ image: /assets/img/hero-music-library.webp
       const type = button.dataset.type;
       const value = button.dataset.filter;
 
-      if (value === 'all') {
+      if (value === 'all' || type === 'all') {
         selectedMood = null;
         selectedGenre = null;
       } else if (type === 'mood') {
-        selectedMood = (selectedMood === value) ? null : value;
+        selectedMood = selectedMood === value ? null : value;
       } else if (type === 'genre') {
-        selectedGenre = (selectedGenre === value) ? null : value;
+        selectedGenre = selectedGenre === value ? null : value;
       }
 
-      // GA tracking
-      if (typeof gtag === 'function') {
-        gtag('event', 'filter_selected', {
-          filter_type: type,
-          filter_value: value,
-          page_location: window.location.pathname
-        });
-      }
+      // GA4 event tracking
+      gtag('event', 'filter_selected', {
+        filter_type: type,
+        filter_value: value,
+        page_location: window.location.pathname
+      });
 
       updateFilters();
     });
   });
 
-  // Apply URL param filter on load
+  // Init from URL
   const params = new URLSearchParams(window.location.search);
   const genreFromURL = params.get('genre');
   if (genreFromURL) selectedGenre = genreFromURL.toLowerCase();
+
   updateFilters();
+});
 </script>

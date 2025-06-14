@@ -1,0 +1,138 @@
+---
+layout: default
+title: Music Library
+permalink: /library/
+description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
+image: /assets/img/hero-music-library.webp
+---
+{% include components/hero.html 
+  image=page.image 
+  title="Music Library" %}
+
+<div class="filter-bar">
+  <button data-filter="all" data-type="all" class="active">All</button>
+
+
+  {% assign all_moods = "" | split: "" %}
+  {% assign all_genres = "" | split: "" %}
+
+  {% for track in site.tracks %}
+    {% assign all_moods = all_moods | concat: track.mood %}
+    {% assign all_genres = all_genres | concat: track.genre %}
+  {% endfor %}
+
+  {% assign unique_moods = all_moods | uniq | sort %}
+  {% assign unique_genres = all_genres | uniq | sort %}
+
+  <!-- Moods -->
+  {% for mood in unique_moods %}
+    {% unless mood == "nan" %}
+      <button data-filter="{{ mood | downcase }}" data-type="mood">{{ mood }}</button>
+    {% endunless %}
+  {% endfor %}
+
+  <!-- Genres -->
+  {% for genre in unique_genres %}
+    {% unless genre == "nan" %}
+      <button data-filter="{{ genre | downcase }}" data-type="genre">{{ genre }}</button>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<section class="track-grid">
+  {% for track in site.tracks %}
+    <a class="track-card{% if track.featured %} featured{% endif %}" 
+       href="{{ track.url }}?autoplay=1"
+       data-mood="{{ track.mood | join: ' ' | downcase }}"
+       data-genre="{{ track.genre | join: ' ' | downcase }}">
+      <img src="{{ track.image }}" alt="{{ track.title }} cover" class="track-cover">
+      <div class="track-title">{{ track.title }}</div>
+    </a>
+  {% endfor %}
+</section>
+
+<script>
+const cards = document.querySelectorAll('.track-card');
+const filterButtons = document.querySelectorAll('[data-filter]');
+let selectedMood = null;
+let selectedGenre = null;
+
+
+function updateGenreButtonsForMood(mood) {
+  const genreButtons = document.querySelectorAll('button[data-type="genre"]');
+  genreButtons.forEach(btn => {
+    const genre = btn.dataset.filter;
+    const hasMatch = Array.from(cards).some(card => {
+      const moods = (card.dataset.mood || '').split(' ');
+      const genres = (card.dataset.genre || '').split(' ');
+      return moods.includes(mood) && genres.includes(genre);
+    });
+    btn.classList.toggle('disabled', !hasMatch);
+  });
+}
+
+function updateFilters() {
+  // Reset all buttons
+  filterButtons.forEach(btn => btn.classList.remove('active'));
+
+  if (selectedMood) {
+    document.querySelector(`[data-filter="${selectedMood}"][data-type="mood"]`)?.classList.add('active');
+  }
+  if (selectedGenre) {
+    document.querySelector(`[data-filter="${selectedGenre}"][data-type="genre"]`)?.classList.add('active');
+  }
+  if (!selectedMood && !selectedGenre) {
+    document.querySelector(`[data-filter="all"]`)?.classList.add('active');
+  }
+
+  // Filter track cards
+  cards.forEach(card => {
+    const moods = (card.dataset.mood || '').split(' ');
+    const genres = (card.dataset.genre || '').split(' ');
+    const matchMood = !selectedMood || moods.includes(selectedMood);
+    const matchGenre = !selectedGenre || genres.includes(selectedGenre);
+    card.style.display = (matchMood && matchGenre) ? '' : 'none';
+  });
+
+  // Dim genres that are not available with current mood
+  if (selectedMood) {
+    updateGenreButtonsForMood(selectedMood);
+  } else {
+    document.querySelectorAll('button[data-type="genre"]').forEach(btn => btn.classList.remove('disabled'));
+  }
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const type = button.dataset.type;
+    const value = button.dataset.filter;
+
+    if (value === 'all' || type === 'all') {
+      selectedMood = null;
+      selectedGenre = null;
+    } else if (type === 'mood') {
+      selectedMood = selectedMood === value ? null : value;
+    } else if (type === 'genre') {
+      selectedGenre = selectedGenre === value ? null : value;
+    }
+
+    // GA4 event tracking
+    gtag('event', 'filter_selected', {
+      filter_type: type,
+      filter_value: value,
+      page_location: window.location.pathname
+    });
+
+    updateFilters();
+  });
+});
+
+
+// Init from URL
+const params = new URLSearchParams(window.location.search);
+const genreFromURL = params.get('genre');
+if (genreFromURL) selectedGenre = genreFromURL.toLowerCase();
+updateFilters();
+</script>
+
+

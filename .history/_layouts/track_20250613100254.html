@@ -87,22 +87,22 @@
 
 <div class="share-buttons">
   <p><strong>Share this track:</strong></p>
-  <a href="https://www.threads.net/intent/post?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Threads"  data-share="threads">
+  <a href="https://www.threads.net/intent/post?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Threads">
     <img src="/assets/icons/threads.svg" alt="Threads" height="32">
   </a>
-  <a href="https://bsky.app/intent/compose?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Bluesky" data-share="bluesky">
+  <a href="https://bsky.app/intent/compose?text={{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share on Bluesky">
     <img src="/assets/icons/bluesky.svg" alt="Bluesky" height="32">
   </a>
-  <a href="https://x.com/intent/tweet?text={{ page.title }} by StudioRich&url={{ site.url }}{{ page.url }}" target="_blank" title="Share on X" data-share="x">
+  <a href="https://x.com/intent/tweet?text={{ page.title }} by StudioRich&url={{ site.url }}{{ page.url }}" target="_blank" title="Share on X">
     <img src="/assets/icons/x.svg" alt="X" height="32">
   </a>
-  <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.description }}" target="_blank" title="Pin on Pinterest" data-share="pinterest">
+  <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.description }}" target="_blank" title="Pin on Pinterest">
     <img src="/assets/icons/pinterest.svg" alt="Pinterest" height="32">
   </a>
-  <a href="mailto:?subject={{ page.title }} by StudioRich&body=Check out this track: {{ site.url }}{{ page.url }}" target="_blank" title="Share via Email" data-share="email">
+  <a href="mailto:?subject={{ page.title }} by StudioRich&body=Check out this track: {{ site.url }}{{ page.url }}" target="_blank" title="Share via Email">
   <img src="/assets/icons/email.svg" alt="Email" height="32">
 </a>
-<a href="sms:?&body=Check out {{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share via Messages" data-share="sms">
+<a href="sms:?&body=Check out {{ page.title }} by StudioRich — {{ site.url }}{{ page.url }}" target="_blank" title="Share via Messages">
   <img src="/assets/icons/messages.svg" alt="Messages" height="32">
 </a>
 
@@ -112,30 +112,25 @@
 <p style="margin-top: 2rem; text-align: center;">
   <a href="/library" class="library-link">← Back to Music Library</a>
 </p>
-</main><script>
+</main>
+<script>
   const coverBtn = document.querySelector('.track-cover-button');
-  let playStart = null;
   let loopAudio = null;
   const bars = document.querySelectorAll('.waveform-bar .bar');
   const circle = document.querySelector('.loop-progress');
   const waveform = document.querySelector('.waveform-bar');
   const urlParams = new URLSearchParams(window.location.search);
+  const genreParam = new URLSearchParams(window.location.search).get("genre");
+  if (genreParam) {
+    document.querySelectorAll('.track-card').forEach(card => {
+      const genres = card.dataset.genre || '';
+      card.style.display = genres.includes(genreParam.toLowerCase()) ? '' : 'none';
+    });
+  }
 
   function toggleWaveform(isPlaying) {
     if (waveform) {
       waveform.classList.toggle('playing', isPlaying);
-    }
-  }
-
-  function trackListenEvent() {
-    if (playStart) {
-      const duration = Math.round((Date.now() - playStart) / 1000);
-      gtag('event', 'loop_listened', {
-        track_title: "{{ page.title }}",
-        duration_seconds: duration,
-        page_location: window.location.pathname
-      });
-      playStart = null;
     }
   }
 
@@ -144,15 +139,8 @@
       loopAudio = new Audio(coverBtn.dataset.src);
       loopAudio.loop = true;
 
-      // Add listeners after audio is initialized
-      loopAudio.addEventListener('play', () => {
-        playStart = Date.now();
-      });
-
-      loopAudio.addEventListener('pause', trackListenEvent);
-
       loopAudio.addEventListener('timeupdate', () => {
-        if (circle && loopAudio.duration) {
+        if (circle) {
           const percent = loopAudio.currentTime / loopAudio.duration;
           const offset = 100 - percent * 100;
           circle.style.strokeDashoffset = offset;
@@ -171,23 +159,10 @@
     }
   });
 
-  // ✅ Trigger autoplay safely after setup
-  if (urlParams.get('autoplay') === '1') {
-    setTimeout(() => {
-      coverBtn.click();
-    }, 100); // tiny delay for good measure
+  // ✅ Trigger autoplay after event listener is defined
+  if (urlParams.get('autoplay') === '1' && coverBtn) {
+    coverBtn.click();
   }
-
-  // 📤 Share tracking
-  document.querySelectorAll('[data-share]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const network = btn.dataset.share;
-      gtag('event', 'share_click', {
-        method: network,
-        page_location: window.location.pathname
-      });
-    });
-  });
 </script>
 
 

@@ -1,0 +1,162 @@
+---
+layout: default
+title: Music Library
+permalink: /library/
+description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
+image: /assets/img/hero-music-library.webp
+---
+{% include components/hero.html 
+  image=page.image 
+  title="Music Library" %}
+
+  <div class="filter-bar">
+    <button data-filter="all" data-type="all" class="active">All</button>
+
+    {% assign all_moods = "" | split: "" %}
+    {% assign all_genres = "" | split: "" %}
+
+    {% for track in site.tracks %}
+      {% assign all_moods = all_moods | concat: track.mood %}
+      {% assign all_genres = all_genres | concat: track.genre %}
+    {% endfor %}
+
+    {% assign unique_moods = all_moods | uniq | sort %}
+    {% assign unique_genres = all_genres | uniq | sort %}
+
+    <!-- Moods -->
+    {% for mood in unique_moods %}
+      {% unless mood == "nan" %}
+        <button data-filter="{{ mood | downcase }}" data-type="mood">{{ mood }}</button>
+      {% endunless %}
+    {% endfor %}
+
+    <!-- Genres -->
+    {% for genre in unique_genres %}
+      {% unless genre == "nan" %}
+        <button data-filter="{{ genre | downcase }}" data-type="genre">{{ genre }}</button>
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+
+
+  </div>
+</div>
+
+
+
+<section class="track-grid">
+  {% for track in site.tracks %}
+
+      <a class="track-card{% if track.featured %} featured{% endif %}" 
+      href="{{ track.url }}?autoplay=1"
+      data-mood="{{ track.mood | join: ' ' | downcase }}"
+      data-genre="{{ track.genre | join: ' ' | downcase }}">
+      
+      <img src="{{ track.image }}" alt="{{ track.title }} cover" class="track-cover">
+      <div class="track-title">{{ track.title }}</div>
+    </a>
+
+  {% endfor %}
+</section>
+<script>
+  const cards = document.querySelectorAll('.track-card');
+  const filterButtons = document.querySelectorAll('[data-filter]');
+
+  let selectedMood = null;
+  let selectedGenre = null;
+
+  function updateGenreButtonsForMood(selectedMood) {
+  const genreButtons = document.querySelectorAll('button[data-type="genre"]');
+
+  genreButtons.forEach(genreBtn => {
+    const genreValue = genreBtn.dataset.filter;
+    let hasMatch = false;
+
+    // Check if at least one track matches both mood + genre
+    cards.forEach(card => {
+      const moods = (card.dataset.mood || "").split(" ");
+      const genres = (card.dataset.genre || "").split(" ");
+
+      if (moods.includes(selectedMood) && genres.includes(genreValue)) {
+        hasMatch = true;
+      }
+    });
+
+    genreBtn.classList.toggle('disabled', !hasMatch);
+  });
+}
+
+if (type === 'mood') {
+  selectedMood = selectedMood === value ? null : value;
+
+  if (selectedMood) {
+    updateGenreButtonsForMood(selectedMood);
+  } else {
+    // No mood selected = reset genre buttons
+    document.querySelectorAll('button[data-type="genre"]').forEach(btn => {
+      btn.classList.remove('disabled');
+    });
+  }
+}
+
+  function updateFilters() {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+    if (selectedMood) {
+      document.querySelector(`[data-filter="${selectedMood}"][data-type="mood"]`)?.classList.add('active');
+    }
+    if (selectedGenre) {
+      document.querySelector(`[data-filter="${selectedGenre}"][data-type="genre"]`)?.classList.add('active');
+    }
+    if (!selectedMood && !selectedGenre) {
+      document.querySelector(`[data-filter="all"]`)?.classList.add('active');
+    }
+
+    cards.forEach(card => {
+      const moods = (card.dataset.mood || "").split(" ");
+      const genres = (card.dataset.genre || "").split(" ");
+
+      const moodMatch = !selectedMood || moods.includes(selectedMood);
+      const genreMatch = !selectedGenre || genres.includes(selectedGenre);
+
+      card.style.display = (moodMatch && genreMatch) ? "" : "none";
+    });
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const type = button.dataset.type;
+      const value = button.dataset.filter;
+
+      if (value === 'all') {
+        selectedMood = null;
+        selectedGenre = null;
+      } else if (type === 'mood') {
+        selectedMood = selectedMood === value ? null : value;
+      } else if (type === 'genre') {
+        selectedGenre = selectedGenre === value ? null : value;
+      }
+
+      updateFilters();
+    });
+  });
+
+  // Set filters from URL on page load
+  const params = new URLSearchParams(window.location.search);
+  const genreFromURL = params.get('genre');
+  if (genreFromURL) selectedGenre = genreFromURL.toLowerCase();
+  updateFilters();
+
+  // Optional: Autoplay if ?autoplay=1 (with cover loop handler)
+  const autoplay = params.get('autoplay') === '1';
+  if (autoplay) {
+    const firstCard = document.querySelector('.track-card');
+    if (firstCard) {
+      const audio = new Audio(firstCard.dataset.loop);
+      audio.loop = true;
+      audio.play();
+      firstCard.classList.add('playing');
+    }
+  }
+</script>

@@ -500,37 +500,15 @@ h1, h2, h3 {
 }
 
 
-/* Base mood buttons */
-button[data-type="mood"] {
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #444;
-}
-
-/* Base genre buttons — darker gray */
-button[data-type="genre"] {
-  background-color: #111;
-  color: #ccc;
-  border: 1px solid #333;
-}
-
-/* Active mood (yellow) */
 button.active[data-type="mood"] {
-  background-color: #f1c40f;
+  background-color: #f1c40f; /* Yellow */
   color: #000;
 }
 
-/* Active genre (pink) */
 button.active[data-type="genre"] {
-  background-color: #ff69b4;
+  background-color: #ff69b4; /* Pink */
   color: #000;
 }
-button.disabled {
-  opacity: 0.35;
-  pointer-events: none;
-  cursor: default;
-}
-
 
 /* === Looper === */
 .loop-overlay {
