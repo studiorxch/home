@@ -1,5 +1,23 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+# Sass cache
+.sass-cache/
+
+# Bundler / Ruby
+vendor/
+.bundle/
+Gemfile.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs or temp (if ever used in future)
+*.log
+*.tmp
+
+# Optional: Node (if you ever add JS build tools later)
+node_modules/
