@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Softcore Velocity"
+permalink: /tracks/softcore-velocity/
+description: ""
+image: "/assets/covers/softcore-velocity.webp"
+date: 2025-01-01
+duration: "2:02"
+album: "The Way the Air Moves"
+mood: ["Dreamy", "Nostalgic"]
+genre: ["lo-fi", "jungle", "soul"]
+bpm: 85
+key: "Ab"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

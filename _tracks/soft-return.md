@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Soft Return
+title: "Soft Return"
 permalink: /tracks/soft-return/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/soft-return.webp
+description: ""
+image: "/assets/covers/soft-return.webp"
+image_ready: false
 date: 2025-01-01
-duration: "150.41"
+duration: "2:30"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, ambient]
+mood: ["Chill"]
+genre: ["lo-fi", "ambient"]
+bpm: 89
+key: "Eb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

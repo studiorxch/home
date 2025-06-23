@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Echoes Of Time S01
+title: "Echoes Of Time S01"
 permalink: /tracks/echoes-of-time-s01/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/echoes-of-time-s01.webp
+description: ""
+image: "/assets/covers/echoes-of-time-s01.webp"
+image_ready: false
 date: 2025-01-01
-duration: "180.2"
+duration: "3:00"
 album: "Stranger Vibes"
-mood: [Tense]
-genre: [ambient, electronic, experimental]
+mood: ["Tense"]
+genre: ["ambient", "electronic", "experimental"]
+bpm: 128
+key: "A"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Neon With Teeth"
+permalink: /tracks/neon-with-teeth/
+description: ""
+image: "/assets/covers/neon-with-teeth.webp"
+date: 2025-01-01
+duration: "2:11"
+album: "The Way the Air Moves"
+mood: ["Energetic", "Aggressive"]
+genre: ["lo-fi", "jungle", "ambient"]
+bpm: 172
+key: "A"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

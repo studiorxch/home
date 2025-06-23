@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Sidewalk Sunrise
+title: "Sidewalk Sunrise"
 permalink: /tracks/sidewalk-sunrise/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/sidewalk-sunrise.webp
+description: ""
+image: "/assets/covers/sidewalk-sunrise.webp"
+image_ready: false
 date: 2025-01-01
-duration: "140.19"
+duration: "2:20"
 album: "Stranger Vibes"
-mood: [Energetic, Aggressive]
-genre: [lo-fi]
+mood: ["Energetic", "Aggressive"]
+genre: ["lo-fi"]
+bpm: 166
+key: "C"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Fracture Point Break S04
+title: "Fracture Point Break S04"
 permalink: /tracks/fracture-point-break-s04/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/fracture-point-break-s04.webp
+description: ""
+image: "/assets/covers/fracture-point-break-s04.webp"
+image_ready: false
 date: 2025-01-01
-duration: "174.88"
+duration: "2:54"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic]
-genre: [lo-fi, glitch-fusion]
+mood: ["Dreamy", "Nostalgic"]
+genre: ["lo-fi", "glitch-fusion"]
+bpm: 88
+key: "F"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

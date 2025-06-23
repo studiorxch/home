@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Revival Of The Flame
+title: "Revival Of The Flame"
 permalink: /tracks/revival-of-the-flame/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/revival-of-the-flame.webp
+description: ""
+image: "/assets/covers/revival-of-the-flame.webp"
+image_ready: false
 date: 2025-01-01
-duration: "214.0"
+duration: "3:34"
 album: "Stranger Vibes"
-mood: [Tense]
-genre: [lo-fi]
+mood: ["Tense"]
+genre: ["lo-fi"]
+bpm: 128
+key: "F#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

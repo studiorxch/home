@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Crush.exe"
+permalink: /tracks/crush-exe/
+description: ""
+image: "/assets/covers/crush-exe.webp"
+date: 2025-01-01
+duration: "4:05"
+album: "Run Loop"
+mood: ["Aggressive"]
+genre: ["electronic", "jungle", "glitch"]
+bpm: 156
+key: "F#"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

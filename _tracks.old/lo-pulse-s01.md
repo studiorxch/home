@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Lo Pulse S01"
+permalink: /tracks/lo-pulse-s01/
+description: ""
+image: "/assets/covers/lo-pulse-s01.webp"
+date: 2025-01-01
+duration: "2:09"
+album: "The Way the Air Moves"
+mood: ["Chill"]
+genre: ["lo-fi", "jungle", "ambient"]
+bpm: 85
+key: "F#"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

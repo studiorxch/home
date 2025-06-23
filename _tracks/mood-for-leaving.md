@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Mood For Leaving
+title: "Mood For Leaving"
 permalink: /tracks/mood-for-leaving/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/mood-for-leaving.webp
+description: ""
+image: "/assets/covers/mood-for-leaving.webp"
+image_ready: false
 date: 2025-01-01
-duration: "88.46"
+duration: "1:28"
 album: "Stranger Vibes"
-mood: [Playful]
-genre: [lo-fi]
+mood: ["Playful"]
+genre: ["lo-fi"]
+bpm: 95
+key: "Ab"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

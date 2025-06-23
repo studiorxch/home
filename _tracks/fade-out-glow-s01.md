@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Fade Out Glow S01
+title: "Fade Out Glow S01"
 permalink: /tracks/fade-out-glow-s01/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/fade-out-glow-s01.webp
+description: ""
+image: "/assets/covers/fade-out-glow-s01.webp"
+image_ready: false
 date: 2025-01-01
-duration: "110.08"
+duration: "1:50"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, downtempo, chillhop]
+mood: ["Chill"]
+genre: ["lo-fi", "downtempo", "chillhop"]
+bpm: 85
+key: "C#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

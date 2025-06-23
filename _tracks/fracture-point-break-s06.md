@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Fracture Point Break S06
+title: "Fracture Point Break S06"
 permalink: /tracks/fracture-point-break-s06/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/fracture-point-break-s06.webp
+description: ""
+image: "/assets/covers/fracture-point-break-s06.webp"
+image_ready: false
 date: 2025-01-01
-duration: "139.98"
+duration: "2:19"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, glitch-fusion, experimental]
+mood: ["Chill"]
+genre: ["lo-fi", "glitch-fusion", "experimental"]
+bpm: 75
+key: "Eb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Retro Pulse
+title: "Retro Pulse"
 permalink: /tracks/retro-pulse/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/retro-pulse.webp
+description: ""
+image: "/assets/covers/retro-pulse.webp"
+image_ready: false
 date: 2025-01-01
-duration: "201.84"
+duration: "3:21"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic]
-genre: [lo-fi, synthwave]
+mood: ["Dreamy", "Nostalgic"]
+genre: ["lo-fi", "synthwave"]
+bpm: 90
+key: "E"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

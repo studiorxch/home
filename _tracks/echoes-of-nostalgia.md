@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Echoes Of Nostalgia
+title: "Echoes Of Nostalgia"
 permalink: /tracks/echoes-of-nostalgia/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/echoes-of-nostalgia.webp
+description: ""
+image: "/assets/covers/echoes-of-nostalgia.webp"
+image_ready: false
 date: 2025-01-01
-duration: "240.0"
+duration: "4:00"
 album: "Stranger Vibes"
-mood: [Aggressive]
-genre: [lo-fi]
+mood: ["Aggressive"]
+genre: ["lo-fi"]
+bpm: 142
+key: "G"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Static Sleepwalker
+title: "Static Sleepwalker"
 permalink: /tracks/static-sleepwalker/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/static-sleepwalker.webp
+description: ""
+image: "/assets/covers/static-sleepwalker.webp"
+image_ready: false
 date: 2025-01-01
-duration: "118.78"
+duration: "1:58"
 album: "Stranger Vibes"
-mood: [Energetic, Aggressive]
-genre: [lo-fi, ambient, downtempo]
+mood: ["Energetic", "Aggressive"]
+genre: ["lo-fi", "ambient", "downtempo"]
+bpm: 162
+key: "C"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

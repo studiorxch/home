@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Fourth Period Fog
+title: "Fourth Period Fog"
 permalink: /tracks/fourth-period-fog/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/fourth-period-fog.webp
+description: ""
+image: "/assets/covers/fourth-period-fog.webp"
+image_ready: false
 date: 2025-01-01
-duration: "101.0"
+duration: "1:41"
 album: "Stranger Vibes"
-mood: [Playful]
-genre: [lo-fi, indie, dream pop]
+mood: ["Playful"]
+genre: ["lo-fi", "indie", "dream pop"]
+bpm: 94
+key: "C#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

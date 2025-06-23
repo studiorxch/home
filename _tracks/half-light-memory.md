@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Half-Light Memory
+title: "Half-Light Memory"
 permalink: /tracks/half-light-memory/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/half-light-memory.webp
+description: ""
+image: "/assets/covers/half-light-memory.webp"
+image_ready: false
 date: 2025-01-01
-duration: "164.52"
+duration: "2:44"
 album: "Stranger Vibes"
-mood: [Aggressive]
-genre: [lo-fi, ambient]
+mood: ["Aggressive"]
+genre: ["lo-fi", "ambient"]
+bpm: 142
+key: "B"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

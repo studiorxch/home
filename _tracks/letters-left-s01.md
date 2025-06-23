@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Letters Left S01
+title: "Letters Left S01"
 permalink: /tracks/letters-left-s01/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/letters-left-s01.webp
+description: ""
+image: "/assets/covers/letters-left-s01.webp"
+image_ready: false
 date: 2025-01-01
-duration: "172.99"
+duration: "2:52"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, indie, bedroom pop]
+mood: ["Chill"]
+genre: ["lo-fi", "indie", "bedroom pop"]
+bpm: 80
+key: "F#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

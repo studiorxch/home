@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Nebula Coil"
+permalink: /tracks/nebula-coil/
+description: ""
+image: "/assets/covers/nebula-coil.webp"
+date: 2025-01-01
+duration: "4:00"
+album: "Eunoia"
+mood: []
+genre: ["ambient", "electronic", "experimental"]
+bpm: 120
+key: "C"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

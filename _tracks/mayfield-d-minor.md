@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Mayfield (D-Minor)
+title: "Mayfield (D-Minor)"
 permalink: /tracks/mayfield-d-minor/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/mayfield-d-minor.webp
+description: ""
+image: "/assets/covers/mayfield-d-minor.webp"
+image_ready: false
 date: 2025-01-01
-duration: "240.0"
+duration: "4:00"
 album: "Stranger Vibes"
-mood: [Dreamy, Nostalgic]
-genre: [lo-fi]
+mood: ["Dreamy", "Nostalgic"]
+genre: ["lo-fi"]
+bpm: 88
+key: "D"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,0 +1,63 @@
+---
+---
+
+html, body {
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+    background: #0a0a0a;
+}
+a {
+  color: #aaa; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0000; 
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #f0f0f0;
+}
+
+p {
+  letter-spacing: 0.01em;
+  font-weight: 100;
+  max-width: 900px;
+  margin: 4rem;
+      align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1, h2, h3 {
+  font-family: 'Trirong', serif;
+}
+/* Hide mobile-only by default (desktop view) */
+.mobile-only {
+  display: none;
+}
+
+  .stream {
+    background: #0A0A0A;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .feature {
+    background: #1f1f1f;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+

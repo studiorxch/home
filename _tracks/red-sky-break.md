@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Red Sky Break
+title: "Red Sky Break"
 permalink: /tracks/red-sky-break/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/red-sky-break.webp
+description: ""
+image: "/assets/covers/red-sky-break.webp"
+image_ready: false
 date: 2025-01-01
-duration: "125.12"
+duration: "2:05"
 album: "Stranger Vibes"
-mood: [Melancholy]
-genre: [lo-fi, experimental, ambient]
+mood: ["Melancholy"]
+genre: ["lo-fi", "experimental", "ambient"]
+bpm: 78
+key: "Bb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

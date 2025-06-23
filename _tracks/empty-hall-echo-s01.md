@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Empty Hall Echo S01
+title: "Empty Hall Echo S01"
 permalink: /tracks/empty-hall-echo-s01/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/empty-hall-echo-s01.webp
+description: ""
+image: "/assets/covers/empty-hall-echo-s01.webp"
+image_ready: false
 date: 2025-01-01
-duration: "93.11"
+duration: "1:33"
 album: "Stranger Vibes"
-mood: [Hopeful]
-genre: [lo-fi, ambient, experimental]
+mood: ["Hopeful"]
+genre: ["lo-fi", "ambient", "experimental"]
+bpm: 112
+key: "Ab"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

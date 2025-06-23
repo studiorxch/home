@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Remote Ghost
+title: "Remote Ghost"
 permalink: /tracks/remote-ghost/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/remote-ghost.webp
+description: ""
+image: "/assets/covers/remote-ghost.webp"
+image_ready: false
 date: 2025-01-01
-duration: "135.89"
+duration: "2:15"
 album: "Stranger Vibes"
-mood: [Aggressive]
-genre: [lo-fi, dream pop, ambient]
+mood: ["Aggressive"]
+genre: ["lo-fi", "dream pop", "ambient"]
+bpm: 140
+key: "Bb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

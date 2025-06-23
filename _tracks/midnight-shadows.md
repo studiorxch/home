@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Midnight Shadows
+title: "Midnight Shadows"
 permalink: /tracks/midnight-shadows/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/midnight-shadows.webp
+description: ""
+image: "/assets/covers/midnight-shadows.webp"
+image_ready: false
 date: 2025-01-01
-duration: "175.65"
+duration: "2:55"
 album: "Stranger Vibes"
-mood: [Melancholy, Dreamy, Nostalgic]
-genre: [lo-fi, ambient, downtempo]
+mood: ["Melancholy", "Dreamy", "Nostalgic"]
+genre: ["lo-fi", "ambient", "downtempo"]
+bpm: 82
+key: "Eb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

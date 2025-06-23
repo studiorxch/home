@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Echoes Of Time S03
+title: "Echoes Of Time S03"
 permalink: /tracks/echoes-of-time-s03/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/echoes-of-time-s03.webp
+description: ""
+image: "/assets/covers/echoes-of-time-s03.webp"
+image_ready: false
 date: 2025-01-01
-duration: "213.0"
+duration: "3:33"
 album: "Stranger Vibes"
-mood: [Tense]
-genre: [ambient, electronic, experimental]
+mood: ["Tense"]
+genre: ["ambient", "electronic", "experimental"]
+bpm: 129
+key: "C#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

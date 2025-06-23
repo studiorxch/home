@@ -5,9 +5,9 @@ permalink: /library/
 description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
 image: /assets/img/hero-music-library.webp
 ---
-{% include components/hero.html 
-  image=page.image 
-  title="Music Library" %}
+{% include components/hero.html
+image=page.image
+title="Music Library" %}
 
 <div class="filter-bar">
   <button data-filter="all" data-type="all" class="active">All</button>
@@ -17,8 +17,8 @@ image: /assets/img/hero-music-library.webp
   {% assign all_genres = "" | split: "" %}
 
   {% for track in site.tracks %}
-    {% assign all_moods = all_moods | concat: track.mood %}
-    {% assign all_genres = all_genres | concat: track.genre %}
+  {% assign all_moods = all_moods | concat: track.mood %}
+  {% assign all_genres = all_genres | concat: track.genre %}
   {% endfor %}
 
   {% assign unique_moods = all_moods | uniq | sort %}
@@ -26,30 +26,31 @@ image: /assets/img/hero-music-library.webp
 
   <!-- Moods -->
   {% for mood in unique_moods %}
-    {% unless mood == "nan" %}
-      <button data-filter="{{ mood | downcase }}" data-type="mood">{{ mood }}</button>
-    {% endunless %}
+  {% unless mood == "nan" %}
+  <button data-filter="{{ mood | downcase }}" data-type="mood">{{ mood }}</button>
+  {% endunless %}
   {% endfor %}
 
   <!-- Genres -->
   {% for genre in unique_genres %}
-    {% unless genre == "nan" %}
-      <button data-filter="{{ genre | downcase }}" data-type="genre">{{ genre }}</button>
-    {% endunless %}
+  {% unless genre == "nan" %}
+  <button data-filter="{{ genre | downcase }}" data-type="genre">{{ genre }}</button>
+  {% endunless %}
   {% endfor %}
 </div>
 
 <section class="track-grid">
-  {% for track in site.tracks %}
-    <a class="track-card{% if track.featured %} featured{% endif %}" 
-       href="{{ track.url }}?autoplay=1"
-       data-mood="{{ track.mood | join: ' ' | downcase }}"
-       data-genre="{{ track.genre | join: ' ' | downcase }}">
-      <img src="{{ track.image }}" alt="{{ track.title }} cover" class="track-cover">
-      <div class="track-title">{{ track.title }}</div>
-    </a>
+  {% for track in site.data.library %}
+  {% if track.has_cover and track.has_loop %}
+  <a class="track-card" href="/tracks/{{ track.slug }}/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
+    <div class="track-title">{{ track.title }}</div>
+  </a>
+  {% endif %}
   {% endfor %}
 </section>
+
 
 <script>
   const cards = document.querySelectorAll('.track-card');

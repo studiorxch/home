@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Test Chamber Loop"
+permalink: /tracks/test-chamber-loop/
+description: ""
+image: "/assets/covers/test-chamber-loop.webp"
+date: 2025-01-01
+duration: "2:18"
+album: "Stranger Vibes"
+mood: ["Chill"]
+genre: ["lo-fi", "chillhop", "ambient"]
+bpm: 83
+key: "C"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Glitchlove Again"
+permalink: /tracks/glitchlove-again/
+description: ""
+image: "/assets/covers/glitchlove-again.webp"
+date: 2025-01-01
+duration: "3:14"
+album: "Run Loop"
+mood: ["Tense"]
+genre: ["electronic", "experimental", "avant-pop"]
+bpm: 128
+key: "C"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

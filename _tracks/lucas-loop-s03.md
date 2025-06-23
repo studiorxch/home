@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Lucas Loop S03
+title: "Lucas Loop S03"
 permalink: /tracks/lucas-loop-s03/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/lucas-loop-s03.webp
+description: ""
+image: "/assets/covers/lucas-loop-s03.webp"
+image_ready: false
 date: 2025-01-01
-duration: "95.92"
+duration: "1:35"
 album: "Stranger Vibes"
 mood: []
-genre: [lo-fi, chillhop, ambient]
+genre: ["lo-fi", "chillhop", "ambient"]
+bpm: 136
+key: "B"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

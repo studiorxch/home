@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Roll Call S03
+title: "Roll Call S03"
 permalink: /tracks/roll-call-s03/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/roll-call-s03.webp
+description: ""
+image: "/assets/covers/roll-call-s03.webp"
+image_ready: false
 date: 2025-01-01
-duration: "84.98"
+duration: "1:24"
 album: "Stranger Vibes"
-mood: [Melancholy]
-genre: [lo-fi, indie, chill]
+mood: ["Melancholy"]
+genre: ["lo-fi", "indie", "chill"]
+bpm: 77
+key: "Ab"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Forest Rhythms
+title: "Forest Rhythms"
 permalink: /tracks/forest-rhythms/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/forest-rhythms.webp
+description: ""
+image: "/assets/covers/forest-rhythms.webp"
+image_ready: false
 date: 2025-01-01
-duration: "98.73"
+duration: "1:38"
 album: "Stranger Vibes"
-mood: [Melancholy, Dreamy, Nostalgic]
-genre: [lo-fi]
+mood: ["Melancholy", "Dreamy", "Nostalgic"]
+genre: ["lo-fi"]
+bpm: 83
+key: "E"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

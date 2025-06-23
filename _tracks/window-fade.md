@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Window Fade
+title: "Window Fade"
 permalink: /tracks/window-fade/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/window-fade.webp
+description: ""
+image: "/assets/covers/window-fade.webp"
+image_ready: false
 date: 2025-01-01
-duration: "101.8"
+duration: "1:41"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, cinematic, chill]
+mood: ["Chill"]
+genre: ["lo-fi", "cinematic", "chill"]
+bpm: 85
+key: "Bb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

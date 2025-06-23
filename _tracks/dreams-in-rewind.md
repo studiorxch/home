@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Dreams In Rewind
+title: "Dreams In Rewind"
 permalink: /tracks/dreams-in-rewind/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/dreams-in-rewind.webp
+description: ""
+image: "/assets/covers/dreams-in-rewind.webp"
+image_ready: false
 date: 2025-01-01
-duration: "135.57"
+duration: "2:15"
 album: "Stranger Vibes"
 mood: []
-genre: [lo-fi]
+genre: ["lo-fi"]
+bpm: 113
+key: "Ab"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

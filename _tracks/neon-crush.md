@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Neon Crush
+title: "Neon Crush"
 permalink: /tracks/neon-crush/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/neon-crush.webp
+description: ""
+image: "/assets/covers/neon-crush.webp"
+image_ready: false
 date: 2025-01-01
-duration: "212.68"
+duration: "3:32"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, synthwave, chillwave]
+mood: ["Chill"]
+genre: ["lo-fi", "synthwave", "chillwave"]
+bpm: 90
+key: "C"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

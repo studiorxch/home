@@ -1,12 +1,17 @@
 ---
 layout: track
-title: California Sunspot
+title: "California Sunspot"
 permalink: /tracks/california-sunspot/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/california-sunspot.webp
+description: ""
+image: "/assets/covers/california-sunspot.webp"
+image_ready: false
 date: 2025-01-01
-duration: "110.71"
+duration: "1:50"
 album: "Stranger Vibes"
-mood: [Chill, Weightless]
-genre: [lo-fi, glitch, electronic]
+mood: ["Chill", "Weightless"]
+genre: ["lo-fi", "glitch", "electronic"]
+bpm: 69
+key: "Eb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

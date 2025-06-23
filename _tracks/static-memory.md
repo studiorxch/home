@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Static Memory
+title: "Static Memory"
 permalink: /tracks/static-memory/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/static-memory.webp
+description: ""
+image: "/assets/covers/static-memory.webp"
+image_ready: false
 date: 2025-01-01
-duration: "147.44"
+duration: "2:27"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, synthwave, ambient]
+mood: ["Chill"]
+genre: ["lo-fi", "synthwave", "ambient"]
+bpm: 80
+key: "D"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

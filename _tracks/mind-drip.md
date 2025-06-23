@@ -1,14 +1,17 @@
 ---
 layout: track
-title: Mind Drip
+title: "Mind Drip"
 permalink: /tracks/mind-drip/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/mind-drip.webp
+description: ""
+image: "/assets/covers/mind-drip.webp"
+image_ready: false
 date: 2025-01-01
-duration: "98.4"
+duration: "1:38"
 album: "Stranger Vibes"
 mood: []
-genre: [lo-fi]
-new: true
-
+genre: ["lo-fi"]
+bpm: 135
+key: "E"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

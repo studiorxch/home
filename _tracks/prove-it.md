@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Prove It
+title: "Prove It"
 permalink: /tracks/prove-it/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/prove-it.webp
+description: ""
+image: "/assets/covers/prove-it.webp"
+image_ready: false
 date: 2025-01-01
-duration: "153.26"
+duration: "2:33"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, jazz, soul]
+mood: ["Chill"]
+genre: ["lo-fi", "jazz", "soul"]
+bpm: 88
+key: "C#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

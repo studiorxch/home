@@ -1,14 +1,17 @@
 ---
 layout: track
-title: Lo-Fi Defiance
+title: "Lo-Fi Defiance"
 permalink: /tracks/lo-fi-defiance/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/lo-fi-defiance.webp
+description: ""
+image: "/assets/covers/lo-fi-defiance.webp"
+image_ready: false
 date: 2025-01-01
-duration: "138.52"
+duration: "2:18"
 album: "Stranger Vibes"
 mood: []
-genre: [lo-fi, ambient, chillhop]
-featured: true
-
+genre: ["lo-fi", "ambient", "chillhop"]
+bpm: 139
+key: "Bb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

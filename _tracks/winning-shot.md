@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Winning Shot
+title: "Winning Shot"
 permalink: /tracks/winning-shot/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/winning-shot.webp
+description: ""
+image: "/assets/covers/winning-shot.webp"
+image_ready: false
 date: 2025-01-01
-duration: "153.16"
+duration: "2:33"
 album: "Stranger Vibes"
-mood: [Playful]
-genre: [lo-fi, hip-hop, electronic]
+mood: ["Playful"]
+genre: ["lo-fi", "hip-hop", "electronic"]
+bpm: 94
+key: "Bb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

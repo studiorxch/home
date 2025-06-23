@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Brotherhood Beat S02
+title: "Brotherhood Beat S02"
 permalink: /tracks/brotherhood-beat-s02/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/brotherhood-beat-s02.webp
+description: ""
+image: "/assets/covers/brotherhood-beat-s02.webp"
+image_ready: false
 date: 2025-01-01
-duration: "99.77"
+duration: "1:39"
 album: "Stranger Vibes"
-mood: [Chill]
-genre: [lo-fi, indie, chill]
+mood: ["Chill"]
+genre: ["lo-fi", "indie", "chill"]
+bpm: 86
+key: "C#"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

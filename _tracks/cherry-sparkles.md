@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Cherry Sparkles
+title: "Cherry Sparkles"
 permalink: /tracks/cherry-sparkles/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/cherry-sparkles.webp
+description: ""
+image: "/assets/covers/cherry-sparkles.webp"
+image_ready: false
 date: 2025-01-01
-duration: "120.0"
+duration: "2:00"
 album: "Stranger Vibes"
-mood: [Melancholy, Dreamy, Nostalgic]
-genre: [lo-fi]
+mood: ["Melancholy", "Dreamy", "Nostalgic"]
+genre: ["lo-fi"]
+bpm: 80
+key: "A"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

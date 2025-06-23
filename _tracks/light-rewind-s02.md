@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Light Rewind S02
+title: "Light Rewind S02"
 permalink: /tracks/light-rewind-s02/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/light-rewind-s02.webp
+description: ""
+image: "/assets/covers/light-rewind-s02.webp"
+image_ready: false
 date: 2025-01-01
-duration: "95.96"
+duration: "1:35"
 album: "Stranger Vibes"
-mood: [Hopeful, Playful]
-genre: [lo-fi, chillhop, soul]
+mood: ["Hopeful", "Playful"]
+genre: ["lo-fi", "chillhop", "soul"]
+bpm: 100
+key: "F"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

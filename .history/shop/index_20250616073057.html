@@ -1,0 +1,17 @@
+---
+layout: default
+title: Shop
+---
+
+<h1>🛍️ The Dropwall</h1>
+<div class="grid">
+  {% for product in site.shop %}
+    <div class="product-card">
+      <a href="{{ product.url }}">
+        <img src="{{ product.image }}" alt="{{ product.title }}">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price }}</p>
+      </a>
+    </div>
+  {% endfor %}
+</div>

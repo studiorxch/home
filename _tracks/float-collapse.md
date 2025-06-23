@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Float Collapse
+title: "Float Collapse"
 permalink: /tracks/float-collapse/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/float-collapse.webp
+description: ""
+image: "/assets/covers/float-collapse.webp"
+image_ready: false
 date: 2025-01-01
-duration: "114.28"
+duration: "1:54"
 album: "Stranger Vibes"
-mood: [Melancholy, Dreamy, Nostalgic]
-genre: [lo-fi, experimental, ambient]
+mood: ["Melancholy", "Dreamy", "Nostalgic"]
+genre: ["lo-fi", "experimental", "ambient"]
+bpm: 84
+key: "Ab"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

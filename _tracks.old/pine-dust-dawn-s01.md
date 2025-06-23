@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Pine Dust Dawn S01"
+permalink: /tracks/pine-dust-dawn-s01/
+description: ""
+image: "/assets/covers/pine-dust-dawn-s01.webp"
+date: 2025-01-01
+duration: "3:26"
+album: "Stranger Vibes"
+mood: []
+genre: ["lo-fi", "cinematic", "glitch"]
+bpm: 133
+key: "C"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

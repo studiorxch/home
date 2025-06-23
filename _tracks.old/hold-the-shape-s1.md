@@ -1,0 +1,16 @@
+---
+layout: track
+title: "Hold The Shape S1"
+permalink: /tracks/hold-the-shape-s1/
+description: ""
+image: "/assets/covers/hold-the-shape-s1.webp"
+date: 2025-01-01
+duration: "1:13"
+album: "Run Loop"
+mood: ["Aggressive"]
+genre: ["jungle", "ambient"]
+bpm: 150
+key: "E"
+---
+
+Explore more vibes in the [StudioRich track library](/tracks/).

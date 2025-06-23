@@ -1,12 +1,17 @@
 ---
 layout: track
-title: Blur Escape S01
+title: "Blur Escape S01"
 permalink: /tracks/blur-escape-s01/
-description: "A StudioRich lo-fi track."
-image: /assets/covers/blur-escape-s01.webp
+description: ""
+image: "/assets/covers/blur-escape-s01.webp"
+image_ready: false
 date: 2025-01-01
-duration: "140.59"
+duration: "2:20"
 album: "Stranger Vibes"
 mood: []
-genre: [lo-fi, experimental, ambient]
+genre: ["lo-fi", "experimental", "ambient"]
+bpm: 120
+key: "Eb"
 ---
+
+Explore more vibes in the [StudioRich track library](/tracks/).
