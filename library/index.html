@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Music Library | StudioRich</title>
+
+  <meta name="description" content="Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic.">
+  <link rel="canonical" href="https://studiorich.shop/library/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Music Library">
+  <meta property="og:description" content="Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic.">
+  <meta property="og:url" content="https://studiorich.shop/library/">
+  <meta property="og:image" content="https://studiorich.shop/assets/img/hero-music-library.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Music Library">
+  <meta property="twitter:description" content="Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic.">
+  <meta property="twitter:image" content="https://studiorich.shop/assets/img/hero-music-library.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+  
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "StudioRich",
+    "url": "https://www.studiorich.shop",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.studiorich.shop/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Analytics + Fonts -->
+  
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="mobile-menu mobile-only" id="mobileMenu">
+    <a href="/about">Origin</a>
+    <a href="/library">Explore Music</a>
+    <a href="/live">Live Radio</a>
+    <a href="https://studiorich.printful.me">Shop</a>
+    <a href="/events">Events</a>
+    <a href="https://twitch.tv/studiorich"><img src="/assets/icons/twitch.svg" alt="Twitch"></a>
+    <a href="https://youtube.com/@Studio-Rich"><img src="/assets/icons/youtube.svg" alt="YouTube"></a>
+    <a href="https://ko-fi.com/studiorich"><img src="/assets/icons/kofi.svg" alt="Ko-fi"></a>
+  </nav>
+
+
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/"><img src="/assets/img/kitty-emblem.svg" alt="StudioRich Logo"></a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/about">Origin</a></li>
+        <li><a href="/library">Explore Music</a></li>
+        <li><a href="/live">Live Radio</a></li>
+        <li><a href="/shop">Shop</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <a href="/events" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/calendar.svg" alt="Calendar">
+      </a>
+      <a href="https://twitch.tv/studiorich" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/twitch.svg" alt="Twitch">
+      </a>
+      <a href="https://youtube.com/@Studio-Rich" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://ko-fi.com/studiorich" target="_blank">
+        <img src="/assets/icons/kofi.svg" alt="Ko-fi">
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    const isOpen = menu.classList.toggle('open');
+
+    overlay.classList.toggle('active', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
+  }
+
+  // Auto-close on link click
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('mobileOverlay').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
+
+  <section class="hero" style="background-image: url(/assets/img/hero-music-library.webp);">
+  <div class="hero-overlay">
+    <h1>Music Library</h1>
+  </div>
+</section>
+
+
+<div class="filter-bar">
+  <button data-filter="all" data-type="all" class="active">All</button>
+
+
+  
+  
+
+  
+
+  
+  
+
+  <!-- Moods -->
+  
+  
+  <button data-filter="aggressive" data-type="mood">Aggressive</button>
+  
+  
+  
+  <button data-filter="chill" data-type="mood">Chill</button>
+  
+  
+  
+  <button data-filter="dreamy" data-type="mood">Dreamy</button>
+  
+  
+  
+  <button data-filter="energetic" data-type="mood">Energetic</button>
+  
+  
+  
+  <button data-filter="hopeful" data-type="mood">Hopeful</button>
+  
+  
+  
+  <button data-filter="melancholy" data-type="mood">Melancholy</button>
+  
+  
+  
+  <button data-filter="nostalgic" data-type="mood">Nostalgic</button>
+  
+  
+  
+  <button data-filter="playful" data-type="mood">Playful</button>
+  
+  
+  
+  <button data-filter="tense" data-type="mood">Tense</button>
+  
+  
+  
+  <button data-filter="weightless" data-type="mood">Weightless</button>
+  
+  
+
+  <!-- Genres -->
+  
+  
+  <button data-filter="80s nostalgia" data-type="genre">80s nostalgia</button>
+  
+  
+  
+  <button data-filter="ambient" data-type="genre">ambient</button>
+  
+  
+  
+  <button data-filter="atmospheric" data-type="genre">atmospheric</button>
+  
+  
+  
+  <button data-filter="avant-pop" data-type="genre">avant-pop</button>
+  
+  
+  
+  <button data-filter="bedroom pop" data-type="genre">bedroom pop</button>
+  
+  
+  
+  <button data-filter="breakbeat" data-type="genre">breakbeat</button>
+  
+  
+  
+  <button data-filter="chill" data-type="genre">chill</button>
+  
+  
+  
+  <button data-filter="chillhop" data-type="genre">chillhop</button>
+  
+  
+  
+  <button data-filter="chillout" data-type="genre">chillout</button>
+  
+  
+  
+  <button data-filter="chillwave" data-type="genre">chillwave</button>
+  
+  
+  
+  <button data-filter="cinematic" data-type="genre">cinematic</button>
+  
+  
+  
+  <button data-filter="downtempo" data-type="genre">downtempo</button>
+  
+  
+  
+  <button data-filter="dream pop" data-type="genre">dream pop</button>
+  
+  
+  
+  <button data-filter="drum & bass" data-type="genre">drum & bass</button>
+  
+  
+  
+  <button data-filter="drum and bass" data-type="genre">drum and bass</button>
+  
+  
+  
+  <button data-filter="dub" data-type="genre">dub</button>
+  
+  
+  
+  <button data-filter="electronic" data-type="genre">electronic</button>
+  
+  
+  
+  <button data-filter="electronica" data-type="genre">electronica</button>
+  
+  
+  
+  <button data-filter="experimental" data-type="genre">experimental</button>
+  
+  
+  
+  <button data-filter="experimental electronic" data-type="genre">experimental electronic</button>
+  
+  
+  
+  <button data-filter="experimental pop" data-type="genre">experimental pop</button>
+  
+  
+  
+  <button data-filter="glitch" data-type="genre">glitch</button>
+  
+  
+  
+  <button data-filter="glitch-fusion" data-type="genre">glitch-fusion</button>
+  
+  
+  
+  <button data-filter="guitar-driven" data-type="genre">guitar-driven</button>
+  
+  
+  
+  <button data-filter="hip-hop" data-type="genre">hip-hop</button>
+  
+  
+  
+  <button data-filter="indie" data-type="genre">indie</button>
+  
+  
+  
+  <button data-filter="indie rock" data-type="genre">indie rock</button>
+  
+  
+  
+  <button data-filter="industrial" data-type="genre">industrial</button>
+  
+  
+  
+  <button data-filter="instrumental" data-type="genre">instrumental</button>
+  
+  
+  
+  <button data-filter="introspective" data-type="genre">introspective</button>
+  
+  
+  
+  <button data-filter="jazz" data-type="genre">jazz</button>
+  
+  
+  
+  <button data-filter="jazz rap" data-type="genre">jazz rap</button>
+  
+  
+  
+  <button data-filter="jazztronica" data-type="genre">jazztronica</button>
+  
+  
+  
+  <button data-filter="jungle" data-type="genre">jungle</button>
+  
+  
+  
+  <button data-filter="lo-fi" data-type="genre">lo-fi</button>
+  
+  
+  
+  <button data-filter="lo-fi hip hop" data-type="genre">lo-fi hip hop</button>
+  
+  
+  
+  <button data-filter="lo-fiambient" data-type="genre">lo-fiambient</button>
+  
+  
+  
+  <button data-filter="lo-filo-fi" data-type="genre">lo-filo-fi</button>
+  
+  
+  
+  <button data-filter="melancholic" data-type="genre">melancholic</button>
+  
+  
+  
+  <button data-filter="melancholy" data-type="genre">melancholy</button>
+  
+  
+  
+  <button data-filter="minimal" data-type="genre">minimal</button>
+  
+  
+  
+  <button data-filter="minimalist" data-type="genre">minimalist</button>
+  
+  
+  
+  <button data-filter="nostalgic" data-type="genre">nostalgic</button>
+  
+  
+  
+  <button data-filter="piano" data-type="genre">piano</button>
+  
+  
+  
+  <button data-filter="post-rock" data-type="genre">post-rock</button>
+  
+  
+  
+  <button data-filter="r&b" data-type="genre">r&b</button>
+  
+  
+  
+  <button data-filter="soul" data-type="genre">soul</button>
+  
+  
+  
+  <button data-filter="soulful" data-type="genre">soulful</button>
+  
+  
+  
+  <button data-filter="swing" data-type="genre">swing</button>
+  
+  
+  
+  <button data-filter="synthpop" data-type="genre">synthpop</button>
+  
+  
+  
+  <button data-filter="synthwave" data-type="genre">synthwave</button>
+  
+  
+  
+  <button data-filter="trap" data-type="genre">trap</button>
+  
+  
+</div>
+
+<section class="track-grid">
+  
+  
+  <a class="track-card" href="/tracks/a-new-dawn/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/a-new-dawn.webp" alt="A New Dawn cover" class="track-cover">
+    <div class="track-title">A New Dawn</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/backwards-bloom/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/backwards-bloom.webp" alt="Backwards Bloom cover" class="track-cover">
+    <div class="track-title">Backwards Bloom</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/blue-hoodie/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/blue-hoodie.webp" alt="Blue Hoodie cover" class="track-cover">
+    <div class="track-title">Blue Hoodie</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/blue-hoodie-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/blue-hoodie-s01.webp" alt="Blue Hoodie S01 cover" class="track-cover">
+    <div class="track-title">Blue Hoodie S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/blur-escape/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/blur-escape.webp" alt="Blur Escape cover" class="track-cover">
+    <div class="track-title">Blur Escape</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/blur-escape-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/blur-escape-s01.webp" alt="Blur Escape S01 cover" class="track-cover">
+    <div class="track-title">Blur Escape S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/brotherhood-beat-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/brotherhood-beat-s01.webp" alt="Brotherhood Beat S01 cover" class="track-cover">
+    <div class="track-title">Brotherhood Beat S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/brotherhood-beat-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/brotherhood-beat-s02.webp" alt="Brotherhood Beat S02 cover" class="track-cover">
+    <div class="track-title">Brotherhood Beat S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/brotherhood-beat-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/brotherhood-beat-s03.webp" alt="Brotherhood Beat S03 cover" class="track-cover">
+    <div class="track-title">Brotherhood Beat S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/brotherhood-beat-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/brotherhood-beat-s04.webp" alt="Brotherhood Beat S04 cover" class="track-cover">
+    <div class="track-title">Brotherhood Beat S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/california-sunspot/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/california-sunspot.webp" alt="California Sunspot cover" class="track-cover">
+    <div class="track-title">California Sunspot</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/california-sunspot-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/california-sunspot-s01.webp" alt="California Sunspot S01 cover" class="track-cover">
+    <div class="track-title">California Sunspot S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/cassette-crush/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/cassette-crush.webp" alt="Cassette Crush cover" class="track-cover">
+    <div class="track-title">Cassette Crush</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/cassette-gravity/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/cassette-gravity.webp" alt="Cassette Gravity cover" class="track-cover">
+    <div class="track-title">Cassette Gravity</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/cassette-gravity-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/cassette-gravity-s01.webp" alt="Cassette Gravity S01 cover" class="track-cover">
+    <div class="track-title">Cassette Gravity S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/cherry-sparkles/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/cherry-sparkles.webp" alt="Cherry Sparkles cover" class="track-cover">
+    <div class="track-title">Cherry Sparkles</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/dreams-in-rewind/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/dreams-in-rewind.webp" alt="Dreams In Rewind cover" class="track-cover">
+    <div class="track-title">Dreams In Rewind</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/driveway-fadeout/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/driveway-fadeout.webp" alt="Driveway Fadeout cover" class="track-cover">
+    <div class="track-title">Driveway Fadeout</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/driveway-fadeout-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/driveway-fadeout-s01.webp" alt="Driveway Fadeout S01 cover" class="track-cover">
+    <div class="track-title">Driveway Fadeout S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/echoes-of-nostalgia/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/echoes-of-nostalgia.webp" alt="Echoes Of Nostalgia cover" class="track-cover">
+    <div class="track-title">Echoes Of Nostalgia</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/echoes-of-time-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/echoes-of-time-s01.webp" alt="Echoes Of Time S01 cover" class="track-cover">
+    <div class="track-title">Echoes Of Time S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/echoes-of-time-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/echoes-of-time-s03.webp" alt="Echoes Of Time S03 cover" class="track-cover">
+    <div class="track-title">Echoes Of Time S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/empty-hall-echo/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/empty-hall-echo.webp" alt="Empty Hall Echo cover" class="track-cover">
+    <div class="track-title">Empty Hall Echo</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/empty-hall-echo-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/empty-hall-echo-s01.webp" alt="Empty Hall Echo S01 cover" class="track-cover">
+    <div class="track-title">Empty Hall Echo S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fade-out-glow-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fade-out-glow-s01.webp" alt="Fade Out Glow S01 cover" class="track-cover">
+    <div class="track-title">Fade Out Glow S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fade-out-glow-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fade-out-glow-s02.webp" alt="Fade Out Glow S02 cover" class="track-cover">
+    <div class="track-title">Fade Out Glow S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fade-out-glow-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fade-out-glow-s03.webp" alt="Fade Out Glow S03 cover" class="track-cover">
+    <div class="track-title">Fade Out Glow S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fade-out-glow-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fade-out-glow-s04.webp" alt="Fade Out Glow S04 cover" class="track-cover">
+    <div class="track-title">Fade Out Glow S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/flicker-at-dusk/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/flicker-at-dusk.webp" alt="Flicker At Dusk cover" class="track-cover">
+    <div class="track-title">Flicker At Dusk</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/float-collapse/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/float-collapse.webp" alt="Float Collapse cover" class="track-cover">
+    <div class="track-title">Float Collapse</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/float-collapse-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/float-collapse-s01.webp" alt="Float Collapse S01 cover" class="track-cover">
+    <div class="track-title">Float Collapse S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/forest-rhythms/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/forest-rhythms.webp" alt="Forest Rhythms cover" class="track-cover">
+    <div class="track-title">Forest Rhythms</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fourth-period-fog/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fourth-period-fog.webp" alt="Fourth Period Fog cover" class="track-cover">
+    <div class="track-title">Fourth Period Fog</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fourth-period-fog-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fourth-period-fog-s01.webp" alt="Fourth Period Fog S01 cover" class="track-cover">
+    <div class="track-title">Fourth Period Fog S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s01.webp" alt="Fracture Point Break S01 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s02.webp" alt="Fracture Point Break S02 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s03.webp" alt="Fracture Point Break S03 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s04.webp" alt="Fracture Point Break S04 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s05/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s05.webp" alt="Fracture Point Break S05 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S05</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/fracture-point-break-s06/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/fracture-point-break-s06.webp" alt="Fracture Point Break S06 cover" class="track-cover">
+    <div class="track-title">Fracture Point Break S06</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/ghost-train-to-hawkins/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/ghost-train-to-hawkins.webp" alt="Ghost Train To Hawkins cover" class="track-cover">
+    <div class="track-title">Ghost Train To Hawkins</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/half-light-memory/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/half-light-memory.webp" alt="Half Light Memory cover" class="track-cover">
+    <div class="track-title">Half Light Memory</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/headphones-in/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/headphones-in.webp" alt="Headphones In cover" class="track-cover">
+    <div class="track-title">Headphones In</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/headphones-in-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/headphones-in-s01.webp" alt="Headphones In S01 cover" class="track-cover">
+    <div class="track-title">Headphones In S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/last-scene-in-shadows/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/last-scene-in-shadows.webp" alt="Last Scene In Shadows cover" class="track-cover">
+    <div class="track-title">Last Scene In Shadows</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/letters-left/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/letters-left.webp" alt="Letters Left cover" class="track-cover">
+    <div class="track-title">Letters Left</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/letters-left-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/letters-left-s01.webp" alt="Letters Left S01 cover" class="track-cover">
+    <div class="track-title">Letters Left S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/light-rewind-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/light-rewind-s01.webp" alt="Light Rewind S01 cover" class="track-cover">
+    <div class="track-title">Light Rewind S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/light-rewind-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/light-rewind-s02.webp" alt="Light Rewind S02 cover" class="track-cover">
+    <div class="track-title">Light Rewind S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/light-rewind-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/light-rewind-s03.webp" alt="Light Rewind S03 cover" class="track-cover">
+    <div class="track-title">Light Rewind S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/light-rewind-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/light-rewind-s04.webp" alt="Light Rewind S04 cover" class="track-cover">
+    <div class="track-title">Light Rewind S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/lo-fi-defiance/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/lo-fi-defiance.webp" alt="Lo Fi Defiance cover" class="track-cover">
+    <div class="track-title">Lo Fi Defiance</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/lucas-loop-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/lucas-loop-s01.webp" alt="Lucas Loop S01 cover" class="track-cover">
+    <div class="track-title">Lucas Loop S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/lucas-loop-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/lucas-loop-s02.webp" alt="Lucas Loop S02 cover" class="track-cover">
+    <div class="track-title">Lucas Loop S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/lucas-loop-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/lucas-loop-s03.webp" alt="Lucas Loop S03 cover" class="track-cover">
+    <div class="track-title">Lucas Loop S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/lucas-loop-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/lucas-loop-s04.webp" alt="Lucas Loop S04 cover" class="track-cover">
+    <div class="track-title">Lucas Loop S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/maxine-s-drift/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/maxine-s-drift.webp" alt="Maxine S Drift cover" class="track-cover">
+    <div class="track-title">Maxine S Drift</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/maxine-s-drift-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/maxine-s-drift-s01.webp" alt="Maxine S Drift S01 cover" class="track-cover">
+    <div class="track-title">Maxine S Drift S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mayfield-c-minor/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mayfield-c-minor.webp" alt="Mayfield C Minor cover" class="track-cover">
+    <div class="track-title">Mayfield C Minor</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mayfield-d-minor/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mayfield-d-minor.webp" alt="Mayfield D Minor cover" class="track-cover">
+    <div class="track-title">Mayfield D Minor</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/midnight-court/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/midnight-court.webp" alt="Midnight Court cover" class="track-cover">
+    <div class="track-title">Midnight Court</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/midnight-court-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/midnight-court-s02.webp" alt="Midnight Court S02 cover" class="track-cover">
+    <div class="track-title">Midnight Court S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/midnight-shadows/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/midnight-shadows.webp" alt="Midnight Shadows cover" class="track-cover">
+    <div class="track-title">Midnight Shadows</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mind-drip/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mind-drip.webp" alt="Mind Drip cover" class="track-cover">
+    <div class="track-title">Mind Drip</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mirror-shard/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mirror-shard.webp" alt="Mirror Shard cover" class="track-cover">
+    <div class="track-title">Mirror Shard</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mirror-shard-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mirror-shard-s01.webp" alt="Mirror Shard S01 cover" class="track-cover">
+    <div class="track-title">Mirror Shard S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/mood-for-leaving/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/mood-for-leaving.webp" alt="Mood For Leaving cover" class="track-cover">
+    <div class="track-title">Mood For Leaving</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/muted-sunrise/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/muted-sunrise.webp" alt="Muted Sunrise cover" class="track-cover">
+    <div class="track-title">Muted Sunrise</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/muted-sunrise-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/muted-sunrise-s01.webp" alt="Muted Sunrise S01 cover" class="track-cover">
+    <div class="track-title">Muted Sunrise S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/neon-crush/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/neon-crush.webp" alt="Neon Crush cover" class="track-cover">
+    <div class="track-title">Neon Crush</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/nice-and-warm/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/nice-and-warm.webp" alt="Nice And Warm cover" class="track-cover">
+    <div class="track-title">Nice And Warm</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/no-signal/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/no-signal.webp" alt="No Signal cover" class="track-cover">
+    <div class="track-title">No Signal</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/no-signal-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/no-signal-s01.webp" alt="No Signal S01 cover" class="track-cover">
+    <div class="track-title">No Signal S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/nowhere-shortcut/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/nowhere-shortcut.webp" alt="Nowhere Shortcut cover" class="track-cover">
+    <div class="track-title">Nowhere Shortcut</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/nowhere-shortcut-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/nowhere-shortcut-s01.webp" alt="Nowhere Shortcut S01 cover" class="track-cover">
+    <div class="track-title">Nowhere Shortcut S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/piano-of-solitude/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/piano-of-solitude.webp" alt="Piano Of Solitude cover" class="track-cover">
+    <div class="track-title">Piano Of Solitude</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/prove-it/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/prove-it.webp" alt="Prove It cover" class="track-cover">
+    <div class="track-title">Prove It</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/prove-it-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/prove-it-s02.webp" alt="Prove It S02 cover" class="track-cover">
+    <div class="track-title">Prove It S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/quiet-frequencies/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/quiet-frequencies.webp" alt="Quiet Frequencies cover" class="track-cover">
+    <div class="track-title">Quiet Frequencies</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/red-sky-break/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/red-sky-break.webp" alt="Red Sky Break cover" class="track-cover">
+    <div class="track-title">Red Sky Break</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/red-sky-break-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/red-sky-break-s01.webp" alt="Red Sky Break S01 cover" class="track-cover">
+    <div class="track-title">Red Sky Break S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/remote-ghost/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/remote-ghost.webp" alt="Remote Ghost cover" class="track-cover">
+    <div class="track-title">Remote Ghost</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/remote-ghost-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/remote-ghost-s01.webp" alt="Remote Ghost S01 cover" class="track-cover">
+    <div class="track-title">Remote Ghost S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/retro-pulse/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/retro-pulse.webp" alt="Retro Pulse cover" class="track-cover">
+    <div class="track-title">Retro Pulse</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/revival-of-the-flame/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/revival-of-the-flame.webp" alt="Revival Of The Flame cover" class="track-cover">
+    <div class="track-title">Revival Of The Flame</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/roll-call-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/roll-call-s01.webp" alt="Roll Call S01 cover" class="track-cover">
+    <div class="track-title">Roll Call S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/roll-call-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/roll-call-s02.webp" alt="Roll Call S02 cover" class="track-cover">
+    <div class="track-title">Roll Call S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/roll-call-s03/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/roll-call-s03.webp" alt="Roll Call S03 cover" class="track-cover">
+    <div class="track-title">Roll Call S03</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/roll-call-s04/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/roll-call-s04.webp" alt="Roll Call S04 cover" class="track-cover">
+    <div class="track-title">Roll Call S04</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/run-loop/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/run-loop.webp" alt="Run Loop cover" class="track-cover">
+    <div class="track-title">Run Loop</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/run-loop-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/run-loop-s01.webp" alt="Run Loop S01 cover" class="track-cover">
+    <div class="track-title">Run Loop S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/scout-s-promise/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/scout-s-promise.webp" alt="Scout S Promise cover" class="track-cover">
+    <div class="track-title">Scout S Promise</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/scout-s-promise-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/scout-s-promise-s02.webp" alt="Scout S Promise S02 cover" class="track-cover">
+    <div class="track-title">Scout S Promise S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/sidewalk-sunrise/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/sidewalk-sunrise.webp" alt="Sidewalk Sunrise cover" class="track-cover">
+    <div class="track-title">Sidewalk Sunrise</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/skatepark-ruins/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/skatepark-ruins.webp" alt="Skatepark Ruins cover" class="track-cover">
+    <div class="track-title">Skatepark Ruins</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/skatepark-ruins-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/skatepark-ruins-s01.webp" alt="Skatepark Ruins S01 cover" class="track-cover">
+    <div class="track-title">Skatepark Ruins S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/sleepwalking-home/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/sleepwalking-home.webp" alt="Sleepwalking Home cover" class="track-cover">
+    <div class="track-title">Sleepwalking Home</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/soft-entry/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/soft-entry.webp" alt="Soft Entry cover" class="track-cover">
+    <div class="track-title">Soft Entry</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/soft-return/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/soft-return.webp" alt="Soft Return cover" class="track-cover">
+    <div class="track-title">Soft Return</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/solitude-s-reflection/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/solitude-s-reflection.webp" alt="Solitude S Reflection cover" class="track-cover">
+    <div class="track-title">Solitude S Reflection</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/solo-stand/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/solo-stand.webp" alt="Solo Stand cover" class="track-cover">
+    <div class="track-title">Solo Stand</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/solo-stand-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/solo-stand-s02.webp" alt="Solo Stand S02 cover" class="track-cover">
+    <div class="track-title">Solo Stand S02</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/static-memory/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/static-memory.webp" alt="Static Memory cover" class="track-cover">
+    <div class="track-title">Static Memory</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/static-memory-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/static-memory-s01.webp" alt="Static Memory S01 cover" class="track-cover">
+    <div class="track-title">Static Memory S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/static-sleepwalker/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/static-sleepwalker.webp" alt="Static Sleepwalker cover" class="track-cover">
+    <div class="track-title">Static Sleepwalker</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/submerged-notes/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/submerged-notes.webp" alt="Submerged Notes cover" class="track-cover">
+    <div class="track-title">Submerged Notes</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/tape-from-the-other-side/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/tape-from-the-other-side.webp" alt="Tape From The Other Side cover" class="track-cover">
+    <div class="track-title">Tape From The Other Side</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/turnaround-fade/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/turnaround-fade.webp" alt="Turnaround Fade cover" class="track-cover">
+    <div class="track-title">Turnaround Fade</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/turnaround-fade-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/turnaround-fade-s01.webp" alt="Turnaround Fade S01 cover" class="track-cover">
+    <div class="track-title">Turnaround Fade S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/weightless-in-the-rain/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/weightless-in-the-rain.webp" alt="Weightless In The Rain cover" class="track-cover">
+    <div class="track-title">Weightless In The Rain</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/window-fade/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/window-fade.webp" alt="Window Fade cover" class="track-cover">
+    <div class="track-title">Window Fade</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/window-fade-s01/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/window-fade-s01.webp" alt="Window Fade S01 cover" class="track-cover">
+    <div class="track-title">Window Fade S01</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/winning-shot/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/winning-shot.webp" alt="Winning Shot cover" class="track-cover">
+    <div class="track-title">Winning Shot</div>
+  </a>
+  
+  
+  
+  <a class="track-card" href="/tracks/winning-shot-s02/?autoplay=1" data-mood="" data-genre="">
+
+    <img src="/assets/covers/winning-shot-s02.webp" alt="Winning Shot S02 cover" class="track-cover">
+    <div class="track-title">Winning Shot S02</div>
+  </a>
+  
+  
+</section>
+
+
+<script>
+  const cards = document.querySelectorAll('.track-card');
+  const filterButtons = document.querySelectorAll('[data-filter]');
+  let selectedMood = null;
+  let selectedGenre = null;
+
+  function updateGenreButtonsForMood(mood) {
+    const genreButtons = document.querySelectorAll('button[data-type="genre"]');
+    genreButtons.forEach(btn => {
+      const genre = btn.dataset.filter;
+      const hasMatch = Array.from(cards).some(card => {
+        const moods = (card.dataset.mood || '').split(' ');
+        const genres = (card.dataset.genre || '').split(' ');
+        return moods.includes(mood) && genres.includes(genre);
+      });
+      btn.classList.toggle('disabled', !hasMatch);
+    });
+  }
+
+  function updateFilters() {
+    // Reset button states
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+    if (selectedMood) {
+      document.querySelector(`[data-filter="${selectedMood}"][data-type="mood"]`)?.classList.add('active');
+    }
+    if (selectedGenre) {
+      document.querySelector(`[data-filter="${selectedGenre}"][data-type="genre"]`)?.classList.add('active');
+    }
+    if (!selectedMood && !selectedGenre) {
+      document.querySelector(`[data-filter="all"]`)?.classList.add('active');
+    }
+
+    // Show matching cards
+    cards.forEach(card => {
+      const moods = (card.dataset.mood || '').split(' ');
+      const genres = (card.dataset.genre || '').split(' ');
+      const moodMatch = !selectedMood || moods.includes(selectedMood);
+      const genreMatch = !selectedGenre || genres.includes(selectedGenre);
+      card.style.display = (moodMatch && genreMatch) ? '' : 'none';
+    });
+
+    // Update genre buttons to reflect what's available for selected mood
+    if (selectedMood) {
+      updateGenreButtonsForMood(selectedMood);
+    } else {
+      document.querySelectorAll('button[data-type="genre"]').forEach(btn => btn.classList.remove('disabled'));
+    }
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const type = button.dataset.type;
+      const value = button.dataset.filter;
+
+      if (value === 'all') {
+        selectedMood = null;
+        selectedGenre = null;
+      } else if (type === 'mood') {
+        selectedMood = (selectedMood === value) ? null : value;
+      } else if (type === 'genre') {
+        selectedGenre = (selectedGenre === value) ? null : value;
+      }
+
+      // GA tracking
+      if (typeof gtag === 'function') {
+        gtag('event', 'filter_selected', {
+          filter_type: type,
+          filter_value: value,
+          page_location: window.location.pathname
+        });
+      }
+
+      updateFilters();
+    });
+  });
+
+  // Apply URL param filter on load
+  const params = new URLSearchParams(window.location.search);
+  const genreFromURL = params.get('genre');
+  if (genreFromURL) selectedGenre = genreFromURL.toLowerCase();
+  updateFilters();
+</script>
+
+  
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>SHOP</h4>
+      <ul>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/refund-policy">Refund Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/links">Links</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>ABOUT US</h4>
+            <ul>
+        <li><a href="https://studiorich.shop">Home</a></li>
+        <li><a href="https://studiorich.shop/library">Music Library</a></li>
+        <li><a href="https://ko-fi.com/studiorich">Support on Ko-fi</a></li>
+
+       
+    </div>
+    <div class="footer-column">
+      <h4>GET YOUR SEAT AT THE TABLE</h4>
+      <form class="subscribe-form">
+        <input type="email" placeholder="EMAIL ADDRESS">
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+<div class="footer-bottom">
+  <p>&copy; 2025 StudioRich, Lo-Fi Lives Here</p>
+
+  <div class="footer-links">
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/StudioRichNYC" target="_blank">
+        <img src="/assets/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com/_studiorich" target="_blank">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://tiktok.com/@studiorich" target="_blank">
+        <img src="/assets/icons/tiktok.svg" alt="TikTok" />
+      </a>
+      <a href="https://x.com/studiorxch" target="_blank">
+        <img src="/assets/icons/x.svg" alt="X" />
+      </a>
+      <a href="https://youtube.com/@studio-rich" target="_blank">
+        <img src="/assets/icons/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
+
+    <!-- Music Icons -->
+    <div class="music-icons">
+      <a href="https://open.spotify.com/artist/your-link" target="_blank">
+        <img src="/assets/icons/spotify.svg" alt="Spotify" />
+      </a>
+      <a href="https://soundcloud.com/your-link" target="_blank">
+        <img src="/assets/icons/soundcloud.svg" alt="SoundCloud" />
+      </a>
+      <a href="https://bandcamp.com/your-link" target="_blank">
+        <img src="/assets/icons/bandcamp.svg" alt="Bandcamp" />
+      </a>
+      <a href="https://twitch.tv/your-link" target="_blank">
+        <img src="/assets/icons/twitch.svg" alt="Twitch" />
+      </a>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StudioRich - Lo-Fi Music, Art & Stories from Brooklyn | StudioRich</title>
+
+  <meta name="description" content="Explore StudioRich: a Brooklyn-born world of lo-fi music, ambient visuals, field recordings, and creative urban storytelling.">
+  <link rel="canonical" href="https://studiorich.shop/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="StudioRich - Lo-Fi Music, Art & Stories from Brooklyn">
+  <meta property="og:description" content="Explore StudioRich: a Brooklyn-born world of lo-fi music, ambient visuals, field recordings, and creative urban storytelling.">
+  <meta property="og:url" content="https://studiorich.shop/">
+  <meta property="og:image" content="https://studiorich.shop/assets/img/hero.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="StudioRich - Lo-Fi Music, Art & Stories from Brooklyn">
+  <meta property="twitter:description" content="Explore StudioRich: a Brooklyn-born world of lo-fi music, ambient visuals, field recordings, and creative urban storytelling.">
+  <meta property="twitter:image" content="https://studiorich.shop/assets/img/hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+  
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "StudioRich",
+    "url": "https://www.studiorich.shop",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.studiorich.shop/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Analytics + Fonts -->
+  
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="mobile-menu mobile-only" id="mobileMenu">
+    <a href="/about">Origin</a>
+    <a href="/library">Explore Music</a>
+    <a href="/live">Live Radio</a>
+    <a href="https://studiorich.printful.me">Shop</a>
+    <a href="/events">Events</a>
+    <a href="https://twitch.tv/studiorich"><img src="/assets/icons/twitch.svg" alt="Twitch"></a>
+    <a href="https://youtube.com/@Studio-Rich"><img src="/assets/icons/youtube.svg" alt="YouTube"></a>
+    <a href="https://ko-fi.com/studiorich"><img src="/assets/icons/kofi.svg" alt="Ko-fi"></a>
+  </nav>
+
+
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/"><img src="/assets/img/kitty-emblem.svg" alt="StudioRich Logo"></a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/about">Origin</a></li>
+        <li><a href="/library">Explore Music</a></li>
+        <li><a href="/live">Live Radio</a></li>
+        <li><a href="/shop">Shop</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <a href="/events" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/calendar.svg" alt="Calendar">
+      </a>
+      <a href="https://twitch.tv/studiorich" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/twitch.svg" alt="Twitch">
+      </a>
+      <a href="https://youtube.com/@Studio-Rich" class="hide-mobile" target="_blank">
+        <img src="/assets/icons/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://ko-fi.com/studiorich" target="_blank">
+        <img src="/assets/icons/kofi.svg" alt="Ko-fi">
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    const isOpen = menu.classList.toggle('open');
+
+    overlay.classList.toggle('active', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
+  }
+
+  // Auto-close on link click
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('mobileOverlay').classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
+
+  <section class="hero" style="background-image: url(/assets/img/hero.webp);">
+  <div class="hero-overlay">
+    <h1>Tap In.<br />Stay Weird.<br />Broadcast the Vibe..</h1>
+  </div>
+</section>
+
+<h3 style="margin-left: 2em">
+<img src="/assets/icons/record.svg" alt="Vinyl Record" style="width: 1em; vertical-align: middle;" />
+Now Spinning: StudioRich Visual Mixes
+</h3>
+
+<!-- Stream Banner and Features go here -->
+<div class="youtube-carousel-wrapper">
+  <button class="carousel-arrow left" onclick="scrollCarousel(-1)">
+    <img src="/assets/icons/arrow-left.svg" alt="Left" class="arrow-icon" />
+  </button>
+  <div class="youtube-carousel" id="youtubeCarousel">
+    
+    
+      <iframe src="https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+    
+      <iframe src="https://www.youtube.com/embed/u5tCaLsFW-M?si=WmKxX14EHcumI1Tf" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+    
+      <iframe src="https://www.youtube.com/embed/d_ERqZwROAk?si=94CKxDrn897Bssoi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+    
+      <iframe src="https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+    
+  </div>
+  <button class="carousel-arrow right" onclick="scrollCarousel(1)">
+    <img src="/assets/icons/arrow-right.svg" alt="Right" class="arrow-icon" />
+  </button>
+</div>
+
+<style>
+  .youtube-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .youtube-carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    scroll-behavior: smooth;
+  }
+
+  .youtube-carousel iframe {
+    flex: 0 0 320px;
+    height: 180px;
+    border-radius: 12px;
+    border: none;
+  }
+
+  .carousel-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+
+  .arrow-icon {
+    height: 64px;
+    width: 64px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+  }
+
+  .arrow-icon:hover {
+    filter: brightness(1.5);
+  }
+
+  .carousel-arrow.left {
+    position: absolute;
+    left: 0;
+  }
+
+  .carousel-arrow.right {
+    position: absolute;
+    right: 0;
+  }
+</style>
+
+<script>
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById('youtubeCarousel');
+    const scrollAmount = 340; // including gap
+    carousel.scrollBy({
+      left: scrollAmount * direction,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<section class="welcome">
+  <div class="welcome">
+<p>Welcome to StudioRich — a Brooklyn-based creative lab fusing lo-fi music, experimental visuals, and street-smart storytelling. From Stranger Vibes soundtracks to melting boombox art, we blend nostalgia, kung fu, graffiti, and ambient field recordings into collectible experiences. Explore our music catalog, digital merch drops, and live-streamed vibes — all handcrafted with a rebellious spirit and a touch of humor. StudioRich is where city noise becomes rhythm, and every beat has a backstory.</p>
+</div></section>
+<div class="stream-schedule">
+  <h2><img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" />
+     Weekly Stream Schedule</h2>
+     <p>Starting in July 2025</p>
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time (ET)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">Loading schedule...</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align:center; margin-top: 1.5rem; font-size: 0.95rem; color:#bbb;">
+    All times in Eastern Time (ET) · Subject to vibe and surprise drops <img src="/assets/icons/moon.svg" alt="Moon icon" style="width: 1em; vertical-align: middle;" />
+  </p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async function () {
+  const clientId = '1jpexght2145jhryp52b8syq2jduvq';
+  const accessToken = 'b54mq9my1mv3fato7bacc3h8oqfcea';
+  const broadcasterId = '652015218';
+  const scheduleTableBody = document.querySelector(".schedule-table tbody");
+
+  function toEasternTime(dateString) {
+    const utcDate = new Date(dateString);
+    return new Date(utcDate.toLocaleString("en-US", { timeZone: "America/New_York" }));
+  }
+
+  function formatTime(date) {
+    const hours24 = date.getHours();
+    const hours = hours24 % 12 || 12;
+    const minutes = date.getMinutes().toString().padStart(2, "0");
+    const ampm = hours24 >= 12 ? "PM" : "AM";
+    return `${hours}:${minutes} ${ampm}`;
+  }
+
+  function formatDay(date) {
+    return date.toLocaleDateString("en-US", { weekday: "long" });
+  }
+
+  try {
+    const response = await fetch(`https://api.twitch.tv/helix/schedule?broadcaster_id=${broadcasterId}&first=20`, {
+      headers: {
+        "Client-ID": clientId,
+        "Authorization": `Bearer ${accessToken}`
+      }
+    });
+
+    const data = await response.json();
+    const segments = data.data?.segments || [];
+
+    scheduleTableBody.innerHTML = "";
+
+    if (segments.length === 0) {
+      scheduleTableBody.innerHTML = "<tr><td colspan='2'>No upcoming streams.</td></tr>";
+      return;
+    }
+
+    const now = new Date();
+    const nowET = new Date(now.toLocaleString("en-US", { timeZone: "America/New_York" }));
+    const oneWeekFromNow = new Date(nowET);
+    oneWeekFromNow.setDate(nowET.getDate() + 7);
+
+    const weekSegments = segments.filter(segment => {
+      const streamDate = toEasternTime(segment.start_time);
+      return streamDate >= nowET && streamDate <= oneWeekFromNow;
+    });
+
+    if (weekSegments.length === 0) {
+      scheduleTableBody.innerHTML = "<tr><td colspan='2'>No scheduled streams this week.</td></tr>";
+      return;
+    }
+
+    for (const segment of weekSegments) {
+      const streamDate = toEasternTime(segment.start_time);
+      const title = segment.title || "Untitled Stream";
+      const day = formatDay(streamDate);
+      const time = formatTime(streamDate);
+
+      const row = document.createElement("tr");
+      const slug = day.toLowerCase();
+
+ row.innerHTML = `
+  <td>
+    <a href="/schedule/${slug}" style="color:#00ffcc; text-decoration:none;">
+      <strong>${day}</strong>
+    </a>
+    <br>
+    <span style="font-size:0.9rem; color:#aaa;">${title}</span>
+  </td>
+  <td class="time">${time}</td>
+`;
+
+
+      scheduleTableBody.appendChild(row);
+    }
+  } catch (err) {
+    console.error("Twitch schedule fetch error:", err);
+    scheduleTableBody.innerHTML = "<tr><td colspan='2'>Failed to load schedule.</td></tr>";
+  }
+});
+</script>
+
+<!-- Feature Sections -->
+<section class="features">
+  <div class="feature">
+    <h3>
+      <img src="/assets/icons/zenstones.svg" alt="Spa icon" style="width: 1em; vertical-align: middle;" />
+      <a href="schedule/sunday">Sound Therapy</a>
+    </h3>
+    <p>Relax with lo-fi and ambient visuals in real-time spa-inspired scenes.</p>
+  </div>
+  <div class="feature">
+    <h3>
+      <img src="/assets/icons/musiclibrary.svg" alt="Music library icon" style="width: 1em; vertical-align: middle;" />
+      <a href="/library">Music Library</a>
+    </h3>
+    <p>Explore our curated archive and search by mood, genre, or visual tone.</p>
+  </div>
+  <div class="feature">
+    <h3>
+      <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" style="width: 1em; vertical-align: middle;" />
+      What's New at StudioRich
+    </h3>
+    <p>Preview a collection of 100 tracks from the Stranger Vibes collection in the <a href="/library">music library</a></p>
+  </div>
+</section>
+
+
+  
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>SHOP</h4>
+      <ul>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/refund-policy">Refund Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/links">Links</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>ABOUT US</h4>
+            <ul>
+        <li><a href="https://studiorich.shop">Home</a></li>
+        <li><a href="https://studiorich.shop/library">Music Library</a></li>
+        <li><a href="https://ko-fi.com/studiorich">Support on Ko-fi</a></li>
+
+       
+    </div>
+    <div class="footer-column">
+      <h4>GET YOUR SEAT AT THE TABLE</h4>
+      <form class="subscribe-form">
+        <input type="email" placeholder="EMAIL ADDRESS">
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+<div class="footer-bottom">
+  <p>&copy; 2025 StudioRich, Lo-Fi Lives Here</p>
+
+  <div class="footer-links">
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/StudioRichNYC" target="_blank">
+        <img src="/assets/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com/_studiorich" target="_blank">
+        <img src="/assets/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://tiktok.com/@studiorich" target="_blank">
+        <img src="/assets/icons/tiktok.svg" alt="TikTok" />
+      </a>
+      <a href="https://x.com/studiorxch" target="_blank">
+        <img src="/assets/icons/x.svg" alt="X" />
+      </a>
+      <a href="https://youtube.com/@studio-rich" target="_blank">
+        <img src="/assets/icons/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
+
+    <!-- Music Icons -->
+    <div class="music-icons">
+      <a href="https://open.spotify.com/artist/your-link" target="_blank">
+        <img src="/assets/icons/spotify.svg" alt="Spotify" />
+      </a>
+      <a href="https://soundcloud.com/your-link" target="_blank">
+        <img src="/assets/icons/soundcloud.svg" alt="SoundCloud" />
+      </a>
+      <a href="https://bandcamp.com/your-link" target="_blank">
+        <img src="/assets/icons/bandcamp.svg" alt="Bandcamp" />
+      </a>
+      <a href="https://twitch.tv/your-link" target="_blank">
+        <img src="/assets/icons/twitch.svg" alt="Twitch" />
+      </a>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+</body>
+</html>
