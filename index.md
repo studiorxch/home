@@ -51,7 +51,10 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
       <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" style="width: 1em; vertical-align: middle;" />
       What's New at StudioRich
     </h3>
-    <p>Preview a collection of 100 tracks from the Stranger Vibes collection in the <a href="/library">music library</a></p>
+    <p>
+Our latest audiovisual drop, <em>Cat on the Signal</em>, blends lo-fi bedroom pop with surreal domestic visuals. Think analog fuzz, pastel glitchscapes, and a tabby cat channeling mech-prophet energy.<br>
+<a href="https://soundcloud.com/studiorich/cat-on-the-signal?si=12ab981478444d959fab3bb097f01c8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Listen on SoundCloud</a></p>
+
   </div>
 </section>
 
