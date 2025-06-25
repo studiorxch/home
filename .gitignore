@@ -1,4 +1,5 @@
 # Jekyll build artifacts
+!_site/
 _site/
 .jekyll-cache/
 .jekyll-metadata
