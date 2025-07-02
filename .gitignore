@@ -22,3 +22,6 @@ Thumbs.db
 
 # Optional: Node (if you ever add JS build tools later)
 node_modules/
+
+# Obsidian workspace configs
+_tracks/.obsidian/

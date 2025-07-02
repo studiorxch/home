@@ -7,9 +7,8 @@ permalink: /
 ---
 
 
-{% include components/hero.html
-  image="/assets/img/hero.webp"
-  title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.." %}
+{% include components/hero.html image="/assets/img/hero.webp" title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.." %}
+
 
 <h3 style="margin-left: 2em">
 <img src="/assets/icons/record.svg" alt="Vinyl Record" style="width: 1em; vertical-align: middle;" />

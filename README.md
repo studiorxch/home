@@ -79,3 +79,6 @@ For sub-projects like Trackstar or WhisperChat, see their own README files or su
 We’re slowly building a self-contained universe of lo-fi, tech-augmented vibes.
 
 ---
+bundle exec jekyll clean
+bundle exec jekyll build
+bundle exec jekyll serve

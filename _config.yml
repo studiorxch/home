@@ -43,7 +43,8 @@ defaults:
       sitemap: true
 
 sass:
-  sass_dir: assets/css
+  sass_dir: _sass
+
 
 
 
@@ -57,14 +58,14 @@ collections:
   events: # Stranger Vibes, Spa Therapy, Ramen Town
     output: true
     permalink: /events/:slug/
-  tracks: # Music Library 
+  tracks: # Music Library
     output: true
     permalink: /tracks/:name/
-  shop: # Shop 
+  shop: # Shop
     output: true
     permalink: /shop/:title/
 
-    
+
 # Exclude unnecessary files from processing
 exclude:
   - .sass-cache/
@@ -75,7 +76,7 @@ exclude:
   - node_modules/
   - vendor/
   - _site/
-  
+
 # Add custom settings as needed
 favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you want one
 

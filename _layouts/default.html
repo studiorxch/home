@@ -10,7 +10,7 @@
 
   <meta name="description" content="{{ page.description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
@@ -27,7 +27,7 @@
   <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
-  
+
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
@@ -45,10 +45,10 @@
 
   <!-- Analytics + Fonts -->
   {% if jekyll.environment == "production" and site.google_analytics %}
-    {% include google-analytics.html %}
+  {% include google-analytics.html %}
   {% endif %}
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
@@ -58,4 +58,5 @@
   {{ content }}
   {% include components/footer.html %}
 </body>
+
 </html>
