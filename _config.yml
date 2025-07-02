@@ -61,9 +61,9 @@ collections:
   tracks: # Music Library
     output: true
     permalink: /tracks/:name/
-  shop: # Shop
-    output: true
-    permalink: /shop/:title/
+  #shop: # Shop
+  #  output: true
+  #  permalink: /shop/:title/
 
 
 # Exclude unnecessary files from processing
