@@ -1,6 +1,9 @@
 /* === Shop Page Styles === */
-
-
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4); // adds readability
+  padding: 2rem;
+  border-radius: 12px;
+}
 
 .shop-intro {
   max-width: 700px;
