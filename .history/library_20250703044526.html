@@ -9,27 +9,16 @@ image: /assets/img/hero-music-library.webp
 image=page.image
 title="Music Library" %}
 
-
 <div class="filter-bar">
   <button data-filter="all" data-type="all" class="active">All</button>
+
 
   {% assign all_moods = "" | split: "" %}
   {% assign all_genres = "" | split: "" %}
 
-  {% for track in site.data.library %}
-
-    {% assign mood_array = track.mood %}
-    {% unless mood_array %}
-      {% assign mood_array = "" | split: "" %}
-    {% endunless %}
-
-    {% assign genre_array = track.genre %}
-    {% unless genre_array %}
-      {% assign genre_array = "" | split: "" %}
-    {% endunless %}
-
-    {% assign all_moods = all_moods | concat: mood_array %}
-    {% assign all_genres = all_genres | concat: genre_array %}
+  {% for track in site.tracks %}
+  {% assign all_moods = all_moods | concat: track.mood %}
+  {% assign all_genres = all_genres | concat: track.genre %}
   {% endfor %}
 
   {% assign unique_moods = all_moods | uniq | sort %}
@@ -37,21 +26,18 @@ title="Music Library" %}
 
   <!-- Moods -->
   {% for mood in unique_moods %}
-    {% unless mood == "nan" %}
-      <button data-filter="{{ mood | downcase | strip }}" data-type="mood">{{ mood | strip }}</button>
-    {% endunless %}
+  {% unless mood == "nan" %}
+  <button data-filter="{{ mood | downcase }}" data-type="mood">{{ mood }}</button>
+  {% endunless %}
   {% endfor %}
 
   <!-- Genres -->
   {% for genre in unique_genres %}
-    {% unless genre == "nan" %}
-      <button data-filter="{{ genre | downcase | strip }}" data-type="genre">{{ genre | strip }}</button>
-    {% endunless %}
+  {% unless genre == "nan" %}
+  <button data-filter="{{ genre | downcase }}" data-type="genre">{{ genre }}</button>
+  {% endunless %}
   {% endfor %}
 </div>
-
-
-
 
 <section class="track-grid">
   {% for track in site.data.library %}

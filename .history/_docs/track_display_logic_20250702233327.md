@@ -5,8 +5,6 @@ To define and document the criteria that determine whether a track appears in th
 
 ---
 
-library.yml is the source of truth for all track display and filtering logic on the /library page. Ensure it includes mood, genre, and other frontmatter fields during generation.
-
 ### ✅ Requirements for a Track to Appear in the Library
 1. **Valid Loop File**
    - Each track must have a valid `.mp3` loop file.

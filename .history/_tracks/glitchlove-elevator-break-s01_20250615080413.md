@@ -9,7 +9,7 @@ date: 2025-01-01
 duration: "4:31"
 album: "Run Loop"
 mood: ["Dreamy", "Nostalgic"]
-genre: ["drum and bass", "electronic"]
+genre: ["drum & bass", "electronic"]
 bpm: 86
 key: "F"
 ---
