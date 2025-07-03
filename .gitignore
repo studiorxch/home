@@ -25,3 +25,7 @@ node_modules/
 
 # Obsidian workspace configs
 _tracks/.obsidian/
+
+
+#scripts
+generate_library_yml.py
