@@ -24,24 +24,14 @@ layout: default
     </div>
   </div>
 
-  <div class="waveform-bar">
-  {% for i in (0..35) %}
-    {% assign delay = i | times: 0.04 %}
-    <div class="bar" style="animation-delay: {{ delay }}s;"></div>
-  {% endfor %}
-</div>
-
-
   <!-- Title with back arrow -->
   <div class="track-meta">
     <h1>
-     <a href="/library" class="back-inline">
-  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-  </svg>
-  <span class="hover-label">Back</span>
-</a>
-
+      <a href="/library" class="back-inline" aria-label="Back to Library">
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </a>
       {{ page.title }}
     </h1>
 
