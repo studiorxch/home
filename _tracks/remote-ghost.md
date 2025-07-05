@@ -2,7 +2,7 @@
 layout: track
 title: "Remote Ghost"
 permalink: /tracks/remote-ghost/
-description: ""
+description: "Remote Ghost is a Dark, Dreamy, Lonely, Melancholy track blending lo-fi, dream pop, ambient with deep focus energy."
 image: "/assets/covers/remote-ghost.webp"
 image_ready: false
 date: 2025-01-01

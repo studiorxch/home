@@ -2,7 +2,7 @@
 layout: track
 title: "Mirror Shard"
 permalink: /tracks/mirror-shard/
-description: ""
+description: "Mirror Shard is a Chill, Dreamy, Gritty, Nostalgic track blending lo-fi, experimental, ambient with sleep energy."
 image: "/assets/covers/mirror-shard.webp"
 image_ready: false
 date: 2025-01-01

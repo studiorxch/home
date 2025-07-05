@@ -2,7 +2,7 @@
 layout: track
 title: "No Signal"
 permalink: /tracks/no-signal/
-description: ""
+description: "No Signal is a Chill, Dreamy, Energetic, Intimate, Tense, Weightless track blending lo-fi, experimental, electronic with deep focus energy."
 image: "/assets/covers/no-signal.webp"
 image_ready: false
 date: 2025-01-01

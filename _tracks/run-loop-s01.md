@@ -2,7 +2,7 @@
 layout: track
 title: "Run Loop S01"
 permalink: /tracks/run-loop-s01/
-description: ""
+description: "Run Loop is a Chill, Gritty, Intimate track blending lo-fi, ambient, swing with sleep energy."
 image: "/assets/covers/run-loop-s01.webp"
 image_ready: false
 date: 2025-01-01

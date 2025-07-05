@@ -2,7 +2,7 @@
 layout: track
 title: "Lo-Fi Defiance"
 permalink: /tracks/lo-fi-defiance/
-description: ""
+description: "Lo-Fi Defiance is a Chill, Dark, Intimate, Lonely, Melancholy track blending lo-fi, ambient, chillhop with deep focus energy."
 image: "/assets/covers/lo-fi-defiance.webp"
 image_ready: false
 date: 2025-01-01
