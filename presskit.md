@@ -9,9 +9,7 @@ image: /assets/covers/presskit-cover.webp
 {% include components/hero.html
   image="/assets/img/white-cat-hero.webp"
   title="StudioRich<br/>Presskit" %}
-<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;">
-Our mascot in Whiteout RX-0 Mode — a lo-fi signal runner moving between memory and motion.
-</p>
+
 
 <h1 style="text-align:left; padding-left: 8rem; font-weight:300;">
   StudioRich Presskit <span style="opacity: 0.5;">/ Featuring Whiteout RX-0</span>
