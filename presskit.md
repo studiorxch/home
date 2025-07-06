@@ -8,10 +8,20 @@ image: /assets/covers/presskit-cover.webp
 
 {% include components/hero.html
   image="/assets/img/white-cat-hero.webp"
-  title="" %}
+  title="StudioRich<br/>Presskit" %}
+<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;">
+Our mascot in Whiteout RX-0 Mode — a lo-fi signal runner moving between memory and motion.
+</p>
+
+<h1 style="text-align:left; padding-left: 8rem; font-weight:300;">
+  StudioRich Presskit <span style="opacity: 0.5;">/ Featuring Whiteout RX-0</span>
+</h1>
 
 
 <section class="about-page">
+
+
+
   <section class="about-content">
 
   <p><strong>StudioRich</strong> is the creative lab of Brooklyn-based artist Mr. Richie, blending lo-fi aesthetics, glitch design, and emotionally charged music into immersive, genre-blurring experiences.</p>
