@@ -8,7 +8,7 @@ image: /assets/covers/about-cover.webp
 ---
 {% include components/hero.html
   image="/assets/img/white-cat-hero.webp"
-  title="" %}
+  title="Origin" %}
 
 
 <section class="about-page">
