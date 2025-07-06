@@ -7,9 +7,9 @@ image: /assets/covers/presskit-cover.webp
 ---
 
 {% include components/hero.html
-  image="/assets/img/cat-presskit.webp"
-  title="StudioRich Presskit"
-%}
+  image="/assets/img/white-cat-hero.webp"
+  title="" %}
+
 
 <section class="about-page">
   <section class="about-content">
@@ -32,13 +32,27 @@ image: /assets/covers/presskit-cover.webp
 
   <hr>
 
-  <h3><img src="/assets/icons/musicnote.svg" alt="Music" class="icon-sm"> Featured Projects</h3>
-  <ul>
+<h3><img src="/assets/icons/musicnote.svg" alt="Music" class="icon-sm"> Featured Projects</h3>
+<ul>
+  <li><strong>Nice and Warm (Lo-Fi Nights)</strong> – Our top-performing track with 4,865+ plays on SoundCloud. A warm, tape-textured groove and StudioRich favorite.
+  <a href="https://soundcloud.com/studiorich/nice-and-warm-demo" target="_blank">Listen on SoundCloud</a></li>
+
+  <li><strong>Without You</strong> – One of StudioRich’s earliest official releases, blending ambient mood with nostalgic chords and glitchy space.
+  <a href="https://soundcloud.com/studiorich/without-you-1" target="_blank">Listen on SoundCloud</a></li>
+
+
     <li><strong>Stranger Vibes</strong> – Lo-fi music meets anime-inspired character arcs. <a href="https://www.youtube.com/watch?v=3_U9pLLI6Tk" target="_blank">Watch the mix</a></li>
-    <li><strong>Cat on the Signal</strong> – A pastel-toned audio toy glitch loop. <a href="/pieces/02-cat-on-the-signal">View the piece</a></li>
-    <li><strong>Trackstar Engine</strong> – Emotional playlist generator. <a href="https://trackstar.nyc" target="_blank">Explore tools</a></li>
-    <li><strong>Lo-Fi Therapy Stream</strong> – Audio-reactive Twitch stream with spa energy. <a href="https://twitch.tv/studiorich" target="_blank">Visit Twitch</a></li>
+    <li><strong>Cat on the Signal</strong> – A pastel-toned audio toy glitch loop. <a href="https://soundcloud.com/studiorich/cat-on-the-signal">View the piece</a></li>
+    <li><strong>Trackstar Engine</strong> – Emotional playlist generator. <a href="https://studiorich.shop/library/" target="_blank">Explore tools</a></li>
+    <li><strong>Lo-Fi Therapy Stream</strong> – Audio-reactive Twitch stream with spa energy. <a href="https://studiorich.shop/schedule/sunday" target="_blank">Visit Twitch</a></li>
   </ul>
+
+<h3><img src="/assets/icons/record.svg" alt="Archive" class="icon-sm"> Legacy Projects</h3>
+<ul>
+<li><strong>Stranger Vibes: Poster Promo Video</strong> – A lo-fi visual journey blending ambient beats and anime-inspired edits. Originally created to promote a Redbubble poster inspired by Stranger Things, this piece reflects StudioRich’s roots in remix culture and emotional design. The poster is no longer available due to licensing changes with Netflix.
+<a href="https://www.youtube.com/watch?v=IeEzjiKucgk" target="_blank">Watch on YouTube</a></li>
+</ul>
+
 
   <hr>
 

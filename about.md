@@ -7,8 +7,9 @@ image: /assets/covers/about-cover.webp
 
 ---
 {% include components/hero.html
-  image="/assets/img/drawer-of-disassociation.webp"
+  image="/assets/img/white-cat-hero.webp"
   title="" %}
+
 
 <section class="about-page">
 
