@@ -14,9 +14,10 @@ h1 {
 
 
 
-  .arrow-icon:hover {
-    opacity: 1;
-  }
+.arrow-icon:hover {
+  opacity: 1;
+}
+
 .back-inline {
   position: relative;
   display: inline-flex;
@@ -118,30 +119,37 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+
+
 .track-meta {
   max-width: 420px;
   margin: 2rem auto;
   text-align: left;
   padding: 0 1rem;
-  position: relative;
-}
-.track-meta h1 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  padding-left: 0.8rem; /* aligns with text indent below */
-  position: relative;
 }
 
-.track-meta h1 .back-inline {
+.track-heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* centers the title */
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.track-heading .back-inline {
   position: absolute;
   left: 0;
-  transform: translateX(-100%); /* hangs the arrow left of the text */
   display: inline-flex;
   align-items: center;
+  padding-right: 1rem;
+}
+
+
+.track-heading h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .track-meta p.description {
@@ -153,14 +161,16 @@ h1 {
   list-style: none;
   padding: 0;
   font-size: 0.95rem;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 360px;
+  margin: 0;
 }
 
 .track-meta ul.metadata li {
   margin-bottom: 0.5rem;
 }
+
+
+
+
 
 .track-grid {
   display: grid;
@@ -501,4 +511,3 @@ button.disabled {
   vertical-align: middle;
   filter: brightness(0) invert(1);
 }
-

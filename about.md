@@ -6,58 +6,25 @@ description: "Learn the story behind StudioRich - a lo-fi audio collective blend
 image: /assets/covers/about-cover.webp
 
 ---
-{% include components/hero.html 
-  image="/assets/img/bruce-lee-origin.webp" 
+{% include components/hero.html
+  image="/assets/img/drawer-of-disassociation.webp"
   title="" %}
 
 <section class="about-page">
-  <!--<h1>About<br>StudioRich:<br>Origins</h1>-->
+
 <section class="about-content">
-  <p><strong>StudioRich</strong> is a Brooklyn-based creative lab blending lo-fi music, graffiti culture, and rebellious design with a hint of kung fu spirit. Our work lives at the intersection of analog and AI—merging sound experiments, field recordings, and character-driven visual storytelling into collectible experiences.</p>
+<p><strong>StudioRich</strong> is a Brooklyn-based audio-visual lab building immersive, emotionally driven experiences through lo-fi music, glitch design, and experimental storytelling. </p>
 
-  <p>From chill Twitch streams to raw NYC soundscapes and nostalgic merch drops, StudioRich is redefining what a street-born studio can be.</p>
+<p>Blending ambient textures, jungle rhythms, anime nostalgia, and NYC street grit, StudioRich fuses sound and visuals into collectible worlds. From animated cover loops and Twitch therapy streams to character systems and custom-built playlist engines, every project is designed to feel human, tactile, and a little bit rebellious.</p>
+
+<p><a href="/presskit/">→ Press & Project Kit Available Here</a></p>
 
 
-  <div class="tagline">
-  <img src="/assets/icons/musicnote.svg" alt="Music"> Music 
-  <img src="/assets/icons/fadervertical.svg" alt="Design"> Design 
-  <img src="/assets/icons/headphones.svg" alt="Subways"> Subways 
-  <img src="/assets/icons/record.svg" alt="AI"> AI 
-  <img src="/assets/icons/catpaws.svg" alt="Lucky Claw"> Lucky Claw Lives Here
-</div>
 
-  <p>Like our work? Support on <a href="https://ko-fi.com/studiorich" target="_blank">Ko-fi</a></p>
 
-  <p>→ <a href="#">Listen Now</a></p>
+
   </section>
 </section>
 
-<style>
-.about-page h1 {
-  padding-left: 4rem;  
-  font-size: 5.5rem;         /* Bigger title */
-  font-weight: 200;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
-
-.about-content {
-   /* Pull content up */
-  padding-left: 4rem;      /* Left breathing room */
-  padding-right: 6rem;     /* Extra space on the right */
-  font-size: .85rem;
-  line-height: 1.7;
-  font-weight: 100;
-  letter-spacing: 0.01em;
-  max-width: 500px;
-}
-
-.tagline img {
-  height: 20px;        /* adjust size here */
-  vertical-align: middle;
-  filter: brightness(0) invert(1); /* make white */
-  margin-right: 6px;   /* space between icon and text */
-}
 
 
-</style>
