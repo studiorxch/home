@@ -1,0 +1,136 @@
+---
+layout: default
+title: StudioRich | Links
+description: "Explore StudioRich across the web – music, streams, shop, and more in one place."
+permalink: /links/
+image: /assets/covers/nice-and-warm.webp
+redirect_from:
+  - /pages/links
+
+---
+{% include components/hero.html
+image="/assets/img/graffiti-mascot-ink-doodle.webp"
+title="Links" %}
+<div class="container">
+
+
+
+  <section class="link-hub">
+    <h2>Connect with StudioRich</h2>
+    <ul class="link-list">
+      <li>
+        <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
+          <img src="/assets/icons/youtube.svg" alt="YouTube">
+          <span>YouTube</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://soundcloud.com/studiorich" target="_blank">
+          <img src="/assets/icons/soundcloud.svg" alt="SoundCloud">
+          <span>SoundCloud</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitch.tv/studiorich" target="_blank">
+          <img src="/assets/icons/twitch.svg" alt="Twitch">
+          <span>Twitch</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://studiorich.bandcamp.com" target="_blank">
+          <img src="/assets/icons/bandcamp.svg" alt="Bandcamp">
+          <span>Bandcamp</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://open.spotify.com/artist/55NPQkvFCSFrE7eZuzlzqT" target="_blank">
+          <img src="/assets/icons/spotify.svg" alt="Spotify">
+          <span>Spotify</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- Embeds -->
+  <iframe width="100%" height="315"
+    src="https://www.youtube.com/embed/videoseries?list=PL52xhhjGMqGb8xoVatUjepBeLIomu21DG" allowfullscreen></iframe>
+  <iframe width="100%" height="166" scrolling="no"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1970334771"></iframe>
+  <iframe allow="autoplay" width="100%" height="300" src="https://www.iheart.com/artist/studiorich-45140302/?embed=true"
+    frameborder="0"></iframe>
+</div>
+
+<style>
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .link-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .link-buttons a {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .link-buttons a:hover {
+    background: #333;
+  }
+
+  .link-hub {
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .link-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .link-list li a:hover {
+    background: #333;
+  }
+
+  .link-list img {
+    height: 24px;
+    margin-right: 1rem;
+    filter: brightness(0.5) invert(1);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  .link-list li a:hover img {
+    opacity: 1;
+  }
+</style>
