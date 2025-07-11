@@ -3,11 +3,14 @@ layout: default
 title: StudioRich Shop
 permalink: /shop/
 description: Buy merch, music & digital drops from StudioRich.
+sitemap: true
 redirect_from:
   - /collections/all
   - /collections/hats
   - /collections/t-shirts
   - /products/nyc-subway-sign-graffiti
+  - /products/nyc-subway-signature-series-k-discontinued-series
+  - /products/nyc-subway-signature-series-r
 
 ---
 

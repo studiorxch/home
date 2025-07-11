@@ -2,7 +2,7 @@
 layout: track
 title: "Circuit Grove"
 permalink: /tracks/circuit-grove/
-description: ""
+description: "Circuit Grove is an ambient, electronic, experimental track. Mood: digital calm, synthetic motion. A sonic grove pulses under scattered melodic sparks."
 image: "/assets/covers/circuit-grove.webp"
 image_ready: false
 date: 2025-01-01
