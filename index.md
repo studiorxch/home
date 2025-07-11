@@ -38,7 +38,7 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
     </h3>
     <p>A collectible NFT series fusing graffiti visuals, lo-fi hip hop, and Brooklyn static.
 Animated drops. Mood-coded loops. Zine culture meets the chain.
-The Record Collection begins soon.
+<a href="record-collection">The Record Collection</a> begins soon.
 </p>
   </div>
   <div class="feature">
