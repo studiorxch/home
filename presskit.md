@@ -42,7 +42,7 @@ image: /assets/covers/presskit-cover.webp
 
 <h3><img src="/assets/icons/musicnote.svg" alt="Music" class="icon-sm"> Featured Projects</h3>
 <ul>
-  <li><strong>Nice and Warm (Lo-Fi Nights)</strong> – Our top-performing track with 4,865+ plays on SoundCloud. A warm, tape-textured groove and StudioRich favorite.
+  <li><strong>Nice and Warm (Lo-Fi Nights)</strong> – Our top-performing track with 5,000+ plays on SoundCloud. A warm, tape-textured groove and StudioRich favorite.
   <a href="https://soundcloud.com/studiorich/nice-and-warm-demo" target="_blank">Listen on SoundCloud</a></li>
 
   <li><strong>Without You</strong> – One of StudioRich’s earliest official releases, blending ambient mood with nostalgic chords and glitchy space.

@@ -34,9 +34,12 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <div class="feature">
     <h3>
       <img src="/assets/icons/zenstones.svg" alt="Spa icon" style="width: 1em; vertical-align: middle;" />
-      <a href="schedule/sunday">Sound Therapy</a>
+      🎧 RX-0: Loops Incoming
     </h3>
-    <p>Relax with lo-fi and ambient visuals in real-time spa-inspired scenes.</p>
+    <p>A collectible NFT series fusing graffiti visuals, lo-fi hip hop, and Brooklyn static.
+Animated drops. Mood-coded loops. Zine culture meets the chain.
+The Record Collection begins soon.
+</p>
   </div>
   <div class="feature">
     <h3>
@@ -48,10 +51,10 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <div class="feature">
     <h3>
       <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" style="width: 1em; vertical-align: middle;" />
-      What's New at StudioRich
+      <em>Cat on the Signal</em>
     </h3>
     <p>
-Our latest audiovisual drop, <em>Cat on the Signal</em>, blends lo-fi bedroom pop with surreal domestic visuals. Think analog fuzz, pastel glitchscapes, and a tabby cat channeling mech-prophet energy.<br>
+Our latest audiovisual drop, blends lo-fi bedroom pop with surreal domestic visuals. Think analog fuzz, pastel glitchscapes, and a tabby cat channeling mech-prophet energy.<br>
 <a href="https://soundcloud.com/studiorich/cat-on-the-signal?si=12ab981478444d959fab3bb097f01c8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Listen on SoundCloud</a></p>
 
   </div>

@@ -4,12 +4,12 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign real_url = site.url | replace: 'http://localhost:4000', 'https://www.studiorich.shop' %}
+
   {% for page in site.pages %}
     {% unless page.sitemap == false %}
     <url>
-      {% assign real_url = site.url | replace: 'http://localhost:4000', 'https://www.studiorich.shop' %}
-<loc>{{ real_url }}{{ page.url | replace: 'index.html', '' }}</loc>
-
+      <loc>{{ real_url }}{{ page.url | replace: 'index.html', '' }}</loc>
       {% if page.date %}
         <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
       {% endif %}
@@ -20,7 +20,7 @@ permalink: /sitemap.xml
   {% for track in site.tracks %}
     {% unless track.sitemap == false %}
     <url>
-      <loc>{{ site.url }}{{ track.url }}</loc>
+      <loc>{{ real_url }}{{ track.url }}</loc>
       {% if track.date %}
         <lastmod>{{ track.date | date_to_xmlschema }}</lastmod>
       {% endif %}

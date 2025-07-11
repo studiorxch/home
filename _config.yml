@@ -81,6 +81,5 @@ favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you wa
 # Google Analytics (optional, add only if you have GA setup)
 google_analytics: "G-E5KN2YJJKF"
 
-
 redirect_from:
-  - /collections/all
+  json: false

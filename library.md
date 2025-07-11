@@ -9,8 +9,12 @@ redirect_from:
 
 ---
 {% include components/hero.html
-image=page.image
-title="Music Library" %}
+  image=page.image
+  title="Lo-Fi Music Library"
+  subtitle="360+ lo-fi tracks for streamers, artists, spa therapy lovers, and chillroom dreamers — all crafted by StudioRich in NYC."
+%}
+
+
 
 
 <div class="filter-bar">
@@ -51,17 +55,20 @@ title="Music Library" %}
       <button data-filter="{{ genre | downcase | strip }}" data-type="genre">{{ genre | strip }}</button>
     {% endunless %}
   {% endfor %}
+
 </div>
 
 
 
 
 <section class="track-grid">
+
+
   {% for track in site.data.library %}
   {% if track.has_cover and track.has_loop %}
-  <a class="track-card" 
-     href="/tracks/{{ track.slug }}/?autoplay=1" 
-     data-mood="{{ track.mood | join: ' ' | downcase }}" 
+  <a class="track-card"
+     href="/tracks/{{ track.slug }}/?autoplay=1"
+     data-mood="{{ track.mood | join: ' ' | downcase }}"
      data-genre="{{ track.genre | join: ' ' | downcase }}">
 
     <img src="/assets/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
