@@ -1,17 +1,21 @@
 ---
 layout: track
-title: "Turnaround Fade"
+title: Turnaround Fade
 permalink: /tracks/turnaround-fade/
-description: ""
-image: "/assets/covers/turnaround-fade.webp"
+description: ''
+image: /assets/covers/turnaround-fade.webp
 image_ready: false
 date: 2025-01-01
-duration: "2:17"
-album: "Stranger Vibes"
+duration: '2:17'
+album: Stranger Vibes
 mood: []
-genre: ["lo-fi", "ambient", "chillwave"]
+genre:
+- lo-fi
+- ambient
+- chillwave
 bpm: 136
-key: "F#"
+key: F#
+image_jpg: /assets/covers/turnaround-fade.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

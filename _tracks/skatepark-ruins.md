@@ -1,17 +1,22 @@
 ---
 layout: track
-title: "Skatepark Ruins"
+title: Skatepark Ruins
 permalink: /tracks/skatepark-ruins/
-description: ""
-image: "/assets/covers/skatepark-ruins.webp"
+description: ''
+image: /assets/covers/skatepark-ruins.webp
 image_ready: false
 date: 2025-01-01
-duration: "1:54"
-album: "Stranger Vibes"
-mood: ["Hopeful"]
-genre: ["lo-fi", "experimental", "melancholic"]
+duration: '1:54'
+album: Stranger Vibes
+mood:
+- Hopeful
+genre:
+- lo-fi
+- experimental
+- melancholic
 bpm: 118
-key: "F"
+key: F
+image_jpg: /assets/covers/skatepark-ruins.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

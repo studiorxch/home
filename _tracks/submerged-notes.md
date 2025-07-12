@@ -1,17 +1,19 @@
 ---
 layout: track
-title: "Submerged Notes"
+title: Submerged Notes
 permalink: /tracks/submerged-notes/
-description: ""
-image: "/assets/covers/submerged-notes.webp"
+description: ''
+image: /assets/covers/submerged-notes.webp
 image_ready: false
 date: 2025-01-01
-duration: "2:09"
-album: "Stranger Vibes"
+duration: '2:09'
+album: Stranger Vibes
 mood: []
-genre: ["lo-fi"]
+genre:
+- lo-fi
 bpm: 120
-key: "C"
+key: C
+image_jpg: /assets/covers/submerged-notes.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

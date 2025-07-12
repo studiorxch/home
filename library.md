@@ -6,16 +6,13 @@ description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesth
 image: /assets/img/hero-music-library.webp
 redirect_from:
   - /blogs/news
-
 ---
+
 {% include components/hero.html
   image=page.image
   title="Lo-Fi Music Library"
   subtitle="360+ lo-fi tracks for streamers, artists, spa therapy lovers, and chillroom dreamers — all crafted by StudioRich in NYC."
 %}
-
-
-
 
 <div class="filter-bar">
   <button data-filter="all" data-type="all" class="active">All</button>
@@ -24,17 +21,14 @@ redirect_from:
   {% assign all_genres = "" | split: "" %}
 
   {% for track in site.data.library %}
-
     {% assign mood_array = track.mood %}
-    {% unless mood_array %}
+    {% if mood_array == nil or mood_array == blank %}
       {% assign mood_array = "" | split: "" %}
-    {% endunless %}
-
+    {% endif %}
     {% assign genre_array = track.genre %}
-    {% unless genre_array %}
+    {% if genre_array == nil or genre_array == blank %}
       {% assign genre_array = "" | split: "" %}
-    {% endunless %}
-
+    {% endif %}
     {% assign all_moods = all_moods | concat: mood_array %}
     {% assign all_genres = all_genres | concat: genre_array %}
   {% endfor %}
@@ -55,30 +49,35 @@ redirect_from:
       <button data-filter="{{ genre | downcase | strip }}" data-type="genre">{{ genre | strip }}</button>
     {% endunless %}
   {% endfor %}
-
 </div>
 
-
-
-
 <section class="track-grid">
-
-
   {% for track in site.data.library %}
-  {% if track.has_cover and track.has_loop %}
-  <a class="track-card"
-     href="/tracks/{{ track.slug }}/?autoplay=1"
-     data-mood="{{ track.mood | join: ' ' | downcase }}"
-     data-genre="{{ track.genre | join: ' ' | downcase }}">
+    {% if track.has_cover and track.has_loop %}
+      {% assign mood_array = track.mood %}
+      {% if mood_array == nil or mood_array.size < 3 %}
+        {% assign mood_array = track.mood_suggested %}
+        {% assign filtered_mood = false %}
+      {% else %}
+        {% assign filtered_mood = true %}
+      {% endif %}
 
-    <img src="/assets/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
-    <div class="track-title">{{ track.title }}</div>
-  </a>
-  {% endif %}
+      {% assign genre_array = track.genre %}
+      {% if genre_array == nil or genre_array == blank %}
+        {% assign genre_array = "" | split: "" %}
+      {% endif %}
+
+      <a class="track-card {% unless filtered_mood %}no-filter{% endunless %}"
+         href="/tracks/{{ track.slug }}/?autoplay=1"
+         data-mood="{{ mood_array | join: ' ' | downcase }}"
+         data-genre="{{ genre_array | join: ' ' | downcase }}">
+
+        <img src="/assets/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
+        <div class="track-title">{{ track.title }}</div>
+      </a>
+    {% endif %}
   {% endfor %}
 </section>
-
-
 
 <script>
   const cards = document.querySelectorAll('.track-card');
@@ -100,7 +99,6 @@ redirect_from:
   }
 
   function updateFilters() {
-    // Reset button states
     filterButtons.forEach(btn => btn.classList.remove('active'));
 
     if (selectedMood) {
@@ -113,16 +111,18 @@ redirect_from:
       document.querySelector(`[data-filter="all"]`)?.classList.add('active');
     }
 
-    // Show matching cards
     cards.forEach(card => {
       const moods = (card.dataset.mood || '').split(' ');
       const genres = (card.dataset.genre || '').split(' ');
+      const isNoFilter = card.classList.contains('no-filter');
+
       const moodMatch = !selectedMood || moods.includes(selectedMood);
       const genreMatch = !selectedGenre || genres.includes(selectedGenre);
-      card.style.display = (moodMatch && genreMatch) ? '' : 'none';
+      const show = (!selectedMood && !selectedGenre) || (moodMatch && genreMatch && !isNoFilter);
+
+      card.style.display = show ? '' : 'none';
     });
 
-    // Update genre buttons to reflect what's available for selected mood
     if (selectedMood) {
       updateGenreButtonsForMood(selectedMood);
     } else {
@@ -144,7 +144,6 @@ redirect_from:
         selectedGenre = (selectedGenre === value) ? null : value;
       }
 
-      // GA tracking
       if (typeof gtag === 'function') {
         gtag('event', 'filter_selected', {
           filter_type: type,
@@ -157,7 +156,6 @@ redirect_from:
     });
   });
 
-  // Apply URL param filter on load
   const params = new URLSearchParams(window.location.search);
   const genreFromURL = params.get('genre');
   if (genreFromURL) selectedGenre = genreFromURL.toLowerCase();

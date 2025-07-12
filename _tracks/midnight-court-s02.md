@@ -1,17 +1,22 @@
 ---
 layout: track
-title: "Midnight Court S02"
+title: Midnight Court S02
 permalink: /tracks/midnight-court-s02/
-description: ""
-image: "/assets/covers/midnight-court-s02.webp"
+description: ''
+image: /assets/covers/midnight-court-s02.webp
 image_ready: false
 date: 2025-01-01
-duration: "2:36"
-album: "Stranger Vibes"
-mood: ["Chill"]
-genre: ["lo-fi hip hop", "jazztronica", "chillout"]
+duration: '2:36'
+album: Stranger Vibes
+mood:
+- Chill
+genre:
+- lo-fi hip hop
+- jazztronica
+- chillout
 bpm: 90
-key: "Eb"
+key: Eb
+image_jpg: /assets/covers/midnight-court-s02.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

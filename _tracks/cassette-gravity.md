@@ -1,17 +1,21 @@
 ---
 layout: track
-title: "Cassette Gravity"
+title: Cassette Gravity
 permalink: /tracks/cassette-gravity/
-description: ""
-image: "/assets/covers/cassette-gravity.webp"
+description: ''
+image: /assets/covers/cassette-gravity.webp
 image_ready: false
 date: 2025-01-01
-duration: "2:26"
-album: "Stranger Vibes"
+duration: '2:26'
+album: Stranger Vibes
 mood: []
-genre: ["lo-fi", "experimental", "ambient"]
+genre:
+- lo-fi
+- experimental
+- ambient
 bpm: 118
-key: "C"
+key: C
+image_jpg: /assets/covers/cassette-gravity.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).
