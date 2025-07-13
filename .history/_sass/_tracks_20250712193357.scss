@@ -460,27 +460,12 @@ button.disabled {
   transform-origin: center;
 }
 
-.loop-track {
-  stroke: rgba(255, 255, 255, 0.2); /* faint white */
-  stroke-width: 1.5;
-}
-
-.loop-progress {
-  stroke: rgba(255, 255, 255, 0.6); /* brighter, still soft */
-  stroke-width: 2;
-  stroke-linecap: round;
-  transition: stroke-dashoffset 0.2s ease;
-}
 
 
 .track-card.playing .waveform-mini .bar {
   animation-play-state: running;
 }
 
-.track-card.playing .loop-progress {
-  stroke: rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
-}
 
 
 .track-cover-missing {
