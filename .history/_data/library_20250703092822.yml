@@ -1,15 +1,3 @@
-- title: Backwards Ventilation
-  slug: backwards-ventilation
-  has_cover: true
-  has_loop: true
-  mood:
-  - Gritty
-  - Chill
-  - Nostalgic
-  genre:
-  - boom bap
-  - hip hop
-  - instrumental
 - title: Roll Call S03
   slug: roll-call-s03
   has_cover: true
