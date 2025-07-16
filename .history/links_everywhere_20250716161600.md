@@ -31,13 +31,7 @@ image: /assets/covers/everywhere-cover.webp
   <li><a href="https://www.beatport.com/artist/studiorich/1278105" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Beatport"><span>Beatport</span></a></li>
   <li><a href="https://www.mixcloud.com/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Mixcloud"><span>Mixcloud</span></a></li>
     <li><a href="https://soundcloud.com/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Soundcloud"><span>Soundcloud</span></a></li>
-  <li><a href="https://studiorich.bandcamp.com" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Bandcamp"><span>Bandcamp</span></a></li>
-<li><a href="https://www.musixmatch.com/artist/StudioRich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Musixmatch"><span>Musixmatch</span></a></li>
-
-
-
-
-        
+        <li><a href="https://studiorich.bandcamp.com" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Bandcamp"><span>Bandcamp</span></a></li>
 </ul>
 
 <!-- 📱 Social & Short-Form -->

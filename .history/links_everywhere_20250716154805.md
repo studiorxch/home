@@ -26,18 +26,6 @@ image: /assets/covers/everywhere-cover.webp
   <li><a href="https://music.youtube.com/channel/UCvLh5_MPChww6fgXlsOG9qA" target="_blank"><img src="/assets/icons/musicnote.svg" alt="YouTube Music"><span>YouTube Music</span></a></li>
   <li><a href="https://www.deezer.com/us/artist/294319151" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Deezer"><span>Deezer</span></a></li>
   <li><a href="https://tidal.com/browse/artist/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="TIDAL"><span>TIDAL</span></a></li>
-  <li><a href="https://audiomack.com/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Audiomack"><span>Audiomack</span></a></li>
-  <li><a href="https://www.pandora.com/artist/studiorich/ARZ563fvKk56m6Z" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Pandora"><span>Pandora</span></a></li>
-  <li><a href="https://www.beatport.com/artist/studiorich/1278105" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Beatport"><span>Beatport</span></a></li>
-  <li><a href="https://www.mixcloud.com/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Mixcloud"><span>Mixcloud</span></a></li>
-    <li><a href="https://soundcloud.com/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Soundcloud"><span>Soundcloud</span></a></li>
-  <li><a href="https://studiorich.bandcamp.com" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Bandcamp"><span>Bandcamp</span></a></li>
-<li><a href="https://www.musixmatch.com/artist/StudioRich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Musixmatch"><span>Musixmatch</span></a></li>
-
-
-
-
-        
 </ul>
 
 <!-- 📱 Social & Short-Form -->
