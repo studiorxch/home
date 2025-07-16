@@ -19,16 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site settings
-title: "StudioRich | Lo-Fi Experiences"
+# title: "StudioRich | Lo-Fi Experiences"
 email: "hello@studiorich.shop"
 description: "Explore the world of Lo-Fi vibes, music experiences, and spa therapies with StudioRich."
-baseurl: ""  # If you're using a subpath like /blog, add it here (leave blank for root)
-url: "https://studiorich.shop"  # Your actual base domain
+baseurl: ""
+url: "https://studiorich.shop"
 twitter_username: "studiorxch"
 github_username: "studiorxch"
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -42,8 +40,13 @@ defaults:
       last_modified_at: 2025-06-12
       sitemap: true
 
-include:
-  - assets/main.css
+sass:
+  sass_dir: _sass
+
+
+
+
+
 
 # Add custom collections if needed (example: Blog, Music, etc.)
 collections:
@@ -53,14 +56,14 @@ collections:
   events: # Stranger Vibes, Spa Therapy, Ramen Town
     output: true
     permalink: /events/:slug/
-  tracks: # Music Library 
+  tracks: # Music Library
     output: true
     permalink: /tracks/:name/
-  shop: # Shop 
+  shop: # Shop
     output: true
-    permalink: /shop/:name/
+    permalink: /shop/:title/
 
-    
+
 # Exclude unnecessary files from processing
 exclude:
   - .sass-cache/
@@ -71,30 +74,12 @@ exclude:
   - node_modules/
   - vendor/
   - _site/
-  
+
 # Add custom settings as needed
 favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you want one
 
 # Google Analytics (optional, add only if you have GA setup)
 google_analytics: "G-E5KN2YJJKF"
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+redirect_from:
+  json: false

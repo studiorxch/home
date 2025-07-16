@@ -17,11 +17,11 @@
   <meta name="twitter:site" content="@studiorxch">
 
 
-  {% if jekyll.environment == "production" %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  {% else %}
-    <!-- Canonical disabled during dev to avoid localhost indexing -->
-  {% endif %}
+{% if jekyll.environment == "production" %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% else %}
+  <!-- Canonical disabled during dev to avoid localhost indexing -->
+{% endif %}
 
   <!-- 📎 Identity Links (rel=me) -->
   <link rel="me" href="https://studiorich.shop" />
