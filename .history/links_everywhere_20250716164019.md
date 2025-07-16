@@ -51,8 +51,7 @@ image: /assets/covers/everywhere-cover.webp
 
 
 
-<h3>🌍 More Platforms</h3>
-<p>(May Require App or Regional Access)</p>
+<h3>🌍 More Platforms (May Require App or Regional Access)</h3>
 <ul class="link-list">
   <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
   <li><a href="https://www.qobuz.com/us-en/interpreter/studiorich/25018851" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
