@@ -40,12 +40,19 @@ image: /assets/covers/everywhere-cover.webp
 </ul>
 
 
+<!-- 🧘 Fitness & Video -->
+<h3>🧘 Fitness & Video</h3>
+<ul class="link-list">
+  <li><a href="https://www.peloton.com/music/artist/your-id" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Peloton"><span>Peloton</span></a></li>
+  <li><a href="https://www.slacker.com/artist/your-id" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Slacker"><span>Slacker Radio</span></a></li>
+  <li><a href="https://www.vevo.com/artist/your-id" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Vevo"><span>Vevo</span></a></li>
+</ul>
 
 
 <h3>🌍 More Platforms (May Require App or Regional Access)</h3>
 <ul class="link-list">
-  <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
-  <li><a href="https://www.qobuz.com/us-en/interpreter/studiorich/25018851" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
+  <li><a href="https://www.boomplay.com/artist/your-id" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
+  <li><a href="https://www.qobuz.com/artist/your-id" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
   <li><a href="hhttps://www.shazam.com/artist/studiorich/1785907828" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Shazam"><span>Shazam <em>(ID Only)</em></span></a></li>
 </ul>
 
