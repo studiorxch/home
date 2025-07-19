@@ -1,15 +1,24 @@
 ---
 layout: default
-title: StudioRich | Tuesday Schedule
-permalink: /schedule/tuesday
-description: "Join us for StudioRich's Tuesday livestream - lo-fi sound therapy and creative sessions every week."
-image: /assets/covers/schedule-tuesday.webp
+title: StudioRich | Sunday Schedule
+permalink: /schedule/sunday
+description: "Join us for StudioRich's sunday livestream - lo-fi sound therapy and creative sessions every week."
+image: /assets/covers/schedule-sunday.webp
+redirect_from:
+  - /pages/schedule
+  - /blogs/lo-fi-sundays
+  - /pages/lo-fi-sundays-sweet-dreams
+
 
 ---
 {% include components/hero.html 
   image=page.image 
-  title="Tuesday" %}
+  title="Sunday" %}
 
+
+{% include components/hero.html 
+  image="/assets/img/hero-spatherapy.webp" 
+  title="A Lo-Fi Sonic Massage Experience" %}
 
 {% include components/youtube-carousel.html video_urls="
 https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r, 
