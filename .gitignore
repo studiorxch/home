@@ -6,6 +6,9 @@ _site/
 _tracks.zip
 _dev
 README-Blog-Template.md
+_blog/_bak
+
+
 
 # Sass cache
 .sass-cache/
