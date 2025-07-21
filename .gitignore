@@ -5,6 +5,7 @@ _site/
 .jekyll-metadata
 _tracks.zip
 _dev
+README-Blog-Template.md
 
 # Sass cache
 .sass-cache/

@@ -1,11 +1,9 @@
 <!--
 📝 StudioRich Blog Template
 
-SECTION: Signal Archive
-
 INSTRUCTIONS:
 - This blog post template is managed by the Narrative Comms Director.
-- Use it to publish or draft long-form features based on track discoveries, cultural references, or visual pairings *outside* of StudioRich.
+- Use it to publish or draft long-form features based on track discoveries, cultural references, or visual pairings.
 - Paste new finds or article links into this doc and label them clearly for review.
 - When submitting a draft, include:
   • A featured image path
