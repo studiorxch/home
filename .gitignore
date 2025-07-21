@@ -3,6 +3,8 @@
 _site/
 .jekyll-cache/
 .jekyll-metadata
+_tracks.zip
+_dev
 
 # Sass cache
 .sass-cache/
@@ -29,4 +31,7 @@ _tracks/.obsidian/
 
 #scripts
 generate_library_yml.py_docs/
+generate_product_redirects.py
+generate_library_yml.py
+generate_library_ym-bak.py
 
