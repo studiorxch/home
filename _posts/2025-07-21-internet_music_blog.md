@@ -4,7 +4,7 @@ layout: post
 title: "From Vaporwave to Lo-Fi Irony: Tracing the Tone of Internet Music"
 date: 2025-07-21
 description: "Exploring the soft, playful, and often ironic aesthetic of early internet music—how it shaped sound, identity, and meme-culture roots."
-image: /assets/img/blog/internet-music-tone.jpg
+image: /assets/img/blog/default.webp
 tags:
   - internet-music
   - vaporwave

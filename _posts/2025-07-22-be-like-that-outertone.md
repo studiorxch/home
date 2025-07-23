@@ -2,7 +2,7 @@
 title: "Truth Is & Branquis – Be Like That: Future Bass with Feeling"
 date: 2025-07-22
 description: "A vibrant, emotional future bass track from Outertone’s rising stars Truth Is & Branquis."
-image: /assets/img/blog/be-like-that-outertone.jpg
+image: /assets/img/blog/default.webp
 layout: post
 tags: [futurebass, outertone, electronic, vocaldrop, synthwavefeelings]
 ---
