@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% include components/hero.html
+  image="/assets/img/graffiti-mascot-ink-doodle.webp"
+  title="StudioRich<br/>Presskit" %}
+  
+<div class="blog-feed">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="blog-card">
+      <div class="blog-thumb">
+        <img src="{{ post.image | default: '/assets/img/blog/default.jpg' }}" alt="{{ post.title }}">
+        <div class="blog-date">
+          {{ post.date | date: "%d" }}<br>{{ post.date | date: "%b" }}
+        </div>
+        <div class="blog-text-overlay">
+          <div class="blog-title">{{ post.title }}</div>
+          <div class="blog-desc">{{ post.description | truncate: 90 }}</div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>

@@ -107,26 +107,17 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0.75rem 0.75rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 80%);
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.2) 60%, transparent);
+  color: #fff;
 }
 
 .blog-title {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.25rem;
   line-height: 1.3;
 }
-
-.blog-desc {
-  font-size: 0.85rem;
-  color: #ccc;
-  margin: 0;
-  line-height: 1.4;
-}
-
-
-
 
 .blog-meta {
   font-size: 0.75rem;
@@ -136,7 +127,12 @@
   margin-bottom: 0.25rem;
 }
 
-
+.blog-desc {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 0;
+  line-height: 1.4;
+}
 
 .blog-date {
   position: absolute;

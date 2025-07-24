@@ -60,9 +60,6 @@ collections:
     output: true
     permalink: /shop/:title/
 
-#coming soon: features, zines, drops
-
-
 
 # Exclude unnecessary files from processing
 exclude:
