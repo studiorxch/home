@@ -17,7 +17,7 @@ image: /assets/covers/everywhere-cover.webp
   <section class="link-hub">
 <h2>Connect with StudioRich</h2>
 
-<!-- Global Platforms -->
+<!-- 🌍 Global Platforms -->
 <h3><img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Global Platforms</h3>
 <ul class="link-list">
   <li><a href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Amazon Music"><span>Amazon Music</span></a></li>

@@ -17,8 +17,8 @@ image: /assets/covers/everywhere-cover.webp
   <section class="link-hub">
 <h2>Connect with StudioRich</h2>
 
-<!-- Global Platforms -->
-<h3><img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Global Platforms</h3>
+<!-- 🌍 Global Platforms -->
+<h3>🌍 Global Platforms</h3>
 <ul class="link-list">
   <li><a href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Amazon Music"><span>Amazon Music</span></a></li>
   <li><a href="https://music.apple.com/us/artist/studiorich/1785907828" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Apple Music"><span>Apple Music</span></a></li>
@@ -38,7 +38,7 @@ image: /assets/covers/everywhere-cover.webp
 
 
 <!-- 📱 Social & Short-Form -->
-<h3><img src="/assets/icons/satelitedish.svg" alt="Satelite Dish icon" style="width: 1em; vertical-align: middle;" /> Social & Short‑Form</h3>
+<h3>📱 Social & Short‑Form</h3>
 <ul class="link-list">
   <li><a href="https://www.tiktok.com/@Studi.Rich" target="_blank"><img src="/assets/icons/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/icons/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
@@ -62,7 +62,7 @@ image: /assets/covers/everywhere-cover.webp
 </ul>
 
 
-<h3><img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> More Platforms</h3>
+<h3><img src="/assets/icons/record.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> More Platforms</h3>
 <p>(May Require App or Regional Access)</p>
 <ul class="link-list">
   <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
@@ -70,7 +70,7 @@ image: /assets/covers/everywhere-cover.webp
 
 </ul>
 
-<p class="platform-note"><img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
+<p class="platform-note">⚠️ Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
 
 <!-- 🔁 Return to Featured Platforms -->
 <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Featured platforms → <a href="/links">studiorich.shop/links</a>
