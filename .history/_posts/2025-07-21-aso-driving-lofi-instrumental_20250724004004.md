@@ -4,7 +4,7 @@ layout: post
 title: "Aso – Driving: A Warm, Introspective Lo-Fi Instrumental"
 date: 2025-07-21
 description: "Aso’s track 'Driving' is a dusk-lit lo-fi loop that captures the feeling of motion and memory."
-image: /assets/img/blog/aso-driving-lofi-instrumental.webp
+image: /assets/img/blog/aso-driving.webp
 tags: [lofi, instrumental, chillhop, roadmusic]
 ---
 
