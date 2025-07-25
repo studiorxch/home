@@ -184,19 +184,14 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.hero {
-  position: relative;
-  overflow: hidden;
-}
 
-.hero::after {
+.hero-image::after {
   content: "";
   position: absolute;
-  bottom: 0; /* locks to bottom of .hero container */
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%; /* or tweak this — try 25%, 50%, etc. */
-  background: linear-gradient(to bottom, rgba(199, 103, 103, 0) 0%, #0a0a0a 100%);
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #0a0a0a 100%);
   pointer-events: none;
-  z-index: 1;
 }
