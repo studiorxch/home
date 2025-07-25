@@ -1,0 +1,28 @@
+      <div class="share-buttons">
+        <p><strong>Share this post:</strong></p>
+        {% assign full_url = site.url | append: page.url %}
+        <a href="https://www.threads.net/intent/post?text={{ page.title }} by StudioRich — {{ full_url }}" target="_blank"
+          title="Share on Threads" data-share="threads">
+          <img src="/assets/icons/threads.svg" alt="Threads" height="32">
+        </a>
+        <a href="https://bsky.app/intent/compose?text={{ page.title }} by StudioRich — {{ full_url }}" target="_blank"
+          title="Share on Bluesky" data-share="bluesky">
+          <img src="/assets/icons/bluesky.svg" alt="Bluesky" height="32">
+        </a>
+        <a href="https://x.com/intent/tweet?text={{ page.title }} by StudioRich&url={{ full_url }}" target="_blank"
+          title="Share on X" data-share="x">
+          <img src="/assets/icons/x.svg" alt="X" height="32">
+        </a>
+        <a href="https://pinterest.com/pin/create/button/?url={{ full_url }}&media={{ site.url }}{{ page.image }}&description={{ page.description }}"
+          target="_blank" title="Pin on Pinterest" data-share="pinterest">
+          <img src="/assets/icons/pinterest.svg" alt="Pinterest" height="32">
+        </a>
+        <a href="mailto:?subject={{ page.title }} by StudioRich&body=Check out this track: {{ full_url }}" target="_blank"
+          title="Share via Email" data-share="email">
+          <img src="/assets/icons/email.svg" alt="Email" height="32">
+        </a>
+        <a href="sms:?&body=Check out {{ page.title }} by StudioRich — {{ full_url }}" target="_blank"
+          title="Share via Messages" data-share="sms">
+          <img src="/assets/icons/messages.svg" alt="Messages" height="32">
+        </a>
+      </div>
