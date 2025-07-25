@@ -23,7 +23,6 @@
 
 
   position: fixed;
-  z-index: 10; /* ⬅️ This is now above the gradient */
   top: 0;
   left: 0;
   width: 100%;
@@ -39,8 +38,8 @@
   width: 100%;
   padding: 0 2rem;
   box-sizing: border-box;
-  position: relative;
-  z-index: 1000;
+    position: relative;
+  z-index: 100;
 }
 
 header.site-header::after {
@@ -52,7 +51,7 @@ header.site-header::after {
   height: 250px; /* adjust as needed */
   background: linear-gradient(to bottom, #0a0a0a 0%, rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
-  z-index: 0;
+  z-index: 3;
 }
 
 

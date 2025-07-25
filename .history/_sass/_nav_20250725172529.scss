@@ -2,6 +2,7 @@
 .logo img {
   height: 50px;
   justify-self: start;
+  z-index: 25;
 }
 
 .main-nav a {
@@ -23,10 +24,10 @@
 
 
   position: fixed;
-  z-index: 10; /* ⬅️ This is now above the gradient */
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
   box-sizing: border-box;
 
 }
@@ -39,8 +40,6 @@
   width: 100%;
   padding: 0 2rem;
   box-sizing: border-box;
-  position: relative;
-  z-index: 1000;
 }
 
 header.site-header::after {
@@ -52,7 +51,7 @@ header.site-header::after {
   height: 250px; /* adjust as needed */
   background: linear-gradient(to bottom, #0a0a0a 0%, rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
-  z-index: 0;
+  z-index: 3;
 }
 
 
