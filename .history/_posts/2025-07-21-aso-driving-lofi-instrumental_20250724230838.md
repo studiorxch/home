@@ -17,7 +17,7 @@ tags: [lofi, instrumental, chillhop, roadmusic]
 
 ---
 
-## <img src="/assets/icons/gamecontroller.svg" alt="Game Controller icon" style="width: 1em; vertical-align: middle;" /> Vibe Check
+## <img src="/assets/icons/gamecontrollers.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Vibe Check
 “Driving” by Aso rolls in like a memory. It’s dusk-colored and road-worn, built from mellow piano motifs, head-nod percussion, and a gentle hum of solitude. The track captures the bittersweet clarity of motion — like cruising familiar streets with no destination, only sound.
 
 This is music for when the sun folds itself into the horizon, and thoughts stretch long across the dashboard.

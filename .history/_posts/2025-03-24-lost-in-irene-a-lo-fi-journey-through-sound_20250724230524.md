@@ -19,5 +19,5 @@ tags: [CassetteVibes, ChillHop, Lofi, nostalgia, vinyl]
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## <img src="/assets/icons/cat-face.svg" alt="Cat icon" style="width: 1em; vertical-align: middle;" /> Filed Under
 #CassetteVibes #ChillHop #Lofi #nostalgia #vinyl

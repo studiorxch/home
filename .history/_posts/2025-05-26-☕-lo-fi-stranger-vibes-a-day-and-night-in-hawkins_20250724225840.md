@@ -82,5 +82,5 @@ tags: [Chill Beats, ChillBeats, ChillHop, ChillVibes, StrangerThings, ambient, l
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## 📦 Filed Under
 #ChillBeats #ChillHop #ChillVibes #StrangerThings #ambient #lofi

@@ -27,7 +27,7 @@ The setup? An analog rig that prints photos from 2-bit sensors, channeling retro
 
 ---
 
-## <img src="/assets/icons/gameboy.svg" alt="Gameboy icon" style="width: 1em; vertical-align: middle;" />  What It Felt Like
+## <img src="/assets/icons/gameboy.svg" alt="Person icon" style="width: 1em; vertical-align: middle;" />  What It Felt Like
 
 Imagine stepping into a moment and leaving with a memory that looks like early Pokémon dialogue — soft, square, and soulfully imperfect. No filters needed. Just time, tech, and a little visual poetry.
 

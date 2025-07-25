@@ -22,9 +22,9 @@ tags: [Chill Beats, ChillBeats, ChillHop, ChillVibes, StrangerThings, ambient, l
 
 ---
 <p>
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Featured: Tracks from StudioRich's Stranger Vibes series<br>
-<img src="/assets/icons/mic.svg" alt="Mic icon" style="width: 1em; vertical-align: middle;" /> Streamed live from The Vibe Station<br>
-<img src="/assets/icons/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle;" /> Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
+🎧 Featured: Tracks from StudioRich's Stranger Vibes series<br>
+📍 Streamed live from The Vibe Station<br>
+💡 Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
 </p>
 <p>Watching here? You can also explore each track in our music library—just click a title to listen directly.</p>
 
@@ -82,5 +82,5 @@ tags: [Chill Beats, ChillBeats, ChillHop, ChillVibes, StrangerThings, ambient, l
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## 📦 Filed Under
 #ChillBeats #ChillHop #ChillVibes #StrangerThings #ambient #lofi

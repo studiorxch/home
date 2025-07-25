@@ -19,7 +19,7 @@ tags:
 
 ---
 
-## <img src="/assets/icons/dot-matrix-heart.svg" alt="Dot Matrix icon" style="width: 1em; vertical-align: middle;" />  Analog Hearts, Digital Dreams
+## <img src="/assets/icons/pixelheart.svg" alt="Pixel Heartr icon" style="width: 1em; vertical-align: middle;" />  Analog Hearts, Digital Dreams
 
 Weddings tend to be high-gloss. But this one leaned grayscale — powered by a 1998 Game Boy Camera, some brilliant hacking, and a love for pixelated memory. Photographer Brendan Barry crafted a custom booth that captured lo-fi portraits with that unmistakable dot-matrix warmth.
 
@@ -27,7 +27,7 @@ The setup? An analog rig that prints photos from 2-bit sensors, channeling retro
 
 ---
 
-## <img src="/assets/icons/gameboy.svg" alt="Gameboy icon" style="width: 1em; vertical-align: middle;" />  What It Felt Like
+## <img src="/assets/icons/gameboy.svg" alt="Person icon" style="width: 1em; vertical-align: middle;" />  What It Felt Like
 
 Imagine stepping into a moment and leaving with a memory that looks like early Pokémon dialogue — soft, square, and soulfully imperfect. No filters needed. Just time, tech, and a little visual poetry.
 
