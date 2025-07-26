@@ -53,7 +53,6 @@ hr {
 }
 
 blockquote {
-  font-size: 1.2em;
   font-style: italic;
   color: var(--accent-color);
   border-left: 3px solid var(--accent-color);
@@ -62,13 +61,6 @@ blockquote {
 
 }
 
-.image-caption {
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: 0.6;
-  margin-top: 0.5rem;
-  line-height: 1.4;
-}
 
 
 /* ===============================
@@ -79,7 +71,7 @@ blockquote {
 }
 
 .icon-sm {
-  height: 24px;
+  height: 20px;
   vertical-align: middle;
   margin-right: 6px;
   filter: brightness(0) invert(1);
@@ -196,9 +188,6 @@ blockquote {
   width: 1em;
 }
 
-ul li::marker {
-  color: red;
-}
 
 
 /* ===============================
