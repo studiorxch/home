@@ -54,11 +54,11 @@ image: /assets/covers/everywhere-cover.webp
   <li><a href="https://x.com/studiorxch" target="_blank"><img src="/assets/icons/x.svg" alt="X"><span>X (Twitter)</span></a></li>
   <li><a href="https://www.threads.net/@_studiorich" target="_blank"><img src="/assets/icons/threads.svg" alt="Threads"><span>Threads</span></a></li>
   <li><a href="https://bsky.app/profile/studiorich.shop" target="_blank"><img src="/assets/icons/bluesky.svg" alt="Bluesky"><span>Bluesky</span></a></li>
-  <li><a href="https://patreon.com/StudioRich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Patreon"><span>Patreon</span></a></li>
+  <li><a href="https://patreon.com/StudioRich" target="_blank"><img src="/assets/icons/patreon.svg" alt="Patreon"><span>Patreon</span></a></li>
   <li><a href="https://ko-fi.com/studiorich" target="_blank"><img src="/assets/icons/kofi.svg" alt="Ko-fi"><span>Ko-fi</span></a></li>
-  <li><a href="https://mastodon.social/@studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Mastodon"><span>Mastodon</span></a></li>
-  <li><a href="https://www.linkedin.com/in/richielau" target="_blank"><img src="/assets/icons/musicnote.svg" alt="LinkedIn"><span>LinkedIn</span></a></li>
-  <li><a href="https://github.com/studiorxch" target="_blank"><img src="/assets/icons/musicnote.svg" alt="GitHub"><span>GitHub</span></a></li>
+  <li><a href="https://mastodon.social/@studiorich" target="_blank"><img src="/assets/icons/mastodon.svg" alt="Mastodon"><span>Mastodon</span></a></li>
+  <li><a href="https://www.linkedin.com/in/richielau" target="_blank"><img src="/assets/icons/linkedin.svg" alt="LinkedIn"><span>LinkedIn</span></a></li>
+  <li><a href="https://github.com/studiorxch" target="_blank"><img src="/assets/icons/github.svg" alt="GitHub"><span>GitHub</span></a></li>
 </ul>
 
 
