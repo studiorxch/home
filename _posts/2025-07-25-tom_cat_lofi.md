@@ -5,7 +5,7 @@ date: 2025-07-25
 description: "A satirical interview with a feline philosopher reveals unexpected truths about lo-fi lifestyle, naps, and resistance to productivity culture."
 image: /assets/img/blog/tom-the-cat.webp
 tags: [lofi, ambientattitude, catsbeingdeep, studiofieldnotes]
-category: Field Notes
+category: field-notes
 ---
 
 # Tom the Cat: A Lo-Fi Icon of Anti-Hustle Wisdom
