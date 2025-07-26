@@ -138,13 +138,13 @@
   line-height: 1;
   white-space: nowrap;
 }
-  /*blog*/
+  /*round circle button ends (blog)*/
 
   .circle-button {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: sans-serif;
   color: white;
 }
@@ -171,3 +171,4 @@
   color: #fff;
   letter-spacing: 1px;
 }
+  /*round circle button ends*/
