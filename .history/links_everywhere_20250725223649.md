@@ -3,7 +3,7 @@ layout: default
 title: StudioRich | Links Everywhere
 description: "Explore all the global platforms where StudioRich music lives – from Boomplay to Qobuz, Mdundo, and more."
 permalink: /links-everywhere/
-image: /assets/img/hero-scratch.webp
+image: /assets/covers/everywhere-cover.webp
 ---
 
 {% include components/hero.html

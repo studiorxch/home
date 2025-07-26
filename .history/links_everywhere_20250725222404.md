@@ -3,7 +3,7 @@ layout: default
 title: StudioRich | Links Everywhere
 description: "Explore all the global platforms where StudioRich music lives – from Boomplay to Qobuz, Mdundo, and more."
 permalink: /links-everywhere/
-image: /assets/img/hero-scratch.webp
+image: /assets/covers/everywhere-cover.webp
 ---
 
 {% include components/hero.html
@@ -43,7 +43,7 @@ image: /assets/img/hero-scratch.webp
   <li><a href="https://www.tiktok.com/@Studi.Rich" target="_blank"><img src="/assets/icons/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/icons/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
   <li><a href="https://www.facebook.com/StudioRichNYC/" target="_blank"><img src="/assets/icons/facebook.svg" alt="Facebook"><span>Facebook</span></a></li>
-  <li><a href="https://www.snapchat.com/add/studiorich" target="_blank"><img src="/assets/icons/snapchat.svg" alt="Snapchat"><span>Snapchat</span></a></li>
+  <li><a href="https://www.snapchat.com/add/studiorich" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Snapchat"><span>Snapchat</span></a></li>
   <li><a href="https://www.twitch.tv/studiorich" target="_blank"><img src="/assets/icons/twitch.svg" alt="Twitch"><span>Twitch</span></a></li>
   <li><a href="https://www.youtube.com/@Studio-Rich" target="_blank"><img src="/assets/icons/youtube.svg" alt="YouTube"><span>YouTube</span></a></li>
 </ul>
@@ -63,14 +63,14 @@ image: /assets/img/hero-scratch.webp
 
 
 <h3><img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> More Platforms</h3>
-<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;">(May Require App or Regional Access)</p>
+<p>(May Require App or Regional Access)</p>
 <ul class="link-list">
-  <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/boomplay.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
-  <li><a href="https://www.qobuz.com/us-en/interpreter/studiorich/25018851" target="_blank"><img src="/assets/icons/qobuz.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
+  <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
+  <li><a href="https://www.qobuz.com/us-en/interpreter/studiorich/25018851" target="_blank"><img src="/assets/icons/musicnote.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
 
 </ul>
 
-<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;"><img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
+<p class="platform-note"><img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
 
 <!-- 🔁 Return to Featured Platforms -->
 <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Featured platforms → <a href="/links">studiorich.shop/links</a>
