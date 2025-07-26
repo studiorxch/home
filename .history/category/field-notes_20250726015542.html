@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Field Notes"
+permalink: /category/field-notes/
+image: /assets/img/blog/hero-field-notes.webp
+---
+
+
+{% include components/hero.html
+  image=page.image
+  title="Field Notes"
+  subtitle="A full directory of platforms where our music lives—regional, global, niche, and next-gen."
+%}
+
+<h1>Field Notes</h1>
+
+<ul>
+  {% for post in site.categories["Field Notes"] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span> – {{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>

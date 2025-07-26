@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Warped Honey"
+permalink: /album/warped-honey/
+image: /album/img/hero-warped-honey.webp
+tracklist:
+  - "Warped Honey"
+  - "Pocket Garden"
+  - "Hive Code"
+  - "Harmonic Loom"
+  - "Amber Flow"
+  - "Nectar Splice"
+---
+---
+
+
+{% include components/hero.html
+  image=page.image
+  title="Warped Honey"
+  subtitle="The Original Space Honey"
+%}
+
+<h1>Field Notes</h1>
+
+{% assign track_page = site.tracks | where: "title", track.title | first %}
+{% if track_page %}
+  <a href="{{ track_page.url }}">{{ track.title }}</a>
+{% else %}
+  {{ track.title }}
+{% endif %}
