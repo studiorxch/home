@@ -3,7 +3,7 @@ title: "Kitchen Song: A Love Letter to Lo-Fi Solitude"
 date: 2025-07-26
 image: /assets/img/blog/opal-mag-kitchen-song.webp
 description: "Opal Mag’s 'Kitchen Song' drifts like a diary entry set to reverb—ambient pop made for quiet rituals, soft solitude, and lo-fi stillness."
-category: Field Notes
+category: field-notes
 tags: [lofi, ambient, indie-pop, bedroom-recording]
 filed_under:
   - ambientattitude
