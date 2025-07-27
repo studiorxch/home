@@ -28,28 +28,6 @@ twitter_username: "studiorxch"
 github_username: "studiorxch"
 repository: studiorxch/home
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      last_modified_at: 2025-06-12
-      sitemap: true
-
-sass:
-  sass_dir: _sass
-
-
-
-timezone: America/New_York
-
-
-
 # Add custom collections if needed (example: Blog, Music, etc.)
 collections:
   events: # Stranger Vibes, Spa Therapy, Ramen Town
@@ -62,9 +40,35 @@ collections:
     output: true
     permalink: /shop/:title/
 
-#coming soon: features, zines, drops
+defaults:
+  scope:
+    path: ""
+  values:
+    last_modified_at: 2025-06-12
+    sitemap: true
 
+include:
+  - assets/icons
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-read-file
+
+sass:
+  sass_dir: _sass
+
+timezone: America/New_York
+
+whitelist:
+  - jekyll-readme-index
+  - jekyll-include-cache
+  - jekyll-read-file
+
+# Or if you're on newer Jekyll: (how new is new?)
+safe: false
 
 # Exclude unnecessary files from processing
 exclude:

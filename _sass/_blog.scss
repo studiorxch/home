@@ -214,11 +214,35 @@
 }
 /* update */
 .field-notes-feed {
-  margin-top: -150px; // raise it over the hero if desired
-  background: rgba(10,10,10,0.7);
+  margin-left: 90px;
+  margin-top: -150px;
+  max-width: 600px;
+  width: 100%;// raise it over the hero if desired
+  background: rgba(10,10,10,0.0);
   padding: 2rem;
   border-radius: 12px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(.01px);
+  z-index: 2;
+  position: relative;
+}
+.field-notes-feed li {
+  list-style: none;
+  margin-bottom: 1.75rem;
+}
+.field-notes-feed a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.field-notes-feed a:hover {
+  text-decoration: underline;
+}
+.field-notes-feed span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.3rem;
 }
 
 .field-notes-entry {
@@ -229,6 +253,15 @@
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 1rem;
 }
+
+.entry-icon {
+  width: 1.5em;
+  height: auto;
+  margin-right: 0.5em;
+  margin-left: -45px; /* align with text */
+  vertical-align: middle;
+}
+
 
 .entry-left {
   flex: 1;

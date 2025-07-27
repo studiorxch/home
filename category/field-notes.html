@@ -12,15 +12,25 @@ image: /assets/img/blog/hero-field-notes.webp
   subtitle="Quiet observations from the lo-fi underground."
 %}
 
-<h1>Field Notes</h1>
+
 
 <div class="field-notes-feed">
+
   {% for post in site.categories["field-notes"] %}
     <div class="field-notes-entry">
       <div class="entry-left">
+
         <h2 class="entry-title">
-          <a href="{{ post.url }}">{{ post.icon }} {{ post.title }}</a>
+        {% if post.icon %}
+        <img src="{{ post.icon }}" alt="Field Notes icon" class="entry-icon" width="24" height="24" />
+        {% endif %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
         </h2>
+
+        {% if post.image %}
+          <img src="{{ post.image }}" alt="{{ post.title }} thumbnail" class="entry-image" />
+        {% endif %}
+
         {% if post.description %}
           <p class="entry-description">{{ post.description }}</p>
         {% endif %}
