@@ -5,6 +5,7 @@ description: "2HR lo-fi mix inspired by Stranger Things. From analog warmth to o
 image: /assets/img/blog/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.webp
 layout: post
 tags: [chill-beats, chillbeats, chillhop, chillvibes, strangerthings, ambient, lo-fi]
+category: field-notes
 ---
 
 # Lo-Fi Stranger Vibes: A Day and Night in Hawkins
