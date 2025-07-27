@@ -1,18 +1,23 @@
 ---
-title: "Lo-Fi Stranger Vibes: A Day and Night in Hawkins"
-date: 2025-05-26
-description: "2HR lo-fi mix inspired by Stranger Things. From analog warmth to otherworldly chill."
-image: /assets/img/blog/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.webp
 layout: post
-tags: [chill-beats, chillbeats, chillhop, chillvibes, strangerthings, ambient, lo-fi]
 category: field-notes
+date: 2025-05-26
+title: "Lo-Fi Stranger Vibes: A Day and Night in Hawkins"
+description: "2HR lo-fi mix inspired by Stranger Things. From analog warmth to otherworldly chill."
+icon: /assets/icons/walkie.svg
+image: /assets/img/blog/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.webp
+tags: [chill-beats, chillbeats, chillhop, chillvibes, strangerthings, ambient, lo-fi]
+redirect_from:
+  - /2025/05/26/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
+  - /2025/05/26/☕-lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
+
 ---
 
 # Lo-Fi Stranger Vibes: A Day and Night in Hawkins
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3_U9pLLI6Tk?si=Lr2iOkhznKm96Lnm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3_U9pLLI6Tk?si=KzXeYt7ZHneZRr-x&amp;start=29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>We just wrapped a 2HR ambient lo-fi session inspired by the world of Stranger Things. The result? <em>Stranger Vibes</em> — our longest mix yet and our weirdest.</p>
 <p>This isn’t just spooky pads and synth lines. It’s middle school angst, walkie-talkie reverb, and the gentle hum of a bike wheel spinning after dark.</p>
@@ -20,9 +25,9 @@ category: field-notes
 
 ---
 <p>
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Featured: Tracks from StudioRich's Stranger Vibes series<br>
-<img src="/assets/icons/mic.svg" alt="Mic icon" style="width: 1em; vertical-align: middle;" /> Streamed live from The Vibe Station<br>
-<img src="/assets/icons/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle;" /> Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
+<img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Featured: Tracks from StudioRich's Stranger Vibes series<br>
+<img src="/assets/icons/mic.svg" alt="Mic icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Streamed live from The Vibe Station<br>
+<img src="/assets/icons/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
 </p>
 <p>Watching here? You can also explore each track in our music library—just click a title to listen directly.</p>
 
@@ -43,13 +48,13 @@ category: field-notes
 0:28:52 <a href="/tracks/no-signal/?autoplay=1">No Signal</a><br>
 0:32:10 <a href="/tracks/red-sky-break-s01/?autoplay=1">Red Sky Break (A-Side)</a><br>
 0:34:17 <a href="/tracks/muted-sunrise-s01/?autoplay=1">Muted Sunrise (A-Side)</a><br>
-0:36:56 <a href="/tracks/nowhere-shortcut/?autoplay=1">Nowhere Shortcut</a><br>
+0:36:56 <a href="/tracks/nowhere-shortcut/?autoplay=1">Nowhere Shortcut</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" style="width: 1em; vertical-align: middle; margin: 0;" /><br>
 0:38:50 <a href="/tracks/no-signal-s01/?autoplay=1">No Signal (A-Side)</a><br>
 0:40:49 <a href="/tracks/blue-hoodie-s01/?autoplay=1">Blue Hoodie (A-Side)</a><br>
 0:43:26 <a href="/tracks/brotherhood-beat-s01/?autoplay=1">Brotherhood Beat (A-Side)</a><br>
 0:45:25 <a href="/tracks/driveway-fadeout-s01/?autoplay=1">Driveway Fadeout (A-Side)</a><br>
 0:46:57 <a href="/tracks/fracture-point-break-s02/?autoplay=1">Fracture Point Break (B-Side)</a><br>
-0:49:26 <a href="/tracks/sidewalk-sunrise/?autoplay=1">Sidewalk Sunrise</a><br>
+0:49:26 <a href="/tracks/sidewalk-sunrise/?autoplay=1">Sidewalk Sunrise</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" style="width: 1em; vertical-align: middle; margin: 0;" /><br>
 0:51:50 <a href="/tracks/driveway-fadeout/?autoplay=1">Driveway Fadeout</a><br>
 0:53:27 <a href="/tracks/quiet-frequencies/?autoplay=1">Quiet Frequencies</a><br>
 0:55:45 <a href="/tracks/light-rewind-s02/?autoplay=1">Light Rewind (B-Side)</a><br>
@@ -69,7 +74,7 @@ category: field-notes
 1:26:02 <a href="/tracks/fracture-point-break-s04/?autoplay=1">Fracture Point Break (D-Side)</a><br>
 1:28:58 <a href="/tracks/flicker-at-dusk/?autoplay=1">Flicker At Dusk</a><br>
 1:31:22 <a href="/tracks/soft-return/?autoplay=1">Soft Return</a><br>
-1:33:55 <a href="/tracks/fade-out-glow-s01/?autoplay=1">Fade Out Glow (A-Side)</a><br>
+1:33:55 <a href="/tracks/fade-out-glow-s01/?autoplay=1">Fade Out Glow (A-Side)</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" style="width: 1em; vertical-align: middle; margin: 0;" /><br>
 1:35:45 <a href="/tracks/run-loop-s01/?autoplay=1">Run Loop (A-Side)</a><br>
 1:37:46 <a href="/tracks/headphones-in/?autoplay=1">Headphones In</a><br>
 1:40:05 <a href="/tracks/red-sky-break/?autoplay=1">Red Sky Break</a><br>

@@ -22,6 +22,7 @@ genre:
 bpm: 101
 key: Eb
 image_jpg: /assets/covers/nowhere-shortcut.jpg
+youtube: https://www.youtube.com/watch?v=3_U9pLLI6Tk&t=2226s
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

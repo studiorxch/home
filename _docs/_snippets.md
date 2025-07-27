@@ -4,9 +4,27 @@
 bundle exec jekyll clean
 bundle exec jekyll build
 bundle exec jekyll serve
+
+-----
+
 ---
-git add .
-git commit -m "post layout added"
+
+bundle exec jekyll serve --future
+
+
+---
+
+
+
+# git list push:
+git add assets/icons/linkedIn.svg
+git commit -m "Schedule Update"
+git push origin main
+
+
+
+git add . 
+git commit -m "redirect stranger vibes update"
 git push origin main
 
 
