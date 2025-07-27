@@ -22,10 +22,11 @@ image: /assets/img/blog/hero-field-notes.webp
 
         <h2 class="entry-title">
         {% if post.icon %}
-        <img src="{{ post.icon }}" alt="Field Notes icon" class="entry-icon" width="24" height="24" />
+            <img src="{{ post.icon }}" alt="{{ post.title }} icon" class="entry-icon" />
         {% endif %}
         <a href="{{ post.url }}">{{ post.title }}</a>
         </h2>
+
 
 
         {% if post.description %}
@@ -40,7 +41,7 @@ image: /assets/img/blog/hero-field-notes.webp
       </div>
       {% if post.image %}
         <div class="entry-thumbnail">
-          <img src="{{ post.image }}" alt="{{ post.title }} thumbnail">
+          <a href="{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.title }} thumbnail"></a>
         </div>
       {% endif %}
     </div>
