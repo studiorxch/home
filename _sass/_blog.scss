@@ -264,18 +264,8 @@
   color: #bbb;
   margin: 0.25rem 0 0.5rem 0;
 }
-.entry-icon {
-  width: 1.25em;
-  height: 1.25em;
-  flex-shrink: 0;
-}
-.entry-title .entry-icon {
-  position: absolute;
-  top: 0.1em;
-  left: 0;
-  width: 1.5em;
-  height: 1.5em;
-}
+
+
 .entry-left {
   flex: 1;
 }
@@ -318,6 +308,14 @@
   line-height: 1.2;
   margin: 0 0 1rem;
 }
+
+.entry-icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex-shrink: 0;
+    margin-left: -1.8em;
+}
+
 
 .entry-title a {
   font-size: inherit;
