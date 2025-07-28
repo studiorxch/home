@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: desktop
 title: Coming Soon
 permalink: /coming-soon/
 meta_title: StudioRich – Coming Soon
@@ -8,7 +8,6 @@ image: /assets/wallpapers/default.webp
 noindex: true
 
 redirect_from:
-  - /tracks/warped-honey/
   - /tracks/warped-honey/
   - /tracks/pulse-petals/
   - /tracks/voice-inside-static/

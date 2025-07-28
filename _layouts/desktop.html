@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.meta_title | default: page.title | append: ' | ' | append: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="{{ page.image }}">
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:image" content="{{ page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/img/default-share.jpg' }}">
+
+
+
+  </head>
+  <body class="desktop-page">
+    <div id="menu-bar">
+      <div class="menu-left">StudioRich OS</div>
+      <div class="menu-right"><span id="clock">Coming Soon</span></div>
+    </div>
+
+    <div id="desktop">
+      <div class="icon">
+        <img src="/assets/icons/folder-music.webp" alt="Music Folder" />
+        <span>Music</span>
+      </div>
+      <div class="icon">
+        <img src="/assets/icons/folder-zine.webp" alt="Zines Folder" />
+        <span>Zines</span>
+      </div>
+    </div>
+
+    <div class="window visible" id="window-comingsoon">
+      <div class="window-header">
+        <img src="/assets/icons/cursor.svg" alt="Cursor icon" style="width: 1em; vertical-align: middle; margin: 0;" />
+        Track Incoming…
+      </div>
+      <div class="window-body">
+        <p>This track or product isn’t live yet, but it’s in the works and coming soon.</p>
+        <ul style="margin-top: 1rem;">
+          <li>
+            <a href="/library/">
+              <img src="/assets/icons/headphones.svg" alt="Headphones" style="width: 1em; vertical-align: middle; margin: 0;" />
+              Explore all tracks
+            </a>
+          </li>
+          <li>
+            <a href="/links/">
+              <img src="/assets/icons/drop.svg" alt="Drop" style="width: 1em; vertical-align: middle; margin: 0;" />
+              Check out our latest drops
+            </a>
+          </li>
+          <li>
+            <a href="/blog/">
+              <img src="/assets/icons/disco-ball.svg" alt="Blog" style="width: 1em; vertical-align: middle; margin: 0;" />
+              Catch up on the blog
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
