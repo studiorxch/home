@@ -9,11 +9,12 @@ noindex: true
 
 redirect_from:
   - /tracks/warped-honey/
-  - /tracks/hive-code/
+  - /tracks/warped-honey/
   - /tracks/pulse-petals/
   - /tracks/voice-inside-static/
   - /tracks/midnight-bridge-run/
-  - /tracks/air-between-us-s0/
+  - /tracks/air-between-us-s01/
+  - /tracks/nothing-to-grab-onto/
   - /products/midnight-prowler-warning-crossbones-cat-graphic-tee-unisex-tee/
 ---
 
