@@ -41,14 +41,14 @@ redirect_from:
 </div>
 
 <div class="window visible" id="window-comingsoon">
-  <div class="window-header">⏳ Track Incoming…</div>
+  <div class="window-header"><img src="/assets/icons/cursor.svg" alt="Cursor icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Track Incoming…</div>
   <div class="window-body">
     <p>This track or product isn’t live yet, but it’s in the works and coming soon.</p>
 
     <ul style="margin-top: 1rem;">
-      <li><a href="/library/">🎧 Explore all tracks</a></li>
-      <li><a href="/links/">🆕 Check out our latest drops</a></li>
-      <li><a href="/blog/">📰 Catch up on the blog</a></li>
+      <li><a href="/library/"><img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle; margin: 0;" />  Explore all tracks</a></li>
+      <li><a href="/links/"><img src="/assets/icons/drop.svg" alt="Drop icon" style="width: 1em; vertical-align: middle; margin: 0;" />  Check out our latest drops</a></li>
+      <li><a href="/blog/"><img src="/assets/icons/disco-ball.svg" alt="Disco Ball icon" style="width: 1em; vertical-align: middle; margin: 0;" />  Catch up on the blog</a></li>
     </ul>
   </div>
 </div>
