@@ -1,4 +1,5 @@
 ---
-permalink: /pages/tag-your-friend
+layout: redirect
+redirect_from: /pages/tag-your-friend
 redirect_to: /lofi
 ---

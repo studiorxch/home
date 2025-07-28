@@ -1,4 +1,5 @@
 ---
-permalink: /products/nyc-subway-signature-series-3
+layout: redirect
+redirect_from: /products/nyc-subway-signature-series-3
 redirect_to: /shop
 ---

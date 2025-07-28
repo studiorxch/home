@@ -1,4 +1,5 @@
 ---
-permalink: /products/ny-crown-bklyn-24-snapback-hat
+layout: redirect
+redirect_from: /products/ny-crown-bklyn-24-snapback-hat
 redirect_to: /shop
 ---

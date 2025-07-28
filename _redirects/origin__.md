@@ -1,4 +1,5 @@
 ---
-permalink: /origin/
+layout: redirect
+redirect_from: /origin/
 redirect_to: /about
 ---

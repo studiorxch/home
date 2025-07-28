@@ -1,4 +1,5 @@
 ---
-permalink: /blogs/news/soft-served-dreams-pre-release-now-available
+layout: redirect
+redirect_from: /blogs/news/soft-served-dreams-pre-release-now-available
 redirect_to: /blog/
 ---

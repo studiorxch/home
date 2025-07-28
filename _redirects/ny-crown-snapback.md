@@ -1,4 +1,5 @@
 ---
-permalink: /products/ny-crown-snapback
+layout: redirect
+redirect_from: /products/ny-crown-snapback
 redirect_to: /shop
 ---

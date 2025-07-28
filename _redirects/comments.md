@@ -1,4 +1,5 @@
 ---
-permalink: /comments
+layout: redirect
+redirect_from: /comments
 redirect_to: /lofi
 ---
