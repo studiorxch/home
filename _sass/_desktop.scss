@@ -1,12 +1,28 @@
 #menu-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: rgba(0, 0, 0, 0.7);
   color: #eee;
   padding: 6px 12px;
   font-size: 14px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  border-bottom: 1px solid #333;
 }
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-logo {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0.9);
+  vertical-align: middle;
+}
+
 
 body.desktop-page {
   background: url('/assets/wallpapers/default.webp') no-repeat center center fixed;

@@ -16,15 +16,9 @@ bundle exec jekyll serve --future
 
 
 
-# git list push:
-git add assets/icons/linkedIn.svg
-git commit -m "Schedule Update"
-git push origin main
-
-
 
 git add . 
-git commit -m "redirect stranger vibes update"
+git commit -m "Favicon Time"
 git push origin main
 
 

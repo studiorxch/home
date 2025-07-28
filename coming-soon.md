@@ -20,9 +20,17 @@ redirect_from:
 <link rel="stylesheet" href="/assets/css/desktop.css" />
 
 <div id="menu-bar">
-  <div class="menu-left">StudioRich OS</div>
-  <div class="menu-right"><span id="clock">Coming Soon</span></div>
+  <div class="menu-left">
+    <img src="/assets/icons/logo-mini.svg" alt="StudioRich Logo" class="menu-logo" />
+    StudioRich OS
+  </div>
+  <div class="menu-right">
+    <span id="current-date"></span>
+    ·
+    <span id="clock"></span>
+  </div>
 </div>
+
 
 <div id="desktop">
 

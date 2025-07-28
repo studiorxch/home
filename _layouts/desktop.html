@@ -18,14 +18,25 @@
     <meta property="og:image" content="{{ page.image }}">
     <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/img/default-share.jpg' }}">
 
-
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
 
   </head>
   <body class="desktop-page">
     <div id="menu-bar">
-      <div class="menu-left">StudioRich OS</div>
-      <div class="menu-right"><span id="clock">Coming Soon</span></div>
+    <div class="menu-left">
+        <img src="/assets/icons/logo-mini.svg" alt="StudioRich Logo" class="menu-logo" />
+        StudioRich OS
     </div>
+    <div class="menu-right">
+        <span id="current-date"></span>
+        ·
+        <span id="clock"></span>
+    </div>
+    </div>
+
 
     <div id="desktop">
       <div class="icon">
@@ -67,5 +78,20 @@
         </ul>
       </div>
     </div>
+
+
+
+    <script>
+    function updateTime() {
+        const now = new Date();
+        const options = { weekday: 'short', month: 'short', day: 'numeric' };
+        document.getElementById('current-date').textContent = now.toLocaleDateString('en-US', options);
+        document.getElementById('clock').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+    </script>
+
   </body>
 </html>
