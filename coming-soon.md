@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Coming Soon
-permalink: /redirect/coming-soon/
+permalink: /coming-soon/
 meta_title: StudioRich – Coming Soon
 meta_description: This track or product isn’t live yet, but it’s coming soon. In the meantime, check out our latest releases.
-image: /assets/wallpaper/default.webp
+image: /assets/wallpapers/default.webp
 noindex: true
 
 redirect_from:
