@@ -39,6 +39,8 @@ collections:
   shop: # Shop
     output: true
     permalink: /shop/:title/
+  redirects:
+    output: true
 
 defaults:
   scope:
