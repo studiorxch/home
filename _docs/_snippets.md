@@ -18,7 +18,7 @@ bundle exec jekyll serve --future
 
 
 git add . 
-git commit -m "Favicon Time"
+git commit -m "new re-direct"
 git push origin main
 
 
