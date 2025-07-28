@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url={{ page.permalink | default: "/" }}" />
-    <link rel="canonical" href="{{ page.permalink | default: "/" }}">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}" />
+    <link rel="canonical" href="{{ page.redirect.to }}">
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="{{ page.permalink | default: "/" }}">link</a>.</p>
+    <p>If you are not redirected automatically, follow this
+    <a href="{{ page.redirect.to }}">link</a>.</p>
   </body>
 </html>
