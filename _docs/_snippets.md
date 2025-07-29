@@ -18,8 +18,9 @@ bundle exec jekyll serve --future
 
 
 git add . 
-git commit -m "new re-direct"
+git commit -m "blog filename update"
 git push origin main
+
 
 
 ### 📌 How to Rebuild and Push sitemap.xml Correctly (7-6-25)
@@ -42,3 +43,15 @@ git push
 --remote-debugging-port=9222 \
 --user-data-dir=/tmp/chrome-dev
 ```
+
+
+
+
+
+
+
+# Convert underscores to hyphens in directory
+
+for f in *_*; do
+  mv "$f" "${f//_/-}"
+done
