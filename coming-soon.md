@@ -6,17 +6,6 @@ meta_title: StudioRich – Coming Soon
 meta_description: This track or product isn’t live yet, but it’s coming soon. In the meantime, check out our latest releases.
 image: /assets/wallpapers/default.webp
 noindex: true
-
-redirect_from:
-  - /pages/tag-your-friend
-  - /pages/coming-soon
-  - /tracks/warped-honey/
-  - /tracks/pulse-petals/
-  - /tracks/voice-inside-static/
-  - /tracks/midnight-bridge-run/
-  - /tracks/air-between-us-s01/
-  - /tracks/nothing-to-grab-onto/
-  - /products/midnight-prowler-warning-crossbones-cat-graphic-tee-unisex-tee/
 ---
 
 <link rel="stylesheet" href="/assets/css/desktop.css" />
