@@ -8,6 +8,8 @@ image: /assets/wallpapers/default.webp
 noindex: true
 
 redirect_from:
+  - /pages/tag-your-friend
+  - /pages/coming-soon
   - /tracks/warped-honey/
   - /tracks/pulse-petals/
   - /tracks/voice-inside-static/
