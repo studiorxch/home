@@ -15,6 +15,7 @@ _tracks/unreleased/
 _dev
 _scripts
 
+/assets/playlists
 
 # Sass cache
 .sass-cache/

@@ -2,7 +2,7 @@
 layout: track
 title: Backwards Bloom
 permalink: /tracks/backwards-bloom/
-description: ''
+description: '“Backwards Bloom” is a dreamy ambient-electronic track with muted reverse piano notes, soft tape hiss, and swirling analog synths. The atmosphere swells with tension while carrying a nostalgic undertone, creating a soundscape that feels both fragile and expansive. Its experimental layering and reverse-flowing motifs evoke the sensation of time folding in on itself — a bloom caught between memory and distortion. A piece for late-night immersion, meditative listening, or cinematic reflection.'
 image: /assets/covers/backwards-bloom.webp
 image_ready: true
 date: 2025-01-01

@@ -25,6 +25,8 @@ noindex: true
 
 <div id="desktop">
 
+
+
   <!-- Static Icon: Music Folder -->
   <div class="icon">
     <img src="/assets/icons/folder-music.webp" alt="Music Folder">
@@ -36,6 +38,66 @@ noindex: true
     <img src="/assets/icons/folder-zine.webp" alt="Zines Folder">
     <span>Zines</span>
   </div>
+
+
+
+
+<div class="desktop-player">
+  <h2>Now Playing</h2>
+  <p id="now-playing">Loading playlist...</p>
+
+  <div id="player-controls">
+    <button onclick="prevTrack()">⏮️ Prev</button>
+    <button onclick="togglePlay()">▶️ Play / ⏸️ Pause</button>
+    <button onclick="nextTrack()">⏭️ Next</button>
+  </div>
+
+  <audio id="audio" preload="auto" controls></audio>
+
+</div>
+
+<script>
+  // Quick bootstrap playlist (replace with M3U parser later)
+  const playlist = [
+    { title: "Missing Frame", file: "/assets/loops/skatepark-ruins-loop.mp3" },
+    { title: "Night Signals", file: "/assets/loops/static-memory-loop.mp3" },
+    { title: "Glitch Garden", file: "/assets/loops/backwards-bloom-loop.mp3" }
+  ];
+
+  let currentTrack = 0;
+  const audio = document.getElementById("audio");
+  const nowPlaying = document.getElementById("now-playing");
+
+  function loadTrack(index) {
+    currentTrack = index;
+    audio.src = playlist[index].file;
+    nowPlaying.textContent = "Now Playing: " + playlist[index].title;
+    audio.play();
+  }
+
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  function nextTrack() {
+    loadTrack((currentTrack + 1) % playlist.length);
+  }
+
+  function prevTrack() {
+    loadTrack((currentTrack - 1 + playlist.length) % playlist.length);
+  }
+
+  audio.addEventListener("ended", nextTrack);
+
+  // Load first track
+  loadTrack(0);
+</script>
+
+
 
 </div>
 
