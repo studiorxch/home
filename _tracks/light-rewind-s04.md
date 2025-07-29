@@ -2,7 +2,7 @@
 layout: track
 title: Light Rewind S04
 permalink: /tracks/light-rewind-s04/
-description: 'Warm, dusty analog keys and muted drum loops set a laid-back lo-fi groove. Vinyl crackle and subtle tape warble weave beneath mellow guitar riffs and lush synth pads, while soulful electric piano enriches the texture. A hazy blend of nostalgia that bends lo-fi through classical poise, rock grit, and country warmth.'
+description: '“Light Rewind: S04” drifts in with warm, dusty analog keys and muted drum loops, creating a laid-back lo-fi groove. Vinyl crackle and subtle tape warble run beneath mellow guitar riffs and lush synth pads, while soulful electric piano lines breathe depth into the mix. The track’s gentle sidechain and layered warmth make it feel both intimate and expansive — a hazy reverie pressed to tape, rewinding memory in every loop.'
 image: /assets/covers/light-rewind-s04.webp
 image_ready: false
 date: 2025-01-01

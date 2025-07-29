@@ -8,6 +8,10 @@ image_ready: true
 date: 2025-01-01
 duration: '3:33'
 album: Stranger Vibes
+mood_suggested: 
+- Tense
+- Dreamy
+- Nostalgic
 mood:
 - Tense
 genre:
