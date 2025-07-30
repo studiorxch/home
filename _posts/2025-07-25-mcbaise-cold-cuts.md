@@ -12,6 +12,7 @@ tags:
   - music-video
   - mcbaise
   - dirtymelody
+redirect_from: /2025/07/25/mcbaise_cold_cuts.html
 ---
 
 ## <img src="/assets/icons/little-heart-gesture.svg" alt="Heart icon" style="width: 1em; vertical-align: middle;" /> MCBAISE – *Cold Cuts* (feat. Muthi)
