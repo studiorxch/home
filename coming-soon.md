@@ -22,10 +22,7 @@ noindex: true
   </div>
 </div>
 
-
 <div id="desktop">
-
-
 
   <!-- Static Icon: Music Folder -->
   <div class="icon">
@@ -39,9 +36,6 @@ noindex: true
     <span>Zines</span>
   </div>
 
-
-
-
 <div class="desktop-player">
   <h2>Now Playing</h2>
   <p id="now-playing">Loading playlist...</p>
@@ -52,9 +46,11 @@ noindex: true
     <button onclick="nextTrack()">⏭️ Next</button>
   </div>
 
-  <audio id="audio" preload="auto" controls></audio>
+<audio id="audio" preload="auto" controls></audio>
 
 </div>
+
+{% include desktop-dock.html %}
 
 <script>
   // Quick bootstrap playlist (replace with M3U parser later)
@@ -97,8 +93,6 @@ noindex: true
   loadTrack(0);
 </script>
 
-
-
 </div>
 
 <div class="window visible" id="window-comingsoon">
@@ -111,5 +105,6 @@ noindex: true
       <li><a href="/links/"><img src="/assets/icons/drop.svg" alt="Drop icon" style="width: 1em; vertical-align: middle; margin: 0;" />  Check out our latest drops</a></li>
       <li><a href="/blog/"><img src="/assets/icons/disco-ball.svg" alt="Disco Ball icon" style="width: 1em; vertical-align: middle; margin: 0;" />  Catch up on the blog</a></li>
     </ul>
+
   </div>
 </div>

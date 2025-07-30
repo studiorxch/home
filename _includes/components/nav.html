@@ -10,16 +10,34 @@
     <a href="/live">Live Radio</a>
     <a href="/shop/">Shop</a>
     <a href="/events">Events</a>
-    <a href="https://twitch.tv/studiorich"><img src="/assets/icons/twitch.svg" alt="Twitch"></a>
-    <a href="https://youtube.com/@Studio-Rich"><img src="/assets/icons/youtube.svg" alt="YouTube"></a>
-    <a href="https://ko-fi.com/studiorich"><img src="/assets/icons/kofi.svg" alt="Ko-fi"></a>
+    <a href="https://twitch.tv/studiorich"
+      ><img src="/assets/icons/twitch.svg" alt="Twitch"
+    /></a>
+    <a href="https://youtube.com/@Studio-Rich"
+      ><img src="/assets/icons/youtube.svg" alt="YouTube"
+    /></a>
+    <a href="https://ko-fi.com/studiorich"
+      ><img src="/assets/icons/kofi.svg" alt="Ko-fi"
+    /></a>
   </nav>
-
 
   <div class="header-inner">
     <div class="logo">
-      <a href="/"><img src="/assets/img/studiorich-logo.svg" alt="StudioRich logo – Studio Rich music visuals"></a>
+      <a id="site-logo" href="/"
+        ><img
+          src="/assets/img/studiorich-logo.svg"
+          alt="StudioRich logo – Studio Rich music visuals"
+      /></a>
     </div>
+
+    <script>
+      // Check if we're on the homepage
+      if (window.location.pathname === "/") {
+        document
+          .getElementById("site-logo")
+          .setAttribute("href", "/coming-soon/");
+      }
+    </script>
 
     <nav class="main-nav">
       <ul>
@@ -32,16 +50,24 @@
 
     <div class="header-icons">
       <a href="/events" class="hide-mobile" target="_blank">
-        <img src="/assets/icons/calendar.svg" alt="Calendar">
+        <img src="/assets/icons/calendar.svg" alt="Calendar" />
       </a>
-      <a href="https://twitch.tv/studiorich" class="hide-mobile" target="_blank">
-        <img src="/assets/icons/twitch.svg" alt="Twitch">
+      <a
+        href="https://twitch.tv/studiorich"
+        class="hide-mobile"
+        target="_blank"
+      >
+        <img src="/assets/icons/twitch.svg" alt="Twitch" />
       </a>
-      <a href="https://youtube.com/@Studio-Rich" class="hide-mobile" target="_blank">
-        <img src="/assets/icons/youtube.svg" alt="YouTube">
+      <a
+        href="https://youtube.com/@Studio-Rich"
+        class="hide-mobile"
+        target="_blank"
+      >
+        <img src="/assets/icons/youtube.svg" alt="YouTube" />
       </a>
       <a href="https://ko-fi.com/studiorich" target="_blank">
-        <img src="/assets/icons/kofi.svg" alt="Ko-fi">
+        <img src="/assets/icons/kofi.svg" alt="Ko-fi" />
       </a>
     </div>
   </div>
@@ -49,20 +75,20 @@
 
 <script>
   function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    const overlay = document.getElementById('mobileOverlay');
-    const isOpen = menu.classList.toggle('open');
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("mobileOverlay");
+    const isOpen = menu.classList.toggle("open");
 
-    overlay.classList.toggle('active', isOpen);
-    document.body.classList.toggle('menu-open', isOpen);
+    overlay.classList.toggle("active", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
   }
 
   // Auto-close on link click
-  document.querySelectorAll('.mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.getElementById('mobileMenu').classList.remove('open');
-      document.getElementById('mobileOverlay').classList.remove('active');
-      document.body.classList.remove('menu-open');
+  document.querySelectorAll(".mobile-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.remove("open");
+      document.getElementById("mobileOverlay").classList.remove("active");
+      document.body.classList.remove("menu-open");
     });
   });
 </script>

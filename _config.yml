@@ -32,11 +32,10 @@ repository: studiorxch/home
 
 blog_subtitles:
   - "Sound + Visual Culture in Loops"
-  - "Where Lo‑Fi Lives, Breathes, and Crosses Formats"
-  - "Archives of Lo‑Fi Memory, Weird Internet, and Beat Culture"
+  - "Where Lo-Fi Lives, Breathes, and Crosses Formats"
+  - "Archives of Lo-Fi Memory, Weird Internet, and Beat Culture"
   - "Filed Under: Loops, Pixels, and Subcultures"
-  - "Lo‑Fi Soundscapes and Visual Beat Loop Aesthetics"
-
+  - "Lo-Fi Soundscapes and Visual Beat Loop Aesthetics"
 
 collections:
   events: # Stranger Vibes, Spa Therapy, Ramen Town
@@ -93,7 +92,7 @@ exclude:
   - _site/
 
 # Add custom settings as needed
-favicon: "/assets/img/favicon.ico"  # Make sure to upload your favicon if you want one
+favicon: "/assets/img/favicon.ico" # Make sure to upload your favicon if you want one
 
 # Google Analytics (optional, add only if you have GA setup)
 google_analytics: "G-E5KN2YJJKF"
