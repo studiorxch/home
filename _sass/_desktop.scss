@@ -93,7 +93,7 @@ body.desktop-page {
   background: rgba(0, 0, 0, 0.35);
   border-radius: 16px;
   backdrop-filter: blur(8px);
-  z-index: 1000;
+  z-index: 5000;
 }
 
 .dock-item img {
@@ -117,7 +117,7 @@ body.desktop-page {
   color: white;
   display: flex;
   flex-direction: column;
-  z-index: 2000;
+  z-index: 1000;
 }
 .window-header {
   background: rgba(40, 40, 40, 0.9);
@@ -145,4 +145,7 @@ body.desktop-page {
 
 .window-body a:hover {
   color: #fff;
+}
+.dock {
+  background: red !important;
 }
