@@ -1,5 +1,6 @@
 ---
-title: "Lost in Irene: A Lo-Fi Journey Through Sound"
+title: "Lost in Irene: "
+subtitle: "A Lo-Fi Journey Through Sound"
 date: 2025-03-24
 description: "Lost in Irene is a hypnotic lo-fi journey guided by StudioRich’s cassette textures and ambient nostalgia."
 image: /assets/img/blog/lost-in-irene-a-lo-fi-journey-through-sound.webp

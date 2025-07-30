@@ -11,6 +11,8 @@ tags: [lo-fi, chillbeats, chillhop, chillvibes, strangerthings, ambient]
 redirect_from:
   - /2025/05/26/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
   - /2025/05/26/☕-lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
+  - /2025/05/26/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
+  - /blogs/news/☕-lo-fi-stranger-vibes-a-day-and-night-in-hawkins
 
 ---
 

@@ -5,11 +5,7 @@ permalink: /library/
 description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
 image: /assets/img/hero-music-library.webp
 redirect_from:
-  - /blogs/news
-  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-4
-  - /blogs/news?page=1
-  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-2
-  - /blogs/news/studiorich-debut-pre-release-access-to-see-you-later-oscillator
+  - https://studiorich.shop/tracks/
 
 ---
 

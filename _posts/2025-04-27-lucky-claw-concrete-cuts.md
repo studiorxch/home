@@ -6,9 +6,19 @@ description: "Lucky Claw’s ‘Concrete Cuts’ smashes city grit into beat tap
 image: /assets/img/blog/-lucky-claw-concrete-cuts-4.webp
 tags: [beat-tape-culture, concrete-cuts, field-recordings, grithop, subwaybeats]
 redirect_from: 
-- /2025/05/26/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
-- /blogs/news/☕-lo-fi-stranger-vibes-a-day-and-night-in-hawkins
+
+- 2025/04/27/lucky-claw-concrete-cuts-1.html
+- 2025/04/27/lucky-claw-concrete-cuts-2.html
+- 2025/04/27/lucky-claw-concrete-cuts-3.html
 - 2025/04/27/lucky-claw-concrete-cuts-4.html
+- /blogs/news/🎧-lucky-claw-concrete-cuts-1
+- /blogs/news/🎧-lucky-claw-concrete-cuts-2
+- /blogs/news/🎧-lucky-claw-concrete-cuts-3
+- /blogs/news/🎧-lucky-claw-concrete-cuts-4
+- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-1
+- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-2
+- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-3
+- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-4
 ---
 
 # Lucky Claw: Concrete Cuts

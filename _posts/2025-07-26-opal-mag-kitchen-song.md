@@ -1,5 +1,5 @@
 ---
-title: "Kitchen Song: "
+title: "Kitchen Song:"
 subtitle: "A Love Letter to Lo-Fi Solitude"
 date: 2025-07-26
 image: /assets/img/blog/opal-mag-kitchen-song.webp
@@ -11,6 +11,7 @@ filed_under:
   - visual-culture
 redirect_from: 2025/07/26/opal-mag-kitchen-song.html
 ---
+# Kitchen Song: A Love Letter to Lo-Fi Solitude
 
 Watch: Kitchen Song official video clip below.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VU9t3S7Nhb4?si=HEhwVqrc1NdYor3j&amp;clip=Ugkx--0zTUpBGLEHwcI59ecOZp9UqW9mdIKg&amp;clipt=EMVZGLWjAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

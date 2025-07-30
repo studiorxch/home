@@ -12,6 +12,8 @@ body {
   font-weight: 100;
   font-size: 1.125rem;
   line-height: 1.4;
+  word-break: keep-all;
+  hyphens: manual;
 }
 
 /* ===============================
@@ -47,6 +49,15 @@ hr {
   border: none;
   border-top: 1px dotted #777;
   margin: 2rem 0;
+}
+
+.hero-kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ff3b3b; /* same accent red as bullets/logo */
+  margin: 0 0 0.4rem 0; /* tight above title */
+  font-weight: 500;
 }
 
 .hero-subtitle {
@@ -131,7 +142,7 @@ ul li::before {
 .icon-sm {
   height: 20px;
   vertical-align: middle;
-  margin: 0 0.4em 0 0; /* only right margin */
+  margin: 0 0.3em 0 0; /* only right margin */
   filter: brightness(0) invert(1);
   line-height: 1;  
 }
