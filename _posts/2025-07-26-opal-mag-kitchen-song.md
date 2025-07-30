@@ -9,7 +9,7 @@ tags: [lofi, ambient, indie-pop, bedroom-recording]
 filed_under:
   - ambientattitude
   - visual-culture
-  
+redirect_from: 2025/07/26/opal-mag-kitchen-song.html
 ---
 
 Watch: Kitchen Song official video clip below.
