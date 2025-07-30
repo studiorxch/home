@@ -13,9 +13,9 @@ redirect_from:
 
 
 ---
-{% include components/hero.html
-  image="/assets/img/origin-hero.webp"
-  title="Origin" %}
+{% include components/hero.html image="/assets/img/origin-hero.webp" title="Origin" subitle="" %}
+
+
 <p class="image-caption">Our mascot in Whiteout RX-0 Mode — a lo-fi signal runner moving between memory and motion.</p>
 
 <section class="about-page">

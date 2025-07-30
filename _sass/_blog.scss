@@ -1,9 +1,33 @@
+.blog-body img.icon-sm,
+.blog-post img.icon-sm {
+  height: 20px;                /* smaller looks balanced with text */
+  vertical-align: text-bottom; /* aligns to baseline */
+  margin: 0 0.4em 0 0;         /* spacing only to the right */
+  line-height: 1;              /* prevent stretching */
+  display: inline;             /* keeps it in text flow */
+}
+
+.blog-body h2 img.icon-sm,
+.blog-body h3 img.icon-sm {
+  height: 20px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+.blog-body h2,
+.blog-body h3 {
+  display: flex;
+  align-items: center; /* aligns icon + text baseline */
+  gap: 0.4em;
+}
+
+
 .blog-post {
   max-width: 740px;
   margin: 8rem auto;
   padding: 0 1.5rem;
   font-family: 'Helvetica Neue', 'NotoJP', sans-serif;
-  line-height: 1.75;
+  line-height: 1;
   font-size: 1.1rem;
   background-color: #111;
   color: #eee;

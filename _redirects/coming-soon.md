@@ -10,5 +10,8 @@ redirect_from:
   - /tracks/air-between-us-s01/
   - /tracks/nothing-to-grab-onto/
   - /products/midnight-prowler-warning-crossbones-cat-graphic-tee-unisex-tee/
+  - /tracks/backwards-
+  - /customer_authentication/login
+  - /games
 redirect_to: /coming-soon
 ---

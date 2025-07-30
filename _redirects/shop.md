@@ -67,8 +67,11 @@ redirect_from:
 - /products/urban-grayscale-collection-sleek-city-style
 - /products/vivid-and-bright-collection-color-your-world
 - /refund-policy
+- /policies/refund-policy
 - /services/login_with_shop/authorize
 - /terms
 - /assets/icons/README%20-%20StudioRich%20SVG%20Icon%20Optimization.html
+- /(a%7Capps%7Ccommunity%7Ctools)/*
+- /pages/faq
 redirect_to: /shop
 ---
