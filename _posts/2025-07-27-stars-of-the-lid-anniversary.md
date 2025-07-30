@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Stars of the Lid – Music for Nitrous Oxide (30th Anniversary Remastered)"
+title: "Stars of the Lid "
+subtitle: "– Music for Nitrous Oxide (30th Anniversary Remastered)"
 date: 2025-07-27
 description: "Ambient duo Stars of the Lid re-release their 1995 debut in a newly remastered vinyl edition. The 30-year revisit deepens the hypnotic drone textures and emotional depth of the original."
 image: /assets/img/blog/stars-of-the-lid-music-for-nitrous-oxide.jpg

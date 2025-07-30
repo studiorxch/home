@@ -1,7 +1,8 @@
 ---
 layout: post
 
-title: "Welcome Strawberry – Desperate Flower: Jangle-Pop Memory with Psychedelic Roots"
+title: "Welcome Strawberry"
+subtitle: " – Desperate Flower: Jangle-Pop Memory with Psychedelic Roots"
 date: 2025-07-25 09:00:00 -0400
 description: "Oakland band Welcome Strawberry returns with an album steeped in scent, sorrow, and shimmer. *Desperate Flower* is noise-kissed dream pop for emotional bloom cycles."
 image: /assets/img/blog/welcome-strawberry-desperate-flower.jpg

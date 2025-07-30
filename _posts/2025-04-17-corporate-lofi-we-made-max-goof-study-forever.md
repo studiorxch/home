@@ -1,5 +1,6 @@
 ---
-title: "Corporate LoFi: We Made Max Goof Study Forever"
+title: "Corporate LoFi: "
+subtitle: "We Made Max Goof Study Forever"
 date: 2025-04-17
 description: "We remixed Disney’s Max Goof LoFi stream into corporate chill satire."
 image: /assets/img/blog/corporate-lofi-we-made-max-goof-study-forever.webp

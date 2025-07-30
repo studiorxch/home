@@ -1,7 +1,8 @@
 ---
 layout: post
 
-title: "Fig Tape – Miracle: Nordic Lo-Fi with Linger"
+title: "Fig Tape – Miracle:"
+subtitle: " Nordic Lo-Fi with Linger"
 date: 2025-07-21
 description: "A sublime indie-electronic lo-fi cut from Norwegian artist Fig Tape, steeped in atmosphere and memory."
 image: /assets/img/blog/fig-tape-miracle.webp

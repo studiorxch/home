@@ -1,5 +1,6 @@
 ---
-title: "Bring Me The Horizon – Lo-files (LP)"
+title: "Bring Me The Horizon"
+subtitle: " – Lo-files (LP)"
 permalink: /posts/bring-me-the-horizon-lofiles/
 description: "Bring Me The Horizon takes a surprising turn into lo-fi textures with *Lo-files (LP)*, weaving ambient beats, vinyl crackle, and nostalgic haze into their sound."
 date: 2025-07-29

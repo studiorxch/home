@@ -1,7 +1,8 @@
 ---
 layout: post
 
-title: "Cyberpunk 2077 – Lo-Fi Auto-Drive Mode Is the Chillest Update Yet"
+title: "Cyberpunk 2077"
+subtitle: " – Lo-Fi Auto-Drive Mode Is the Chillest Update Yet"
 date: 2025-07-19
 image: /assets/img/blog/cyberpunk-lofi-autodrive.jpg
 

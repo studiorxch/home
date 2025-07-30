@@ -1,10 +1,12 @@
 ---
-title: "Tropical Cat Dreamscape: A Lo-Fi Escape by StudioRich"
+title: "Tropical Cat Dreamscape: "
+subtitle: "A Lo-Fi Escape by StudioRich"
 date: 2025-02-24
 description: "Relax with Tropical Cat Dreamscape, a lo-fi escape into synth jungles and feline energy."
 image: /assets/img/blog/tropical-cat-dreamscape-a-lo-fi-escape-by-studiorich.webp
 layout: post
 tags: [cats, cinematic-lofi, lofi, lofi-dreams, lofihouse, synth]
+redirect_from: /blogs/news/tropical-cat-dreamscape-a-lo-fi-escape-by-studiorich
 ---
 
 # Tropical Cat Dreamscape: A Lo-Fi Escape by StudioRich

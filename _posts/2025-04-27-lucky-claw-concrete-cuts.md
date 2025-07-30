@@ -5,6 +5,10 @@ date: 2025-04-27
 description: "Lucky Claw’s ‘Concrete Cuts’ smashes city grit into beat tape warmth."
 image: /assets/img/blog/-lucky-claw-concrete-cuts-4.webp
 tags: [beat-tape-culture, concrete-cuts, field-recordings, grithop, subwaybeats]
+redirect_from: 
+- /2025/05/26/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.html
+- /blogs/news/☕-lo-fi-stranger-vibes-a-day-and-night-in-hawkins
+- 2025/04/27/lucky-claw-concrete-cuts-4.html
 ---
 
 # Lucky Claw: Concrete Cuts

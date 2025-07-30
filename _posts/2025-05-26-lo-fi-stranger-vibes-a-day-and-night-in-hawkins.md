@@ -2,7 +2,8 @@
 layout: post
 category: field-notes
 date: 2025-05-26
-title: "Lo-Fi Stranger Vibes: A Day and Night in Hawkins"
+title: "Lo-Fi Stranger Vibes: "
+subtitle: "A Day and Night in Hawkins"
 description: "2HR lo-fi mix inspired by Stranger Things. From analog warmth to otherworldly chill."
 icon: /assets/icons/walkie.svg
 image: /assets/img/blog/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.webp

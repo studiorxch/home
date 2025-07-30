@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "MCBAISE – Cold Cuts (feat. Muthi): Surreal Pop & Supermarket Dreams"
+title: "MCBAISE – Cold Cuts (feat. Muthi): "
+subtitle: "Surreal Pop & Supermarket Dreams"
 date: 2025-07-25
 description: "MCBAISE returns with a surreal, sunlit funk loop featuring Muthi—‘Cold Cuts’ is a trip through ‘90s nostalgia and guitar groove."
 image: /assets/img/blog/mcbaise-cold-cuts.webp

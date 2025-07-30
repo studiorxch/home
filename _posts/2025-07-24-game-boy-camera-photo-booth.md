@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Pixel-Grain Dreams: Game Boy Camera as Lo-Fi Wedding Photo Booth"
+title: "Pixel-Grain Dreams: "
+subtitle: "Game Boy Camera as Lo-Fi Wedding Photo Booth"
 date: 2025-07-24
 description: "A Game Boy Camera turned photo booth brings lo-fi grain and retro joy to the modern wedding aisle. Analog romance in every pixel."
 image: /assets/img/blog/game-boy-camera-photo-booth.webp

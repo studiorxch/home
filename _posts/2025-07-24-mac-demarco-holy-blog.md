@@ -1,7 +1,8 @@
 ---
 layout: post
 
-title: "Mac DeMarco – Holy: A Lo-Fi Confession by the Sea"
+title: "Mac DeMarco – Holy:"
+subtitle: " A Lo-Fi Confession by the Sea"
 date: 2025-07-24
 description: "In *Holy*, Mac DeMarco steps barefoot into the ocean and into a quiet kind of faith. No production tricks. Just drift."
 image: /assets/img/blog/default.webp

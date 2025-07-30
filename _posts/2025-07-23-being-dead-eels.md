@@ -1,5 +1,6 @@
 ---
-title: "Being Dead – Eels: Lo-Fi Goof-Pop With Depth"
+title: "Being Dead – Eels: "
+subtitle: "Lo-Fi Goof-Pop With Depth"
 date: 2025-07-23
 description: "Austin duo Being Dead crafts songs that feel like art school sleepovers — unserious on the surface, complex underneath."
 image: /assets/img/blog/being-dead-eels.webp

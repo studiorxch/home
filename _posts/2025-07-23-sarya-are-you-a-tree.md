@@ -1,5 +1,6 @@
 ---
-title: "Sarya – Are You A Tree?: Vocal Alchemy for Fleeting Connection"
+title: "Sarya – Are You A Tree?: "
+subtitle: "Vocal Alchemy for Fleeting Connection"
 date: 2025-07-23
 description: "“Are You A Tree?” captures a mystic, late-night tenderness that lingers in Sarya’s voice — like love spoken in dreams."
 image: /assets/img/blog/sarya-are-you-a-tree.webp
