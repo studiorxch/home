@@ -6,16 +6,15 @@ image: /assets/img/hero.webp
 permalink: /
 ---
 
-
 {% include components/hero.html image="/assets/img/hero.webp" title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.." %}
 
-
 <h3 style="margin-left: 2em">
-<img src="/assets/icons/record.svg" alt="Vinyl Record" style="width: 1em; vertical-align: middle;" />
+<img src="/assets/icons/record.svg" alt="Vinyl Record" class="icon-sm">
 Now Spinning: StudioRich Visual Mixes
 </h3>
 
 <!-- Stream Banner and Features go here -->
+
 {% include components/youtube-carousel.html video_urls="
 https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r,
 https://www.youtube.com/embed/u5tCaLsFW-M?si=WmKxX14EHcumI1Tf,
@@ -53,7 +52,7 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <!-- Music Library -->
   <div class="feature">
     <h3>
-      <img src="/assets/icons/musiclibrary.svg" alt="Music library icon" style="width: 1em; vertical-align: middle;" />
+      <img src="/assets/icons/musiclibrary.svg" alt="Music library icon" class="icon-sm">
       <a href="/library">Music Library</a>
     </h3>
     <p>Explore our curated archive and search by mood, genre, or visual tone.</p>
@@ -62,7 +61,7 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <!-- Cat on the Signal -->
   <div class="feature">
     <h3>
-      <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" style="width: 1em; vertical-align: middle;" />
+      <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" class="icon-sm">
       <em>Cat on the Signal</em>
     </h3>
     <p>

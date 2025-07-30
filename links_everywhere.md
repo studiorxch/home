@@ -12,13 +12,11 @@ image: /assets/img/hero-scratch.webp
   subtitle="A full directory of platforms where our music lives—regional, global, niche, and next-gen."
 %}
 
-
-
   <section class="link-hub">
 <h2>Connect with StudioRich</h2>
 
 <!-- Global Platforms -->
-<h3><img src="/assets/icons/planet-earth.svg" alt="Planet Earth icon" style="width: 1em; vertical-align: middle;" /> Global Platforms</h3>
+<h3><img src="/assets/icons/planet-earth.svg" alt="Planet Earth icon" class="icon-sm"> Global Platforms</h3>
 <ul class="link-list">
   <li><a href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich" target="_blank"><img src="/assets/icons/amazon-music.svg" alt="Amazon Music"><span>Amazon Music</span></a></li>
   <li><a href="https://music.apple.com/us/artist/studiorich/1785907828" target="_blank"><img src="/assets/icons/apple-music.svg" alt="Apple Music"><span>Apple Music</span></a></li>
@@ -36,9 +34,8 @@ image: /assets/img/hero-scratch.webp
   <li><a href="https://music.youtube.com/channel/UCvLh5_MPChww6fgXlsOG9qA" target="_blank"><img src="/assets/icons/youtube-music.svg" alt="YouTube Music"><span>YouTube Music</span></a></li>
 </ul>
 
-
 <!-- 📱 Social & Short-Form -->
-<h3><img src="/assets/icons/satelitedish.svg" alt="Satelite Dish icon" style="width: 1em; vertical-align: middle;" /> Social & Short‑Form</h3>
+<h3><img src="/assets/icons/satelitedish.svg" alt="Satelite Dish icon" class="icon-sm"> Social & Short‑Form</h3>
 <ul class="link-list">
   <li><a href="https://www.tiktok.com/@Studi.Rich" target="_blank"><img src="/assets/icons/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/icons/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
@@ -48,8 +45,7 @@ image: /assets/img/hero-scratch.webp
   <li><a href="https://www.youtube.com/@Studio-Rich" target="_blank"><img src="/assets/icons/youtube.svg" alt="YouTube"><span>YouTube</span></a></li>
 </ul>
 
-
-<h3><img src="/assets/icons/sparkles.svg" alt="Sparkles icon" style="width: 1em; vertical-align: middle;" />  Creator & Network Hubs</h3>
+<h3><img src="/assets/icons/sparkles.svg" alt="Sparkles icon" class="icon-sm">  Creator & Network Hubs</h3>
 <ul class="link-list">
   <li><a href="https://x.com/studiorxch" target="_blank"><img src="/assets/icons/x.svg" alt="X"><span>X (Twitter)</span></a></li>
   <li><a href="https://www.threads.net/@_studiorich" target="_blank"><img src="/assets/icons/threads.svg" alt="Threads"><span>Threads</span></a></li>
@@ -60,8 +56,7 @@ image: /assets/img/hero-scratch.webp
   <li><a href="https://github.com/studiorxch" target="_blank"><img src="/assets/icons/github.svg" alt="GitHub"><span>GitHub</span></a></li>
 </ul>
 
-
-<h3><img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> More Platforms</h3>
+<h3><img src="/assets/icons/record.svg" alt="Record icon" class="icon-sm"> More Platforms</h3>
 <p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;">(May Require App or Regional Access)</p>
 <ul class="link-list">
   <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/icons/boomplay.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
@@ -69,15 +64,13 @@ image: /assets/img/hero-scratch.webp
 
 </ul>
 
-<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;"><img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
+<p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;"><img src="/assets/icons/eye.svg" alt="Eye icon" class="icon-sm"> Some services may not open in your browser. We recommend trying them via mobile app or in regions where they are officially supported.</p>
 
 <!-- 🔁 Return to Featured Platforms -->
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Featured platforms → <a href="/links">studiorich.shop/links</a>
+
+<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm"> Featured platforms → <a href="/links">studiorich.shop/links</a>
 
   </section>
 
   <iframe allow="autoplay" width="100%" height="300" src="https://www.iheart.com/artist/studiorich-45140302/?embed=true"
     frameborder="0"></iframe>
-
-
-

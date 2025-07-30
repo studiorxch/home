@@ -23,9 +23,10 @@ image: /assets/covers/live-stream.webp
       >
       </iframe>
     </div>
+
   </div>
 
-  <button id="toggleChat">🗨️ Hide Chat</button>
+<button id="toggleChat">🗨️ Hide Chat</button>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -84,9 +85,8 @@ image: /assets/covers/live-stream.webp
     }
   </style>
 
-
   <div class="offline-message" style="text-align:center; color:#ccc; max-width:800px; margin:0 auto;">
-    <h1 style="color:white;"><img src="/assets/icons/radio.svg" alt="Radio icon" style="width: 1em; vertical-align: middle;" /> StudioRich Radio is Offline</h1>
+    <h1 style="color:white;"><img src="/assets/icons/radio.svg" alt="Radio icon" class="icon-sm"> StudioRich Radio is Offline</h1>
     <p>We stream live every Monday to Thursday from 8–10PM EST.</p>
     <p>
       Catch Stranger Vibes, lo-fi chill, and ambient hip hop here or on
