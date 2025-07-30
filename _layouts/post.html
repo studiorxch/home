@@ -2,74 +2,75 @@
 layout: default
 ---
 
-
-{% include components/hero.html image=page.image title=page.title subtitle=page.subtitle kicker=page.kicker %}
-
+{% include components/hero.html image=page.image title=page.title
+subtitle=page.subtitle kicker=page.kicker %}
 
 <article class="blog-post-container">
   <div class="blog-layout">
-
     <div class="blog-content">
-  
-    <p class="blog-meta">
-      <a href="/blog/">StudioRich Blog</a> /
-      {% if page.category %}
-        <a href="/category/{{ page.category | downcase | replace: ' ', '-' }}/">{{ page.category }}</a> /
-      {% endif %}
-      {{ page.date | date: "%B %d, %Y" }}
-    </p>
+      <p class="blog-meta">
+        <a href="/blog/">StudioRich Blog</a> / {% if page.category %}
+        <a href="/category/{{ page.category | downcase | replace: ' ', '-' }}/"
+          >{{ page.category }}</a
+        >
+        / {% endif %} {{ page.date | date: "%B %d, %Y" }}
+      </p>
 
-
-<!--tags-->
-{% if page.tags %}
-  {% assign linked_tags = "lofi,ambient,chillhop" | split: "," %}
-  <p class="blog-meta">
-    Tags:
-    {% for tag in page.tags %}
-      {% assign normalized = tag | downcase | replace: ' ', '-' %}
-      {% assign is_linkable = false %}
-      {% for linked in linked_tags %}
-        {% if normalized == linked %}
-          {% assign is_linkable = true %}
-        {% endif %}
-      {% endfor %}
-      {% if is_linkable %}
+      <!--tags-->
+      {% if page.tags %} {% assign linked_tags = "lofi,ambient,chillhop" |
+      split: "," %}
+      <p class="blog-meta">
+        Tags: {% for tag in page.tags %} {% assign normalized = tag | downcase |
+        replace: ' ', '-' %} {% assign is_linkable = false %} {% for linked in
+        linked_tags %} {% if normalized == linked %} {% assign is_linkable =
+        true %} {% endif %} {% endfor %} {% if is_linkable %}
         <a href="/tag/{{ normalized }}/" class="post-tag">{{ tag }}</a>
-      {% else %}
+        {% else %}
         <span class="post-tag">{{ tag }}</span>
+        {% endif %} {% unless forloop.last %}, {% endunless %} {% endfor %}
+      </p>
       {% endif %}
-      {% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </p>
-{% endif %}
-<!--tags-->
+      <!--tags-->
 
+      <div class="blog-body">{{ content }}</div>
 
-
-      <div class="blog-body">
-        {{ content }}
+      <div class="related-posts">
+        <h3>
+          <img
+            src="/assets/icons/folder.svg"
+            alt="Folder icon"
+            class="icon-sm"
+          />Filed Under: {{ page.tags | join: ", " }}
+        </h3>
+        <p class="related-posts-label">Related Posts:</p>
+        <ul>
+          {% for post in site.posts %} {% if post != page and post.tags contains
+          page.tags[0] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endif %} {% endfor %}
+        </ul>
       </div>
 
-    <!--- share this -->
-      {% include components/share-buttons.html type="blog" %}
-    <!--- share this -->
-
-
-
-
       <footer class="blog-footer">
-
-
-                <a href="/blog/" class="circle-button">
-          <div class="icon-wrapper">
-            <!-- Back arrow SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
-              <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <span class="button-label">BLOG</span>
-        </a>
-
+        <div class="post-nav-cards">
+          {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="nav-card prev">
+            <img
+              src="{{ page.previous.image }}"
+              alt="{{ page.previous.title }}"
+            />
+            <span>← {{ page.previous.title }}</span>
+          </a>
+          {% endif %} {% if page.next %}
+          <a href="{{ page.next.url }}" class="nav-card next">
+            <img src="{{ page.next.image }}" alt="{{ page.next.title }}" />
+            <span>{{ page.next.title }} →</span>
+          </a>
+          {% endif %}
+        </div>
+        <!--- share this -->
+        {% include components/share-buttons.html type="blog" %}
+        <!--- share this -->
       </footer>
     </div>
 
@@ -78,6 +79,5 @@ layout: default
       <img src="{{ page.image }}" alt="{{ page.title }} cover" />
     </div>
     {% endif %}
-
   </div>
 </article>

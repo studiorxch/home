@@ -1,10 +1,10 @@
 .blog-body img.icon-sm,
 .blog-post img.icon-sm {
-  height: 20px;                /* smaller looks balanced with text */
+  height: 20px; /* smaller looks balanced with text */
   vertical-align: text-bottom; /* aligns to baseline */
-  margin: 0 0.4em 0 0;         /* spacing only to the right */
-  line-height: 1;              /* prevent stretching */
-  display: inline;             /* keeps it in text flow */
+  margin: 0 0.4em 0 0; /* spacing only to the right */
+  line-height: 1; /* prevent stretching */
+  display: inline; /* keeps it in text flow */
 }
 
 .blog-body h2 img.icon-sm,
@@ -21,12 +21,11 @@
   gap: 0.4em;
 }
 
-
 .blog-post {
   max-width: 740px;
   margin: 8rem auto;
   padding: 0 1.5rem;
-  font-family: 'Helvetica Neue', 'NotoJP', sans-serif;
+  font-family: "Helvetica Neue", "NotoJP", sans-serif;
   line-height: 1;
   font-size: 1.1rem;
   background-color: #111;
@@ -108,7 +107,6 @@
   text-decoration: none;
 }
 
-
 .blog-card:hover {
   transform: translateY(-2px);
 }
@@ -126,14 +124,13 @@
   display: block;
 }
 
-
 .blog-text-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 1rem 0.75rem 0.75rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 80%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 80%);
 }
 
 .blog-title {
@@ -150,9 +147,6 @@
   line-height: 1.4;
 }
 
-
-
-
 .blog-meta {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -161,13 +155,11 @@
   margin-bottom: 0.25rem;
 }
 
-
-
 .blog-date {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 0.3rem 0.5rem;
   font-size: 1rem;
   font-weight: 700;
@@ -177,7 +169,6 @@
   border-radius: 2px;
   color: #fff;
 }
-
 
 .blog-post-container {
   max-width: 1200px;
@@ -220,14 +211,14 @@
   left: 0;
   width: 100%;
   height: 40%; /* or tweak this — try 25%, 50%, etc. */
-  background: linear-gradient(to bottom, rgba(199, 103, 103, 0) 0%, #0a0a0a 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(199, 103, 103, 0) 0%,
+    #0a0a0a 100%
+  );
   pointer-events: none;
   z-index: 1;
 }
-
-
-
-
 
 .post-tag {
   color: var(--accent-color);
@@ -244,11 +235,11 @@
   margin-left: 90px;
   margin-top: -150px;
   max-width: 600px;
-  width: 100%;// raise it over the hero if desired
-  background: rgba(10,10,10,0.0);
+  width: 100%; // raise it over the hero if desired
+  background: rgba(10, 10, 10, 0);
   padding: 2rem;
   border-radius: 12px;
-  backdrop-filter: blur(.01px);
+  backdrop-filter: blur(0.01px);
   z-index: 2;
   position: relative;
 }
@@ -277,28 +268,20 @@
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 1rem;
 }
-
-
-
-
-
-
 
 .entry-description {
   color: #bbb;
   margin: 0.25rem 0 0.5rem 0;
 }
 
-
 .entry-left {
   flex: 1;
 }
 .entry-date {
   font-size: 0.85rem;
-
 }
 .entry-tags {
   all: unset;
@@ -318,7 +301,9 @@
   }
 
   h1.post-title,
-  h1, .blog-header h1, .hero h1 {
+  h1,
+  .blog-header h1,
+  .hero h1 {
     font-size: 1.6rem;
     line-height: 1.3;
     word-break: break-word;
@@ -384,4 +369,44 @@
     font-size: 0.9rem;
     letter-spacing: 0.05em;
   }
+}
+/*====blog navigation==*/
+
+.post-nav-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 2rem;
+  gap: 2rem;
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  max-width: 220px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-card img {
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.nav-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ebebeb; /* matches blog text */
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-card:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+  text-decoration: none;
 }

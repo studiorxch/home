@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   background: #0a0a0a;
   color: #f0f0f0;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 100;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -22,7 +22,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Trirong', serif;
+  font-family: "Trirong", serif;
 }
 
 p {
@@ -30,7 +30,10 @@ p {
   letter-spacing: 0.01em;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -63,7 +66,7 @@ hr {
 .hero-subtitle {
   font-size: 2em;
   color: #f4f4f4;
-  margin-top: 0.0em;
+  margin-top: 0em;
   max-width: 700px;
   line-height: 1.1;
 }
@@ -75,7 +78,6 @@ blockquote {
   border-left: 3px solid var(--accent-color);
   padding: 0.5em 1em;
   margin: 1.5em 0;
-
 }
 
 .image-caption {
@@ -86,12 +88,22 @@ blockquote {
   line-height: 1.4;
 }
 
+.related-posts-label {
+  padding: 1.5em 0.1em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ff3b3b; /* same accent red as bullets/logo */
+  margin: 0 0 0.4rem 0; /* tight above title */
+  font-weight: 500;
+}
+
 /* ===============================
    Global List Styles
 ================================= */
 ul {
-  list-style: none;         /* remove browser default */
-  padding-left: 1.2em;      /* space for custom bullet */
+  list-style: none; /* remove browser default */
+  padding-left: 1.2em; /* space for custom bullet */
   margin: 0.75em 0;
 }
 
@@ -103,7 +115,7 @@ ul li {
 
 ul li::before {
   content: "•";
-  color: red;               /* brand bullet color */
+  color: red; /* brand bullet color */
   margin-left: -1.2em;
   margin-right: 0.5em;
   display: inline-block;
@@ -115,7 +127,7 @@ ul li::before {
 ================================= */
 /* Icon List Variant */
 .icon-list {
-  list-style: none;       /* hide bullets */
+  list-style: none; /* hide bullets */
   padding-left: 0;
 }
 
@@ -130,8 +142,6 @@ ul li::before {
   height: 20px;
 }
 
-
-
 /* ===============================
    Utilities
 ================================= */
@@ -144,7 +154,7 @@ ul li::before {
   vertical-align: middle;
   margin: 0 0.3em 0 0; /* only right margin */
   filter: brightness(0) invert(1);
-  line-height: 1;  
+  line-height: 1;
 }
 
 /* ===============================
@@ -217,10 +227,8 @@ ul li::before {
   font-size: 1.1rem;
 }
 
-
-
 .stream {
-  background: #0A0A0A;
+  background: #0a0a0a;
   text-align: center;
   padding: 1.5rem;
 }
@@ -239,18 +247,14 @@ ul li::before {
   border-radius: 8px;
 }
 
-
-
 ul li::marker {
   color: red;
 }
-
 
 /* ===============================
    Responsive Adjustments
 ================================= */
 @media screen and (max-width: 500px) {
-
   .schedule-table th,
   .schedule-table td {
     font-size: 0.9rem;
@@ -258,10 +262,8 @@ ul li::marker {
   }
 }
 
-
 .link-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-

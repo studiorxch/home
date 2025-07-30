@@ -29,6 +29,15 @@ github_username: "studiorxch"
 repository: studiorxch/home
 
 # Add custom collections if needed (example: Blog, Music, etc.)
+
+blog_subtitles:
+  - "Sound + Visual Culture in Loops"
+  - "Where Lo‑Fi Lives, Breathes, and Crosses Formats"
+  - "Archives of Lo‑Fi Memory, Weird Internet, and Beat Culture"
+  - "Filed Under: Loops, Pixels, and Subcultures"
+  - "Lo‑Fi Soundscapes and Visual Beat Loop Aesthetics"
+
+
 collections:
   events: # Stranger Vibes, Spa Therapy, Ramen Town
     output: true
