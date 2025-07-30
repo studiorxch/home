@@ -21,7 +21,7 @@ HollowBookCo began as an experiment in 2012 — books carved into objects of mys
 
 ---
 
-## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" style="width: 1em; vertical-align: middle;" /> Carved Pages, Living Sound
+## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" class="icon-sm" /> Carved Pages, Living Sound
 
 Once known for physical hollow books, the project now cuts *sound* into its lore. The relaunch pivots HollowBookCo into a hybrid publisher, ambient label, and archive for moods you can read and listen to.
 
@@ -31,7 +31,7 @@ Once known for physical hollow books, the project now cuts *sound* into its lore
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> First Re-entry: A New Song
+## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> First Re-pages/studiorich-presskitentry: A New Song
 
 The first re-entry into the archive is a new track + visual ritual:  
 <img src="/assets/icons/youtube.svg" alt="Link" class="icon-sm"> [Watch on YouTube](https://www.youtube.com/watch?v=5CYCmcvXMlM)  
