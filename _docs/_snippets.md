@@ -18,7 +18,7 @@ bundle exec jekyll serve --future
 
 
 git add . 
-git commit -m "blog filename update"
+git commit -m "underscore filename update"
 git push origin main
 
 
@@ -38,19 +38,12 @@ git push
 
 
 
-```
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
---remote-debugging-port=9222 \
---user-data-dir=/tmp/chrome-dev
-```
 
 
 
+# Maintenance Mac Filesystem
 
-
-
-
-# Convert underscores to hyphens in directory
+## Convert underscores to hyphens in directory
 
 for f in *_*; do
   mv "$f" "${f//_/-}"

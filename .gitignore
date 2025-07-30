@@ -6,16 +6,26 @@ _site/
 .history/
 
 
-README-Blog-Template.md
-_blog/_bak
 
+#MUSIC
 _tracks.zip
 _tracks/unreleased/
 
+
+#DEV 
 _dev
 _scripts
-
+_docs
+README-Blog-Template.md
+_blog/_bak
 /assets/playlists
+
+#scripts
+generate_library_yml.py_docs/
+generate_product_redirects.py
+generate_library_yml.py
+generate_library_ym-bak.py
+
 
 # Sass cache
 .sass-cache/
@@ -40,9 +50,5 @@ node_modules/
 _tracks/.obsidian/
 
 
-#scripts
-generate_library_yml.py_docs/
-generate_product_redirects.py
-generate_library_yml.py
-generate_library_ym-bak.py
+
 
