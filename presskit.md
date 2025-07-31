@@ -18,7 +18,8 @@ redirect_from:
   </iframe>
 </div>
 
-<h1 style="text-align:left; padding-left: 4rem; font-weight:300;">
+<h1 style="text-align:left; padding-left: 4rem; font-weight:300;
+">
   StudioRich Presskit <span style="opacity: 0.5;">/ Time Machine</span>
 </h1>
 
@@ -60,9 +61,10 @@ redirect_from:
 
   <li><strong><a href="https://soundcloud.com/studiorich/cat-on-the-signal">Cat on the Signal</a></strong> – A pastel-toned audio toy glitch loop. <br><a href="https://soundcloud.com/studiorich/cat-on-the-signal">→ View the piece</a></li>
 
-  <li><strong>Trackstar Engine</strong>  <span class="badge">Tool</span> – Emotional playlist generator. <br><a href="https://studiorich.shop/library/" target="_blank">→ Explore tools</a></li>
+<li><strong>StudioRich Desktop OS</strong> <span class="badge">Tool</span> – An upcoming desktop music player that merges Stranger Vibes, StudioRich visuals, and the Trackstar Engine’s emotional playlist generator. A creative OS where playback becomes performance. <br><a href="https://studiorich.shop/coming-soon/" target="_blank">→ Explore tools</a></li>
 
-  <li><strong>Lo-Fi Therapy Stream</strong> – Audio-reactive Twitch stream with spa energy. <br><a href="https://studiorich.shop/schedule/sunday" target="_blank">→ Visit Twitch</a></li>
+<li><strong>CTRL‑WALL</strong> – A visual layer for the Desktop OS: an audio‑reactive wall of sound that transforms playlists into immersive lo‑fi canvases. Streaming, drops, and mood‑synced visuals all in one. <br><a href="https://studiorich.shop/coming-soon/" target="_blank">→ See preview</a></li>
+
 </ul>
 
 <p style="margin-top: 1em;"><a href="/library/" class="cta-link">→ Browse the full StudioRich catalog</a></p>
