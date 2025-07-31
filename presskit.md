@@ -11,7 +11,7 @@ redirect_from:
 <!-- Presskit Page Hero  -->
 <div class="presskit-hero" style="width:100vw; height:75vh; overflow:hidden;">
   <iframe 
-    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQriiQdZvg1NgG-UDKBrTLZGnti_mcpz5U_VkzKyYZXXMecQwr4NyRcyBwHw0DBdFULgolfh0P0fm/pubhtml&font=Default&lang=en&initial_zoom=1&start_at_slide=13&timenav_position=bottom&timenav_theme=dark&width=100%25&height=75vh" 
+    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQriiQdZvg1NgG-UDKBrTLZGnti_mcpz5U_VkzKyYZXXMecQwr4NyRcyBwHw0DBdFULgolfh0P0fm/pubhtml&font=Default&lang=en&initial_zoom=1&start_at_slide=5&timenav_position=bottom&timenav_theme=dark&width=100%25&height=75vh" 
     frameborder="0" 
     allowfullscreen 
     style="border:none; width:100%; height:100%; display:block;">
@@ -39,7 +39,7 @@ redirect_from:
   <ul>
     <li><a href="/assets/presskit/studiorich_logo.zip">Download Logos</a></li>
     <li>Cover Art & Visuals</li>
-    <li>Press One-Sheet (PDF)</li>
+    <li><a href="/asset/presskit/StudioRich_Press_OneSheet_Placeholder.pdf">Press One-Sheet (PDF)</a></li>
     <li><a href="/library/">Listen & Download via StudioRich Library</a></li>
   </ul>
 
