@@ -20,7 +20,10 @@
     <button id="close-trash">✕</button>
   </div>
   <div id="trash-contents" class="window-body">
-    <p>Drag items here to delete them.</p>
+    <div class="trash-item">🗑️ old_party_photo_83.jpg</div>
+    <div class="trash-item">🗑️ unfinished_mix_v2.mp3</div>
+    <div class="trash-item">🗑️ scan_1983_sleep_prank.jpg</div>
+    <div class="trash-item">🗑️ empty_polaroid_scan_85.jpg</div>
   </div>
 </div>
 <script>
@@ -28,6 +31,21 @@
   const trashWindow = document.getElementById("trash-window");
   const closeTrash = document.getElementById("close-trash");
   const trashContents = document.getElementById("trash-contents");
+
+  const starterTrash = [
+    "old_party_photo_83.jpg",
+    "unfinished_mix_v2.mp3",
+    "scan_1983_sleep_prank.jpg",
+    "empty_polaroid_scan_85.jpg",
+  ];
+
+  trashContents.innerHTML = ""; // clear placeholder
+  starterTrash.forEach((file) => {
+    const div = document.createElement("div");
+    div.classList.add("trash-item");
+    div.textContent = `🗑️ ${file}`;
+    trashContents.appendChild(div);
+  });
 
   // Toggle window
   trashCan.addEventListener("click", (e) => {

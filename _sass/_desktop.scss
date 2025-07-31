@@ -19,11 +19,13 @@ body.desktop-page {
   overflow: hidden; /* lock only the desktop layout */
 }
 
+/* Base Desktop Layout (already working for desktop/laptop) */
 body.desktop-page #menu-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 40px; /* lock menu bar height */
   z-index: 6000;
 }
 
@@ -82,20 +84,35 @@ body.desktop-page {
   min-height: 100vh;
   margin: 0;
 }
+/* Desktop canvas */
 #desktop {
-  position: absolute; /* anchor to the viewport */
-  top: 40px; /* just below your fixed menubar */
+  position: absolute;
+  top: 40px; /* below menu bar */
   left: 0;
   right: 0;
-  bottom: 0; /* stop above your dock */
+  bottom: 70px; /* stop above dock (match dock height + padding) */
   padding: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem 4rem;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: hidden; /* no scrolling the entire desktop */
+}
 
-  overflow: hidden; /* prevents scrolling the whole desktop */
+/* Dock pinned at bottom */
+.dock {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  z-index: 5000;
 }
 
 .icon {
@@ -129,19 +146,6 @@ body.desktop-page {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   font-family: "Helvetica Neue", "NotoJP", sans-serif;
-}
-.dock {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  padding: 8px 16px;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  z-index: 5000;
 }
 
 .dock-item img {
@@ -177,12 +181,12 @@ body.desktop-page {
   font-weight: bold;
   cursor: move;
 }
+/* Windows can scroll internally */
 .window-body {
   flex: 1;
   padding: 10px;
-  overflow-y: auto; /* scroll only inside windows */
+  overflow-y: auto;
 }
-
 .hidden {
   display: none;
 }
@@ -195,4 +199,79 @@ body.desktop-page {
 
 .window-body a:hover {
   color: #fff;
+}
+/* ------------------------------------------
+   Responsive Tweaks
+   ------------------------------------------ */
+
+/* Tablets & small laptops */
+@media screen and (max-width: 1024px) {
+  #desktop {
+    padding: 2rem 1.5rem;
+    gap: 2rem 2.5rem;
+  }
+  .dock {
+    gap: 16px;
+    padding: 6px 12px;
+  }
+  .dock-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Phones / very small screens */
+@media screen and (max-width: 768px) {
+  body.desktop-page #menu-bar {
+    height: 32px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  #desktop {
+    top: 32px; /* shorter menu bar */
+    bottom: 60px; /* slightly smaller dock */
+    padding: 1.5rem 1rem;
+    gap: 1.5rem 2rem;
+  }
+  .dock {
+    gap: 12px;
+    padding: 4px 8px;
+  }
+  .dock-item img {
+    width: 32px;
+    height: 32px;
+  }
+  .icon {
+    width: 72px;
+    font-size: 11px;
+  }
+  .icon img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.trash-item {
+  padding: 4px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  cursor: default;
+}
+.trash-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Super narrow screens (≤480px) */
+@media screen and (max-width: 480px) {
+  #desktop {
+    justify-content: center; /* center icons on tiny screens */
+    gap: 1rem 1.5rem;
+  }
+  .dock {
+    gap: 8px;
+  }
+  .dock-item img {
+    width: 28px;
+    height: 28px;
+  }
 }
