@@ -50,8 +50,6 @@ noindex: true
 
 </div>
 
-{ % include desktop-dock.html % }
-
 <script>
   // Quick bootstrap playlist (replace with M3U parser later)
   const playlist = [

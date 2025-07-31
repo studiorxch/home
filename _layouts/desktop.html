@@ -2,48 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ page.meta_title | default: page.title | append: ' | ' | append: site.title }}</title>
+    <title>
+      {{ page.meta_title | default: page.title | append: ' | ' | append:
+      site.title }}
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="{{ page.image }}">
-    <meta name="robots" content="noindex">
+    <meta property="og:image" content="{{ page.image }}" />
+    <meta name="robots" content="noindex" />
 
-    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:image" content="{{ page.image }}">
-    <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/img/default-share.jpg' }}">
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta
+      property="og:description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <meta property="og:image" content="{{ page.image }}" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}{{ page.image | default: '/assets/img/default-share.jpg' }}"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
-
+    <link
+      rel="icon"
+      href="{{ '/assets/img/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/assets/img/favicon-32x32.png' | relative_url }}"
+    />
   </head>
   <body class="desktop-page">
     <div id="menu-bar">
-    <div class="menu-left">
-       <a href="/"><img src="/assets/icons/logo-mini.svg" alt="StudioRich Logo" class="menu-logo" /></a> 
+      <div class="menu-left">
+        <a href="/"
+          ><img
+            src="/assets/icons/logo-mini.svg"
+            alt="StudioRich Logo"
+            class="menu-logo"
+        /></a>
         StudioRich OS
-    </div>
-    <div class="menu-right">
+      </div>
+      <div class="menu-right">
         <span id="current-date"></span>
-        ·
-        <span id="clock"></span>
-    </div>
-    </div>
 
+        <span id="clock"></span>
+      </div>
+    </div>
 
     <div id="desktop">
-      <div class="icon">
+      <div class="icon desktop-icon" id="music-folder">
         <img src="/assets/icons/folder-music.webp" alt="Music Folder" />
         <span>Music</span>
       </div>
-      <div class="icon">
+      <div class="icon desktop-icon" id="zines-folder">
         <img src="/assets/icons/folder-zine.webp" alt="Zines Folder" />
         <span>Zines</span>
       </div>
@@ -51,27 +89,46 @@
 
     <div class="window visible" id="window-comingsoon">
       <div class="window-header">
-        <img src="/assets/icons/cursor.svg" alt="Cursor icon" style="width: 1em; vertical-align: middle; margin: 0;" />
+        <img
+          src="/assets/icons/cursor.svg"
+          alt="Cursor icon"
+          style="width: 1em; vertical-align: middle; margin: 0"
+        />
         Track Incoming…
       </div>
       <div class="window-body">
-        <p>This track or product isn’t live yet, but it’s in the works and coming soon.</p>
-        <ul style="margin-top: 1rem;">
+        <p>
+          This track or product isn’t live yet, but it’s in the works and coming
+          soon.
+        </p>
+        <ul style="margin-top: 1rem">
           <li>
             <a href="/library/">
-              <img src="/assets/icons/headphones.svg" alt="Headphones" style="width: 1em; vertical-align: middle; margin: 0;" />
+              <img
+                src="/assets/icons/headphones.svg"
+                alt="Headphones"
+                style="width: 1em; vertical-align: middle; margin: 0"
+              />
               Explore all tracks
             </a>
           </li>
           <li>
             <a href="/links/">
-              <img src="/assets/icons/drop.svg" alt="Drop" style="width: 1em; vertical-align: middle; margin: 0;" />
+              <img
+                src="/assets/icons/drop.svg"
+                alt="Drop"
+                style="width: 1em; vertical-align: middle; margin: 0"
+              />
               Check out our latest drops
             </a>
           </li>
           <li>
             <a href="/blog/">
-              <img src="/assets/icons/disco-ball.svg" alt="Blog" style="width: 1em; vertical-align: middle; margin: 0;" />
+              <img
+                src="/assets/icons/disco-ball.svg"
+                alt="Blog"
+                style="width: 1em; vertical-align: middle; margin: 0"
+              />
               Catch up on the blog
             </a>
           </li>
@@ -79,19 +136,35 @@
       </div>
     </div>
 
-
-
     <script>
-    function updateTime() {
+      function pad(num) {
+        return num.toString().padStart(2, "0");
+      }
+
+      function updateTime() {
         const now = new Date();
-        const options = { weekday: 'short', month: 'short', day: 'numeric' };
-        document.getElementById('current-date').textContent = now.toLocaleDateString('en-US', options);
-        document.getElementById('clock').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    }
 
-    setInterval(updateTime, 1000);
-    updateTime();
+        // Format the date
+        const options = { weekday: "short", month: "short", day: "numeric" };
+        document.getElementById("current-date").textContent =
+          now.toLocaleDateString("en-US", options);
+
+        // Build time string with AM/PM
+        let hours = now.getHours();
+        const minutes = pad(now.getMinutes());
+        const seconds = pad(now.getSeconds());
+        const ampm = hours >= 12 ? "PM" : "AM";
+
+        hours = hours % 12;
+        hours = hours ? hours : 12; // handle 0 as 12 (midnight/noon)
+
+        const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      setInterval(updateTime, 1000);
+      updateTime();
     </script>
-
+    {% include components/desktop-dock.html %}
   </body>
 </html>
