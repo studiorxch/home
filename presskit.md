@@ -19,7 +19,7 @@ redirect_from:
 </div>
 
 <h1 style="text-align:left; padding-left: 4rem; font-weight:300;">
-  StudioRich Presskit <span style="opacity: 0.5;">/ Timeline</span>
+  StudioRich Presskit <span style="opacity: 0.5;">/ Time Machine</span>
 </h1>
 
 <section class="about-page">
