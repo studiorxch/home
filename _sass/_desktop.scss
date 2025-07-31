@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+html,
+body {
+  height: auto;
+  margin: 0;
+  overflow-x: hidden; /* only prevent horizontal scroll */
+}
+
 body.desktop-page {
   height: 100%;
   margin: 0;
@@ -75,19 +82,20 @@ body.desktop-page {
   min-height: 100vh;
   margin: 0;
 }
-
 #desktop {
-  min-height: 100vh;
-  align-content: flex-start;
-  row-gap: 4rem;
-
+  position: absolute; /* anchor to the viewport */
+  top: 40px; /* just below your fixed menubar */
+  left: 0;
+  right: 0;
+  bottom: 0; /* stop above your dock */
   padding: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem 4rem;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 40px; /* match menu bar height */
+
+  overflow: hidden; /* prevents scrolling the whole desktop */
 }
 
 .icon {
@@ -172,8 +180,9 @@ body.desktop-page {
 .window-body {
   flex: 1;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: auto; /* scroll only inside windows */
 }
+
 .hidden {
   display: none;
 }
