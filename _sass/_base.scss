@@ -160,6 +160,13 @@ ul li::before {
 /* ===============================
    Hero / Intro Sections
 ================================= */
+
+.presskit-hero iframe {
+  width: 95vw;
+  height: 100vh;
+  margin-left: -0.5vw;
+}
+
 .welcome,
 .stream-schedule {
   background: #111;

@@ -5,22 +5,24 @@ permalink: /presskit/
 description: "Download StudioRich assets, bios, and visual materials for media or collaborations."
 image: /assets/covers/presskit-cover.webp
 redirect_from:
-- pages/studiorich-presskit
+  - pages/studiorich-presskit
 ---
 
-{% include components/hero.html
-  image="/assets/img/graffiti-mascot-ink-doodle.webp"
-  title="StudioRich<br/>Presskit" %}
+<!-- Presskit Page Hero  -->
+<div class="presskit-hero" style="width:100vw; height:75vh; overflow:hidden;">
+  <iframe 
+    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQriiQdZvg1NgG-UDKBrTLZGnti_mcpz5U_VkzKyYZXXMecQwr4NyRcyBwHw0DBdFULgolfh0P0fm/pubhtml&font=Default&lang=en&initial_zoom=1&start_at_slide=13&timenav_position=bottom&timenav_theme=dark&width=100%25&height=75vh" 
+    frameborder="0" 
+    allowfullscreen 
+    style="border:none; width:100%; height:100%; display:block;">
+  </iframe>
+</div>
 
-
-<h1 style="text-align:left; padding-left: 8rem; font-weight:300;">
-  StudioRich Presskit <span style="opacity: 0.5;">/ Featuring RX-0</span>
+<h1 style="text-align:left; padding-left: 4rem; font-weight:300;">
+  StudioRich Presskit <span style="opacity: 0.5;">/ Timeline</span>
 </h1>
 
-
 <section class="about-page">
-
-
 
   <section class="about-content">
 
@@ -82,10 +84,7 @@ DIY visual ephemera from StudioRich’s underground loop lab days. These pieces 
 This archive reflects our early collage experiments, VHS-era textures, and the deep-rooted influence of Japanese anime, which had already become a foundational aesthetic in our visual language.
 Not officially released—some of this material may appear in future NFT drops or zine-format reissues.</li>
 
-
-
 </ul>
-
 
   <hr>
 

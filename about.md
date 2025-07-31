@@ -10,11 +10,9 @@ redirect_from:
   - /pages/contact
   - /blogs/news/see-you-later-oscillator-early-access-now-on-bandcamp
   - /blogs/news/soft-served-dreams-pre-release-now-available
-
-
 ---
-{% include components/hero.html image="/assets/img/origin-hero.webp" title="Origin" subitle="" %}
 
+{% include components/hero.html image="/assets/img/origin-hero.webp" title="Origin" subitle=""%}
 
 <p class="image-caption">Our mascot in Whiteout RX-0 Mode — a lo-fi signal runner moving between memory and motion.</p>
 
@@ -30,7 +28,6 @@ redirect_from:
 
 <p>Whether through animated cover loops, character-driven story arcs, or custom-coded engines that turn music curation into something tactile and strange, every release invites listeners into a world that feels handmade, human, and a little unruly.</p>
 
-
 <p><a href="/presskit/" class="cta-button">Press & Project Kit</a>
 </p>
 
@@ -43,10 +40,5 @@ redirect_from:
     SoundCloud: <a href="https://soundcloud.com/studiorich">soundcloud.com/studiorich</a>
   </p>
 
-
-
   </section>
 </section>
-
-
-
