@@ -6,7 +6,20 @@
   font-style: normal;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 #menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6000;
+  padding-top: 40px; /* or however tall the menubar is */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,10 +63,14 @@ body.desktop-page {
   font-weight: 300;
   font-size: 15px;
   color: #e0e0e0;
+
+  /* Add these */
+  min-height: 100vh;
+  margin: 0;
 }
 
 #desktop {
-  min-height: 80vh;
+  min-height: 100vh;
   align-content: flex-start;
   row-gap: 4rem;
 
