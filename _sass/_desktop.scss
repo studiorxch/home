@@ -250,7 +250,7 @@ body.desktop-page {
     height: 48px;
   }
 }
-
+/*--Trash Can Window--*/
 .trash-item {
   padding: 4px 6px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -260,7 +260,7 @@ body.desktop-page {
 .trash-item:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
+/* Trash can window */
 /* Super narrow screens (≤480px) */
 @media screen and (max-width: 480px) {
   #desktop {

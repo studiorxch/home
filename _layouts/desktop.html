@@ -58,6 +58,7 @@
       href="{{ '/assets/img/favicon-32x32.png' | relative_url }}"
     />
   </head>
+
   <body class="desktop-page">
     <div id="menu-bar">
       <div class="menu-left">
@@ -76,95 +77,12 @@
       </div>
     </div>
 
-    <div id="desktop">
-      <div class="icon desktop-icon" id="music-folder">
-        <img src="/assets/icons/folder-music.webp" alt="Music Folder" />
-        <span>Music</span>
-      </div>
-      <div class="icon desktop-icon" id="zines-folder">
-        <img src="/assets/icons/folder-zine.webp" alt="Zines Folder" />
-        <span>Zines</span>
-      </div>
-    </div>
+    <div id="desktop">{% include components/desktop-icons.html %}</div>
 
-    <div class="window visible" id="window-comingsoon">
-      <div class="window-header">
-        <img
-          src="/assets/icons/cursor.svg"
-          alt="Cursor icon"
-          style="width: 1em; vertical-align: middle; margin: 0"
-        />
-        Track Incoming…
-      </div>
-      <div class="window-body">
-        <p>
-          This track or product isn’t live yet, but it’s in the works and coming
-          soon.
-        </p>
-        <ul style="margin-top: 1rem">
-          <li>
-            <a href="/library/">
-              <img
-                src="/assets/icons/headphones.svg"
-                alt="Headphones"
-                style="width: 1em; vertical-align: middle; margin: 0"
-              />
-              Explore all tracks
-            </a>
-          </li>
-          <li>
-            <a href="/links/">
-              <img
-                src="/assets/icons/drop.svg"
-                alt="Drop"
-                style="width: 1em; vertical-align: middle; margin: 0"
-              />
-              Check out our latest drops
-            </a>
-          </li>
-          <li>
-            <a href="/blog/">
-              <img
-                src="/assets/icons/disco-ball.svg"
-                alt="Blog"
-                style="width: 1em; vertical-align: middle; margin: 0"
-              />
-              Catch up on the blog
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <script>
-      function pad(num) {
-        return num.toString().padStart(2, "0");
-      }
-
-      function updateTime() {
-        const now = new Date();
-
-        // Format the date
-        const options = { weekday: "short", month: "short", day: "numeric" };
-        document.getElementById("current-date").textContent =
-          now.toLocaleDateString("en-US", options);
-
-        // Build time string with AM/PM
-        let hours = now.getHours();
-        const minutes = pad(now.getMinutes());
-        const seconds = pad(now.getSeconds());
-        const ampm = hours >= 12 ? "PM" : "AM";
-
-        hours = hours % 12;
-        hours = hours ? hours : 12; // handle 0 as 12 (midnight/noon)
-
-        const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-        document.getElementById("clock").textContent = timeString;
-      }
-
-      setInterval(updateTime, 1000);
-      updateTime();
-    </script>
+    {% include components/desktop-windows.html %}
+    <script src="{{ '/assets/js/clock.js' | relative_url }}"></script>
     {% include components/desktop-dock.html %}
+
+    <script src="{{ '/assets/js/desktop.js' | relative_url }}"></script>
   </body>
 </html>

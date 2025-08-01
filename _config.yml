@@ -38,9 +38,13 @@ blog_subtitles:
   - "Lo-Fi Soundscapes and Visual Beat Loop Aesthetics"
 
 collections:
+  desktop:
+    output: false
   events: # Stranger Vibes, Spa Therapy, Ramen Town
     output: true
     permalink: /events/:slug/
+  files:
+    output: false
   tracks: # Music Library
     output: true
     permalink: /tracks/:name/

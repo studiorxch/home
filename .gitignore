@@ -9,7 +9,8 @@ _site/
 
 #MUSIC
 _tracks.zip
-_tracks/unreleased/
+_tracks/_unreleased/
+_album/_unreleased/
 
 
 #DEV 

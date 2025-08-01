@@ -11,13 +11,10 @@ tracklist:
   - "Harmonic Loom"
   - "Amber Flow"
   - "Nectar Splice"
+description: "A full StudioRich lo-fi album with tracks, inserts, and cover art."
+view: "grid"
 published: false
 ---
-
-
-
-
-
 
 {% include components/hero.html
   image=page.image
