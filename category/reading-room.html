@@ -1,53 +1,142 @@
----
-layout: default
-title: "Reading Room"
-permalink: /category/reading-room/
-image: /assets/blog/hero-reading-room.webp
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Reading Room</title>
+    <style>
+      /* Reset */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* no scroll */
+      }
 
-<div class="reading-room">
-  {% include components/reading-room-hero.html %} {% assign posts =
-  site.categories["reading-room"] | sort: "date" | reverse %} {% for post in
-  posts %}
-  <div class="reading-room-entry">
-    <!-- your entry code -->
+      /* Background image */
+      .hero-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("/assets/img/blog/hero-reading-room.webp") center/cover
+          no-repeat;
+        z-index: 0;
+      }
 
-    <div class="entry-left">
-      {% if post.chapter %}
-      <div class="entry-chapter">Week {{ post.chapter }}</div>
-      {% endif %}
-      <h2 class="entry-title">
-        {% if post.icon %}
-        <img
-          src="{{ post.icon }}"
-          alt="{{ post.title }} icon"
-          class="entry-icon"
-        />
-        {% endif %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
+      /* Gradient overlay */
+      .hero-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          -45deg,
+          rgba(29, 43, 100, 0.85),
+          rgba(248, 205, 218, 0.85),
+          rgba(29, 151, 108, 0.85),
+          rgba(147, 249, 185, 0.85)
+        );
+        background-size: 400% 400%;
+        animation: gradientShift 30s ease infinite;
+        z-index: 1;
+      }
 
-      {% if post.description %}
-      <p class="entry-description">{{ post.description }}</p>
-      {% endif %}
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
-      <div class="entry-meta">
-        <span class="entry-date">{{ post.date | date: "%B %d, %Y" }}</span>
-        {% if post.tags %}
-        <span class="entry-tags"> – {{ post.tags | join: ", " }}</span>
-        {% endif %}
-      </div>
+      /* Foreground content */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        top: 40%;
+        transform: translateY(-50%);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-content p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+      }
+
+      /* Fullscreen button */
+      .fs-btn {
+        margin-top: 1.5rem;
+        padding: 0.6rem 1.2rem;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid white;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .fs-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Music player docked */
+      #bgMusic {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        z-index: 3;
+      }
+
+      /* Hide unless fullscreen */
+      :not(:fullscreen) #bgMusic {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>The Reading Room</h1>
+      <p>One gradient. One loop. A quiet corner.</p>
+      <button class="fs-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+      <audio
+        id="bgMusic"
+        src="/assets/loops/loops-between-pages.mp3"
+        autoplay
+        loop
+      ></audio>
     </div>
 
-    <div class="entry-thumbnail">
-      <a href="{{ post.url }}">
-        <img
-          src="{{ post.image | default: '/assets/img/placeholders/reading-room.webp' }}"
-          alt="{{ post.title }} thumbnail"
-        />
-      </a>
-    </div>
-    <!-- your entry code -->
-  </div>
-  {% endfor %}
-</div>
+    <script>
+      function toggleFullscreen() {
+        const el = document.documentElement;
+        if (!document.fullscreenElement) {
+          el.requestFullscreen().then(() => {
+            document.getElementById("bgMusic").play();
+          });
+        } else {
+          document.exitFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>

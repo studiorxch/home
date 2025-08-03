@@ -64,7 +64,7 @@ redirect_from:
   <div class="product-card">
     <img src="/assets/covers/cat-on-the-signal.webp" alt="Cat on the Signal">
     <h3><em>Cat on the Signal</em></h3>
-    <p>Surreal glitch-pop, fuzzy beats.<br><strong>Download <img src="/assets/icons/finger-point.svg" alt="Finger icon" class="icon-sm">  <a href="https://ko-fi.com/studiorich" target="_blank">Ko‑fi</a></strong></p>
+    <p>Surreal glitch-pop, fuzzy beats.<br><strong>Download  <a href="https://ko-fi.com/studiorich" target="_blank">Ko‑fi</a></strong></p>
   </div>
 </section>
 
