@@ -21,14 +21,12 @@
   display: flex;
   justify-content: center;
 
-
   position: fixed;
   z-index: 10; /* ⬅️ This is now above the gradient */
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .header-inner {
@@ -55,8 +53,6 @@ header.site-header::after {
   z-index: 0;
 }
 
-
-
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -82,77 +78,35 @@ header.site-header::after {
   gap: 1rem;
 }
 
+/* ===============================
+   Header Icons - Toolbar Style
+================================= */
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem; /* tighter than 1rem so they feel grouped */
+}
+
 .header-icons a {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03); /* subtle translucent background */
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.header-icons a:hover {
+  background: rgba(255, 255, 255, 0.15); /* stronger hover */
+  transform: translateY(-2px); /* lift slightly */
 }
 
 .header-icons img {
-  height: 28px;
+  height: 20px; /* uniform inside button */
+  width: auto;
   filter: brightness(0) invert(1);
-  transition: 0.3s ease;
-  margin: 0;
-  padding: 0;
-}
-
-.header-icons img:hover {
-  filter: brightness(2.5);
-  height: 26px;
-}
-
-.hero {
-  padding: 0;
-  padding-bottom: 1rem;
-  width: 100vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 6rem;
-  background: center/cover no-repeat;
-  padding-left: 4rem;
-  text-align: left;
-}
-
-.hero-overlay {
-  background: rgba(0, 0, 0, 0);
-  padding: 2rem 3rem;
-  max-width: 640px;
-}
-
-.hero h1 {
-  font-size: 72px;
-  font-weight: 200;
-  letter-spacing: 0.02em;
-  color: #f0f0f0;
-  line-height: 1.1;
-    margin-bottom: 0.1em; /* Add this if not present */
-}
-
-.hero-about {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background: url('/assets/img/about-hero.webp') center/cover no-repeat;
-  color: #f0f0f0;
-  text-align: left;
-}
-
-.hero-about .hero-overlay h1 {
-  font-size: 64px;
-  line-height: 1.2;
-  font-weight: 200;
-}
-
-.about-content {
-  max-width: 720px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  pointer-events: none; /* avoid weird drag issues */
 }

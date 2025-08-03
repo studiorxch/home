@@ -98,13 +98,14 @@ blockquote {
   margin: 0 0 0.4rem 0; /* tight above title */
   font-weight: 500;
 }
-
 /* ===============================
    Global List Styles
 ================================= */
+
+/* Reset all unordered lists to clean (no bullets) */
 ul {
-  list-style: none; /* remove browser default */
-  padding-left: 1.2em; /* space for custom bullet */
+  list-style: none;
+  padding-left: 0;
   margin: 0.75em 0;
 }
 
@@ -114,9 +115,15 @@ ul li {
   line-height: 1.4;
 }
 
+/* By default, no custom bullets */
 ul li::before {
+  content: none;
+}
+
+/* Apply red bullets only on designated link lists */
+.link-list li::before {
   content: "•";
-  color: red; /* brand bullet color */
+  color: #ff3b3b; /* your brand accent red */
   margin-left: -1.2em;
   margin-right: 0.5em;
   display: inline-block;
@@ -141,6 +148,12 @@ ul li::before {
   vertical-align: text-bottom;
   margin-right: 0.4em;
   height: 20px;
+}
+
+img.icon-med {
+  vertical-align: text-bottom;
+  margin-right: 0.4em;
+  height: 96px;
 }
 
 /* ===============================
@@ -274,4 +287,62 @@ ul li::marker {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+/* ===============================
+   Hero About Section
+================================= */
+.hero {
+  padding: 0;
+  padding-bottom: 1rem;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 6rem;
+  background: center/cover no-repeat;
+  padding-left: 4rem;
+  text-align: left;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0);
+  padding: 2rem 3rem;
+  max-width: 640px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+  color: #f0f0f0;
+  line-height: 1.1;
+  margin-bottom: 0.1em; /* Add this if not present */
+}
+
+.hero-about {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("/assets/img/about-hero.webp") center/cover no-repeat;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.hero-about .hero-overlay h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+.about-content {
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }

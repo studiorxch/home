@@ -2,7 +2,7 @@
 layout: post
 title: "Chapter 02 — Cassette Tapes for the Mind"
 subtitle: "A nostalgic dive into the 1990s productivity music craze"
-date: 2025-08-04
+date: 2025-08-09
 description: "Exploring how study music cassettes of the 1990s promised better focus, memory, and productivity — the ancestors of today’s lo-fi culture."
 image: /assets/img/blog/cassette-tape.webp
 tags:

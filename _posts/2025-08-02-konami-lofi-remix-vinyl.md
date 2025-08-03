@@ -2,7 +2,7 @@
 title: "Konami’s Arcade Classics Get the Lo‑Fi Vinyl Treatment"
 date: 2025-08-01
 description: "A new vinyl LP reimagines Konami’s arcade soundtracks as lo‑fi chill remixes — nostalgia pressed to wax."
-image: /assets/img/blog/konami-lofi-remix-vinyl.jpg
+image: /assets/img/blog/konami-lofi-remix-vinyl.webp
 tags: [lo‑fi, vinyl, retro‑gaming, soundtracks, crossovers]
 ---
 
