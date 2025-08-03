@@ -7,6 +7,7 @@ description: "A satirical interview with a feline philosopher reveals unexpected
 image: /assets/img/blog/tom-the-cat.webp
 tags: [lofi, ambientattitude, catsbeingdeep, studiofieldnotes]
 category: field-notes
+published: false
 ---
 
 # Tom the Cat: A Lo-Fi Icon of Anti-Hustle Wisdom
@@ -27,7 +28,7 @@ If that isn’t a perfect mission statement for the lo-fi mindset, we don’t kn
 
 ---
 
-## <img src="/assets/icons/dreamy-clouds.svg" alt="Dreamy Clouds" style="width: 1em; vertical-align: middle;" />  Lo-Fi Life Lessons from Tom
+## <img src="/assets/icons/dreamy-clouds.svg" alt="Dreamy Clouds" style="width: 1em; vertical-align: middle;" /> Lo-Fi Life Lessons from Tom
 
 What starts as comedy becomes quiet commentary:
 
@@ -41,15 +42,15 @@ For creators, listeners, and lo-fi wanderers, Tom is a reminder: let mood lead. 
 
 ## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
-We’re filing this under *ambient attitude studies*. Tom’s worldview aligns perfectly with the StudioRich beat ethic: no rush, full feeling, selective presence.
+We’re filing this under _ambient attitude studies_. Tom’s worldview aligns perfectly with the StudioRich beat ethic: no rush, full feeling, selective presence.
 
 This isn’t just about cats. It’s about permission to live like a loop—softly repeating what restores you.
 
 ---
+
 <img src="/assets/icons/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle;" /> **Filed Under:**
 
 #ambientattitude  
 #catsbeingdeep  
 #lofiethos  
 #studiofieldnotes
-

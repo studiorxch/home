@@ -25,7 +25,7 @@ Her “graduation” doesn’t end the stream—it reframes it. The beats contin
 
 ---
 
-## 🌌 Why It Matters
+## <img src="/assets/icons/pin.svg" alt="Pin icon" class="icon-sm" /> Why It Matters
 
 - Marks the end of an era in **[nostalgic ambient playlists](/tags/nostalgic/)**.
 - Reinforces lo‑fi’s role in **[sound + visual culture crossovers](/tags/crossovers/)**.
@@ -33,7 +33,7 @@ Her “graduation” doesn’t end the stream—it reframes it. The beats contin
 
 ---
 
-## 📌 File It Under
+## <img src="/assets/icons/folder.svg" alt="Folder icon" class="icon-sm" /> File It Under
 
 #LegacySeries  
 #SundayReads  
