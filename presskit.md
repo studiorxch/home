@@ -38,7 +38,7 @@ redirect_from:
   <h3><img src="/assets/icons/splatter.svg" alt="Splatter" class="icon-sm"> Assets</h3>
   <ul>
     <li><a href="/assets/presskit/studiorich_logo.zip">Download Logos</a></li>
-    <li>Cover Art & Visuals</li>
+    <li><a href="/assets/presskit/visuals">Cover Art & Visuals</a></li>
     <li><a href="/assets/presskit/StudioRich_Press_OneSheet_Placeholder.pdf">Press One-Sheet (PDF)</a></li>
     <li><a href="/library/">Listen & Download via StudioRich Library</a></li>
   </ul>
