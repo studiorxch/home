@@ -1,7 +1,8 @@
 ---
 layout: post
 date: 2025-08-04
-title: "Chainlink Shuffle – StudioRich’s Off‑Kilter Accordion Lo‑Fi Ritual"
+title: "Chainlink Shuffle"
+subtitle: "StudioRich’s Off‑Kilter Accordion Lo‑Fi Ritual"
 description: "Accordion lead, toy‑speaker kick, and highway ghosts stitched into a lo‑fi dance ritual. A surreal StudioRich drop — weird, hypnotic, and strangely catchy."
 image: /assets/covers/chainlink-shuffle.webp
 tags:
@@ -53,7 +54,7 @@ File it under:
 
 ---
 
-## <img src="/assets/icons/tape-loop.svg" alt="Tape Loop icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/icons/tape-cassette.webp" alt="Tape Loop icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 This track embodies what we love: making the unusual feel essential. It’s lo‑fi dance you can’t quite explain but can’t stop nodding to.
 
