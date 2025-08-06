@@ -5,7 +5,7 @@ from mutagen import File as MutagenFile
 
 # --- CONFIG ---
 PLAYLIST_FILE = "_desktop/stranger-vibes-playlist.json"
-LIBRARY_FILE = "library.yml"
+LIBRARY_FILE = "_data/library.yml"
 LOOP_ROOT = "assets/loops"  # adjust to match your project structure
 OUTPUT_FILE = "_desktop/stranger-vibes-playlist-enriched.json"
 # ---------------
