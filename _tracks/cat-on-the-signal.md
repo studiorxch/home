@@ -7,9 +7,9 @@ image: /assets/covers/cat-on-the-signal.webp
 image_ready: true
 date: 2025-02-24
 duration: "2:44"
-album:
-key:
-bpm:
+album: Available Now
+key: D
+bpm: 136
 genre:
   - bedroom pop
   - chillhop
