@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "NINO – Sea Salt Dayz: "
+title: "NINO – Sea Salt Dayz"
 subtitle: "A Lo-Fi Reset for the Weary Mind"
 date: 2025-07-24
 description: "Released just ahead of the full moon, NINO’s *Sea Salt Dayz* is a low-key soul mantra — lo-fi, mindful, and gentle as salt air."

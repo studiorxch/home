@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tom the Cat: "
+title: "Tom the Cat"
 subtitle: "A Lo-Fi Icon of Anti-Hustle Wisdom"
 date: 2025-07-25
 description: "A satirical interview with a feline philosopher reveals unexpected truths about lo-fi lifestyle, naps, and resistance to productivity culture."

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HollowBookCo Reawakens:"
+title: "HollowBookCo Reawakens"
 subtitle: "Lo‑Fi Lore in Sound + Story"
 date: 2025-08-03
 description: "From secret hollow books in 2012 to lo-fi soundbound stories in 2025 — HollowBookCo is back as StudioRich’s literary-music imprint."

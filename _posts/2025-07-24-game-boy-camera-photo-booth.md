@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pixel-Grain Dreams: "
+title: "Pixel-Grain Dreams"
 subtitle: "Game Boy Camera as Lo-Fi Wedding Photo Booth"
 date: 2025-07-24
 description: "A Game Boy Camera turned photo booth brings lo-fi grain and retro joy to the modern wedding aisle. Analog romance in every pixel."
@@ -20,7 +20,7 @@ tags:
 
 ---
 
-## <img src="/assets/icons/dot-matrix-heart.svg" alt="Dot Matrix icon" style="width: 1em; vertical-align: middle;" />  Analog Hearts, Digital Dreams
+## <img src="/assets/icons/dot-matrix-heart.svg" alt="Dot Matrix icon" style="width: 1em; vertical-align: middle;" /> Analog Hearts, Digital Dreams
 
 Weddings tend to be high-gloss. But this one leaned grayscale — powered by a 1998 Game Boy Camera, some brilliant hacking, and a love for pixelated memory. Photographer Brendan Barry crafted a custom booth that captured lo-fi portraits with that unmistakable dot-matrix warmth.
 
@@ -28,7 +28,7 @@ The setup? An analog rig that prints photos from 2-bit sensors, channeling retro
 
 ---
 
-## <img src="/assets/icons/gameboy.svg" alt="Gameboy icon" style="width: 1em; vertical-align: middle;" />  What It Felt Like
+## <img src="/assets/icons/gameboy.svg" alt="Gameboy icon" style="width: 1em; vertical-align: middle;" /> What It Felt Like
 
 Imagine stepping into a moment and leaving with a memory that looks like early Pokémon dialogue — soft, square, and soulfully imperfect. No filters needed. Just time, tech, and a little visual poetry.
 
@@ -36,7 +36,7 @@ This isn’t just a wedding trend. It’s a reminder: nostalgia isn't a glitch �
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" />  StudioRich Take
+## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 We love when lo-fi crosses formats — from music to image to lived moment. This project feels like a beat made visual. A perfect fit for StudioRich ethos.
 
@@ -49,7 +49,8 @@ File it under:
 
 ---
 
-## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" style="width: 1em; vertical-align: middle;" />  Original Story + Credits
+## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" style="width: 1em; vertical-align: middle;" /> Original Story + Credits
+
 [PetaPixel Feature](https://petapixel.com/2025/07/23/game-boy-camera-powers-lo-fi-wedding-photo-booth-like-youve-never-seen/)  
 Photography by Brendan Barry  
 Image used with editorial intent under fair use

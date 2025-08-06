@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Fig Tape – Miracle:"
+title: "Fig Tape – Miracle"
 subtitle: " Nordic Lo-Fi with Linger"
 date: 2025-07-21
 description: "A sublime indie-electronic lo-fi cut from Norwegian artist Fig Tape, steeped in atmosphere and memory."
@@ -17,26 +17,30 @@ tags:
 
 # Fig Tape – Miracle: Nordic Lo-Fi with Linger
 
-**Track:** *Miracle*  
+**Track:** _Miracle_  
 **Artist:** Fig Tape (aka Elias Melkersen)  
 **Featured via:** [Record of the Day](https://www.recordoftheday.com/record-of-the-day/2025-07-21/miracle2025)
 
 ---
 
 ## <img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Lo-Fi That Freezes Time
-*Miracle* doesn’t just play—it settles in. Norwegian artist Fig Tape crafts a track that floats between ambient hush and indie electronics, gently braided together by lo-fi textures and winterlight melancholy.
+
+_Miracle_ doesn’t just play—it settles in. Norwegian artist Fig Tape crafts a track that floats between ambient hush and indie electronics, gently braided together by lo-fi textures and winterlight melancholy.
 
 It’s the kind of loop that feels like the end of a film, or the start of a very slow memory.
 
 ---
 
 ## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Listen In
+
 You’ll hear:
+
 - Filtered vocals echoing like breath on glass
 - Sparse percussion, just enough to pace a heartbeat
 - A sense of stillness that invites pause
 
 Great for:
+
 - Window-watching
 - Pre-dawn editing sprints
 - Soundtracking that one lingering moment
@@ -44,7 +48,8 @@ Great for:
 ---
 
 ## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
-There’s restraint here—and that’s the magic. *Miracle* shows how much power exists in less. No over-arrangement, no forced peaks. Just soft persistence and shimmer.
+
+There’s restraint here—and that’s the magic. _Miracle_ shows how much power exists in less. No over-arrangement, no forced peaks. Just soft persistence and shimmer.
 
 A study in patience. A slow fade into beauty.
 
@@ -57,9 +62,9 @@ File it under:
 ---
 
 ## <img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> More from Record of the Day
+
 [Full Feature – Miracle](https://www.recordoftheday.com/record-of-the-day/2025-07-21/miracle2025)
 
 When silence needs a sound, let this one in.
 
 ---
-

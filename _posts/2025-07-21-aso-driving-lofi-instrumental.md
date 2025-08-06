@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Aso – Driving: "
+title: "Aso – Driving"
 subtitle: "A Warm, Introspective Lo-Fi Instrumental"
 date: 2025-07-21
 description: "Aso’s track 'Driving' is a dusk-lit lo-fi loop that captures the feeling of motion and memory."
 image: /assets/img/blog/aso-driving-lofi-instrumental.webp
 tags: [lofi, instrumental, chillhop, roadmusic]
-
 ---
 
 # Aso – Driving: A Warm, Introspective Lo-Fi Instrumental
@@ -19,6 +18,7 @@ tags: [lofi, instrumental, chillhop, roadmusic]
 ---
 
 ## <img src="/assets/icons/car.svg" alt="Car icon" style="width: 1em; vertical-align: middle;" /> Vibe Check
+
 “Driving” by Aso rolls in like a memory. It’s dusk-colored and road-worn, built from mellow piano motifs, head-nod percussion, and a gentle hum of solitude. The track captures the bittersweet clarity of motion — like cruising familiar streets with no destination, only sound.
 
 This is music for when the sun folds itself into the horizon, and thoughts stretch long across the dashboard.
@@ -26,6 +26,7 @@ This is music for when the sun folds itself into the horizon, and thoughts stret
 ---
 
 ## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Listen In
+
 Available now via RouteNote Radar. You can stream it wherever lo-fi lives: Bandcamp, SoundCloud, or your rainy day playlist on Spotify.
 
 Pair it with a sketchpad and an open window.
@@ -33,15 +34,16 @@ Pair it with a sketchpad and an open window.
 ---
 
 ## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
-We caught “Driving” on a slow-scroll break and it stuck — the kind of loop that lingers longer than expected. Aso keeps it simple, letting tone lead rhythm. The drums breathe. The piano exhales. 
+
+We caught “Driving” on a slow-scroll break and it stuck — the kind of loop that lingers longer than expected. Aso keeps it simple, letting tone lead rhythm. The drums breathe. The piano exhales.
 
 For fans of tracks that feel like late night voice notes to yourself.
 
 ---
 
 ## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> File It Under
+
 #ForNightCommutes  
 #MoodLoops  
 #BeatsForThinking  
 #VisualsToThis
-

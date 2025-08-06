@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MCBAISE – Cold Cuts (feat. Muthi): "
+title: "MCBAISE – Cold Cuts (feat. Muthi)"
 subtitle: "Surreal Pop & Supermarket Dreams"
 date: 2025-07-25
 description: "MCBAISE returns with a surreal, sunlit funk loop featuring Muthi—‘Cold Cuts’ is a trip through ‘90s nostalgia and guitar groove."
@@ -15,29 +15,26 @@ tags:
 redirect_from: /2025/07/25/mcbaise_cold_cuts.html
 ---
 
-## <img src="/assets/icons/little-heart-gesture.svg" alt="Heart icon" style="width: 1em; vertical-align: middle;" /> MCBAISE – *Cold Cuts* (feat. Muthi)
-MCBAISE (aka Matthieu Bessudo, better known as *mcbess*) is back with a woozy, sun-kissed jam that retreats into nostalgic quirks tangled in slick guitar work and velvet synth textures. Inspired by ‘90s gaming-day dopamine—like finally getting that Sonic & Knuckles Mega Drive cartridge—the new single *“Cold Cuts”* channels supermarket​-checkout excitement with surreal, swaying visuals ([musicwire.popfiltr.com](https://musicwire.popfiltr.com/news/mcbaise-cold-cuts-ft-muthi?utm_source=chatgpt.com)).
+## <img src="/assets/icons/little-heart-gesture.svg" alt="Heart icon" style="width: 1em; vertical-align: middle;" /> MCBAISE – _Cold Cuts_ (feat. Muthi)
+
+MCBAISE (aka Matthieu Bessudo, better known as _mcbess_) is back with a woozy, sun-kissed jam that retreats into nostalgic quirks tangled in slick guitar work and velvet synth textures. Inspired by ‘90s gaming-day dopamine—like finally getting that Sonic & Knuckles Mega Drive cartridge—the new single _“Cold Cuts”_ channels supermarket​-checkout excitement with surreal, swaying visuals ([musicwire.popfiltr.com](https://musicwire.popfiltr.com/news/mcbaise-cold-cuts-ft-muthi?utm_source=chatgpt.com)).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZWbryTgv8k?si=z87kqg8XfNmbJD93&amp;clip=UgkxZwKLLbtGD7gGStzERoWFm-_xY7yFYTt6&amp;clipt=EID6ARjozAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;"><img src="/assets/icons/donut.svg" alt="Donut icon" style="width: 1em; vertical-align: middle;" /> Loop moment starts here — watch the guitar and grass tilt sync.</p>
 
 Shot from a tilted, dreamlike vantage, the video mirrors the shift​-and-​wobble energy in the track—as though you’re lying in the grass watching the world subtly misalign itself in slo​-mo ([completemusicupdate.com](https://completemusicupdate.com/approved-mcbaise/?utm_source=chatgpt.com)).
 
-### <img src="/assets/icons/smile-face.svg" alt="Smile icon" style="width: 1em; vertical-align: middle;" />  Track vibe
+### <img src="/assets/icons/smile-face.svg" alt="Smile icon" style="width: 1em; vertical-align: middle;" /> Track vibe
+
 - An infectious blend of yacht​-rock sheen, woozy funk, and psychedelic pop.
 - Complex guitars flicker in and out like half​-remembered jingles; synths melt into warm backgrounds.
 - Basslines stride confident and playful—anchored yet elastic in tone.
-- Lyrical concept: *“Cold Cuts bottles the electric joy of being in a supermarket in the ’90s…”*—a precise, vivid metaphor for nostalgia mixed with modern surrealism.
+- Lyrical concept: _“Cold Cuts bottles the electric joy of being in a supermarket in the ’90s…”_—a precise, vivid metaphor for nostalgia mixed with modern surrealism.
 
-### <img src="/assets/icons/tv.svg" alt="TV icon" style="width: 1em; vertical-align: middle;" />  Visual notes 
+### <img src="/assets/icons/tv.svg" alt="TV icon" style="width: 1em; vertical-align: middle;" /> Visual notes
 
 - Self-directed by MCBAISE, the video features skewed angles, grassy landscapes, and a playful tilt on reality that echoes the music's nostalgic oddity.
 - The aesthetic feels like a cross between vintage home movies and hand-drawn animation—sunlit, dreamy, fresh.
 
-
 <img src="/assets/icons/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle;" /> File It Under:  
 #LoopVibes #RetroVideoArt #ColdCutsForever #DirtyMelody
-
-
-
-

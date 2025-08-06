@@ -1,3 +1,16 @@
+- title: Light Rewind S04
+  slug: light-rewind-s04
+  has_cover: true
+  has_loop: true
+  mood:
+    - Melancholy
+    - Dreamy
+    - Nostalgic
+  genre:
+    - lo-fi
+    - chillhop
+    - soul
+  duration: "2:27"
 - title: Cat on the Signal
   slug: cat-on-the-signal
   has_cover: true
@@ -1193,19 +1206,7 @@
     - glitch
     - electronic
   duration: "1:31"
-- title: Light Rewind S04
-  slug: light-rewind-s04
-  has_cover: true
-  has_loop: true
-  mood:
-    - Melancholy
-    - Dreamy
-    - Nostalgic
-  genre:
-    - lo-fi
-    - chillhop
-    - soul
-  duration: "2:27"
+
 - title: Mayfield (C-Minor)
   slug: mayfield-c-minor
   has_cover: true

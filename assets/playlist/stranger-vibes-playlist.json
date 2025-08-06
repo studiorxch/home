@@ -27,37 +27,37 @@
             "cover": "/assets/covers/letters-left.webp"
         },
         {
-            "title": "Fade Out Glow (D-Side)",
+            "title": "Fade Out Glow S04",
             "file": "/assets/loops/fade-out-glow-s04-loop.mp3",
             "link": "/tracks/fade-out-glow-s04/",
             "cover": "/assets/covers/fade-out-glow-s04.webp"
         },
         {
-            "title": "Light Rewind (C-Side)",
+            "title": "Light Rewind S03",
             "file": "/assets/loops/light-rewind-s03-loop.mp3",
             "link": "/tracks/light-rewind-s03/",
             "cover": "/assets/covers/light-rewind-s03.webp"
         },
         {
-            "title": "Roll Call (C-Side)",
+            "title": "Roll Call S03",
             "file": "/assets/loops/roll-call-s03-loop.mp3",
             "link": "/tracks/roll-call-s03/",
             "cover": "/assets/covers/roll-call-s03.webp"
         },
         {
-            "title": "Brotherhood Beat (C-Side)",
+            "title": "Brotherhood Beat S03",
             "file": "/assets/loops/brotherhood-beat-s03-loop.mp3",
             "link": "/tracks/brotherhood-beat-s03/",
             "cover": "/assets/covers/brotherhood-beat-s03.webp"
         },
         {
-            "title": "Brotherhood Beat (B-Side)",
+            "title": "Brotherhood Beat S02",
             "file": "/assets/loops/brotherhood-beat-s02-loop.mp3",
             "link": "/tracks/brotherhood-beat-s02/",
             "cover": "/assets/covers/brotherhood-beat-s02.webp"
         },
         {
-            "title": "Roll Call (A-Side)",
+            "title": "Roll Call S01",
             "file": "/assets/loops/roll-call-s01-loop.mp3",
             "link": "/tracks/roll-call-s01/",
             "cover": "/assets/covers/roll-call-s01.webp"
@@ -69,13 +69,13 @@
             "cover": "/assets/covers/empty-hall-echo.webp"
         },
         {
-            "title": "Fracture Point Break (A-Side)",
+            "title": "Fracture Point Break S01",
             "file": "/assets/loops/fracture-point-break-s01-loop.mp3",
             "link": "/tracks/fracture-point-break-s01/",
             "cover": "/assets/covers/fracture-point-break-s01.webp"
         },
         {
-            "title": "Remote Ghost (A-Side)",
+            "title": "Remote Ghost S01",
             "file": "/assets/loops/remote-ghost-s01-loop.mp3",
             "link": "/tracks/remote-ghost-s01/",
             "cover": "/assets/covers/remote-ghost-s01.webp"
@@ -87,13 +87,13 @@
             "cover": "/assets/covers/no-signal.webp"
         },
         {
-            "title": "Red Sky Break (A-Side)",
+            "title": "Red Sky Break S01",
             "file": "/assets/loops/red-sky-break-s01-loop.mp3",
             "link": "/tracks/red-sky-break-s01/",
             "cover": "/assets/covers/red-sky-break-s01.webp"
         },
         {
-            "title": "Muted Sunrise (A-Side)",
+            "title": "Muted Sunrise S01",
             "file": "/assets/loops/muted-sunrise-s01-loop.mp3",
             "link": "/tracks/muted-sunrise-s01/",
             "cover": "/assets/covers/muted-sunrise-s01.webp"
@@ -105,31 +105,31 @@
             "cover": "/assets/covers/nowhere-shortcut.webp"
         },
         {
-            "title": "No Signal (A-Side)",
+            "title": "No Signal S01",
             "file": "/assets/loops/no-signal-s01-loop.mp3",
             "link": "/tracks/no-signal-s01/",
             "cover": "/assets/covers/no-signal-s01.webp"
         },
         {
-            "title": "Blue Hoodie (A-Side)",
+            "title": "Blue Hoodie S01",
             "file": "/assets/loops/blue-hoodie-s01-loop.mp3",
             "link": "/tracks/blue-hoodie-s01/",
             "cover": "/assets/covers/blue-hoodie-s01.webp"
         },
         {
-            "title": "Brotherhood Beat (A-Side)",
+            "title": "Brotherhood Beat S01",
             "file": "/assets/loops/brotherhood-beat-s01-loop.mp3",
             "link": "/tracks/brotherhood-beat-s01/",
             "cover": "/assets/covers/brotherhood-beat-s01.webp"
         }
     {
-            "title": "Driveway Fadeout (A-Side)",
+            "title": "Driveway Fadeout S01",
             "file": "/assets/loops/driveway-fadeout-s01-loop.mp3",
             "link": "/tracks/driveway-fadeout-s01/",
             "cover": "/assets/covers/driveway-fadeout-s01.webp"
         },
         {
-            "title": "Fracture Point Break (B-Side)",
+            "title": "Fracture Point Break S02",
             "file": "/assets/loops/fracture-point-break-s02-loop.mp3",
             "link": "/tracks/fracture-point-break-s02/",
             "cover": "/assets/covers/fracture-point-break-s02.webp"
@@ -153,37 +153,37 @@
             "cover": "/assets/covers/quiet-frequencies.webp"
         },
         {
-            "title": "Light Rewind (B-Side)",
+            "title": "Light Rewind S02",
             "file": "/assets/loops/light-rewind-s02-loop.mp3",
             "link": "/tracks/light-rewind-s02/",
             "cover": "/assets/covers/light-rewind-s02.webp"
         },
         {
-            "title": "Float Collapse (A-Side)",
+            "title": "Float Collapse S01",
             "file": "/assets/loops/float-collapse-s01-loop.mp3",
             "link": "/tracks/float-collapse-s01/",
             "cover": "/assets/covers/float-collapse-s01.webp"
         },
         {
-            "title": "Roll Call (B-Side)",
+            "title": "Roll Call S02",
             "file": "/assets/loops/roll-call-s02-loop.mp3",
             "link": "/tracks/roll-call-s02/",
             "cover": "/assets/covers/roll-call-s02.webp"
         },
         {
-            "title": "Fracture Point Break (C-Side)",
+            "title": "Fracture Point Break S03",
             "file": "/assets/loops/fracture-point-break-s03-loop.mp3",
             "link": "/tracks/fracture-point-break-s03/",
             "cover": "/assets/covers/fracture-point-break-s03.webp"
         },
         {
-            "title": "Fade Out Glow (C-Side)",
+            "title": "Fade Out Glow S03",
             "file": "/assets/loops/fade-out-glow-s03-loop.mp3",
             "link": "/tracks/fade-out-glow-s03/",
             "cover": "/assets/covers/fade-out-glow-s03.webp"
         },
         {
-            "title": "Window Fade (A-Side)",
+            "title": "Window Fade S01",
             "file": "/assets/loops/window-fade-s01-loop.mp3",
             "link": "/tracks/window-fade-s01/",
             "cover": "/assets/covers/window-fade-s01.webp"
@@ -231,13 +231,13 @@
             "cover": "/assets/covers/tape-from-the-other-side.webp"
         },
         {
-            "title": "Letters Left (A-Side)",
+            "title": "Letters Left S01",
             "file": "/assets/loops/letters-left-s01-loop.mp3",
             "link": "/tracks/letters-left-s01/",
             "cover": "/assets/covers/letters-left-s01.webp"
         },
         {
-            "title": "Fracture Point Break (D-Side)",
+            "title": "Fracture Point Break S04",
             "file": "/assets/loops/fracture-point-break-s04-loop.mp3",
             "link": "/tracks/fracture-point-break-s04/",
             "cover": "/assets/covers/fracture-point-break-s04.webp"
@@ -255,13 +255,13 @@
             "cover": "/assets/covers/soft-return.webp"
         },
         {
-            "title": "Fade Out Glow (A-Side)",
+            "title": "Fade Out Glow S01",
             "file": "/assets/loops/fade-out-glow-s01-loop.mp3",
             "link": "/tracks/fade-out-glow-s01/",
             "cover": "/assets/covers/fade-out-glow-s01.webp"
         },
         {
-            "title": "Run Loop (A-Side)",
+            "title": "Run Loop S01",
             "file": "/assets/loops/run-loop-s01-loop.mp3",
             "link": "/tracks/run-loop-s01/",
             "cover": "/assets/covers/run-loop-s01.webp"
@@ -285,13 +285,13 @@
             "cover": "/assets/covers/float-collapse.webp"
         },
         {
-            "title": "Static Memory (A-Side)",
+            "title": "Static Memory S01",
             "file": "/assets/loops/static-memory-s01-loop.mp3",
             "link": "/tracks/static-memory-s01/",
             "cover": "/assets/covers/static-memory-s01.webp"
         },
         {
-            "title": "California Sunspot (A-Side)",
+            "title": "California Sunspot S01",
             "file": "/assets/loops/california-sunspot-s01-loop.mp3",
             "link": "/tracks/california-sunspot-s01/",
             "cover": "/assets/covers/california-sunspot-s01.webp"

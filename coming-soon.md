@@ -49,47 +49,7 @@ noindex: true
 <audio id="audio" preload="auto" controls></audio>
 
 </div>
-
-<script>
-  // Quick bootstrap playlist (replace with M3U parser later)
-  const playlist = [
-    { title: "Missing Frame", file: "/assets/loops/skatepark-ruins-loop.mp3" },
-    { title: "Night Signals", file: "/assets/loops/static-memory-loop.mp3" },
-    { title: "Glitch Garden", file: "/assets/loops/backwards-bloom-loop.mp3" }
-  ];
-
-  let currentTrack = 0;
-  const audio = document.getElementById("audio");
-  const nowPlaying = document.getElementById("now-playing");
-
-  function loadTrack(index) {
-    currentTrack = index;
-    audio.src = playlist[index].file;
-    nowPlaying.textContent = "Now Playing: " + playlist[index].title;
-    audio.play();
-  }
-
-  function togglePlay() {
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-  }
-
-  function nextTrack() {
-    loadTrack((currentTrack + 1) % playlist.length);
-  }
-
-  function prevTrack() {
-    loadTrack((currentTrack - 1 + playlist.length) % playlist.length);
-  }
-
-  audio.addEventListener("ended", nextTrack);
-
-  // Load first track
-  loadTrack(0);
-</script>
+<script src="/assets/js/player.js"></script>
 
 </div>
 
