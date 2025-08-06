@@ -6,10 +6,10 @@ description: "Off-kilter bedroom pop meets chillhop minimalism. Lo-fi textures p
 image: /assets/covers/cat-on-the-signal.webp
 image_ready: true
 date: 2025-02-24
-duration: "2:44"
+duration: "2:45"
 album: Available Now
 key: D
-bpm: 136
+bpm: 132
 genre:
   - bedroom pop
   - chillhop
