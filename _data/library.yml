@@ -1,3 +1,17 @@
+- title: Cat on the Signal
+  slug: cat-on-the-signal
+  has_cover: true
+  has_loop: true
+  mood_suggested:
+    - Hypnotic
+    - Off-Kilter
+    - Gritty
+    - Surreal
+  genre:
+    - lo-fi
+    - experimental
+    - weirdcore
+    - accordion
 - title: Chainlink Shuffle
   slug: chainlink-shuffle
   has_cover: true
