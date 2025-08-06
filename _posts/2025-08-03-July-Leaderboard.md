@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Loop Leaderboard: July’s Lo‑Fi in Sound"
+title: "Loop Leaderboard"
+subtitle: July’s Lo‑Fi in Sound
 date: 2025-08-04
 author: StudioRich
 tags: [loops, monthly, highlights, community]
-meta_description: "July at StudioRich was a month of deep breaths and repeat moments. Lo‑Fi carried through mornings and long nights, with six tracks defining the month’s sound."
+description: "July at StudioRich was a month of deep breaths and repeat moments. Lo‑Fi carried through mornings and long nights, with six tracks defining the month’s sound."
 image: /assets/covers/backwards-ventilation.webp
 ---
 

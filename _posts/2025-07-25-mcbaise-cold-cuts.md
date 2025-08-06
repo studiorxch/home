@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MCBAISE – Cold Cuts (feat. Muthi)"
+title: "MCBAISE – Cold Cuts (feat.&nbsp;Muthi)"
 subtitle: "Surreal Pop & Supermarket Dreams"
 date: 2025-07-25
 description: "MCBAISE returns with a surreal, sunlit funk loop featuring Muthi—‘Cold Cuts’ is a trip through ‘90s nostalgia and guitar groove."
@@ -15,7 +15,7 @@ tags:
 redirect_from: /2025/07/25/mcbaise_cold_cuts.html
 ---
 
-## <img src="/assets/icons/little-heart-gesture.svg" alt="Heart icon" style="width: 1em; vertical-align: middle;" /> MCBAISE – _Cold Cuts_ (feat. Muthi)
+## <img src="/assets/icons/little-heart-gesture.svg" alt="Heart icon" style="width: 1em; vertical-align: middle;" /> MCBAISE – _Cold Cuts_ (feat.&nbsp;Muthi)
 
 MCBAISE (aka Matthieu Bessudo, better known as _mcbess_) is back with a woozy, sun-kissed jam that retreats into nostalgic quirks tangled in slick guitar work and velvet synth textures. Inspired by ‘90s gaming-day dopamine—like finally getting that Sonic & Knuckles Mega Drive cartridge—the new single _“Cold Cuts”_ channels supermarket​-checkout excitement with surreal, swaying visuals ([musicwire.popfiltr.com](https://musicwire.popfiltr.com/news/mcbaise-cold-cuts-ft-muthi?utm_source=chatgpt.com)).
 
