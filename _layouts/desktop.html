@@ -68,7 +68,7 @@
             alt="StudioRich Logo"
             class="menu-logo"
         /></a>
-        StudioRich OS
+        StudioRich OS v1
       </div>
       <div class="menu-right">
         <span id="current-date"></span>
@@ -79,10 +79,10 @@
 
     <div id="desktop">{% include components/desktop-icons.html %}</div>
 
-    {% include components/desktop-windows.html %}
+    {% include components/desktop-windows.html %} {% include
+    components/desktop-dock.html %}
+    <script src="{{ '/assets/js/player.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/clock.js' | relative_url }}"></script>
-    {% include components/desktop-dock.html %}
-
     <script src="{{ '/assets/js/desktop.js' | relative_url }}"></script>
   </body>
 </html>

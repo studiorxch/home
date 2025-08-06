@@ -1,44 +1,71 @@
 let playlist = [];
 let currentTrack = 0;
 let loopCounter = 0;
+let maxRepeats = 0;
 
 const audio = document.getElementById("audio");
 const nowPlaying = document.getElementById("now-playing");
 
-fetch("/_desktop/stranger-vibes-playlist.json")
-    .then(response => response.json())
-    .then(data => {
+/**
+ * Parse "m:ss" (e.g. "2:27") into seconds
+ */
+function parseDuration(durationStr) {
+    if (!durationStr) return 0;
+    const parts = durationStr.split(":").map(Number);
+    if (parts.length === 2) {
+        return parts[0] * 60 + parts[1];
+    } else if (parts.length === 3) {
+        return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    }
+    return 0;
+}
+
+// Load playlist JSON
+fetch("/desktop/stranger-vibes-playlist.json")
+    .then((response) => response.json())
+    .then((data) => {
         playlist = data.tracks;
         loadTrack(0); // start first track
     });
 
-// Load track and reset loop counter
 function loadTrack(index) {
     currentTrack = index;
     loopCounter = 0;
+
     const track = playlist[index];
     audio.src = track.file;
     nowPlaying.innerHTML = `
     <img src="${track.cover}" alt="${track.title}"
          style="width:80px;height:auto;margin-right:10px;vertical-align:middle;" />
-    <span>Now Playing: <a href="${track.link}">${track.title}</a></span>
+    <span><img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm" />: <a href="${track.link}">${track.title}</a></span>
   `;
-    audio.play();
+
+    // When metadata loads, calculate repeats
+    audio.addEventListener(
+        "loadedmetadata",
+        () => {
+            const loopLength = audio.duration; // seconds
+            const fullDuration = parseDuration(track.duration);
+            maxRepeats =
+                loopLength && fullDuration
+                    ? Math.max(1, Math.round(fullDuration / loopLength))
+                    : 1;
+
+            console.log(
+                `▶️ ${track.title} | Loop length: ${loopLength.toFixed(
+                    2
+                )}s | Full duration: ${fullDuration}s | Repeats: ${maxRepeats}`
+            );
+
+            audio.play();
+        },
+        { once: true }
+    );
 }
 
-// Handle repeats until approx duration reached
+// Handle loop repeats until duration reached
 audio.addEventListener("ended", () => {
-    const track = playlist[currentTrack];
-
-    // if no duration/loop_length metadata, just skip forward
-    if (!track.duration || !track.loop_length) {
-        nextTrack();
-        return;
-    }
-
     loopCounter++;
-    const maxRepeats = Math.round(track.duration / track.loop_length);
-
     if (loopCounter < maxRepeats) {
         audio.currentTime = 0;
         audio.play();

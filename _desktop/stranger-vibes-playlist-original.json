@@ -1,0 +1,300 @@
+{
+    "playlistTitle": "StudioRich Prototype Mix",
+    "description": "Phase 1 – 2-hour lo-fi playlist with loops + visuals",
+    "tracks": [
+        {
+            "title": "Skatepark Ruins",
+            "file": "/assets/loops/skatepark-ruins-loop.mp3",
+            "link": "/tracks/skatepark-ruins/",
+            "cover": "/assets/covers/skatepark-ruins.webp"
+        },
+        {
+            "title": "Static Memory",
+            "file": "/assets/loops/static-memory-loop.mp3",
+            "link": "/tracks/static-memory/",
+            "cover": "/assets/covers/static-memory.webp"
+        },
+        {
+            "title": "Backwards Bloom",
+            "file": "/assets/loops/backwards-bloom-loop.mp3",
+            "link": "/tracks/backwards-bloom/",
+            "cover": "/assets/covers/backwards-bloom.webp"
+        },
+        {
+            "title": "Letters Left",
+            "file": "/assets/loops/letters-left-loop.mp3",
+            "link": "/tracks/letters-left/",
+            "cover": "/assets/covers/letters-left.webp"
+        },
+        {
+            "title": "Fade Out Glow (S04)",
+            "file": "/assets/loops/fade-out-glow-s04-loop.mp3",
+            "link": "/tracks/fade-out-glow-s04/",
+            "cover": "/assets/covers/fade-out-glow-s04.webp"
+        },
+        {
+            "title": "Light Rewind (S03)",
+            "file": "/assets/loops/light-rewind-s03-loop.mp3",
+            "link": "/tracks/light-rewind-s03/",
+            "cover": "/assets/covers/light-rewind-s03.webp"
+        },
+        {
+            "title": "Roll Call (S03)",
+            "file": "/assets/loops/roll-call-s03-loop.mp3",
+            "link": "/tracks/roll-call-s03/",
+            "cover": "/assets/covers/roll-call-s03.webp"
+        },
+        {
+            "title": "Brotherhood Beat (S03)",
+            "file": "/assets/loops/brotherhood-beat-s03-loop.mp3",
+            "link": "/tracks/brotherhood-beat-s03/",
+            "cover": "/assets/covers/brotherhood-beat-s03.webp"
+        },
+        {
+            "title": "Brotherhood Beat (S02)",
+            "file": "/assets/loops/brotherhood-beat-s02-loop.mp3",
+            "link": "/tracks/brotherhood-beat-s02/",
+            "cover": "/assets/covers/brotherhood-beat-s02.webp"
+        },
+        {
+            "title": "Roll Call (S01)",
+            "file": "/assets/loops/roll-call-s01-loop.mp3",
+            "link": "/tracks/roll-call-s01/",
+            "cover": "/assets/covers/roll-call-s01.webp"
+        },
+        {
+            "title": "Empty Hall Echo",
+            "file": "/assets/loops/empty-hall-echo-loop.mp3",
+            "link": "/tracks/empty-hall-echo/",
+            "cover": "/assets/covers/empty-hall-echo.webp"
+        },
+        {
+            "title": "Fracture Point Break S01",
+            "file": "/assets/loops/fracture-point-break-s01-loop.mp3",
+            "link": "/tracks/fracture-point-break-s01/",
+            "cover": "/assets/covers/fracture-point-break-s01.webp"
+        },
+        {
+            "title": "Remote Ghost S01",
+            "file": "/assets/loops/remote-ghost-s01-loop.mp3",
+            "link": "/tracks/remote-ghost-s01/",
+            "cover": "/assets/covers/remote-ghost-s01.webp"
+        },
+        {
+            "title": "No Signal",
+            "file": "/assets/loops/no-signal-loop.mp3",
+            "link": "/tracks/no-signal/",
+            "cover": "/assets/covers/no-signal.webp"
+        },
+        {
+            "title": "Red Sky Break S01",
+            "file": "/assets/loops/red-sky-break-s01-loop.mp3",
+            "link": "/tracks/red-sky-break-s01/",
+            "cover": "/assets/covers/red-sky-break-s01.webp"
+        },
+        {
+            "title": "Muted Sunrise S01",
+            "file": "/assets/loops/muted-sunrise-s01-loop.mp3",
+            "link": "/tracks/muted-sunrise-s01/",
+            "cover": "/assets/covers/muted-sunrise-s01.webp"
+        },
+        {
+            "title": "Nowhere Shortcut",
+            "file": "/assets/loops/nowhere-shortcut-loop.mp3",
+            "link": "/tracks/nowhere-shortcut/",
+            "cover": "/assets/covers/nowhere-shortcut.webp"
+        },
+        {
+            "title": "No Signal S01",
+            "file": "/assets/loops/no-signal-s01-loop.mp3",
+            "link": "/tracks/no-signal-s01/",
+            "cover": "/assets/covers/no-signal-s01.webp"
+        },
+        {
+            "title": "Blue Hoodie S01",
+            "file": "/assets/loops/blue-hoodie-s01-loop.mp3",
+            "link": "/tracks/blue-hoodie-s01/",
+            "cover": "/assets/covers/blue-hoodie-s01.webp"
+        },
+        {
+            "title": "Brotherhood Beat S01",
+            "file": "/assets/loops/brotherhood-beat-s01-loop.mp3",
+            "link": "/tracks/brotherhood-beat-s01/",
+            "cover": "/assets/covers/brotherhood-beat-s01.webp"
+        },
+        {
+            "title": "Driveway Fadeout S01",
+            "file": "/assets/loops/driveway-fadeout-s01-loop.mp3",
+            "link": "/tracks/driveway-fadeout-s01/",
+            "cover": "/assets/covers/driveway-fadeout-s01.webp"
+        },
+        {
+            "title": "Fracture Point Break S02",
+            "file": "/assets/loops/fracture-point-break-s02-loop.mp3",
+            "link": "/tracks/fracture-point-break-s02/",
+            "cover": "/assets/covers/fracture-point-break-s02.webp"
+        },
+        {
+            "title": "Sidewalk Sunrise",
+            "file": "/assets/loops/sidewalk-sunrise-loop.mp3",
+            "link": "/tracks/sidewalk-sunrise/",
+            "cover": "/assets/covers/sidewalk-sunrise.webp"
+        },
+        {
+            "title": "Driveway Fadeout",
+            "file": "/assets/loops/driveway-fadeout-loop.mp3",
+            "link": "/tracks/driveway-fadeout/",
+            "cover": "/assets/covers/driveway-fadeout.webp"
+        },
+        {
+            "title": "Quiet Frequencies",
+            "file": "/assets/loops/quiet-frequencies-loop.mp3",
+            "link": "/tracks/quiet-frequencies/",
+            "cover": "/assets/covers/quiet-frequencies.webp"
+        },
+        {
+            "title": "Light Rewind S02",
+            "file": "/assets/loops/light-rewind-s02-loop.mp3",
+            "link": "/tracks/light-rewind-s02/",
+            "cover": "/assets/covers/light-rewind-s02.webp"
+        },
+        {
+            "title": "Float Collapse S01",
+            "file": "/assets/loops/float-collapse-s01-loop.mp3",
+            "link": "/tracks/float-collapse-s01/",
+            "cover": "/assets/covers/float-collapse-s01.webp"
+        },
+        {
+            "title": "Roll Call S02",
+            "file": "/assets/loops/roll-call-s02-loop.mp3",
+            "link": "/tracks/roll-call-s02/",
+            "cover": "/assets/covers/roll-call-s02.webp"
+        },
+        {
+            "title": "Fracture Point Break S03",
+            "file": "/assets/loops/fracture-point-break-s03-loop.mp3",
+            "link": "/tracks/fracture-point-break-s03/",
+            "cover": "/assets/covers/fracture-point-break-s03.webp"
+        },
+        {
+            "title": "Fade Out Glow S03",
+            "file": "/assets/loops/fade-out-glow-s03-loop.mp3",
+            "link": "/tracks/fade-out-glow-s03/",
+            "cover": "/assets/covers/fade-out-glow-s03.webp"
+        },
+        {
+            "title": "Window Fade S01",
+            "file": "/assets/loops/window-fade-s01-loop.mp3",
+            "link": "/tracks/window-fade-s01/",
+            "cover": "/assets/covers/window-fade-s01.webp"
+        },
+        {
+            "title": "Lo-Fi Defiance",
+            "file": "/assets/loops/lo-fi-defiance-loop.mp3",
+            "link": "/tracks/lo-fi-defiance/",
+            "cover": "/assets/covers/lo-fi-defiance.webp"
+        },
+        {
+            "title": "Muted Sunrise",
+            "file": "/assets/loops/muted-sunrise-loop.mp3",
+            "link": "/tracks/muted-sunrise/",
+            "cover": "/assets/covers/muted-sunrise.webp"
+        },
+        {
+            "title": "Blur Escape",
+            "file": "/assets/loops/blur-escape-loop.mp3",
+            "link": "/tracks/blur-escape/",
+            "cover": "/assets/covers/blur-escape.webp"
+        },
+        {
+            "title": "Weightless In The Rain",
+            "file": "/assets/loops/weightless-in-the-rain-loop.mp3",
+            "link": "/tracks/weightless-in-the-rain/",
+            "cover": "/assets/covers/weightless-in-the-rain.webp"
+        },
+        {
+            "title": "Turnaround Fade",
+            "file": "/assets/loops/turnaround-fade-loop.mp3",
+            "link": "/tracks/turnaround-fade/",
+            "cover": "/assets/covers/turnaround-fade.webp"
+        },
+        {
+            "title": "Mood For Leaving",
+            "file": "/assets/loops/mood-for-leaving-loop.mp3",
+            "link": "/tracks/mood-for-leaving/",
+            "cover": "/assets/covers/mood-for-leaving.webp"
+        },
+        {
+            "title": "Tape From The Other Side",
+            "file": "/assets/loops/tape-from-the-other-side-loop.mp3",
+            "link": "/tracks/tape-from-the-other-side/",
+            "cover": "/assets/covers/tape-from-the-other-side.webp"
+        },
+        {
+            "title": "Letters Left S01",
+            "file": "/assets/loops/letters-left-s01-loop.mp3",
+            "link": "/tracks/letters-left-s01/",
+            "cover": "/assets/covers/letters-left-s01.webp"
+        },
+        {
+            "title": "Fracture Point Break S04",
+            "file": "/assets/loops/fracture-point-break-s04-loop.mp3",
+            "link": "/tracks/fracture-point-break-s04/",
+            "cover": "/assets/covers/fracture-point-break-s04.webp"
+        },
+        {
+            "title": "Flicker At Dusk",
+            "file": "/assets/loops/flicker-at-dusk-loop.mp3",
+            "link": "/tracks/flicker-at-dusk/",
+            "cover": "/assets/covers/flicker-at-dusk.webp"
+        },
+        {
+            "title": "Soft Return",
+            "file": "/assets/loops/soft-return-loop.mp3",
+            "link": "/tracks/soft-return/",
+            "cover": "/assets/covers/soft-return.webp"
+        },
+        {
+            "title": "Fade Out Glow S01",
+            "file": "/assets/loops/fade-out-glow-s01-loop.mp3",
+            "link": "/tracks/fade-out-glow-s01/",
+            "cover": "/assets/covers/fade-out-glow-s01.webp"
+        },
+        {
+            "title": "Run Loop S01",
+            "file": "/assets/loops/run-loop-s01-loop.mp3",
+            "link": "/tracks/run-loop-s01/",
+            "cover": "/assets/covers/run-loop-s01.webp"
+        },
+        {
+            "title": "Headphones In",
+            "file": "/assets/loops/headphones-in-loop.mp3",
+            "link": "/tracks/headphones-in/",
+            "cover": "/assets/covers/headphones-in.webp"
+        },
+        {
+            "title": "Red Sky Break",
+            "file": "/assets/loops/red-sky-break-loop.mp3",
+            "link": "/tracks/red-sky-break/",
+            "cover": "/assets/covers/red-sky-break.webp"
+        },
+        {
+            "title": "Float Collapse",
+            "file": "/assets/loops/float-collapse-loop.mp3",
+            "link": "/tracks/float-collapse/",
+            "cover": "/assets/covers/float-collapse.webp"
+        },
+        {
+            "title": "Static Memory S01",
+            "file": "/assets/loops/static-memory-s01-loop.mp3",
+            "link": "/tracks/static-memory-s01/",
+            "cover": "/assets/covers/static-memory-s01.webp"
+        },
+        {
+            "title": "California Sunspot S01",
+            "file": "/assets/loops/california-sunspot-s01-loop.mp3",
+            "link": "/tracks/california-sunspot-s01/",
+            "cover": "/assets/covers/california-sunspot-s01.webp"
+        }
+    ]
+}
