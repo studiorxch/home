@@ -16,13 +16,15 @@
 <div id="trash-window" class="window hidden">
   <div class="window-header">
     <span>Trash</span>
-    <button id="close-trash">✕</button>
+    <button id="close-trash">
+      <img src="/assets/icons/x-button.svg" alt="Close" />
+    </button>
   </div>
   <div class="window-body">
     {% assign trash_files = site.files | where: "folder", "trash" | sort: "date"
     %} {% for file in trash_files %}
     <div class="file-item">
-      <img src="{{ file.icon }}" alt="icon" width="16" height="16" />
+      <img src="{{ file.icon }}" alt="icon" width="24" height="24" />
       <span>{{ file.filename }}</span>
       <small>{{ file.size }} · {{ file.kind }}</small>
       {% if file.comments %}

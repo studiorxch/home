@@ -2,7 +2,9 @@
 <div class="window hidden" id="window-music">
   <div class="window-header">
     <span>🎵 Music</span>
-    <button class="close-window">✕</button>
+    <button class="close-window">
+      <img src="/assets/icons/x-button.svg" alt="Close" />
+    </button>
   </div>
   <div class="window-body">
     <p>Music folder placeholder. Tracks and playlists will appear here.</p>
@@ -13,7 +15,9 @@
 <div class="window hidden" id="window-zines">
   <div class="window-header">
     <span>📚 Zines</span>
-    <button class="close-window">✕</button>
+    <button class="close-window">
+      <img src="/assets/icons/x-button.svg" alt="Close" />
+    </button>
   </div>
   <div class="window-body">
     <p>Zines folder placeholder. PDFs and previews will appear here.</p>
@@ -24,7 +28,9 @@
 <div class="window hidden" id="window-presskit">
   <div class="window-header">
     <span>📂 Presskit</span>
-    <button class="close-window">✕</button>
+    <button class="close-window">
+      <img src="/assets/icons/x-button.svg" alt="Close" />
+    </button>
   </div>
   <div class="window-body">
     <p>
@@ -36,7 +42,7 @@
 <!-- Albums Window -->
 <div class="window hidden" id="window-albums">
   <div class="window-header">
-    <span>💿 Albums</span>
+    <span>Albums</span>
     <button class="close-window">✕</button>
   </div>
   <div class="window-body">
@@ -45,14 +51,46 @@
 </div>
 
 <div class="desktop-player window visible" id="player-window">
-  <div class="window-header">🎶 Now Playing</div>
+  <div class="window-header">
+    <img
+      src="/assets/icons/musicnote.svg"
+      alt="Music Note icon"
+      class="icon-sm"
+    />
+    Now Playing
+  </div>
   <div class="window-body">
     <p id="now-playing">Loading playlist...</p>
     <div id="player-controls">
-      <button onclick="prevTrack()">⏮️ Prev</button>
-      <button onclick="togglePlay()">▶️ / ⏸️</button>
-      <button onclick="nextTrack()">⏭️ Next</button>
+      <button onclick="prevTrack()">
+        <img
+          src="/assets/icons/previous-button.svg"
+          alt="Previous track"
+          class="icon-sm"
+        />
+      </button>
+      <button onclick="togglePlay()">
+        <img
+          id="play-pause-icon"
+          src="/assets/icons/play-button.svg"
+          alt="Play/Pause"
+          class="icon-sm"
+        />
+      </button>
+
+      <button onclick="nextTrack()">
+        <img
+          src="/assets/icons/next-button.svg"
+          alt="Next track"
+          class="icon-sm"
+        />
+      </button>
     </div>
+
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
     <audio id="audio" preload="auto"></audio>
   </div>
 </div>

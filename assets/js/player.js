@@ -5,6 +5,36 @@ let maxRepeats = 0;
 
 const audio = document.getElementById("audio");
 const nowPlaying = document.getElementById("now-playing");
+const progressBar = document.getElementById("progress-bar");
+const playPauseIcon = document.getElementById("play-pause-icon");
+
+
+
+function nextTrack() {
+    loadTrack((currentTrack + 1) % playlist.length);
+}
+
+function prevTrack() {
+    loadTrack((currentTrack - 1 + playlist.length) % playlist.length);
+}
+
+
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
+
+
+audio.addEventListener("timeupdate", () => {
+    const duration = audio.duration || 1;
+    const progress = (audio.currentTime / duration) * 100;
+    progressBar.style.width = `${progress}%`;
+});
+
 
 /**
  * Parse "m:ss" (e.g. "2:27") into seconds
@@ -37,8 +67,16 @@ function loadTrack(index) {
     nowPlaying.innerHTML = `
     <img src="${track.cover}" alt="${track.title}"
          style="width:250px;height:auto;margin-right:10px;vertical-align:middle;" />
-    <span><img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm" />: <a href="${track.link}">${track.title}</a></span>
+    <span><a href="${track.link}">${track.title}</a></span>
   `;
+
+    audio.addEventListener("play", () => {
+        playPauseIcon.src = "/assets/icons/pause-button.svg";
+    });
+
+    audio.addEventListener("pause", () => {
+        playPauseIcon.src = "/assets/icons/play-button.svg";
+    });
 
     // When metadata loads, calculate repeats
     audio.addEventListener(
@@ -74,18 +112,3 @@ audio.addEventListener("ended", () => {
     }
 });
 
-function togglePlay() {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
-
-function nextTrack() {
-    loadTrack((currentTrack + 1) % playlist.length);
-}
-
-function prevTrack() {
-    loadTrack((currentTrack - 1 + playlist.length) % playlist.length);
-}

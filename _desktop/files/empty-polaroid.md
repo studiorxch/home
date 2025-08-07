@@ -10,6 +10,4 @@ date: 1985-10-26 # canonical date (can be real or lore)
 tags: ["artifact", "retro", "legendary"] # freeform tags
 rarity: "legendary" # common | rare | legendary (optional)
 comments: |
-  A fading Polaroid from a timeline that never survived.
-  Hardcore fans claim this proves Marty’s failure branch.
 ---
