@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Reading Room</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-      /* Reset */
       html,
       body {
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow: hidden; /* no scroll */
+        overflow: hidden;
+        font-family: sans-serif;
+        background: #000;
       }
 
-      /* Background image */
       .hero-bg {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: url("/assets/img/blog/hero-reading-room.webp") center/cover
+        background: url("/assets/img/reading-room-clouds.webp") center/cover
           no-repeat;
         z-index: 0;
       }
 
-      /* Gradient overlay */
       .hero-overlay {
         position: fixed;
         top: 0;
@@ -35,10 +39,10 @@
         bottom: 0;
         background: linear-gradient(
           -45deg,
-          rgba(29, 43, 100, 0.85),
-          rgba(248, 205, 218, 0.85),
-          rgba(29, 151, 108, 0.85),
-          rgba(147, 249, 185, 0.85)
+          rgba(245, 245, 220, 0.95),
+          rgba(255, 182, 193, 0.98),
+          rgba(85, 107, 47, 0.98),
+          rgba(0, 128, 128, 0.95)
         );
         background-size: 400% 400%;
         animation: gradientShift 30s ease infinite;
@@ -57,7 +61,6 @@
         }
       }
 
-      /* Foreground content */
       .hero-content {
         position: relative;
         z-index: 2;
@@ -79,7 +82,6 @@
         line-height: 1.6;
       }
 
-      /* Fullscreen button */
       .fs-btn {
         margin-top: 1.5rem;
         padding: 0.6rem 1.2rem;
@@ -90,11 +92,24 @@
         cursor: pointer;
         transition: background 0.3s ease;
       }
+
       .fs-btn:hover {
         background: rgba(255, 255, 255, 0.3);
       }
 
-      /* Music player docked */
+      .logo-hollowbookco {
+        position: fixed;
+        top: 1rem;
+        left: 2rem;
+        z-index: 1000;
+      }
+
+      .logo-hollowbookco img {
+        height: 50px;
+        width: auto;
+        opacity: 0.7; /* Range: 0 (transparent) to 1 (fully visible) */
+      }
+
       #bgMusic {
         position: fixed;
         bottom: 10px;
@@ -104,20 +119,62 @@
         z-index: 3;
       }
 
-      /* Hide unless fullscreen */
       :not(:fullscreen) #bgMusic {
         display: none;
+      }
+
+      #countdown-bar {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        width: auto;
+        height: auto;
+        background: transparent;
+        color: white;
+        font-size: 3.5rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 300;
+
+        letter-spacing: 0.01em;
+        z-index: 999;
+        display: none;
+      }
+
+      #fullscreen-message {
+        display: none;
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+        top: 45%;
+        transform: translateY(-50%);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      #post-timer-message {
+        margin-top: 2rem;
       }
     </style>
   </head>
   <body>
     <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay">
+      <a href="/" class="logo-hollowbookco">
+        <img
+          src="/assets/icons/studiorich-x-hollowbookco-symbol.svg"
+          alt="StudioRich x Hollowbookco books and music"
+        />
+      </a>
+    </div>
 
-    <div class="hero-content">
+    <div class="hero-content" id="hero-content">
       <h1>The Reading Room</h1>
-      <p>One gradient. One loop. A quiet corner.</p>
-      <button class="fs-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+      <p>
+        In the right mood, music becomes ink's echo. Some loops don’t
+        distract—they draw you further into the page.
+      </p>
+      <button class="fs-btn" onclick="toggleFullscreen()">Begin</button>
       <audio
         id="bgMusic"
         src="/assets/loops/loops-between-pages.mp3"
@@ -126,16 +183,69 @@
       ></audio>
     </div>
 
+    <div id="countdown-bar">30:00</div>
+
+    <div id="fullscreen-message">
+      <h2>Create less distraction.</h2>
+      <p>Just read. 30 minutes begin now…</p>
+
+      <div id="post-timer-message" style="display: none">
+        <p>You did it. Take a breath.</p>
+        <button class="fs-btn" onclick="restartTimer()">Go another 30?</button>
+      </div>
+    </div>
+
     <script>
       function toggleFullscreen() {
         const el = document.documentElement;
+        const music = document.getElementById("bgMusic");
+        const hero = document.getElementById("hero-content");
+        const message = document.getElementById("fullscreen-message");
+
         if (!document.fullscreenElement) {
           el.requestFullscreen().then(() => {
-            document.getElementById("bgMusic").play();
+            music.play();
+            hero.style.display = "none";
+            message.style.display = "block";
+            startCountdown(30 * 60); // 30 min
           });
         } else {
-          document.exitFullscreen();
+          document.exitFullscreen().then(() => {
+            music.pause();
+            hero.style.display = "block";
+            message.style.display = "none";
+            document.getElementById("countdown-bar").style.display = "none";
+          });
         }
+      }
+
+      function startCountdown(duration) {
+        let time = duration;
+        const bar = document.getElementById("countdown-bar");
+        const postTimer = document.getElementById("post-timer-message");
+
+        postTimer.style.display = "none";
+        bar.style.display = "block";
+
+        clearInterval(window.currentTimer);
+
+        window.currentTimer = setInterval(() => {
+          const minutes = Math.floor(time / 60);
+          const seconds = time % 60;
+          const formatted = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+          bar.textContent = formatted;
+          time--;
+
+          if (time < 0) {
+            clearInterval(window.currentTimer);
+            bar.textContent = "00:00";
+            postTimer.style.display = "block";
+          }
+        }, 1000);
+      }
+
+      function restartTimer() {
+        startCountdown(30 * 60);
       }
     </script>
   </body>
