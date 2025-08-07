@@ -61,7 +61,7 @@ redirect_from:
 
   <li><strong><a href="https://soundcloud.com/studiorich/cat-on-the-signal">Cat on the Signal</a></strong> – A pastel-toned audio toy glitch loop. <br><a href="https://soundcloud.com/studiorich/cat-on-the-signal">→ View the piece</a></li>
 
-<li><strong>StudioRich Desktop OS</strong> <span class="badge">Tool</span> – An upcoming desktop music player that merges Stranger Vibes, StudioRich visuals, and the Trackstar Engine’s emotional playlist generator. A creative OS where playback becomes performance. <br><a href="https://studiorich.shop/coming-soon/" target="_blank">→ Explore tools</a></li>
+<li><strong><a href="https://studiorich.shop/coming-soon/" target="_blank">StudioRich Desktop OS</a></strong> <span class="badge">Tool</span> – An upcoming desktop music player that merges Stranger Vibes, StudioRich visuals, and the Trackstar Engine’s emotional playlist generator. A creative OS where playback becomes performance. <br><a href="https://studiorich.shop/coming-soon/" target="_blank">→ Explore tools</a></li>
 
 <li><strong>CTRL‑WALL</strong> – A visual layer for the Desktop OS: an audio‑reactive wall of sound that transforms playlists into immersive lo‑fi canvases. Streaming, drops, and mood‑synced visuals all in one. <br><a href="https://studiorich.shop/coming-soon/" target="_blank">→ See preview</a></li>
 

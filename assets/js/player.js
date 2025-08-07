@@ -36,7 +36,7 @@ function loadTrack(index) {
     audio.src = track.file;
     nowPlaying.innerHTML = `
     <img src="${track.cover}" alt="${track.title}"
-         style="width:80px;height:auto;margin-right:10px;vertical-align:middle;" />
+         style="width:250px;height:auto;margin-right:10px;vertical-align:middle;" />
     <span><img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm" />: <a href="${track.link}">${track.title}</a></span>
   `;
 

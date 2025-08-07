@@ -28,10 +28,10 @@ redirect_from:
 
 <p>Whether through animated cover loops, character-driven story arcs, or custom-coded engines that turn music curation into something tactile and strange, every release invites listeners into a world that feels handmade, human, and a little unruly.</p>
 
+<hr>
 <p><a href="/presskit/" class="cta-button">Press & Project Kit</a>
 </p>
 
-<hr>
   <h3><img src="/assets/icons/link.svg" alt="Link" class="icon-sm"> Contact & Links</h3>
   <p>
     Email: <a href="mailto:press@studiorich.shop">press@studiorich.shop</a><br>

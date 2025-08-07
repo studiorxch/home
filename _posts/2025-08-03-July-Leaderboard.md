@@ -6,10 +6,15 @@ date: 2025-08-04
 author: StudioRich
 tags: [loops, monthly, highlights, community]
 description: "July at StudioRich was a month of deep breaths and repeat moments. Lo‑Fi carried through mornings and long nights, with six tracks defining the month’s sound."
-image: /assets/covers/backwards-ventilation.webp
+image: /assets/img/blog/2025-july-leaderboard.webp
 ---
 
-# <img src="/assets/icons/one-eyed-monster.svg" alt="One Eyed Monster icon" class="icon-sm" /> Loop Leaderboard: July’s Lo‑Fi in Sound
+# Loop Leaderboard: July’s Lo‑Fi in Sound
+
+### Visual Wrap-Up
+
+_A month in loops, captured visually._
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/203268459@N03/albums/72177720328125825" title="Loop Leaderboard: July’s Lo‑Fi in Sound"><img src="https://live.staticflickr.com/65535/54698635390_65dea1f98b.jpg" width="640" height="480" alt="Loop Leaderboard: July’s Lo‑Fi in Sound"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 July at StudioRich was a month of deep breaths and repeat moments. Lo‑Fi lived in the background of mornings and carried through long nights. From immersive slow‑burn loops like _Backwards Ventilation_ to nostalgic echoes like _Cassette Crush_, these tracks weren’t just played — they defined how July felt in sound.
 
