@@ -56,12 +56,15 @@ hr {
 }
 
 .hero-kicker {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #ff3b3b; /* same accent red as bullets/logo */
-  margin: 0 0 0.4rem 0; /* tight above title */
-  font-weight: 500;
+  color: #ff0000;
+  margin: 0 0 0.4rem 0;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.3;
+  display: block;
 }
 
 .hero-subtitle {

@@ -1,8 +1,21 @@
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2"),
-    url("/assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
-  font-weight: 200;
+  font-family: "Red Hat Display";
+  src: url("/assets/fonts/RedHatDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/assets/fonts/RedHatDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/assets/fonts/RedHatDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 

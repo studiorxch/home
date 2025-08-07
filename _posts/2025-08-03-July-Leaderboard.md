@@ -1,5 +1,6 @@
 ---
 layout: post
+kicker: Feedback Bloom
 title: "Loop Leaderboard"
 subtitle: July’s Lo‑Fi in Sound
 date: 2025-08-04
