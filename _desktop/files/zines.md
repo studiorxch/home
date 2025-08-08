@@ -1,7 +1,7 @@
 ---
 title: "Zines"
 folder: "desktop"
-icon: "/assets/icons/blog.webp"
+icon: "/assets/img/icons/blog.webp"
 type: "folder"
 view: "grid"
 description: "Collection of StudioRich zines in PDF format."

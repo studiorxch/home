@@ -25,46 +25,46 @@ Think of this list less as a ranking and more as a constellation: each track its
 
 ---
 
-## <img src="/assets/icons/t-shirt.svg" alt="T-shirt icon" class="icon-sm" /> July’s Top 6 Loops
+## <img src="/assets/ui/t-shirt.svg" alt="T-shirt icon" class="icon-sm" /> July’s Top 6 Loops
 
 ### 🥇 Backwards Ventilation
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/backwards-ventilation/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/backwards-ventilation/?autoplay=1)  
 The month’s slow‑burn center. A track that stretched time, turning background air into atmosphere. Patience became rhythm.
 
 ---
 
 ### 🥈 Roll Call (S03)
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/roll-call-s03/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/roll-call-s03/?autoplay=1)  
 A grounding presence — the loop that set July’s tempo. Steady and familiar, it became a touchstone for the community.
 
 ---
 
 ### 🥉 Sidewalk Sunrise
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/sidewalk-sunrise/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/sidewalk-sunrise/?autoplay=1)  
 Morning haze, notebook pages, soft optimism. This track carried July’s quieter beginnings.
 
 ---
 
 ### Cassette Crush
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/cassette-crush/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/cassette-crush/?autoplay=1)  
 Tape‑warbled nostalgia that rewarded every replay. A reminder that memory itself can be melody.
 
 ---
 
 ### Fade Out Glow (S02)
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/fade-out-glow-s02/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/fade-out-glow-s02/?autoplay=1)  
 The after‑hours glow. Dreamy, lingering, and unhurried — like the final light across a late summer evening.
 
 ---
 
 ### Run Loop (S01)
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/run-loop-s01/?autoplay=1)  
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> [Listen here](/tracks/run-loop-s01/?autoplay=1)  
 A minimal cut that rewarded focus. Not everyone found it, but those who did carried it with them.
 
 ---
@@ -75,9 +75,9 @@ Beyond the Top 6, other loops flickered through July: _Fade Out Glow (S01)_ retu
 
 ---
 
-## <img src="/assets/icons/spiral.svg" alt="Spiral icon" class="icon-sm" /> Closing Note
+## <img src="/assets/ui/spiral.svg" alt="Spiral icon" class="icon-sm" /> Closing Note
 
 July’s Lo‑Fi chart wasn’t just a list — it was a mirror of mood.  
 As August begins, we carry forward the patience, nostalgia, and hazy rhythm that July gave us. The next constellation is already forming.
 
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> Until then — keep looping.
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> Until then — keep looping.

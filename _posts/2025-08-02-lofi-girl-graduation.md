@@ -17,7 +17,7 @@ The moment was revealed in a TikTok clip posted by the official Lofi Girl channe
 
 ---
 
-## <img src="/assets/icons/pin.svg" alt="Pin icon" class="icon-sm" /> A Cultural Shift
+## <img src="/assets/ui/pin.svg" alt="Pin icon" class="icon-sm" /> A Cultural Shift
 
 Since debuting in 2015, the **24/7 livestream** (_lofi hip hop radio – beats to relax/study to_) has built a following of more than 15 million subscribers. Lofi Girl became a global companion for late‑night students, remote workers, and nostalgic browsers.
 
@@ -25,7 +25,7 @@ Her “graduation” doesn’t end the stream—it reframes it. The beats contin
 
 ---
 
-## <img src="/assets/icons/splatter.svg" alt="Splatter icon" class="icon-sm" /> Why It Matters
+## <img src="/assets/ui/splatter.svg" alt="Splatter icon" class="icon-sm" /> Why It Matters
 
 - Marks the end of an era in **[nostalgic ambient playlists](/tags/nostalgic/)**.
 - Reinforces lo‑fi’s role in **[sound + visual culture crossovers](/tags/crossovers/)**.
@@ -33,7 +33,7 @@ Her “graduation” doesn’t end the stream—it reframes it. The beats contin
 
 ---
 
-## <img src="/assets/icons/folder.svg" alt="Folder icon" class="icon-sm" /> File It Under
+## <img src="/assets/ui/folder.svg" alt="Folder icon" class="icon-sm" /> File It Under
 
 #LegacySeries  
 #SundayReads  

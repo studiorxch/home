@@ -19,7 +19,7 @@ Vocal Alchemy for Fleeting Connection
 
 ---
 
-## <img src="/assets/icons/person.svg" alt="Person icon" style="width: 1em; vertical-align: middle;" /> Vibe Check
+## <img src="/assets/ui/person.svg" alt="Person icon" style="width: 1em; vertical-align: middle;" /> Vibe Check
 
 There’s a stillness to “Are You A Tree?” — like a secret you hum to yourself under moonlight. Sarya blends organic metaphor with celestial softness, crafting a sonic space that feels both rooted and otherworldly.
 
@@ -27,19 +27,19 @@ The track unfolds in layers of ambient pop and gentle vocal loops, echoing the d
 
 ---
 
-## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Listen In
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Listen In
 
 Stream “Are You A Tree?” wherever indie mysticism lives. Perfect for headphone walks, plant-watering rituals, or voice notes never sent.
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 Sarya doesn’t just sing — she suspends moments in air. With breathy restraint and intuitive phrasing, she brings intimacy into echo. “Are You A Tree?” isn’t a question. It’s a spell.
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
 
 #ForestPop  
 #NightWhispers  

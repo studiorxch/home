@@ -5,20 +5,19 @@ date: 2025-04-27
 description: "Lucky Claw’s ‘Concrete Cuts’ smashes city grit into beat tape warmth."
 image: /assets/img/blog/-lucky-claw-concrete-cuts-4.webp
 tags: [beat-tape-culture, concrete-cuts, field-recordings, grithop, subwaybeats]
-redirect_from: 
-
-- 2025/04/27/lucky-claw-concrete-cuts-1.html
-- 2025/04/27/lucky-claw-concrete-cuts-2.html
-- 2025/04/27/lucky-claw-concrete-cuts-3.html
-- 2025/04/27/lucky-claw-concrete-cuts-4.html
-- /blogs/news/🎧-lucky-claw-concrete-cuts-1
-- /blogs/news/🎧-lucky-claw-concrete-cuts-2
-- /blogs/news/🎧-lucky-claw-concrete-cuts-3
-- /blogs/news/🎧-lucky-claw-concrete-cuts-4
-- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-1
-- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-2
-- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-3
-- /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-4
+redirect_from:
+  - 2025/04/27/lucky-claw-concrete-cuts-1.html
+  - 2025/04/27/lucky-claw-concrete-cuts-2.html
+  - 2025/04/27/lucky-claw-concrete-cuts-3.html
+  - 2025/04/27/lucky-claw-concrete-cuts-4.html
+  - /blogs/news/🎧-lucky-claw-concrete-cuts-1
+  - /blogs/news/🎧-lucky-claw-concrete-cuts-2
+  - /blogs/news/🎧-lucky-claw-concrete-cuts-3
+  - /blogs/news/🎧-lucky-claw-concrete-cuts-4
+  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-1
+  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-2
+  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-3
+  - /blogs/news/%F0%9F%8E%A7-lucky-claw-concrete-cuts-4
 ---
 
 # Lucky Claw: Concrete Cuts
@@ -33,5 +32,6 @@ redirect_from:
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## <img src="/assets/ui/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+
 #BeatTapeCulture #ConcreteCuts #FieldRecordings #GritHop #SubwayBeats

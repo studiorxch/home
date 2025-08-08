@@ -3,7 +3,7 @@ layout: default
 title: The Café at HollowBookCo
 permalink: /hollowbookco/
 description: "Sounds for shelves and shadows."
-image: /assets/img/hero-hollowbookco.webp
+image: /assets/img/hero/the-cafe-at-hollowbookco-hero.webp
 tags:
   [
     lofi,
@@ -18,7 +18,7 @@ tags:
   ]
 ---
 
-{% include components/hero.html image="/assets/img/hero-hollowbookco.webp" title="The Café at HollowBookCo"
+{% include components/hero.html image="/assets/img/hero/the-cafe-at-hollowbookco-hero.webp" title="The Café at HollowBookCo"
   subtitle="Sounds for shelves and shadows." %}
 
 <div class="container-text">
@@ -29,13 +29,13 @@ tags:
 </section>
 
 <section class="cafe-section">
-  <h2><img src="/assets/icons/hollow-book.svg" alt="Headphones icon" class="icon-sm"> The Story</h2>
+  <h2><img src="/assets/ui/hollow-book.svg" alt="Headphones icon" class="icon-sm"> The Story</h2>
   <p>Born from a hidden corner of StudioRich, HollowBookCo is a quiet world of literary ambience, slow moods, and café after-hours. Once a maker of handcrafted hollow book safes, we’ve evolved into a digital refuge for cat companions, quiet thinkers, and those who find magic in margins.</p>
   <p>Our bookstore cat—grey tabby, long passed—is still here in spirit. Her quiet curled presence lives on in every loop we build and every shelf we reimagine.</p>
 </section>
 
 <section class="cafe-section">
-  <h2><img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm"> Watch & Listen</h2>
+  <h2><img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm"> Watch & Listen</h2>
   <p><a href="https://www.youtube.com/@hollowbookco" target="_blank">YouTube Channel → @hollowbookco</a><br>
      <a href="https://twitch.tv/hollowbookco" target="_blank">Twitch Livestream → twitch.tv/hollowbookco</a></p>
 
@@ -45,7 +45,7 @@ tags:
 </section>
 
 <section class="cafe-section">
-  <h2><img src="/assets/icons/record.svg" alt="Headphones icon" class="icon-sm"> Ambient Editions</h2>
+  <h2><img src="/assets/ui/record.svg" alt="Headphones icon" class="icon-sm"> Ambient Editions</h2>
   <ul>
     <li>Coming soon: vinyl-ready loops</li>
     <li>Limited zines and café kits</li>
@@ -55,7 +55,7 @@ tags:
 </section>
 
 <section class="cafe-section">
-  <h2><img src="/assets/icons/radio.svg" alt="Headphones icon" class="icon-sm">  Connect</h2>
+  <h2><img src="/assets/ui/radio.svg" alt="Headphones icon" class="icon-sm">  Connect</h2>
 <p>
   Instagram → <a href="https://www.instagram.com/hollowbookco" target="_blank">@hollowbookco</a><br>
   Threads → <a href="https://www.threads.net/@hollowbookco" target="_blank">@hollowbookco</a><br>
@@ -71,7 +71,7 @@ tags:
 </section>
 
 <section class="cafe-section">
-  <h2><img src="/assets/icons/heart.svg" alt="Headphones icon" class="icon-sm">  Quick Links</h2>
+  <h2><img src="/assets/ui/heart.svg" alt="Headphones icon" class="icon-sm">  Quick Links</h2>
   <ul>
    
     <li><a href="/artists">Explore All Artists</a></li>

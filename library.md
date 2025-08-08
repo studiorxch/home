@@ -3,7 +3,7 @@ layout: default
 title: Music Library
 permalink: /library/
 description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesthetic."
-image: /assets/img/hero-music-library.webp
+image: /assets/img/hero/music-library-record-room-hero.webp
 redirect_from:
   - https://studiorich.shop/tracks/
 ---

@@ -86,7 +86,7 @@ image: /assets/img/covers/live-stream.webp
   </style>
 
   <div class="offline-message" style="text-align:center; color:#ccc; max-width:800px; margin:0 auto;">
-    <h1 style="color:white;"><img src="/assets/icons/radio.svg" alt="Radio icon" class="icon-sm"> StudioRich Radio is Offline</h1>
+    <h1 style="color:white;"><img src="/assets/ui/radio.svg" alt="Radio icon" class="icon-sm"> StudioRich Radio is Offline</h1>
     <p>We stream live every Monday to Thursday from 8–10PM EST.</p>
     <p>
       Catch Stranger Vibes, lo-fi chill, and ambient hip hop here or on

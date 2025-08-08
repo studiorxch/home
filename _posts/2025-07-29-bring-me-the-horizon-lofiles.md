@@ -8,7 +8,7 @@ tags: [StudioRichCore, DropTieIn, lofi, LoFiles, VisualBeatLoop]
 image: /assets/img/blog/bring-me-the-horizon-lofiles.webp
 ---
 
-# <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> Bring Me The Horizon – _Lo-files (LP)_
+# <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> Bring Me The Horizon – _Lo-files (LP)_
 
 In a move that few saw coming, **Bring Me The Horizon** has stepped into the lo-fi space with their new project, _Lo-files (LP)_. Known for heavy, layered sounds that usually fill stadiums, the band takes a surprising detour into **[hazy lo-fi textures](/tracks/)**, pairing tape hiss, ambient beats, and nostalgic haze with their signature intensity.
 
@@ -18,10 +18,10 @@ For **StudioRich**, this LP lands as a cultural marker. It’s a reminder that l
 
 ---
 
-<img src="/assets/icons/link.svg" alt="Link icon" style="width: 1em; vertical-align: middle;" /> [Read the original coverage on Acid Stag](https://acidstag.com/2025/07/bring-me-the-horizon-lo-files-lp/)
+<img src="/assets/ui/link.svg" alt="Link icon" style="width: 1em; vertical-align: middle;" /> [Read the original coverage on Acid Stag](https://acidstag.com/2025/07/bring-me-the-horizon-lo-files-lp/)
 
 ---
 
-## <img src="/assets/icons/phat-marker.svg" alt="Marker icon" style="width: 1em; vertical-align: middle;" /> Tags
+## <img src="/assets/ui/phat-marker.svg" alt="Marker icon" style="width: 1em; vertical-align: middle;" /> Tags
 
 #StudioRichCore #DropTieIn #lofi #LoFiles #VisualBeatLoop

@@ -27,7 +27,7 @@ tags:
 
 ---
 
-## <img src="/assets/icons/glasses.svg" alt="Glasses icon" style="width: 1em; vertical-align: middle;" /> Salt-Toned Stillness
+## <img src="/assets/ui/glasses.svg" alt="Glasses icon" style="width: 1em; vertical-align: middle;" /> Salt-Toned Stillness
 
 There’s no drop. No buildup. Just soft looped calm. In _Sea Salt Dayz_, NINO leans into clarity — a mantra for quiet resets:
 
@@ -37,7 +37,7 @@ It’s the kind of lo-fi track that doesn’t try to move you — it tries to **
 
 ---
 
-## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> What It Sounds Like
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> What It Sounds Like
 
 - Mellow bedroom pop meets shoreline lo-fi
 - Gentle vocals with an inner monologue feel
@@ -53,7 +53,7 @@ Good for:
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 This isn’t soft for softness’ sake — it’s intentional. _Sea Salt Dayz_ is what happens when quiet becomes craft. NINO offers stillness like a friend handing you water: calm, uncomplicated, necessary.
 
@@ -67,7 +67,7 @@ File it under:
 
 ---
 
-## <img src="/assets/icons/hollow-book.svg" alt="Book Open icon" style="width: 1em; vertical-align: middle;" /> Credits & Context
+## <img src="/assets/ui/hollow-book.svg" alt="Book Open icon" style="width: 1em; vertical-align: middle;" /> Credits & Context
 
 - [Manila Times Feature](https://www.manilatimes.net/2025/07/24/entertainment-lifestyle/show-times/nino-releases-a-soulful-reset-for-the-weary-mind/2154591)
 - [Starmometer](https://starmometer.com/2025/07/20/nino-releases-sea-salt-dayz-a-soulful-reset-for-the-weary-mind/)

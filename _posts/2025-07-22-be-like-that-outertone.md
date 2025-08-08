@@ -17,31 +17,34 @@ tags: [futurebass, outertone, electronic, vocaldrop, synthwavefeelings]
 
 ---
 
-## <img src="/assets/icons/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Drop With Depth
-*Be Like That* is emotional circuitry — glowing synthwork layered under aching vocals and future bass textures. It pulses with the kind of tension that makes your chest buzz.
+## <img src="/assets/ui/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Drop With Depth
+
+_Be Like That_ is emotional circuitry — glowing synthwork layered under aching vocals and future bass textures. It pulses with the kind of tension that makes your chest buzz.
 
 Truth Is & Branquis have crafted a track that feels engineered for heart drops and afterglow moments. It’s cinematic, electric, and made for nights that loop back in memory.
 
 ---
 
-## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Spin It Loud
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Spin It Loud
+
 This is headphone fire and speaker balm. For bedroom sessions, long walks, or lighting up a dark ride.
 
 Listen now on RouteNote Radar: [Be Like That](https://routenote.com/radar/truth-is-branquis-drop-be-like-that-a-future-bass-gem-on-outertone/)
 
 ---
 
-## <img src="/assets/icons/Eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/Eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+
 The first listen hit like a remembered feeling — bright pain, warm delay, and that signature Outertone clarity. If you like your bass with a heartbeat, this one’s calling.
 
 We’ll be spinning it in our next visual loop session. You should too.
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+
 #FutureFeels  
 #EmotiveBass  
 #OutertoneDrop  
 #SynthGlow  
 #EchoHeart
-

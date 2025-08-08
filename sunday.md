@@ -3,7 +3,7 @@ layout: default
 title: StudioRich | Sunday Schedule
 permalink: /schedule/sunday
 description: "Join us for StudioRich's sunday livestream - lo-fi sound therapy and creative sessions every week."
-image: /assets/img/covers/schedule-sunday.webp
+image:
 redirect_from:
   - /pages/schedule
   - /blogs/lo-fi-sundays
@@ -11,7 +11,7 @@ redirect_from:
 ---
 
 {% include components/hero.html
-  image="/assets/img/hero-spatherapy.webp"
+  image="/assets/img/hero/spa-therapy-vinyl-record-hero.webp"
   title="Sundays"
   subtitle="A Lo-Fi Sonic Massage Experience" %}
 

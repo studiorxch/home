@@ -71,11 +71,11 @@ function loadTrack(index) {
   `;
 
     audio.addEventListener("play", () => {
-        playPauseIcon.src = "/assets/icons/pause-button.svg";
+        playPauseIcon.src = "/assets/ui/pause-button.svg";
     });
 
     audio.addEventListener("pause", () => {
-        playPauseIcon.src = "/assets/icons/play-button.svg";
+        playPauseIcon.src = "/assets/ui/play-button.svg";
     });
 
     // When metadata loads, calculate repeats

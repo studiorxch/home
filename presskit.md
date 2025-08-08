@@ -35,7 +35,7 @@ redirect_from:
 
   <hr>
 
-  <h3><img src="/assets/icons/splatter.svg" alt="Splatter" class="icon-sm"> Assets</h3>
+  <h3><img src="/assets/ui/splatter.svg" alt="Splatter" class="icon-sm"> Assets</h3>
   <ul>
     <li><a href="/assets/presskit/studiorich_logo.zip">Download Logos</a></li>
     <li><a href="/assets/presskit/visuals">Cover Art & Visuals</a></li>
@@ -45,7 +45,7 @@ redirect_from:
 
   <hr>
 
-<h3><img src="/assets/icons/musicnote.svg" alt="Music" class="icon-sm"> Featured Projects <span style="font-weight: normal;">(All 2025)</span></h3>
+<h3><img src="/assets/ui/musicnote.svg" alt="Music" class="icon-sm"> Featured Projects <span style="font-weight: normal;">(All 2025)</span></h3>
 
 <ul>
   <li><strong><a href="https://www.youtube.com/shorts/b8RtJjWw2H0" target="_blank">Warped Honey</a></strong> <span class="badge">Upcoming EP</span>  – A new EP brewing in the StudioRich hive—glitched soul, lopsided rhythm, and vinyl-static sweetness.<br>
@@ -70,7 +70,7 @@ redirect_from:
 <p style="margin-top: 1em;"><a href="/library/" class="cta-link">→ Browse the full StudioRich catalog</a></p>
   <hr>
 
-<h3><img src="/assets/icons/turntable.svg" alt="Turntable" class="icon-sm"> Legacy Projects</h3>
+<h3><img src="/assets/ui/turntable.svg" alt="Turntable" class="icon-sm"> Legacy Projects</h3>
 <ul>
 <li><strong><a href="https://www.youtube.com/watch?v=IeEzjiKucgk" target="_blank">Stranger Vibes: Poster Promo Video</a></strong> – A lo-fi visual journey blending ambient beats and anime-inspired edits. Originally created to promote a Redbubble poster inspired by Stranger Things, this piece reflects StudioRich’s roots in remix culture and emotional design. The poster is no longer available due to licensing changes with Netflix.
 <a href="https://www.youtube.com/watch?v=IeEzjiKucgk" target="_blank">→ Watch on YouTube</a></li>
@@ -90,7 +90,7 @@ Not officially released—some of this material may appear in future NFT drops o
 
   <hr>
 
-  <h3><img src="/assets/icons/link.svg" alt="Link" class="icon-sm"> Contact & Links</h3>
+  <h3><img src="/assets/ui/link.svg" alt="Link" class="icon-sm"> Contact & Links</h3>
   <p>
     Email: <a href="mailto:press@studiorich.shop">press@studiorich.shop</a><br>
     Website: <a href="https://www.studiorich.shop">studiorich.shop</a><br>

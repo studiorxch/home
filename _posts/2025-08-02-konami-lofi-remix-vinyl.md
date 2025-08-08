@@ -10,7 +10,7 @@ tags: [lo‑fi, vinyl, retro‑gaming, soundtracks, crossovers]
 
 **Konami Lo‑fi Beats To Chill To** is a vinyl LP featuring DJ No. 2’s lo‑fi remixes of classic Konami arcade themes—including Gradius, Yie Ar Kung‑Fu, TwinBee, and Salamander. Released to commemorate the **35th anniversary of the iconic Konami Code**, it transforms nostalgic game melodies into mellow, hip‑hop‑inflected soundscapes :contentReference[oaicite:2]{index=2}. The vinyl is pressed with art by _Mizucat_, capturing a vaporwave‑tinged aesthetic of nighttime cityscapes and chill energy :contentReference[oaicite:3]{index=3}.
 
-## <img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm" /> Why This Matters for StudioRich
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> Why This Matters for StudioRich
 
 - It’s the perfect _sound + visual culture crossover_—Konami’s pixel‑frame legacy meets modern lo‑fi chillroom vibes.
 - The design aesthetic aligns with our visual beat loop focus: nostalgic ambient tones pressed to vinyl.

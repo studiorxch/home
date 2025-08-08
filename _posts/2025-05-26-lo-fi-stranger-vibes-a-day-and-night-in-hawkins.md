@@ -5,7 +5,7 @@ date: 2025-05-26
 title: "Lo-Fi Stranger Vibes"
 subtitle: "A Day and Night in Hawkins"
 description: "2HR lo-fi mix inspired by Stranger Things. From analog warmth to otherworldly chill."
-icon: /assets/icons/walkie.svg
+icon: /assets/ui/walkie.svg
 image: /assets/img/blog/lo-fi-stranger-vibes-a-day-and-night-in-hawkins.webp
 tags: [lo-fi, chillbeats, chillhop, chillvibes, strangerthings, ambient]
 redirect_from:
@@ -28,16 +28,16 @@ redirect_from:
 ---
 
 <p>
-<img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Featured: Tracks from StudioRich's Stranger Vibes series<br>
-<img src="/assets/icons/mic.svg" alt="Mic icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Streamed live from The Vibe Station<br>
-<img src="/assets/icons/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
+<img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Featured: Tracks from StudioRich's Stranger Vibes series<br>
+<img src="/assets/ui/mic.svg" alt="Mic icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Streamed live from The Vibe Station<br>
+<img src="/assets/ui/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle; margin: 0;" /> Mood: Ambient | Chillhop | Cinematic Lo-Fi | Retro Synths<br>
 </p>
 <p>Watching here? You can also explore each track in our music library—just click a title to listen directly.</p>
 
 <p>
 0:00:30 <a href="/tracks/skatepark-ruins/?autoplay=1">Skatepark Ruins</a><br>
 0:02:59 <a href="/tracks/static-memory/?autoplay=1">Static Memory</a><br>
-0:04:52 <a href="/tracks/backwards-bloom/?autoplay=1">Backwards Bloom</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
+0:04:52 <a href="/tracks/backwards-bloom/?autoplay=1">Backwards Bloom</a> <img src="/assets/ui/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
 0:08:24 <a href="/tracks/letters-left/?autoplay=1">Letters Left</a><br>
 0:10:50 <a href="/tracks/fade-out-glow-s04/?autoplay=1">Fade Out Glow (D-Side)</a><br>
 0:13:15 <a href="/tracks/light-rewind-s03/?autoplay=1">Light Rewind (C-Side)</a><br>
@@ -51,13 +51,13 @@ redirect_from:
 0:28:52 <a href="/tracks/no-signal/?autoplay=1">No Signal</a><br>
 0:32:10 <a href="/tracks/red-sky-break-s01/?autoplay=1">Red Sky Break (A-Side)</a><br>
 0:34:17 <a href="/tracks/muted-sunrise-s01/?autoplay=1">Muted Sunrise (A-Side)</a><br>
-0:36:56 <a href="/tracks/nowhere-shortcut/?autoplay=1">Nowhere Shortcut</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
+0:36:56 <a href="/tracks/nowhere-shortcut/?autoplay=1">Nowhere Shortcut</a> <img src="/assets/ui/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
 0:38:50 <a href="/tracks/no-signal-s01/?autoplay=1">No Signal (A-Side)</a><br>
 0:40:49 <a href="/tracks/blue-hoodie-s01/?autoplay=1">Blue Hoodie (A-Side)</a><br>
 0:43:26 <a href="/tracks/brotherhood-beat-s01/?autoplay=1">Brotherhood Beat (A-Side)</a><br>
 0:45:25 <a href="/tracks/driveway-fadeout-s01/?autoplay=1">Driveway Fadeout (A-Side)</a><br>
 0:46:57 <a href="/tracks/fracture-point-break-s02/?autoplay=1">Fracture Point Break (B-Side)</a><br>
-0:49:26 <a href="/tracks/sidewalk-sunrise/?autoplay=1">Sidewalk Sunrise</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
+0:49:26 <a href="/tracks/sidewalk-sunrise/?autoplay=1">Sidewalk Sunrise</a> <img src="/assets/ui/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
 0:51:50 <a href="/tracks/driveway-fadeout/?autoplay=1">Driveway Fadeout</a><br>
 0:53:27 <a href="/tracks/quiet-frequencies/?autoplay=1">Quiet Frequencies</a><br>
 0:55:45 <a href="/tracks/light-rewind-s02/?autoplay=1">Light Rewind (B-Side)</a><br>
@@ -77,7 +77,7 @@ redirect_from:
 1:26:02 <a href="/tracks/fracture-point-break-s04/?autoplay=1">Fracture Point Break (D-Side)</a><br>
 1:28:58 <a href="/tracks/flicker-at-dusk/?autoplay=1">Flicker At Dusk</a><br>
 1:31:22 <a href="/tracks/soft-return/?autoplay=1">Soft Return</a><br>
-1:33:55 <a href="/tracks/fade-out-glow-s01/?autoplay=1">Fade Out Glow (A-Side)</a> <img src="/assets/icons/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
+1:33:55 <a href="/tracks/fade-out-glow-s01/?autoplay=1">Fade Out Glow (A-Side)</a> <img src="/assets/ui/youtube.svg" alt="YouTube icon" class="icon-sm"/><br>
 1:35:45 <a href="/tracks/run-loop-s01/?autoplay=1">Run Loop (A-Side)</a><br>
 1:37:46 <a href="/tracks/headphones-in/?autoplay=1">Headphones In</a><br>
 1:40:05 <a href="/tracks/red-sky-break/?autoplay=1">Red Sky Break</a><br>
@@ -88,6 +88,6 @@ redirect_from:
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" class="icon-sm"> Filed Under
+## <img src="/assets/ui/cube.svg" alt="Cube icon" class="icon-sm"> Filed Under
 
 #ChillBeats #ChillHop #ChillVibes #StrangerThings #ambient #lofi

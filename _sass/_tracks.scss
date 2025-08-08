@@ -12,8 +12,6 @@ h1 {
   flex-shrink: 0;
 }
 
-
-
 .arrow-icon:hover {
   opacity: 1;
 }
@@ -53,15 +51,9 @@ h1 {
   transform: translateX(0);
 }
 
-
 .back-inline:hover .arrow-icon {
   opacity: 1;
 }
-
-
-
-
-
 
 .track-cover-placeholder {
   width: 100%;
@@ -96,16 +88,11 @@ h1 {
   text-align: center;
 }
 
-
-
-
-
 .track-page {
   max-width: 420px;
   margin: 10rem auto 4rem auto;
   padding: 0 1rem;
   text-align: center;
-
 }
 
 .track-cover {
@@ -118,8 +105,6 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5rem;
 }
-
-
 
 .track-meta {
   max-width: 420px;
@@ -145,7 +130,6 @@ h1 {
   padding-right: 1rem;
 }
 
-
 .track-heading h1 {
   font-size: 1.8rem;
   margin: 0;
@@ -168,16 +152,12 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-
-
-
-
 .track-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
   padding: 2rem 1rem;
-  max-width: 1024px;
+  max-width: 1024;
   margin: 0 auto;
 }
 
@@ -251,8 +231,6 @@ h1 {
   font-weight: bold;
 }
 
-
-
 /* === Library Filter === */
 .filter-bar {
   display: flex;
@@ -302,12 +280,10 @@ h1 {
   gap: 0.5rem;
 }
 
-
 .filter-bar button.active {
   background-color: #f1c40f;
   color: black;
 }
-
 
 /* Base mood buttons */
 button[data-type="mood"] {
@@ -341,7 +317,6 @@ button.disabled {
   cursor: default;
 }
 
-
 /* === Looper === */
 .loop-overlay {
   position: absolute;
@@ -352,7 +327,6 @@ button.disabled {
   opacity: 0.5;
   pointer-events: none;
 }
-
 
 .track-cover-button {
   position: relative;
@@ -369,10 +343,6 @@ button.disabled {
   display: block;
   border-radius: 8px;
 }
-
-
-
-
 
 .loop-indicator {
   transform: rotate(-90deg);
@@ -406,7 +376,6 @@ button.disabled {
   filter: brightness(1.5);
 }
 
-
 .play-loop {
   margin-top: 1rem;
   padding: 0.75rem 1.25rem;
@@ -424,7 +393,6 @@ button.disabled {
   background: #fff;
 }
 
-
 .loop-button-wrapper {
   position: absolute;
   bottom: 12px;
@@ -434,7 +402,6 @@ button.disabled {
   cursor: pointer;
   z-index: 10;
 }
-
 
 .loop-indicator {
   position: relative;
@@ -472,7 +439,6 @@ button.disabled {
   transition: stroke-dashoffset 0.2s ease;
 }
 
-
 .track-card.playing .waveform-mini .bar {
   animation-play-state: running;
 }
@@ -481,7 +447,6 @@ button.disabled {
   stroke: rgba(255, 255, 255, 0.9);
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
 }
-
 
 .track-cover-missing {
   position: relative;
@@ -493,8 +458,6 @@ button.disabled {
   color: #999;
   margin-top: 0.5rem;
 }
-
-
 
 /* === Share Social Media === */
 

@@ -86,7 +86,7 @@ body.desktop-page #menu-bar {
 }
 
 body.desktop-page {
-  background: url("/assets/img/wallpapers/default.webp") no-repeat center center
+  background: url("/assets/wallpapers/default.webp") no-repeat center center
     fixed;
   background-size: cover;
   background-color: #000;
@@ -222,7 +222,7 @@ body.desktop-page {
    ------------------------------------------ */
 
 /* Tablets & small laptops */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024) {
   #desktop {
     padding: 2rem 1.5rem;
     gap: 2rem 2.5rem;

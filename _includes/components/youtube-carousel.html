@@ -1,20 +1,19 @@
 <div class="youtube-carousel-wrapper">
   <button class="carousel-arrow left" onclick="scrollCarousel(-1)">
-    <img src="/assets/icons/arrow-left.svg" alt="Left" class="arrow-icon">
+    <img src="/assets/ui/arrow-left.svg" alt="Left" class="arrow-icon" />
   </button>
   <div class="youtube-carousel" id="youtubeCarousel">
-    {% assign urls = include.video_urls | split: ',' %}
-    {% for url in urls %}
-      <iframe
-        src="{{ url | strip }}"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
+    {% assign urls = include.video_urls | split: ',' %} {% for url in urls %}
+    <iframe
+      src="{{ url | strip }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
     {% endfor %}
   </div>
   <button class="carousel-arrow right" onclick="scrollCarousel(1)">
-    <img src="/assets/icons/arrow-right.svg" alt="Right" class="arrow-icon">
+    <img src="/assets/ui/arrow-right.svg" alt="Right" class="arrow-icon" />
   </button>
 </div>
 
@@ -75,11 +74,11 @@
 
 <script>
   function scrollCarousel(direction) {
-    const carousel = document.getElementById('youtubeCarousel');
+    const carousel = document.getElementById("youtubeCarousel");
     const scrollAmount = 340; // including gap
     carousel.scrollBy({
       left: scrollAmount * direction,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   }
 </script>

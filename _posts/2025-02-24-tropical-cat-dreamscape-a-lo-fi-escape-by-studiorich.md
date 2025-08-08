@@ -21,6 +21,6 @@ redirect_from: /blogs/news/tropical-cat-dreamscape-a-lo-fi-escape-by-studiorich
 
 ---
 
-## <img src="/assets/icons/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## <img src="/assets/ui/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
 
 #cats #CinematicLofi #Lofi #LofiDreams #LofiHouse #synth

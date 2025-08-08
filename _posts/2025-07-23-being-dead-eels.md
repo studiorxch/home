@@ -17,25 +17,27 @@ tags: [indie, lo-fi, pitchfork, artrock, oddpop]
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+
 “Eels” is deceptively simple — a lofi handshake wrapped in slacker rock and schoolyard chants. But underneath the surface wiggle, there’s a layered musicianship and narrative cleverness that’s rare.
 
 Being Dead leans fully into character. Each track feels like a costume, sometimes cartoonish, sometimes sincerely offbeat. It’s the kind of sound collage you’d overhear at an outdoor puppet show for adults — if that puppet show had a record player and a mic.
 
-This isn’t background music. It’s *weird* in the best way. It earns your pause.
+This isn’t background music. It’s _weird_ in the best way. It earns your pause.
 
 ---
 
-## <img src="/assets/icons/speaker.svg" alt="Speaker icon" style="width: 1em; vertical-align: middle;" /> For the Fans Of:
+## <img src="/assets/ui/speaker.svg" alt="Speaker icon" style="width: 1em; vertical-align: middle;" /> For the Fans Of:
+
 - Deerhoof meets Wet Leg
 - Early Beck with more sunscreen
 - Songs that smirk and still hit
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+
 #AltCampfireSongs  
 #BasementCarnivalRock  
 #SongsWithEyebrows  
 #PitchforkSpotted
-

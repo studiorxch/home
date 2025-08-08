@@ -19,7 +19,7 @@ tags:
 
 ---
 
-## <img src="/assets/icons/fire.svg" alt="Heat icon" class="icon-sm"> Summer’s Lo-Fi Anthem
+## <img src="/assets/ui/fire.svg" alt="Heat icon" class="icon-sm"> Summer’s Lo-Fi Anthem
 
 The **Chillhop Essentials** series has become a ritual of the seasons, and Summer 2025 delivers a playlist that feels equal parts sunbeam and daydream. From poolside lounging to late-night balcony listening, this set captures the hazy balance of **energy and ease**.
 
@@ -27,7 +27,7 @@ The grooves? Breezy guitar loops, mellow piano runs, and just enough dusty drums
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm"> What You’ll Hear
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm"> What You’ll Hear
 
 Expect a blend of StudioRich-adjacent vibes:
 
@@ -39,7 +39,7 @@ It’s both a **summer postcard** and a **lo-fi sanctuary**.
 
 ---
 
-## <img src="/assets/icons/sparkles.svg" alt="Sparkles icon" class="icon-sm"> StudioRich Take
+## <img src="/assets/ui/sparkles.svg" alt="Sparkles icon" class="icon-sm"> StudioRich Take
 
 We love how these compilations **mirror our own visual beat loop aesthetics** — each track a vignette, each cover art an instant throwback. **Summer 2025** nails that balance: nostalgic, yet forward-flowing.
 
@@ -47,7 +47,7 @@ For StudioRich, this is a reminder that lo-fi is not just background — it’s 
 
 ---
 
-## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" class="icon-sm"> Original Story + Credits
+## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" class="icon-sm"> Original Story + Credits
 
 [RouteNote Feature](https://routenote.com/radar/chillhop-essentials-summer-2025-a-sun-drenched-journey-through-mellow-grooves/)  
 Cover art courtesy of Chillhop Music  

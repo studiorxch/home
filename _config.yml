@@ -62,7 +62,7 @@ defaults:
     sitemap: true
 
 include:
-  - assets/icons
+  - /assets/ui
 
 plugins:
   - jekyll-feed
@@ -96,7 +96,7 @@ exclude:
   - _site/
 
 # Add custom settings as needed
-favicon: "/assets/img/favicon.ico" # Make sure to upload your favicon if you want one
+favicon: "/assets/img/logo/favicon.ico" # Make sure to upload your favicon if you want one
 
 # Google Analytics (optional, add only if you have GA setup)
 google_analytics: "G-E5KN2YJJKF"

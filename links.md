@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 {% include components/hero.html
-image="/assets/img/graffiti-mascot-ink-doodle.webp"
+image="/assets/img/hero/graffiti-mascot-wing-chun-ink-hero.webp"
 title="Links" %}
 
 <div class="container">
@@ -19,31 +19,31 @@ title="Links" %}
     <ul class="link-list">
       <li>
         <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
-          <img src="/assets/icons/youtube.svg" alt="YouTube">
+          <img src="/assets/img/logos/youtube.svg" alt="YouTube">
           <span>YouTube</span>
         </a>
       </li>
       <li>
         <a href="https://soundcloud.com/studiorich" target="_blank">
-          <img src="/assets/icons/soundcloud.svg" alt="SoundCloud">
+          <img src="/assets/img/logos/soundcloud.svg" alt="SoundCloud">
           <span>SoundCloud</span>
         </a>
       </li>
       <li>
         <a href="https://twitch.tv/studiorich" target="_blank">
-          <img src="/assets/icons/twitch.svg" alt="Twitch">
+          <img src="/assets/img/logos/twitch.svg" alt="Twitch">
           <span>Twitch</span>
         </a>
       </li>
       <li>
         <a href="https://studiorich.bandcamp.com" target="_blank">
-          <img src="/assets/icons/bandcamp.svg" alt="Bandcamp">
+          <img src="/assets/img/logos/bandcamp.svg" alt="Bandcamp">
           <span>Bandcamp</span>
         </a>
       </li>
       <li>
         <a href="https://open.spotify.com/artist/55NPQkvFCSFrE7eZuzlzqT" target="_blank">
-          <img src="/assets/icons/spotify.svg" alt="Spotify">
+          <img src="/assets/img/logos/spotify.svg" alt="Spotify">
           <span>Spotify</span>
         </a>
       </li>
@@ -56,6 +56,6 @@ title="Links" %}
   <iframe width="100%" height="166" scrolling="no"
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1970334771"></iframe>
 
-    <img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm"> Find us on → <a href="/links-everywhere">all platforms</a>
+    <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm"> Find us on → <a href="/links-everywhere">all platforms</a>
 
 </div>

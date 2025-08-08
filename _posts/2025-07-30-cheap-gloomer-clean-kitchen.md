@@ -26,7 +26,7 @@ When a record gets called “cowboy-surf wizardry,” it’s hard not to lean in
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm">Surf Cowboys in the Lo-Fi Kitchen
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm">Surf Cowboys in the Lo-Fi Kitchen
 
 Cheap Gloomer’s project thrives in contradiction: cowboy ballads colliding with surf reverb, all tangled up in wry self-awareness. It’s the kind of record that makes you question if it’s parody, homage, or just pure accident — and that’s exactly what makes it stand out.
 
@@ -34,7 +34,7 @@ Tracks tumble between tongue-in-cheek storytelling and surprisingly affecting ho
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" class="icon-sm">StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm">StudioRich Take
 
 For us, _A Clean Kitchen_ belongs in the same mythic lineage as other **weird internet music culture** artifacts — equal parts joke, spell, and document. It echoes our fascination with sound + visual culture crossovers and sits comfortably in our vault of glitchy lo-fi ephemera.
 
@@ -44,11 +44,11 @@ Like all great lo-fi curios, it doesn’t need to take itself seriously to matte
 
 ---
 
-## <img src="/assets/icons/folder.svg" alt="Folder icon" class="icon-sm">Explore Further
+## <img src="/assets/ui/folder.svg" alt="Folder icon" class="icon-sm">Explore Further
 
-- <img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm"> Lo-fi beats loop archive → [/tracks/](/tracks/)
-- <img src="/assets/icons/octopus.svg" alt="Octopus icon" class="icon-sm"> Weird internet music culture → [/tags/weird-internet/](/tags/weird-internet/)
-- <img src="/assets/icons/magic-eye.svg" alt="Magic Eye icon" class="icon-sm"> Sound + visual culture crossovers → [/tags/crossovers/](/tags/crossovers/)
+- <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm"> Lo-fi beats loop archive → [/tracks/](/tracks/)
+- <img src="/assets/ui/octopus.svg" alt="Octopus icon" class="icon-sm"> Weird internet music culture → [/tags/weird-internet/](/tags/weird-internet/)
+- <img src="/assets/ui/magic-eye.svg" alt="Magic Eye icon" class="icon-sm"> Sound + visual culture crossovers → [/tags/crossovers/](/tags/crossovers/)
 
 ---
 

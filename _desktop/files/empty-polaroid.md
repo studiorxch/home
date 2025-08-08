@@ -2,7 +2,7 @@
 title: "Empty Polaroid"
 filename: "empty_polaroid_scan_85.jpg" # literal file name
 folder: "trash" # trash, music, zines, photos, links, etc.
-icon: "/assets/icons/photos.webp" # small icon for this file type
+icon: "/assets/img/icons/photos.webp" # small icon for this file type
 url: "/assets/photos/empty_polaroid_scan_85.jpg" # actual file location or external link
 kind: "image/jpeg" # MIME type or shorthand: image, audio, doc
 size: "1.2 MB" # display string, not auto-calculated

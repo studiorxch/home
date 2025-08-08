@@ -21,7 +21,7 @@ tags:
 
 ---
 
-## <img src="/assets/icons/gamecontroller.svg" alt="Game Controller icon" style="width: 1em; vertical-align: middle;" /> The Aesthetic That Drifted
+## <img src="/assets/ui/gamecontroller.svg" alt="Game Controller icon" style="width: 1em; vertical-align: middle;" /> The Aesthetic That Drifted
 
 There was a time when “internet music” meant pixel art visuals, reverb-soaked samples, and a wink behind every waveform. From the jittery neon nostalgia of _vaporwave_ to the meme-soft melancholy of _lo-fi remixes_, a whole tonal language emerged—ironic, sentimental, glitch-wrapped.
 
@@ -29,7 +29,7 @@ This wasn’t just music online—it was music _of_ the internet.
 
 ---
 
-## <img src="/assets/icons/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Sonic Motifs That Stuck
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Sonic Motifs That Stuck
 
 You know them:
 
@@ -42,7 +42,7 @@ The sound didn’t shout—it smirked, sighed, and circled back.
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 As lo-fi continues to evolve into a refined artform, it’s worth remembering its chaotic-cute, DIY, Tumblr-core roots. Tracks like _Nyan Cat_ weren’t just novelty—they set the tone for a whole era of soft rebellion.
 
@@ -56,7 +56,7 @@ File it under:
 
 ---
 
-## <img src="/assets/icons/moon.svg" alt="Moon icon" style="width: 1em; vertical-align: middle;" /> More from MenaFN
+## <img src="/assets/ui/moon.svg" alt="Moon icon" style="width: 1em; vertical-align: middle;" /> More from MenaFN
 
 [Original Article](https://menafn.com/1109825763/Internet-music-known-for-its-soft-playful-often-ironic-tone)
 

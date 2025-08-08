@@ -55,12 +55,12 @@ redirect_from:
 </section>
 
 <section class="shop-intro">
-  <h1 class="center"><img src="/assets/icons/store.svg" alt="StudioRich Shop icon" class="icon-sm">  StudioRich Shop</h1>
+  <h1 class="center"><img src="/assets/ui/store.svg" alt="StudioRich Shop icon" class="icon-sm">  StudioRich Shop</h1>
   <p class="center">Join the vibe collection — from lo-fi tees to digital downloads and zines. Every drop is Handcrafted with StudioRich soul and analog dreams.</p>
 </section>
 
 <section class="shop-featured">
-  <h2><img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm">  Latest Music Drop</h2>
+  <h2><img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm">  Latest Music Drop</h2>
   <div class="product-card">
     <img src="/assets/img/covers/cat-on-the-signal.webp" alt="Cat on the Signal">
     <h3><em>Cat on the Signal</em></h3>
@@ -69,7 +69,7 @@ redirect_from:
 </section>
 
 <section class="shop-featured merch">
-  <h2><img src="/assets/icons/baseball-cap.svg" alt="Baseball Cap icon" class="icon-sm">  Featured Merch</h2>
+  <h2><img src="/assets/ui/baseball-cap.svg" alt="Baseball Cap icon" class="icon-sm">  Featured Merch</h2>
   <div class="product-card">
     <img src="/assets/shop/melting-sound-system.webp" alt="Meltdown Boombox Tee">
     <h3>Meltdown Boombox Tee</h3>
@@ -79,11 +79,11 @@ redirect_from:
 </section>
 
 <section class="shop-more">
-  <h2><img src="/assets/icons/glasses.svg" alt="Glasses icon" class="icon-sm">  Explore More Goods</h2>
+  <h2><img src="/assets/ui/glasses.svg" alt="Glasses icon" class="icon-sm">  Explore More Goods</h2>
   <ul>
-    <li><a href="https://ko-fi.com/studiorich" target="_blank"><img src="/assets/icons/giftbox.svg" alt="Giftbox icon" class="icon-sm">  Exclusive sample packs & digital zines on Ko‑fi</a></li>
-    <li><a href="https://studiorich.bandcamp.com/" target="_blank"><img src="/assets/icons/record.svg" alt="Record icon" class="icon-sm">  Albums & EPs on Bandcamp</a></li>
-    <li><a href="https://studiorich.printful.me" target="_blank"><img src="/assets/icons/t-shirt.svg" alt="T-shirt icon" class="icon-sm">  Full merch storefront on Printful</a></li>
-    <li><a href="https://www.redbubble.com/people/studiorich/shop" target="_blank"><img src="/assets/icons/splatter.svg" alt="Splatter icon" class="icon-sm">  Redbubble (Art Prints & More)</a></li>
+    <li><a href="https://ko-fi.com/studiorich" target="_blank"><img src="/assets/ui/giftbox.svg" alt="Giftbox icon" class="icon-sm">  Exclusive sample packs & digital zines on Ko‑fi</a></li>
+    <li><a href="https://studiorich.bandcamp.com/" target="_blank"><img src="/assets/ui/record.svg" alt="Record icon" class="icon-sm">  Albums & EPs on Bandcamp</a></li>
+    <li><a href="https://studiorich.printful.me" target="_blank"><img src="/assets/ui/t-shirt.svg" alt="T-shirt icon" class="icon-sm">  Full merch storefront on Printful</a></li>
+    <li><a href="https://www.redbubble.com/people/studiorich/shop" target="_blank"><img src="/assets/ui/splatter.svg" alt="Splatter icon" class="icon-sm">  Redbubble (Art Prints & More)</a></li>
   </ul>
 </section>

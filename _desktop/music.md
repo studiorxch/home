@@ -1,7 +1,7 @@
 ---
 title: "Music"
 folder: "desktop"
-icon: "/assets/icons/tape-cassette.webp"
+icon: "/assets/img/icons/tape-cassette.webp"
 type: "folder"
 view: "grid"
 description: "Explore all tracks in the StudioRich library."

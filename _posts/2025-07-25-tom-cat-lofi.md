@@ -16,7 +16,7 @@ published: false
 
 ---
 
-## <img src="/assets/icons/cat-face.svg" alt="Cat Face" style="width: 1em; vertical-align: middle;" /> The Interview That Purrs Back
+## <img src="/assets/ui/cat-face.svg" alt="Cat Face" style="width: 1em; vertical-align: middle;" /> The Interview That Purrs Back
 
 When Vocal Media published a satirical interview with Tom—a deeply unimpressed housecat who waxes poetic about naps, ambient presence, and “resisting the hustle”—we felt seen. Because honestly? Tom might be the most lo-fi creature alive.
 
@@ -28,7 +28,7 @@ If that isn’t a perfect mission statement for the lo-fi mindset, we don’t kn
 
 ---
 
-## <img src="/assets/icons/dreamy-clouds.svg" alt="Dreamy Clouds" style="width: 1em; vertical-align: middle;" /> Lo-Fi Life Lessons from Tom
+## <img src="/assets/ui/dreamy-clouds.svg" alt="Dreamy Clouds" style="width: 1em; vertical-align: middle;" /> Lo-Fi Life Lessons from Tom
 
 What starts as comedy becomes quiet commentary:
 
@@ -40,7 +40,7 @@ For creators, listeners, and lo-fi wanderers, Tom is a reminder: let mood lead. 
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 We’re filing this under _ambient attitude studies_. Tom’s worldview aligns perfectly with the StudioRich beat ethic: no rush, full feeling, selective presence.
 
@@ -48,7 +48,7 @@ This isn’t just about cats. It’s about permission to live like a loop—soft
 
 ---
 
-<img src="/assets/icons/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle;" /> **Filed Under:**
+<img src="/assets/ui/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle;" /> **Filed Under:**
 
 #ambientattitude  
 #catsbeingdeep  

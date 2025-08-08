@@ -21,7 +21,7 @@ HollowBookCo began as an experiment in 2012 — books carved into objects of mys
 
 ---
 
-## <img src="/assets/icons/hollow-book.svg" alt="Hollow Book icon" class="icon-sm" /> Carved Pages, Living Sound
+## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" class="icon-sm" /> Carved Pages, Living Sound
 
 Once known for physical hollow books, the project now cuts _sound_ into its lore. The relaunch pivots HollowBookCo into a hybrid publisher, ambient label, and archive for moods you can read and listen to.
 
@@ -31,7 +31,7 @@ Once known for physical hollow books, the project now cuts _sound_ into its lore
 
 ---
 
-## <img src="/assets/icons/book.svg" alt="Book icon" class="icon-sm" /> The Reading Room Opens
+## <img src="/assets/ui/book.svg" alt="Book icon" class="icon-sm" /> The Reading Room Opens
 
 With this reawakening, HollowBookCo also opens its first ongoing corner:  
 **The Reading Room** — a weekly series of atmospheric reads, fragments, and lore.
@@ -44,16 +44,16 @@ This is where the archive breathes: a quiet journal unfolding week by week.
 
 ---
 
-## <img src="/assets/icons/musicnote.svg" alt="Music Note icon" class="icon-sm" /> First Re-pages/studiorich-presskit entry: A New Song
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm" /> First Re-pages/studiorich-presskit entry: A New Song
 
 The first re-entry into the archive is a new track + visual ritual:  
-<img src="/assets/icons/youtube.svg" alt="Link" class="icon-sm" /> [Watch on YouTube](https://www.youtube.com/watch?v=5CYCmcvXMlM)
+<img src="/assets/ui/youtube.svg" alt="Link" class="icon-sm" /> [Watch on YouTube](https://www.youtube.com/watch?v=5CYCmcvXMlM)
 
 This release marks the start of HollowBookCo’s **Library Sessions**, a growing catalogue of ambient literature loops.
 
 ---
 
-## <img src="/assets/icons/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
 
 For us, HollowBookCo feels like a sibling archive to StudioRich:
 
@@ -64,19 +64,19 @@ It’s another shelf in the same creative library.
 
 And with this reawakening, two threads return that make the lore even deeper:
 
-<img src="/assets/icons/catpaws.svg" alt="Link" class="icon-sm"> **Kitty**, the first cat icon in our avatars, comes back as a familiar spirit — stitching HollowBookCo’s earliest days into its future.
+<img src="/assets/ui/catpaws.svg" alt="Link" class="icon-sm"> **Kitty**, the first cat icon in our avatars, comes back as a familiar spirit — stitching HollowBookCo’s earliest days into its future.
 
-<img src="/assets/icons/moon.svg" alt="Link" class="icon-sm"> The visual style, inspired by _Where the Wild Things Are_, rekindles that mix of wonder and shadow, echoing the original magic of 2012 while feeling utterly new.
+<img src="/assets/ui/moon.svg" alt="Link" class="icon-sm"> The visual style, inspired by _Where the Wild Things Are_, rekindles that mix of wonder and shadow, echoing the original magic of 2012 while feeling utterly new.
 
 Together, these elements remind us that HollowBookCo isn’t just relaunching — it’s remembering.
 
 ---
 
-## <img src="/assets/icons/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle; margin: 0px" /> Explore Further
+## <img src="/assets/ui/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle; margin: 0px" /> Explore Further
 
-- <img src="/assets/icons/hollow-book.svg" alt="Link" class="icon-sm"> HollowBookCo archive → [studiorich.shop/hollowbookco/](https://studiorich.shop/hollowbookco/)
-- <img src="/assets/icons/headphones.svg" alt="Link" class="icon-sm"> Lo-fi beats loop archive → [/library/](/library/)
-- <img src="/assets/icons/5-point-rounded-star.svg" alt="Link" class="icon-sm"> Visual beat loop aesthetics → [/tags/visual-beat-loop/](/tags/visual-beat-loop/)
+- <img src="/assets/ui/hollow-book.svg" alt="Link" class="icon-sm"> HollowBookCo archive → [studiorich.shop/hollowbookco/](https://studiorich.shop/hollowbookco/)
+- <img src="/assets/ui/headphones.svg" alt="Link" class="icon-sm"> Lo-fi beats loop archive → [/library/](/library/)
+- <img src="/assets/ui/5-point-rounded-star.svg" alt="Link" class="icon-sm"> Visual beat loop aesthetics → [/tags/visual-beat-loop/](/tags/visual-beat-loop/)
 
 ---
 

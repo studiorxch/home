@@ -2,14 +2,17 @@
 layout: default
 title: "StudioRich Home - Lo-Fi Music, Art & Stories from Brooklyn"
 description: "Explore StudioRich: a Brooklyn-born world of lo-fi music, ambient visuals, field recordings, and creative urban storytelling."
-image: /assets/img/hero.webp
+image: /assets/img/hero/studio-rich-homepage-hero.webp
 permalink: /
 ---
 
-{% include components/hero.html image="/assets/img/hero.webp" title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.." %}
+{% include components/hero.html
+  image=page.image
+  title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.."
+%}
 
 <h3 style="margin-left: 2em">
-<img src="/assets/icons/record.svg" alt="Vinyl Record" class="icon-sm">
+<img src="/assets/ui/record.svg" alt="Vinyl Record" class="icon-sm">
 Now Spinning: StudioRich Visual Mixes
 </h3>
 
@@ -52,7 +55,7 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <!-- Music Library -->
   <div class="feature">
     <h3>
-      <img src="/assets/icons/musiclibrary.svg" alt="Music library icon" class="icon-sm">
+      <img src="/assets/ui/musiclibrary.svg" alt="Music library icon" class="icon-sm">
       <a href="/library">Music Library</a>
     </h3>
     <p>Explore our curated archive and search by mood, genre, or visual tone.</p>
@@ -61,7 +64,7 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
   <!-- Cat on the Signal -->
   <div class="feature">
     <h3>
-      <img src="/assets/icons/gamecontroller.svg" alt="Game controller icon" class="icon-sm">
+      <img src="/assets/ui/gamecontroller.svg" alt="Game controller icon" class="icon-sm">
       <em>Cat on the Signal</em>
     </h3>
     <p>
