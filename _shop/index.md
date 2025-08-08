@@ -47,7 +47,7 @@ redirect_from:
   - /terms
 ---
 
-<section class="hero" style="background-image: url(/assets/shop/default.webp);">
+<section class="hero" style="background-image: url(/assets/img/shop/default.webp);">
   <div class="hero-overlay">
     <h1>Where Lo‑Fi Lives</h1>
     <p>Digital zines. Fuzzy loops. Tees that vibe.</p>
@@ -62,7 +62,7 @@ redirect_from:
 <section class="shop-featured">
   <h2><img src="/assets/icons/headphones.svg" alt="Headphones icon" class="icon-sm">  Latest Music Drop</h2>
   <div class="product-card">
-    <img src="/assets/covers/cat-on-the-signal.webp" alt="Cat on the Signal">
+    <img src="/assets/img/covers/cat-on-the-signal.webp" alt="Cat on the Signal">
     <h3><em>Cat on the Signal</em></h3>
     <p>Surreal glitch-pop, fuzzy beats.<br><strong>Download  <a href="https://ko-fi.com/studiorich" target="_blank">Ko‑fi</a></strong></p>
   </div>

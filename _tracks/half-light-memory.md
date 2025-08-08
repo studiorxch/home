@@ -2,20 +2,20 @@
 layout: track
 title: Half-Light Memory
 permalink: /tracks/half-light-memory/
-description: ''
-image: /assets/covers/half-light-memory.webp
+description: ""
+image: /assets/img/covers/half-light-memory.webp
 image_ready: false
 date: 2025-01-01
-duration: '2:44'
+duration: "2:44"
 album: Stranger Vibes
 mood:
-- Aggressive
+  - Aggressive
 genre:
-- lo-fi
-- ambient
+  - lo-fi
+  - ambient
 bpm: 142
 key: B
-image_jpg: /assets/covers/half-light-memory.jpg
+image_jpg: /assets/img/covers/half-light-memory.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

@@ -2,21 +2,21 @@
 layout: track
 title: California Sunspot S01
 permalink: /tracks/california-sunspot-s01/
-description: ''
-image: /assets/covers/california-sunspot-s01.webp
+description: ""
+image: /assets/img/covers/california-sunspot-s01.webp
 image_ready: false
 date: 2025-01-01
-duration: '2:24'
+duration: "2:24"
 album: Stranger Vibes
 mood:
-- Playful
+  - Playful
 genre:
-- lo-fi
-- glitch
-- electronic
+  - lo-fi
+  - glitch
+  - electronic
 bpm: 94
 key: Bb
-image_jpg: /assets/covers/california-sunspot-s01.jpg
+image_jpg: /assets/img/covers/california-sunspot-s01.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

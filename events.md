@@ -3,8 +3,7 @@ layout: default
 title: StudioRich | Events
 permalink: /events/
 description: "Free NYC field recording events, creative gatherings, and StudioRich livestreams."
-image: /assets/covers/events-cover.webp
-
+image: /assets/img/covers/events-cover.webp
 ---
 
 <style>

@@ -3,7 +3,7 @@ layout: default
 title: Presskit
 permalink: /presskit/
 description: "Download StudioRich assets, bios, and visual materials for media or collaborations."
-image: /assets/covers/presskit-cover.webp
+image: /assets/img/covers/presskit-cover.webp
 redirect_from:
   - pages/studiorich-presskit
 ---

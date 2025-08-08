@@ -3,7 +3,7 @@ layout: default
 title: StudioRich | Links
 description: "Explore StudioRich across the web – music, streams, shop, and more in one place."
 permalink: /links/
-image: /assets/covers/nice-and-warm.webp
+image: /assets/img/covers/nice-and-warm.webp
 redirect_from:
   - /pages/links
 ---

@@ -3,7 +3,7 @@ layout: default
 title: StudioRich | Lo-Fi Radio Chill Beats
 description: "Stream lo-fi chill beats 24/7 from StudioRich – live music therapy, cozy visuals, and relaxed vibes direct from Twitch."
 permalink: /live/
-image: /assets/covers/live-stream.webp
+image: /assets/img/covers/live-stream.webp
 ---
 
   <div class="live-layout">

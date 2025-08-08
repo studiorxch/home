@@ -2,21 +2,21 @@
 layout: track
 title: Fracture Point Break S01
 permalink: /tracks/fracture-point-break-s01/
-description: ''
-image: /assets/covers/fracture-point-break-s01.webp
+description: ""
+image: /assets/img/covers/fracture-point-break-s01.webp
 image_ready: false
 date: 2025-01-01
-duration: '2:09'
+duration: "2:09"
 album: Stranger Vibes
 mood:
-- Aggressive
+  - Aggressive
 genre:
-- lo-fi
-- glitch-fusion
-- experimental
+  - lo-fi
+  - glitch-fusion
+  - experimental
 bpm: 152
 key: F#
-image_jpg: /assets/covers/fracture-point-break-s01.jpg
+image_jpg: /assets/img/covers/fracture-point-break-s01.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

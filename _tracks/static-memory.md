@@ -2,21 +2,21 @@
 layout: track
 title: Static Memory
 permalink: /tracks/static-memory/
-description: ''
-image: /assets/covers/static-memory.webp
+description: ""
+image: /assets/img/covers/static-memory.webp
 image_ready: false
 date: 2025-01-01
-duration: '2:27'
+duration: "2:27"
 album: Stranger Vibes
 mood:
-- Chill
+  - Chill
 genre:
-- lo-fi
-- synthwave
-- ambient
+  - lo-fi
+  - synthwave
+  - ambient
 bpm: 80
 key: D
-image_jpg: /assets/covers/static-memory.jpg
+image_jpg: /assets/img/covers/static-memory.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

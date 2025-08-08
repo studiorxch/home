@@ -3,16 +3,15 @@ layout: default
 title: StudioRich | Thursday Schedule
 permalink: /schedule/thursday
 description: "Join us for StudioRich's Thursday livestream - lo-fi sound therapy and creative sessions every week."
-image: /assets/covers/schedule-thursday.webp
-
+image: /assets/img/covers/schedule-thursday.webp
 ---
-{% include components/hero.html 
-  image=page.image 
+
+{% include components/hero.html
+  image=page.image
   title="Thursday" %}
 
-
 {% include components/youtube-carousel.html video_urls="
-https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r, 
+https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r,
 https://www.youtube.com/embed/u5tCaLsFW-M?si=WmKxX14EHcumI1Tf,
 https://www.youtube.com/embed/d_ERqZwROAk?si=94CKxDrn897Bssoi,
 https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
@@ -33,6 +32,3 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
     border: none;
   }
 </style>
-
-
-

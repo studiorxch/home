@@ -2,21 +2,21 @@
 layout: track
 title: Blur Escape
 permalink: /tracks/blur-escape/
-description: ''
-image: /assets/covers/blur-escape.webp
+description: ""
+image: /assets/img/covers/blur-escape.webp
 image_ready: false
 date: 2025-01-01
-duration: '2:20'
+duration: "2:20"
 album: Stranger Vibes
 mood:
-- Hopeful
+  - Hopeful
 genre:
-- lo-fi
-- experimental
-- ambient
+  - lo-fi
+  - experimental
+  - ambient
 bpm: 120
 key: Eb
-image_jpg: /assets/covers/blur-escape.jpg
+image_jpg: /assets/img/covers/blur-escape.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

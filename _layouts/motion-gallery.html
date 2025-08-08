@@ -1,0 +1,74 @@
+---
+layout: default
+title: Motion Gallery
+---
+
+<section class="motion-gallery">
+  <h1>Motion Gallery</h1>
+
+  <div class="video-grid">
+    {% for post in site.motion %}
+    <div class="video-grid-item">
+      <video
+        src="{{ post.video }}"
+        poster="{{ post.thumbnail }}"
+        muted
+        loop
+        playsinline
+        preload="none"
+      ></video>
+
+      <div class="video-meta">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.summary }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".video-grid-item video").forEach((video) => {
+    video.addEventListener("mouseenter", () => video.play());
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
+
+<style>
+  .motion-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .video-grid-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .video-grid-item video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .video-grid-item:hover video {
+    transform: scale(1.01);
+  }
+
+  .video-meta {
+    margin-top: 0.5rem;
+  }
+</style>

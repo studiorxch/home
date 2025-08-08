@@ -4,7 +4,7 @@ date: 2025-08-04
 title: "Chainlink Shuffle"
 subtitle: "StudioRich’s Off‑Kilter Accordion Lo‑Fi Ritual"
 description: "Accordion lead, toy‑speaker kick, and highway ghosts stitched into a lo‑fi dance ritual. A surreal StudioRich drop — weird, hypnotic, and strangely catchy."
-image: /assets/covers/chainlink-shuffle.webp
+image: /assets/img/covers/chainlink-shuffle.webp
 tags:
   - lo-fi
   - experimental

@@ -3,7 +3,7 @@ layout: default
 title: About StudioRich
 permalink: /about/
 description: "Learn the story behind StudioRich - a lo-fi audio collective blending sound therapy and visual storytelling."
-image: /assets/covers/about-cover.webp
+image: /assets/img/origin/default.webp
 redirect_from:
   - /pages/about-us
   - /origin

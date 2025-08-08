@@ -2,21 +2,21 @@
 layout: track
 title: Echoes Of Time S01
 permalink: /tracks/echoes-of-time-s01/
-description: ''
-image: /assets/covers/echoes-of-time-s01.webp
+description: ""
+image: /assets/img/covers/echoes-of-time-s01.webp
 image_ready: false
 date: 2025-01-01
-duration: '3:00'
+duration: "3:00"
 album: Stranger Vibes
 mood:
-- Tense
+  - Tense
 genre:
-- ambient
-- electronic
-- experimental
+  - ambient
+  - electronic
+  - experimental
 bpm: 128
 key: A
-image_jpg: /assets/covers/echoes-of-time-s01.jpg
+image_jpg: /assets/img/covers/echoes-of-time-s01.jpg
 ---
 
 Explore more vibes in the [StudioRich track library](/tracks/).

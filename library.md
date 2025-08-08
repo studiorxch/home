@@ -6,7 +6,6 @@ description: "Browse over 360 StudioRich tracks by mood, genre, and visual aesth
 image: /assets/img/hero-music-library.webp
 redirect_from:
   - https://studiorich.shop/tracks/
-
 ---
 
 {% include components/hero.html
@@ -18,38 +17,41 @@ redirect_from:
 <div class="filter-bar">
   <button data-filter="all" data-type="all" class="active">All</button>
 
-  {% assign all_moods = "" | split: "" %}
-  {% assign all_genres = "" | split: "" %}
+{% assign all_moods = "" | split: "" %}
+{% assign all_genres = "" | split: "" %}
 
-  {% for track in site.data.library %}
-    {% assign mood_array = track.mood %}
-    {% if mood_array == nil or mood_array == blank %}
-      {% assign mood_array = "" | split: "" %}
-    {% endif %}
-    {% assign genre_array = track.genre %}
-    {% if genre_array == nil or genre_array == blank %}
-      {% assign genre_array = "" | split: "" %}
-    {% endif %}
-    {% assign all_moods = all_moods | concat: mood_array %}
-    {% assign all_genres = all_genres | concat: genre_array %}
-  {% endfor %}
+{% for track in site.data.library %}
+{% assign mood_array = track.mood %}
+{% if mood_array == nil or mood_array == blank %}
+{% assign mood_array = "" | split: "" %}
+{% endif %}
+{% assign genre_array = track.genre %}
+{% if genre_array == nil or genre_array == blank %}
+{% assign genre_array = "" | split: "" %}
+{% endif %}
+{% assign all_moods = all_moods | concat: mood_array %}
+{% assign all_genres = all_genres | concat: genre_array %}
+{% endfor %}
 
-  {% assign unique_moods = all_moods | uniq | sort %}
-  {% assign unique_genres = all_genres | uniq | sort %}
+{% assign unique_moods = all_moods | uniq | sort %}
+{% assign unique_genres = all_genres | uniq | sort %}
 
   <!-- Moods -->
-  {% for mood in unique_moods %}
-    {% unless mood == "nan" %}
-      <button data-filter="{{ mood | downcase | strip }}" data-type="mood">{{ mood | strip }}</button>
-    {% endunless %}
-  {% endfor %}
+
+{% for mood in unique_moods %}
+{% unless mood == "nan" %}
+<button data-filter="{{ mood | downcase | strip }}" data-type="mood">{{ mood | strip }}</button>
+{% endunless %}
+{% endfor %}
 
   <!-- Genres -->
-  {% for genre in unique_genres %}
-    {% unless genre == "nan" %}
-      <button data-filter="{{ genre | downcase | strip }}" data-type="genre">{{ genre | strip }}</button>
-    {% endunless %}
-  {% endfor %}
+
+{% for genre in unique_genres %}
+{% unless genre == "nan" %}
+<button data-filter="{{ genre | downcase | strip }}" data-type="genre">{{ genre | strip }}</button>
+{% endunless %}
+{% endfor %}
+
 </div>
 
 <section class="track-grid">
@@ -73,11 +75,13 @@ redirect_from:
          data-mood="{{ mood_array | join: ' ' | downcase }}"
          data-genre="{{ genre_array | join: ' ' | downcase }}">
 
-        <img src="/assets/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
+        <img src="/assets/img/covers/{{ track.slug }}.webp" alt="{{ track.title }} cover" class="track-cover">
         <div class="track-title">{{ track.title }}</div>
       </a>
     {% endif %}
-  {% endfor %}
+
+{% endfor %}
+
 </section>
 
 <script>
