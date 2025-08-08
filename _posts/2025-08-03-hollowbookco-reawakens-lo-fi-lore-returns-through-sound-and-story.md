@@ -47,7 +47,7 @@ This is where the archive breathes: a quiet journal unfolding week by week.
 ## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm" /> First Re-pages/studiorich-presskit entry: A New Song
 
 The first re-entry into the archive is a new track + visual ritual:  
-<img src="/assets/ui/youtube.svg" alt="Link" class="icon-sm" /> [Watch on YouTube](https://www.youtube.com/watch?v=5CYCmcvXMlM)
+<img src="/assets/img/logos/youtube.svg" alt="Link" class="icon-sm" /> [Watch on YouTube](https://www.youtube.com/watch?v=5CYCmcvXMlM)
 
 This release marks the start of HollowBookCo’s **Library Sessions**, a growing catalogue of ambient literature loops.
 

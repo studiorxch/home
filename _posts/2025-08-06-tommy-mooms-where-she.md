@@ -35,7 +35,7 @@ For fans of introspective vocals wrapped in lo-fi textures and late-night loop f
 
 ---
 
-## <img src="/assets/ui/youtube.svg" alt="YouTube icon" style="width: 1em; vertical-align: middle;" /> Watch + Listen
+## <img src="/assets/img/logos/youtube.svg" alt="YouTube icon" style="width: 1em; vertical-align: middle;" /> Watch + Listen
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m3ENYagCPp4?si=4Av5QiIydjQRMl1h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
