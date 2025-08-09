@@ -17,7 +17,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 
 <!-- Global Platforms -->
 <h3><img src="/assets/ui/planet-earth.svg" alt="Planet Earth icon" class="icon-sm"> Global Platforms</h3>
-<ul class="link-list">
+<ul class="link-list no-bullets">
   <li><a href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich" target="_blank"><img src="/assets/img/logos/amazon-music.svg" alt="Amazon Music"><span>Amazon Music</span></a></li>
   <li><a href="https://music.apple.com/us/artist/studiorich/1785907828" target="_blank"><img src="/assets/img/logos/apple-music.svg" alt="Apple Music"><span>Apple Music</span></a></li>
   <li><a href="https://audiomack.com/studiorich" target="_blank"><img src="/assets/img/logos/audiomack.svg" alt="Audiomack"><span>Audiomack</span></a></li>
@@ -36,7 +36,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 
 <!-- 📱 Social & Short-Form -->
 <h3><img src="/assets/ui/satelitedish.svg" alt="Satelite Dish icon" class="icon-sm"> Social & Short‑Form</h3>
-<ul class="link-list">
+<ul class="link-list no-bullets">
   <li><a href="https://www.tiktok.com/@Studi.Rich" target="_blank"><img src="/assets/img/logos/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/img/logos/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
   <li><a href="https://www.facebook.com/StudioRichNYC/" target="_blank"><img src="/assets/img/logos/facebook.svg" alt="Facebook"><span>Facebook</span></a></li>
@@ -46,7 +46,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 </ul>
 
 <h3><img src="/assets/ui/sparkles.svg" alt="Sparkles icon" class="icon-sm">  Creator & Network Hubs</h3>
-<ul class="link-list">
+<ul class="link-list no-bullets">
   <li><a href="https://x.com/studiorxch" target="_blank"><img src="/assets/img/logos/x.svg" alt="X"><span>X (Twitter)</span></a></li>
   <li><a href="https://www.threads.net/@_studiorich" target="_blank"><img src="/assets/img/logos/threads.svg" alt="Threads"><span>Threads</span></a></li>
   <li><a href="https://bsky.app/profile/studiorich.shop" target="_blank"><img src="/assets/img/logos/bluesky.svg" alt="Bluesky"><span>Bluesky</span></a></li>

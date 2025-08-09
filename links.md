@@ -16,7 +16,7 @@ title="Links" %}
 
   <section class="link-hub">
     <h2>Connect with StudioRich</h2>
-    <ul class="link-list">
+<ul class="link-list no-bullets">
       <li>
         <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
           <img src="/assets/img/logos/youtube.svg" alt="YouTube">

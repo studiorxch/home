@@ -133,6 +133,19 @@ ul li::before {
   width: 1em;
 }
 
+/* kills bullets only where applied */
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.no-bullets li::before {
+  content: none !important;
+}
+.no-bullets li::marker {
+  content: "" !important;
+}
+
 /* ===============================
    Icon Lists (for Kitty/Moon etc.)
 ================================= */
