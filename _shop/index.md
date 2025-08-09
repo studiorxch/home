@@ -2,7 +2,7 @@
 layout: default
 title: StudioRich Shop
 permalink: /shop/
-description: Buy merch, music & digital drops from StudioRich.
+description: Buy merch, music, cinematic lo-fi visuals, and exclusive digital drops from StudioRich — Brooklyn’s audio-visual lab for ambient beats, glitch art, and collectible experiences.
 sitemap: true
 redirect_from:
   - /*/account/logout
@@ -50,28 +50,24 @@ redirect_from:
 <section class="hero" style="background-image: url(/assets/img/shop/default.webp);">
   <div class="hero-overlay">
     <h1>Where Lo‑Fi Lives</h1>
-    <p>Digital zines. Fuzzy loops. Tees that vibe.</p>
+    <p>Ambient beats. Glitch visuals. Tees and drops that vibe.</p>
   </div>
 </section>
 
 <section class="shop-intro">
-  <h1 class="center"><img src="/assets/ui/store.svg" alt="StudioRich Shop icon" class="icon-sm">  StudioRich Shop</h1>
-  <p class="center">Join the vibe collection — from lo-fi tees to digital downloads and zines. Every drop is Handcrafted with StudioRich soul and analog dreams.</p>
-</section>
-
-<section class="shop-featured">
-  <h2><img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm">  Latest Music Drop</h2>
-  <div class="product-card">
-    <img src="/assets/img/covers/cat-on-the-signal.webp" alt="Cat on the Signal">
-    <h3><em>Cat on the Signal</em></h3>
-    <p>Surreal glitch-pop, fuzzy beats.<br><strong>Download  <a href="https://ko-fi.com/studiorich" target="_blank">Ko‑fi</a></strong></p>
-  </div>
+  <h1 class="center">
+    <img src="/assets/ui/store.svg" alt="StudioRich Shop icon" class="icon-sm">  
+    StudioRich Shop
+  </h1>
+  <p class="center">
+    Step into the StudioRich vibe — cinematic lo-fi tees, ambient beats, glitch-art zines, and exclusive digital drops. Every piece is crafted with Brooklyn soul and analog dreams.
+  </p>
 </section>
 
 <section class="shop-featured merch">
   <h2><img src="/assets/ui/baseball-cap.svg" alt="Baseball Cap icon" class="icon-sm">  Featured Merch</h2>
   <div class="product-card">
-    <img src="/assets/shop/melting-sound-system.webp" alt="Meltdown Boombox Tee">
+    <img src="/assets/img/shop/melting-sound-system.webp" alt="Meltdown Boombox Tee">
     <h3>Meltdown Boombox Tee</h3>
     <p>$35 – Oversized tee printed on heavyweight cotton</p>
     <a class="button" href="https://studiorich.printful.me/product/meltdown-boombox-oversized-tee" target="_blank">Buy on Printful</a>
