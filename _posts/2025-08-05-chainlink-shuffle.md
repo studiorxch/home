@@ -54,7 +54,7 @@ File it under:
 
 ---
 
-## <img src="/assets/ui/tape-cassette.webp" alt="Tape Loop icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/musicnote.webp" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
 
 This track embodies what we love: making the unusual feel essential. It’s lo‑fi dance you can’t quite explain but can’t stop nodding to.
 

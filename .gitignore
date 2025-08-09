@@ -20,6 +20,7 @@ _docs
 README-Blog-Template.md
 _blog/_bak
 /assets/playlists
+_snippets
 
 #scripts
 generate_library_yml.py_docs/

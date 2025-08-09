@@ -1,94 +1,174 @@
-<div id="product"></div>
+---
+layout: default
+title: Product
+permalink: /shop/:id/
+---
+
+<div id="product" class="product"></div>
+
 <div class="options">
-  <select id="variant"></select>
+  <select id="variant">
+    <option value="">Loading…</option>
+  </select>
   <input id="qty" type="number" value="1" min="1" />
   <button id="add">Add to bag</button>
 </div>
-<div class="ship">
-  <input id="country" placeholder="US" />
-  <input id="zip" placeholder="10001" />
-  <button id="rate">Get shipping</button>
-  <div id="rates"></div>
+
+<!-- Shipping Estimator -->
+<div class="ship-estimator">
+  <div class="row">
+    <input id="se-country" placeholder="Country (US)" value="US" />
+    <input id="se-state" placeholder="State (NY)" />
+    <input id="se-zip" placeholder="ZIP (10118)" />
+    <button id="se-check">Estimate shipping</button>
+  </div>
+  <div id="se-results"></div>
 </div>
-<div id="cart-drawer" hidden></div>
 
 <script>
-  const API = "https://YOUR-VERCEL-APP.vercel.app/api/printful";
-  const id = location.pathname.split("/").filter(Boolean).pop(); // product id
+  const API = "https://studiorich-api.vercel.app/api/printful";
+  const id = location.pathname.split("/").filter(Boolean).pop();
 
   (async () => {
-    const p = await (await fetch(`${API}/product/${id}`)).json();
-    document.getElementById(
-      "product"
-    ).innerHTML = `<h1>${p.sync_product.name}</h1><img src="${p.sync_product.thumbnail}">`;
+    // Load product
+    const p = await (await fetch(`${API}/products/${id}`)).json();
+    const title = p.sync_product?.name || p.name || "Product";
+    const thumb = p.sync_product?.thumbnail || p.thumbnail || "";
+    document.getElementById("product").innerHTML = `
+    <h1>${title}</h1>
+    <img src="${thumb}" alt="${title}" loading="lazy" style="max-width:480px;width:100%;height:auto;border-radius:12px">
+  `;
 
+    // Variants
+    const variants = p.sync_variants || p.variants || [];
     const vSel = document.getElementById("variant");
-    (p.sync_variants || []).forEach((v) => {
-      const disabled = v.is_discontinued || v.out_of_stock;
-      vSel.insertAdjacentHTML(
-        "beforeend",
-        `<option value="${v.id}" ${disabled ? "disabled" : ""}>${v.name}${
+    vSel.innerHTML = variants
+      .map((v) => {
+        const name = v.name || v.size || `Variant ${v.id}`;
+        const vid = v.variant_id || v.id;
+        const disabled = v.is_discontinued || v.out_of_stock;
+        return `<option value="${vid}" ${disabled ? "disabled" : ""}>${name}${
           disabled ? " — SOLD OUT" : ""
-        }</option>`
-      );
-    });
+        }</option>`;
+      })
+      .join("");
 
-    document.getElementById("rate").onclick = async () => {
-      const items = [
-        {
-          variant_id: +vSel.value,
-          quantity: +document.getElementById("qty").value,
-        },
-      ];
-      const recipient = {
-        country_code: document.getElementById("country").value || "US",
-        zip: document.getElementById("zip").value || "10001",
-      };
-      const r = await fetch(`${API}/rates`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ recipient, items }),
+    // Mini-cart (localStorage)
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    document.getElementById("add").onclick = () => {
+      const vid = Number(vSel.value);
+      const qty = Number(document.getElementById("qty").value || 1);
+      if (!vid) return alert("Pick a variant");
+      cart.push({ variant_id: vid, qty, name: title });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Added to bag");
+    };
+
+    // Shipping estimator
+    async function estimateShipping(variantId) {
+      const country = (
+        document.getElementById("se-country").value || "US"
+      ).toUpperCase();
+      const state = document.getElementById("se-state").value || "";
+      const zip = document.getElementById("se-zip").value || "";
+      const qs = new URLSearchParams({
+        country,
+        state,
+        zip,
+        variant_id: String(variantId),
+        qty: "1",
       });
-      const rates = await r.json();
-      document.getElementById("rates").innerHTML = rates
+      const res = await fetch(`${API}/rates-get?${qs.toString()}`);
+      const data = await res.json();
+      const box = document.getElementById("se-results");
+      if (!Array.isArray(data)) {
+        box.innerHTML = `<div class="error">Error: ${
+          data.error || "Unknown"
+        }</div>`;
+        return;
+      }
+      box.innerHTML = data
         .map(
-          (x) =>
-            `<div>${x.name}: $${x.rate} (${x.min_delivery_time}-${x.max_delivery_time} days)</div>`
+          (r) => `
+      <div class="rate">
+        <div><strong>${r.name}</strong> ${
+            r.isCarbonOffset ? "🌿" : ""
+          }<div class="sub">${r.deliveryWindow || ""}</div></div>
+        <div>${r.currency} $${Number(r.rate).toFixed(2)}</div>
+      </div>`
         )
         .join("");
-    };
-
-    // super‑simple cart
-    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-    const drawer = document.getElementById("cart-drawer");
-    function renderCart() {
-      drawer.hidden = false;
-      drawer.innerHTML =
-        cart.map((i) => `<div>${i.name} ×${i.qty}</div>`).join("") +
-        `<button id="checkout">Checkout</button>`;
-      document.getElementById("checkout").onclick = async () => {
-        const items = cart.map((i) => ({
-          variant_id: i.variant_id,
-          quantity: i.qty,
-        }));
-        const order = { recipient: { name: "StudioRich Buyer" }, items };
-        const res = await fetch(`${API}/create-order`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(order),
-        });
-        const out = await res.json();
-        alert(out.result ? "Order created (draft)!" : "Error");
-      };
     }
-    document.getElementById("add").onclick = () => {
-      cart.push({
-        variant_id: +vSel.value,
-        qty: +qty.value,
-        name: p.sync_product.name,
-      });
-      localStorage.setItem("cart", JSON.stringify(cart));
-      renderCart();
-    };
+    document.getElementById("se-check").addEventListener("click", () => {
+      const vid = Number(vSel.value);
+      if (!vid) return alert("Pick a variant first");
+      estimateShipping(vid);
+    });
   })();
 </script>
+
+<style>
+  .product h1 {
+    margin: 0.2rem 0 0.6rem;
+  }
+  .options {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.75rem 0;
+  }
+  .options select,
+  .options input {
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  .options button {
+    padding: 0.55rem 0.9rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+  }
+  .ship-estimator {
+    margin-top: 1rem;
+    border: 1px solid #eee;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+  .ship-estimator .row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .ship-estimator input {
+    flex: 1 1 120px;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  .ship-estimator button {
+    padding: 0.55rem 0.8rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+  }
+  #se-results .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-top: 1px dashed #e6e6e6;
+  }
+  #se-results .rate:first-child {
+    border-top: 0;
+  }
+  #se-results .sub {
+    color: #666;
+    font-size: 0.9em;
+  }
+</style>
