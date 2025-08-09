@@ -3,33 +3,49 @@ layout: default
 title: Shop
 ---
 
-{% assign products = site.static_files | where: "path",
-"/assets/data/printful.json" %} {% capture json %}{% include_relative
-../assets/data/printful.json %}{% endcapture %} {% assign items = json | jsonify
-| replace: '\n','' | replace: ' ',' ' %}
 <div id="shop-grid" class="grid">
-  <!-- fallback: you can parse via JS for flexibility -->
+  {% assign products = site.data.printful %} {% if products and products.size >
+  0 %} {% for p in products %}
+  <a class="tile" href="/shop/{{ p.id }}/">
+    <img
+      src="{{ p.thumbnail | default: p.sync_product.thumbnail }}"
+      alt="{{ p.name | default: p.sync_product.name }}"
+      loading="lazy"
+    />
+    <div class="meta"><h3>{{ p.name | default: p.sync_product.name }}</h3></div>
+  </a>
+  {% endfor %} {% else %}
+  <p>No products yet.</p>
+  {% endif %}
 </div>
+
 <script>
+  const API = "https://studiorich-api.vercel.app/api/printful";
+
   (async () => {
-    const res = await fetch("/assets/data/printful.json");
-    const products = await res.json();
+    let products = [];
+    try {
+      // Live refresh (fast path)
+      products = await (await fetch(`${API}/products`)).json();
+    } catch (e) {
+      // Optional client fallback (requires a public copy at /assets/data/printful.json)
+      try {
+        products = await (await fetch("/assets/data/printful.json")).json();
+      } catch (_) {}
+    }
+
+    if (!Array.isArray(products) || !products.length) return;
+
     const grid = document.getElementById("shop-grid");
     grid.innerHTML = products
       .map((p) => {
-        const img =
-          p.sync_product?.thumbnail ||
-          p.sync_variants?.[0]?.files?.[0]?.preview_url ||
-          "";
+        const name = p.name || p.sync_product?.name || "Untitled";
+        const id = p.id;
+        const thumb = p.thumbnail || p.sync_product?.thumbnail || "";
         return `
-      <a class="tile" href="/shop/${p.id}/">
-        <img src="${img}" alt="${p.name}" loading="lazy">
-        <div class="meta">
-          <h3>${p.name}</h3>
-          <span class="price">from $${
-            p.sync_variants?.[0]?.retail_price || ""
-          }</span>
-        </div>
+      <a class="tile" href="/shop/${id}/">
+        <img src="${thumb}" alt="${name}" loading="lazy">
+        <div class="meta"><h3>${name}</h3></div>
       </a>`;
       })
       .join("");

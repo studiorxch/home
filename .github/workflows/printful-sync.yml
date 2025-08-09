@@ -29,3 +29,13 @@ jobs:
           git add assets/data/printful.json
           git commit -m "chore: nightly Printful sync" || echo "No changes"
           git push
+
+
+          # in .github/workflows/printful-sync.yml
+          # replace assets/data with _data
+          fs.mkdirSync("_data",
+          {recursive: true
+          });
+          fs.writeFileSync("_data/printful.json", JSON.stringify(data.result,
+          null,
+          2));

@@ -18,7 +18,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/tape-loop.svg" alt="Tape Loop icon" style="width: 1em; vertical-align: middle;" /> Sound + Visual Culture Crossover
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> Sound + Visual Culture Crossover
 
 Midwest’s Cosmorat twist distortion into introspective lo-fi on their latest single, _Gimme Whatcha Got_. A raw collision of self-destruction and needle-dropped nostalgia, the track morphs shattered melodies into haunting loops. Stunning in its blunt honesty, the soundscape feels like adrenaline trying to catch its breath.
 
