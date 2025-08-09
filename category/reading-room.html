@@ -7,7 +7,7 @@ layout: none
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reading Room — Focus + Quotes (v3)</title>
+    <title>Reading Room — Focus + Quotes (v.4)</title>
     {% include google-analytics.html %}
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=IBM+Plex+Mono:wght@300;400&display=swap"
@@ -72,12 +72,15 @@ layout: none
       }
       header h1 {
         margin: 0;
+        margin-left: 0.5rem;
         font-weight: 600;
       }
       header .sub {
         color: var(--muted);
         font-size: 0.95rem;
         margin-top: 0.25rem;
+        margin-left: 0.5rem;
+        line-height: 1.5;
       }
 
       /* HollowBookCo logo (from original Reading Room) */
@@ -315,7 +318,7 @@ layout: none
     <div class="container" id="top">
       <header>
         <div>
-          <h1>The Reading Room</h1>
+          <h1>The Reading&nbsp;Room</h1>
           <div class="sub">In the right mood, music becomes ink’s echo.</div>
         </div>
         <div class="controls" aria-label="Controls">
@@ -325,11 +328,10 @@ layout: none
             title="Focus mode (Fullscreen + Timer + Audio)"
           >
             <img
-              src="/assets/ui/bullseye.svg"
-              alt="Bulleye icon"
+              src="/assets/ui/read.svg"
+              alt="Read icon"
               style="width: 1.5em; vertical-align: middle"
             />
-            Focus
           </button>
           <button
             id="timerBtn"
