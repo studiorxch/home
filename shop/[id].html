@@ -1,0 +1,94 @@
+<div id="product"></div>
+<div class="options">
+  <select id="variant"></select>
+  <input id="qty" type="number" value="1" min="1" />
+  <button id="add">Add to bag</button>
+</div>
+<div class="ship">
+  <input id="country" placeholder="US" />
+  <input id="zip" placeholder="10001" />
+  <button id="rate">Get shipping</button>
+  <div id="rates"></div>
+</div>
+<div id="cart-drawer" hidden></div>
+
+<script>
+  const API = "https://YOUR-VERCEL-APP.vercel.app/api/printful";
+  const id = location.pathname.split("/").filter(Boolean).pop(); // product id
+
+  (async () => {
+    const p = await (await fetch(`${API}/product/${id}`)).json();
+    document.getElementById(
+      "product"
+    ).innerHTML = `<h1>${p.sync_product.name}</h1><img src="${p.sync_product.thumbnail}">`;
+
+    const vSel = document.getElementById("variant");
+    (p.sync_variants || []).forEach((v) => {
+      const disabled = v.is_discontinued || v.out_of_stock;
+      vSel.insertAdjacentHTML(
+        "beforeend",
+        `<option value="${v.id}" ${disabled ? "disabled" : ""}>${v.name}${
+          disabled ? " — SOLD OUT" : ""
+        }</option>`
+      );
+    });
+
+    document.getElementById("rate").onclick = async () => {
+      const items = [
+        {
+          variant_id: +vSel.value,
+          quantity: +document.getElementById("qty").value,
+        },
+      ];
+      const recipient = {
+        country_code: document.getElementById("country").value || "US",
+        zip: document.getElementById("zip").value || "10001",
+      };
+      const r = await fetch(`${API}/rates`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ recipient, items }),
+      });
+      const rates = await r.json();
+      document.getElementById("rates").innerHTML = rates
+        .map(
+          (x) =>
+            `<div>${x.name}: $${x.rate} (${x.min_delivery_time}-${x.max_delivery_time} days)</div>`
+        )
+        .join("");
+    };
+
+    // super‑simple cart
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const drawer = document.getElementById("cart-drawer");
+    function renderCart() {
+      drawer.hidden = false;
+      drawer.innerHTML =
+        cart.map((i) => `<div>${i.name} ×${i.qty}</div>`).join("") +
+        `<button id="checkout">Checkout</button>`;
+      document.getElementById("checkout").onclick = async () => {
+        const items = cart.map((i) => ({
+          variant_id: i.variant_id,
+          quantity: i.qty,
+        }));
+        const order = { recipient: { name: "StudioRich Buyer" }, items };
+        const res = await fetch(`${API}/create-order`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(order),
+        });
+        const out = await res.json();
+        alert(out.result ? "Order created (draft)!" : "Error");
+      };
+    }
+    document.getElementById("add").onclick = () => {
+      cart.push({
+        variant_id: +vSel.value,
+        qty: +qty.value,
+        name: p.sync_product.name,
+      });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    };
+  })();
+</script>

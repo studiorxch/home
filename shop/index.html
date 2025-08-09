@@ -1,0 +1,37 @@
+---
+layout: default
+title: Shop
+---
+
+{% assign products = site.static_files | where: "path",
+"/assets/data/printful.json" %} {% capture json %}{% include_relative
+../assets/data/printful.json %}{% endcapture %} {% assign items = json | jsonify
+| replace: '\n','' | replace: ' ',' ' %}
+<div id="shop-grid" class="grid">
+  <!-- fallback: you can parse via JS for flexibility -->
+</div>
+<script>
+  (async () => {
+    const res = await fetch("/assets/data/printful.json");
+    const products = await res.json();
+    const grid = document.getElementById("shop-grid");
+    grid.innerHTML = products
+      .map((p) => {
+        const img =
+          p.sync_product?.thumbnail ||
+          p.sync_variants?.[0]?.files?.[0]?.preview_url ||
+          "";
+        return `
+      <a class="tile" href="/shop/${p.id}/">
+        <img src="${img}" alt="${p.name}" loading="lazy">
+        <div class="meta">
+          <h3>${p.name}</h3>
+          <span class="price">from $${
+            p.sync_variants?.[0]?.retail_price || ""
+          }</span>
+        </div>
+      </a>`;
+      })
+      .join("");
+  })();
+</script>
