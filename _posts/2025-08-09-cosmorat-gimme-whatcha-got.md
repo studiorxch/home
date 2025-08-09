@@ -36,6 +36,8 @@ Haunted guitar drones collide with slow-burning fuzz. Beneath it, a fragile beat
 
 We’re not just listening. We’re in a shared unraveling. Cosmorat doesn’t hide the chaos—they loop it, replay it, and dare you to feel it again. _Gimme Whatcha Got_ is the kind of track that feels visceral as an analog wound.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y6jdkIXqQTU?si=aov7wOnkHpKyykWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 ## <img src="/assets/ui/folder.svg" alt="Folder icon" style="width: 1em; vertical-align: middle;" /> File It Under
