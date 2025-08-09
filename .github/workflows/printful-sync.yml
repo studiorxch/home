@@ -1,41 +1,56 @@
 name: Printful Sync
 on:
-  schedule: [{ cron: "0 6 * * *" }] # 6:00 UTC daily
+  schedule: [{ cron: "0 6 * * *" }] # daily 06:00 UTC
   workflow_dispatch:
+
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      API_URL: https://studiorich-api.vercel.app/api/printful
+      PRINTFUL_STORE_ID: ${{ secrets.PRINTFUL_STORE_ID }} # set this in repo secrets
+      PRINTFUL_KEY: ${{ secrets.PRINTFUL_KEY }} # set this in repo secrets
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "20" }
-      - run: npm i node-fetch@3
-      - env:
-          PRINTFUL_KEY: ${{ secrets.PRINTFUL_KEY }}
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch products (API first, Printful fallback)
+        shell: bash
         run: |
-          node -e '
-            import fetch from "node-fetch";
-            const hdr={headers:{Authorization:`Bearer ${process.env.PRINTFUL_KEY}`}};
-            const url="https://api.printful.com/store/products";
-            const fs=(await import("fs")).default;
-            const data=await (await fetch(url,hdr)).json();
-            fs.mkdirSync("assets/data",{recursive:true});
-            fs.writeFileSync("assets/data/printful.json", JSON.stringify(data.result,null,2));
-          '
+          set -e
+          mkdir -p _data assets/data
+
+          echo "→ Trying StudioRich API…"
+          if curl -fsS "$API_URL/products" -o /tmp/products.json; then
+            echo "✓ API responded"
+          else
+            echo "✗ API failed — falling back to Printful /sync/products"
+            curl -fsS "https://api.printful.com/sync/products" \
+              -H "Authorization: Bearer ${PRINTFUL_KEY}" \
+              -H "X-PF-Store-Id: ${PRINTFUL_STORE_ID}" \
+              -o /tmp/products-full.json
+            # flatten to array
+            jq '.result // []' /tmp/products-full.json > /tmp/products.json
+          fi
+
+          # Ensure it’s an array; if the API returned {error:…}, coerce to []
+          if jq -e 'type=="array"' /tmp/products.json >/dev/null 2>&1; then
+            echo "✓ Valid product array"
+          else
+            echo "⚠ Non-array response; coercing to []"
+            echo "[]" > /tmp/products.json
+          fi
+
+          # Write both SEO and client fallback files
+          cp /tmp/products.json _data/printful.json
+          cp /tmp/products.json assets/data/printful.json
+
       - name: Commit
         run: |
           git config user.name "printful-bot"
           git config user.email "printful-bot@users.noreply.github.com"
-          git add assets/data/printful.json
+          git add _data/printful.json assets/data/printful.json
           git commit -m "chore: nightly Printful sync" || echo "No changes"
           git push
-
-
-          # in .github/workflows/printful-sync.yml
-          # replace assets/data with _data
-          fs.mkdirSync("_data",
-          {recursive: true
-          });
-          fs.writeFileSync("_data/printful.json", JSON.stringify(data.result,
-          null,
-          2));
