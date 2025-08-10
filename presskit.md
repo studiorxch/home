@@ -51,7 +51,7 @@ redirect_from:
   <li><strong><a href="https://www.youtube.com/shorts/b8RtJjWw2H0" target="_blank">Warped Honey</a></strong> <span class="badge">Upcoming EP</span>  – A new EP brewing in the StudioRich hive—glitched soul, lopsided rhythm, and vinyl-static sweetness.<br>
 <a href="https://www.youtube.com/shorts/b8RtJjWw2H0" target="_blank">→ Watch the BTS Short</a></li>
 
-  <li><strong><a href="https://soundcloud.com/studiorich/nice-and-warm-demo" target="_blank">Nice and Warm (Lo-Fi Nights)</a></strong>  <span class="badge">Top Track</span> – Our top-performing track with 5,600+ plays on SoundCloud. A warm, tape-textured groove and StudioRich favorite.<br>
+  <li><strong><a href="https://soundcloud.com/studiorich/nice-and-warm-demo" target="_blank">Nice and Warm (Lo-Fi Nights)</a></strong>  <span class="badge">Top Track</span> – Our top-performing track with 6000+ plays on SoundCloud. A warm, tape-textured groove and StudioRich favorite.<br>
   <a href="https://soundcloud.com/studiorich/nice-and-warm-demo" target="_blank">→ Listen on SoundCloud</a></li>
 
   <li><strong><a href="https://soundcloud.com/studiorich/without-you-1" target="_blank">Without You</a></strong> – One of StudioRich’s earliest official releases, blending ambient mood with nostalgic chords and glitchy space.<br>
