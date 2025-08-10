@@ -2,8 +2,8 @@
 layout: reading-room
 title: The Reading Room - Focus Music & Book Lover's Quotes — Ambient Focus Timer
 description: A distraction-light reading timer with lo-fi audio and rotating literary quotes by HollowBookCo.
-image: /assets/img/share/reading-room/?-share.webp
-permalink: /reading-room/?/
+image: /assets/img/share/reading-room-share.webp
+permalink: /reading-room/
 version: 4.0
 ---
 

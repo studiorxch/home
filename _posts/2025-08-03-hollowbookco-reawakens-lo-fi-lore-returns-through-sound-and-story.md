@@ -38,7 +38,7 @@ With this reawakening, HollowBookCo also opens its first ongoing corner:
 
 Each entry appears as a **chapter**, filed like notes on the shelf, exploring the overlap between books, music, and memory.
 
-- Chapter 01 — [A Reading Room for the Music World](/reading-room/?/2025/08/02/chapter-01-reading-room.html)
+- Chapter 01 — [A Reading Room for the Music World](/reading-room/2025/08/02/chapter-01-reading-room.html)
 
 This is where the archive breathes: a quiet journal unfolding week by week.
 
