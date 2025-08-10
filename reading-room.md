@@ -49,8 +49,8 @@ version: 4.0
 
   /* Quote stage */
   #quoteStage{position:relative;min-height:48vh;display:grid;place-items:center}
-  .quote-text{text-align:center;font-size:clamp(1.6rem,1.2rem + 2.2vw,3rem);line-height:1.3}
-  .quote-meta{display:flex;justify-content:center;align-items:center;gap:.75rem;margin-top:1rem}
+  .quote-text{text-align:center;font-size:clamp(1.6rem,1.2rem + 2.2vw,3rem);line-height:1.3; max-width: 720px; /* or whatever looks good */}
+  .quote-meta{display:flex;justify-content:center;align-items:center;gap:.75rem;margin: 1rem auto 0 auto;}
   .muted{color:var(--muted)}
 
   /* Bottom center dock (Collections + quote nav) */
