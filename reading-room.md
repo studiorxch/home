@@ -309,7 +309,7 @@ aria-label="HollowBookCo home">
 <header>
 <div>
 <h1>The Reading&nbsp;Room</h1>
-<div class="sub">In the right mood, music becomes ink’s echo.</div>
+<div class="sub">In the right mood, music becomes ink’s&nbsp;echo.</div>
 </div>
 <div class="controls" aria-label="Controls">
 <button id="focusBtn" class="btn primary" title="Focus mode">
@@ -323,7 +323,7 @@ aria-label="HollowBookCo home">
 id="timerBtn"
 class="btn"
 aria-pressed="false"
-title="Timer control / Settings toggle"
+title="Start Timer"
 >
 <img
     src="/assets/ui/clock.svg"
