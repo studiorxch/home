@@ -5,7 +5,7 @@ title: "A Reading Room for the Music&nbsp;World"
 subtitle: "The first entry in HollowBookCo’s Reading Room Journal"
 date: 2025-08-02
 description: "An introduction to The Reading Room, a quiet corner curated by HollowBookCo where sound and text live together."
-image: /assets/img/blog/reading-room.webp
+image: /assets/img/blog/reading-room/?.webp
 tags:
   - hollowbookco
   - reading-room
