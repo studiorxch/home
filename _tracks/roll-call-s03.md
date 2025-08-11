@@ -23,6 +23,7 @@ genre:
   - chill
 bpm: 77
 key: Ab
+prompt_tmp: |
+  lo-fi, crew warmth, subtle goodbye
+  [Intro: group chatter FX] [Verse: vinyl rhythm, electric jazz keys] [Bridge: tone descent] [Outro: home fade]
 ---
-
-Explore more vibes in the [StudioRich track library](/tracks/).
