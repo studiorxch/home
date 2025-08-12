@@ -1,20 +1,20 @@
 ---
 layout: track
-title: Phrygian Puppet Dance
-permalink: /tracks/phrygian-puppet-dance/
+title: Talking to The Moon
+permalink: /tracks/talking-to-the-moon/
 description: "A hypnotic lo-fi dance groove where a modded accordion snarls over warm analog bass and dusty Linn-style drums. Industrial textures, glitch accents, and Phrygian-tinted progressions build cinematic tension at a mid-tempo 106 BPM — underground energy with a heavy, swaggering pulse."
 image: /assets/img/covers/phrygian-puppet-dance.webp
-image_ready: false
-date: 2025-01-01
+image_ready: true
+date: 2025-08-11
 duration: 5:30
-album: Stranger Vibes
+album: Single
 mood: []
 genre:
   - lo-fi
   - electronic
   - industrial
 bpm: 106
-image_jpg: /assets/img/covers/phrygian-puppet-dance.jpg
+image_jpg: /assets/img/covers/talking-to-the-moon.jpg
 moods_suggested:
   - Hypnotic
   - Aggressive
@@ -22,7 +22,6 @@ moods_suggested:
   - Cinematic
   - Underground
 prompt_tmp: |
-  Phrygian Puppet Dance
   lo-fi dance groove with modded accordion as aggressive lead, hypnotic underground energy, phrygian chords, warm analog bass, dusty Linn-style drums, glitch accents, industrial textures, mid-tempo 106 BPM, cinematic tension and heavy groove
 
   genre: lo-fi, electronic, industrial
@@ -57,4 +56,3 @@ prompt_tmp: |
   [Outro]
   [last accordion note stretched and bit-crushed, low sub fade with LPF closing, metallic echo and deep hiss fade]
 ---
-
