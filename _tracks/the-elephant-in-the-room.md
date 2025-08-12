@@ -1,7 +1,7 @@
 ---
 layout: track
 title: The Elephant in The Room
-permalink: /tracks/phrygian-elephant/
+permalink: /tracks/the-elephant-in-the-room/
 description: "A hypnotic lo-fi/industrial dance march: a modded accordion snarls over warm analog bass and dusty Linn-style drums, with glitch accents and metallic textures pushing Phrygian-charged tension toward slam-back drops and bit-crushed echoes."
 image: /assets/img/covers/the-elephant-in-the-room.webp
 image_ready: true
@@ -16,6 +16,7 @@ genre:
 bpm: 141
 key: G
 image_jpg: /assets/img/covers/the-elephant-in-the-room.jpg
+youtube: https://www.youtube.com/watch?v=SBQe4tUjevE
 moods_suggested:
   - Hypnotic
   - Aggressive

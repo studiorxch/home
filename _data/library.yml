@@ -1,3 +1,18 @@
+- title: The Elephant in The Room
+  slug: the-elephant-in-the-room
+  has_cover: true
+  has_loop: true
+  mood:
+    - Hypnotic
+    - Aggressive
+    - Gritty
+    - Cinematic
+    - Underground
+  genre:
+    - lo-fi
+    - electronic
+    - industrial
+  duration: "3:12"
 - title: Light Rewind S04
   slug: light-rewind-s04
   has_cover: true
