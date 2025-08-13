@@ -111,21 +111,29 @@
   document.addEventListener("submit", async (e) => {
     const form = e.target;
     if (!form.matches("#subscribeForm")) return;
-
     e.preventDefault();
 
     const btn = form.querySelector("button[type='submit']");
     const msg = form.querySelector(".form-msg");
     const data = new FormData(form);
-
-    // basic client-side validation
     const email = (data.get("email") || "").toString().trim();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       msg.textContent = "Please enter a valid email.";
       return;
     }
 
-    // UI state
+    // DEV shortcut: simulate success on localhost only
+    if (
+      location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1"
+    ) {
+      msg.textContent = "Dev mode: captured email. (No email sent.)";
+      console.log("DEV SUBSCRIBE:", Object.fromEntries(data.entries()));
+      form.reset();
+      return;
+    }
+
     btn.disabled = true;
     const prior = btn.textContent;
     btn.textContent = "Subscribing…";
@@ -138,6 +146,7 @@
         headers: { Accept: "application/json" },
       });
 
+      // Better error reporting (handles unauthorized domain, etc.)
       if (res.ok) {
         msg.textContent = "You’re in. Check your email for confirmation.";
         form.reset();
@@ -145,7 +154,7 @@
         const err = await res.json().catch(() => ({}));
         const detail =
           (err.errors && err.errors.map((e) => e.message).join(", ")) ||
-          "Something went wrong.";
+          `HTTP ${res.status}: ${res.statusText}`;
         msg.textContent = "Oops — " + detail;
       }
     } catch (err) {

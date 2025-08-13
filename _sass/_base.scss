@@ -362,3 +362,89 @@ ul li::marker {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/*----------------------------------
+  Homepage feature section
+----------------------------------*/
+.feature-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.feature-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-card .feature-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 8, 10, 0.3),
+    rgba(8, 8, 10, 0.65)
+  );
+}
+
+.feature-card .feature-body {
+  position: relative;
+  padding: 1.25rem 1.25rem 1.5rem;
+  color: #fff;
+}
+
+.feature-card .eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin: 0 0 0.25rem;
+}
+
+.feature-card .headline {
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  line-height: 1.15;
+  margin: 0 0 0.35rem;
+}
+
+.feature-card .headline a {
+  color: #fff;
+  text-decoration: none;
+}
+.feature-card .headline a:hover {
+  text-decoration: underline;
+}
+
+.feature-card .sub {
+  margin: 0 0 0.75rem;
+  opacity: 0.95;
+}
+
+.feature-card .btn {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.feature-card .btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 2- or 3-up on wider screens */
+@media (min-width: 860px) {
+  .feature-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .feature-card {
+    min-height: 340px;
+  }
+}

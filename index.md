@@ -11,6 +11,116 @@ permalink: /
   title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.."
 %}
 
+# {%- comment -%}
+
+FEATURE STRIP (no "panels")
+
+- 1. Latest Blog Feature
+- 2. Music Library Spotlight
+- 3. # Rotating Third Feature
+     {%- endcomment -%}
+
+{%- assign recent = site.posts | first -%}
+{%- assign library_all = site.data.library -%}
+
+{%- comment -%}
+Pick a library track that actually has a cover if possible.
+Adjust keys to match your CSV/data (image, has_cover, slug, title, mood etc.)
+{%- endcomment -%}
+{%- assign lib_with_covers = library_all | where_exp: "t","t.image and t.image != ''" -%}
+{%- assign random_track = lib_with_covers | sample -%}
+
+{%- comment -%}
+Daily rotation for the 3rd feature:
+0 => Live Radio
+1 => Shop
+2 => Cat on the Signal
+{%- endcomment -%}
+{%- assign day_index = site.time | date: "%j" | plus: 0 -%}
+{%- assign rot = day_index | modulo: 3 -%}
+
+<section class="feature-strip">
+
+  <!-- 1) Latest Blog Feature -->
+  <article class="feature-card feature-blog"
+           style="background-image:
+             url('{{ recent.image | default: "/assets/img/hero/studio-rich-homepage-hero.webp" }}');">
+    <div class="feature-overlay"></div>
+    <div class="feature-body">
+      <h3 class="eyebrow">Filed Under: Late Night Reads</h3>
+      {% if recent %}
+        <h2 class="headline"><a href="{{ recent.url }}">{{ recent.title }}</a></h2>
+        {% if recent.description %}
+          <p class="sub">{{ recent.description }}</p>
+        {% endif %}
+        <a class="btn" href="{{ recent.url }}">Read the story</a>
+      {% else %}
+        <h2 class="headline">Latest from the Blog</h2>
+        <p class="sub">No posts yet — soon.</p>
+      {% endif %}
+    </div>
+  </article>
+
+  <!-- 2) Music Library Spotlight -->
+  <article class="feature-card feature-library"
+           style="background-image:
+             url('{{ random_track.image | default: "/assets/img/covers/default.webp" }}');">
+    <div class="feature-overlay"></div>
+    <div class="feature-body">
+      <h3 class="eyebrow">From the Library</h3>
+      {% if random_track %}
+        <h2 class="headline">
+          <a href="/tracks/{{ random_track.slug }}/">{{ random_track.title }}</a>
+        </h2>
+        {% if random_track.mood %}
+          <p class="sub">{{ random_track.mood | join: ", " }}</p>
+        {% endif %}
+        <a class="btn" href="/tracks/{{ random_track.slug }}/">Listen now</a>
+      {% else %}
+        <h2 class="headline">Dig the Archive</h2>
+        <p class="sub">Browse 360+ tracks by mood, genre, and vibe.</p>
+        <a class="btn" href="/library">Open Library</a>
+      {% endif %}
+    </div>
+  </article>
+
+  <!-- 3) Rotating Third Feature -->
+
+{% case rot %}
+{% when 0 %}
+
+<article class="feature-card feature-live"
+               style="background-image: url('/assets/img/hero/live-radio.webp');">
+<div class="feature-overlay"></div>
+<div class="feature-body">
+<h3 class="eyebrow">Live Radio</h3>
+<h2 class="headline"><a href="/live">Lo‑Fi Signals, Live</a></h2>
+<p class="sub">Catch visual mixes, late‑night loops, and ambient drift.</p>
+<a class="btn" href="/live">Tune in</a>
+</div>
+</article>
+
+    {% when 1 %}
+      <article class="feature-card feature-shop"
+               style="background-image: url('/assets/img/hero/shop-hero.webp');">
+        <div class="feature-overlay"></div>
+        <div class="feature-body">
+          <h3 class="eyebrow">Shop</h3>
+          <h2 class="headline"><a href="/shop">Melting Boombox Drops</a></h2>
+          <p class="sub">Prints, stickers, digital goodies — vibes you can hold.</p>
+          <a class="btn" href="/shop">Browse drops</a>
+        </div>
+      </article>
+
+    {% else %}
+      <article class="feature-card feature-cat"
+               style="background-image: url('/assets/img/hero/cat-on-the-signal.webp');">
+        <div class="feature-overlay"></div>
+        <div class="feature-body">
+          <h3 class="eyebrow">New Drop</h3>
+          <h2 class="headline"><em>Cat on the Signal</em></h2>
+          <p class="sub">Pastel glitch
+
 <h3 style="margin-left: 1em">
 <img src="/assets/ui/record.svg" alt="Vinyl Record" class="icon-sm">
 Now Spinning: StudioRich Visual Mixes
