@@ -1,10 +1,9 @@
-
 /*FOOTER*/
 .site-footer {
   background: #000;
   color: #fff;
   padding: 3rem 2rem;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   border-top: 1px solid #333;
 }
 
@@ -96,12 +95,14 @@
   gap: 1rem;
 }
 
-.social-icons, .music-icons {
+.social-icons,
+.music-icons {
   display: flex;
   gap: 0.75rem;
 }
 
-.social-icons img, .music-icons img {
+.social-icons img,
+.music-icons img {
   height: 24px;
   opacity: 0.7;
   transition: opacity 0.2s ease;
@@ -112,3 +113,77 @@
   opacity: 1;
 }
 
+/*----------------------------------
+  Email Subscription - Line Field Style
+----------------------------------*/
+/* Footer subscribe — line field style */
+.site-footer .subscribe-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-footer .subscribe-form input[type="email"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666;
+  padding: 0.5rem 0.25rem;
+  color: #f0f0f0;
+  outline: none;
+  min-width: 240px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-footer .subscribe-form input[type="email"]::placeholder {
+  color: #8a8a8a;
+  opacity: 1;
+}
+
+.site-footer .subscribe-form input[type="email"]:focus {
+  border-bottom-color: #ff3b3b; /* brand red */
+}
+
+.site-footer .subscribe-form button {
+  background: transparent;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.05s ease;
+}
+
+.site-footer .subscribe-form button:hover {
+  border-color: #ff3b3b;
+  color: #ff3b3b;
+}
+
+.site-footer .subscribe-form button:active {
+  transform: translateY(1px);
+}
+
+.site-footer .subscribe-form .form-msg {
+  width: 100%;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 0.25rem;
+}
+
+.site-footer .subscribe-form .hp {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .site-footer .subscribe-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-footer .subscribe-form button {
+    width: 100%;
+  }
+}
