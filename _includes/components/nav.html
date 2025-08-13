@@ -112,6 +112,11 @@
     const btn = document.getElementById("hamburgerBtn");
     const willOpen =
       typeof force === "boolean" ? force : !menu.classList.contains("open");
+    // inside toggleMenu(force), after you set willOpen
+    const chrome = document.querySelectorAll("main, .header-inner, footer"); // adjust if needed
+    chrome.forEach((el) =>
+      willOpen ? el.setAttribute("inert", "") : el.removeAttribute("inert")
+    );
 
     menu.classList.toggle("open", willOpen);
     overlay.classList.toggle("active", willOpen);
@@ -130,4 +135,42 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") toggleMenu(false);
   });
+
+  // after your toggleMenu() function
+  function focusTrap(e) {
+    const menu = document.getElementById("mobileMenu");
+    if (!menu.classList.contains("open")) return;
+
+    const focusables = [
+      ...menu.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])'),
+    ];
+    if (!focusables.length) return;
+
+    // loop focus
+    const first = focusables[0],
+      last = focusables[focusables.length - 1];
+    if (e.key === "Tab") {
+      if (
+        e.shiftKey &&
+        (document.activeElement === first ||
+          !menu.contains(document.activeElement))
+      ) {
+        last.focus();
+        e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first.focus();
+        e.preventDefault();
+      }
+    }
+  }
+
+  document.addEventListener("keydown", focusTrap);
+
+  // inside toggleMenu(force) — add after willOpen is computed
+  if (willOpen) {
+    const firstLink = document.querySelector(
+      "#mobileMenu a, #mobileMenu button"
+    );
+    firstLink?.focus();
+  }
 </script>
