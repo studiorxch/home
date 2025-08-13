@@ -13,28 +13,39 @@ permalink: /
 
 # {%- comment -%}
 
-FEATURE STRIP (no "panels")
+# FEATURE STRIP (no "panels")
 
-- 1. Latest Blog Feature
-- 2. Music Library Spotlight
-- 3. # Rotating Third Feature
+# - 1. Latest Bog Feature
+
+# - 2. Music Library Spotlight
+
+# - 3. # Rotating Third Feature
+
      {%- endcomment -%}
 
 {%- assign recent = site.posts | first -%}
 {%- assign library_all = site.data.library -%}
 
 {%- comment -%}
-Pick a library track that actually has a cover if possible.
-Adjust keys to match your CSV/data (image, has_cover, slug, title, mood etc.)
+
+# Pick a library track that actually has a cover if possible.
+
+# Adjust keys to match your CSV/data (image, has_cover, slug, title, mood etc.)
+
 {%- endcomment -%}
-{%- assign lib_with_covers = library_all | where_exp: "t","t.image and t.image != ''" -%}
-{%- assign random_track = lib_with_covers | sample -%}
+{%- assign lib_with_covers = site.data.library | where_exp: "t", "t.image and t.image != ''" -%}
+{%- assign random_track = lib_with_covers | shuffle | first -%}
 
 {%- comment -%}
-Daily rotation for the 3rd feature:
-0 => Live Radio
-1 => Shop
-2 => Cat on the Signal
+
+# Daily rotation for the 3rd feature:
+
+# 0 => Live Radio
+
+# 1 => Shop
+
+# 2 => Cat on the Signal
+
 {%- endcomment -%}
 {%- assign day_index = site.time | date: "%j" | plus: 0 -%}
 {%- assign rot = day_index | modulo: 3 -%}
@@ -86,40 +97,49 @@ Daily rotation for the 3rd feature:
 
   <!-- 3) Rotating Third Feature -->
 
+{%- assign day_index = site.time | date: "%j" | plus: 0 -%}
+{%- assign rot = day_index | modulo: 3 -%}
+
 {% case rot %}
 {% when 0 %}
 
-<article class="feature-card feature-live"
-               style="background-image: url('/assets/img/hero/live-radio.webp');">
-<div class="feature-overlay"></div>
-<div class="feature-body">
-<h3 class="eyebrow">Live Radio</h3>
-<h2 class="headline"><a href="/live">Lo‑Fi Signals, Live</a></h2>
-<p class="sub">Catch visual mixes, late‑night loops, and ambient drift.</p>
-<a class="btn" href="/live">Tune in</a>
-</div>
-</article>
+  <article class="feature-card feature-live"
+           style="background-image: url('/assets/img/hero/live-radio.webp');">
+    <div class="feature-overlay"></div>
+    <div class="feature-body">
+      <h3 class="eyebrow">Live Radio</h3>
+      <h2 class="headline"><a href="/live">Lo-Fi Signals, Live</a></h2>
+      <p class="sub">Catch visual mixes, late-night loops, and ambient drift.</p>
+      <a class="btn" href="/live">Tune in</a>
+    </div>
+  </article>
 
-    {% when 1 %}
-      <article class="feature-card feature-shop"
-               style="background-image: url('/assets/img/hero/shop-hero.webp');">
-        <div class="feature-overlay"></div>
-        <div class="feature-body">
-          <h3 class="eyebrow">Shop</h3>
-          <h2 class="headline"><a href="/shop">Melting Boombox Drops</a></h2>
-          <p class="sub">Prints, stickers, digital goodies — vibes you can hold.</p>
-          <a class="btn" href="/shop">Browse drops</a>
-        </div>
-      </article>
+{% when 1 %}
 
-    {% else %}
-      <article class="feature-card feature-cat"
-               style="background-image: url('/assets/img/hero/cat-on-the-signal.webp');">
-        <div class="feature-overlay"></div>
-        <div class="feature-body">
-          <h3 class="eyebrow">New Drop</h3>
-          <h2 class="headline"><em>Cat on the Signal</em></h2>
-          <p class="sub">Pastel glitch
+  <article class="feature-card feature-shop"
+           style="background-image: url('/assets/img/hero/shop-hero.webp');">
+    <div class="feature-overlay"></div>
+    <div class="feature-body">
+      <h3 class="eyebrow">Shop</h3>
+      <h2 class="headline"><a href="/shop">Melting Boombox Drops</a></h2>
+      <p class="sub">Prints, stickers, digital goodies — vibes you can hold.</p>
+      <a class="btn" href="/shop">Browse drops</a>
+    </div>
+  </article>
+
+{% when 2 %}
+
+  <article class="feature-card feature-cat"
+           style="background-image: url('/assets/img/hero/cat-on-the-signal.webp');">
+    <div class="feature-overlay"></div>
+    <div class="feature-body">
+      <h3 class="eyebrow">New Drop</h3>
+      <h2 class="headline"><em>Cat on the Signal</em></h2>
+      <p class="sub">Pastel glitchscapes + lo-fi bedroom pop.</p>
+      <a class="btn" href="https://soundcloud.com/studiorich/cat-on-the-signal?si=12ab981478444d959fab3bb097f01c8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener">Listen on SoundCloud</a>
+    </div>
+  </article>
+{% endcase %}
 
 <h3 style="margin-left: 1em">
 <img src="/assets/ui/record.svg" alt="Vinyl Record" class="icon-sm">
