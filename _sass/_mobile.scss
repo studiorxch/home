@@ -173,4 +173,40 @@
   .hamburger span {
     transition: transform 0.3s ease, opacity 0.2s ease;
   }
+
+  @media (min-width: 1025px) {
+    /* text links */
+    .main-nav a {
+      position: relative;
+      text-decoration: none;
+    }
+    .main-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 2px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+      opacity: 0.75;
+    }
+    .main-nav a:hover::after,
+    .main-nav a:focus-visible::after {
+      transform: scaleX(1);
+    }
+
+    /* header icon buttons */
+    .header-icons a img {
+      transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+    }
+    .header-icons a:hover img,
+    .header-icons a:focus-visible img {
+      transform: translateY(-1px) scale(1.05);
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+      opacity: 0.95;
+    }
+  }
 }
