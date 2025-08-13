@@ -11,7 +11,7 @@ permalink: /
   title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.."
 %}
 
-<h3 style="margin-left: 2em">
+<h3 style="margin-left: 1em">
 <img src="/assets/ui/record.svg" alt="Vinyl Record" class="icon-sm">
 Now Spinning: StudioRich Visual Mixes
 </h3>
