@@ -1,8 +1,15 @@
 <header class="site-header">
   <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
-  <div class="hamburger" onclick="toggleMenu()">
+  <button
+    class="hamburger"
+    id="hamburgerBtn"
+    aria-label="Open menu"
+    aria-controls="mobileMenu"
+    aria-expanded="false"
+    onclick="toggleMenu()"
+  >
     <span></span><span></span><span></span>
-  </div>
+  </button>
 
   <nav class="mobile-menu mobile-only" id="mobileMenu">
     <a href="/about">Origin</a>
@@ -104,5 +111,29 @@
       document.getElementById("mobileOverlay").classList.remove("active");
       document.body.classList.remove("menu-open");
     });
+  });
+
+  function toggleMenu(force) {
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("mobileOverlay");
+    const btn = document.getElementById("hamburgerBtn");
+
+    const willOpen =
+      typeof force === "boolean" ? force : !menu.classList.contains("open");
+    menu.classList.toggle("open", willOpen);
+    overlay.classList.toggle("active", willOpen);
+    document.body.classList.toggle("menu-open", willOpen);
+    if (btn) btn.setAttribute("aria-expanded", String(willOpen));
+    menu.setAttribute("aria-hidden", String(!willOpen));
+  }
+
+  // Auto-close on link click (keep your version too)
+  document.querySelectorAll("#mobileMenu a").forEach((link) => {
+    link.addEventListener("click", () => toggleMenu(false));
+  });
+
+  // Close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") toggleMenu(false);
   });
 </script>

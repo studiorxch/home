@@ -23,6 +23,6 @@ moods_suggested:
   - Triumphant
 prompt_tmp: |
   Lo-fi textures set the foundation with vinyl crackles, warm keys, and filtered samples, The beat is built on a punchy, syncopated, uptempo rhythm using crisp snares and energetic hi-hats, Layer in bold synth stabs and brassy hits, supporting a confident, uplifting lead melody
-  – Show Summary
+
   [Intro: crowd murmur] [Verse: retro swing beat, filtered horns] [Bridge: drum solo blip] [Outro: arcade fade]
 ---
