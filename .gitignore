@@ -5,15 +5,20 @@ _site/
 .jekyll-metadata
 .history/
 
+# Credentials
+blog-automator-*.json
+.env
 
+# Generated or synced data
+_data/articles/*.csv
 
-#MUSIC
+# MUSIC
 _tracks.zip
 _tracks/_unreleased/
 _album/_unreleased/
 
 
-#DEV 
+# DEV 
 _dev
 _scripts
 _docs

@@ -4,8 +4,13 @@ layout: default
 
 <div class="blog-feed">
   {% for post in site.posts %}
+
   <a href="{{ post.url }}" class="blog-card">
     <div class="blog-thumb">
+      {% if post.unpublished %}
+      <div class="unpublished-flag">UNPUBLISHED</div>
+      {% endif %}
+
       <img
         src="{{ post.image | default: '/assets/img/blog/default.jpg' }}"
         alt="{{ post.title }}"
