@@ -1,3 +1,16 @@
+- title: Faint Return S01
+  slug: faint-return-s01
+  has_cover: true
+  has_loop: true
+  mood:
+    - Kinetic
+    - Hazy
+    - Bittersweet
+  genre:
+    - lo-fi
+    - jungle
+    - electronic
+  duration: "3:46"
 - title: The Elephant in The Room
   slug: the-elephant-in-the-room
   has_cover: true
