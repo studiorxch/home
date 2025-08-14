@@ -60,7 +60,6 @@ redirect_from:
   - /tracks/etheric-bloom/
   - /tracks/everything-at-once-s1/
   - /tracks/everything-at-once/
-  - /tracks/faint-return-s01/
   - /tracks/faint-return/
   - /tracks/fast-crush-s01/
   - /tracks/fast-crush/
