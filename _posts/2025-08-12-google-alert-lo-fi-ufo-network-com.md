@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Google Alert – Lo-Fi"
+title: "Lo-Fi Sightings from the Web"
 date: 2025-08-12
 description: "News - 10 new results for [Lo-Fi]"
 image: /assets/img/blog/default.webp
