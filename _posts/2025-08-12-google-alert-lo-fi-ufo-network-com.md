@@ -2,15 +2,15 @@
 layout: post
 title: "Google Alert – Lo-Fi"
 date: 2025-08-12
-description: "=== News - 10 new results for [Lo-Fi] ==="
+description: "News - 10 new results for [Lo-Fi]"
 image: /assets/img/blog/google-alert-lo-fi-ufo-network-com.webp
 tags:
   - lo-fi
   - discovery
   -  #StudioRichCore
   - news
-unpublished: true
-published: false
+# unpublished: true
+# published: false
 ---
 
 ### Lo-Fi Sightings from the Web – August 12, 2025

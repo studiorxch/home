@@ -1,66 +1,79 @@
 # sync_and_score.py
-
+import pandas as pd
+import os
+from slugify import slugify
+from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
-import pandas as pd
+from urllib.parse import urlparse
+import hashlib
 
-# CONFIG
-SHEET_NAME = "lofi_articles_sync"
-CSV_FILE = "/Users/studio/Sites/studiorich/home/_data/articles/articles.csv"
+# Setup paths and sheet info
+POSTS_DIR = "/Users/studio/Sites/studiorich/home/_posts"
 SERVICE_ACCOUNT_FILE = "blog-automator-468810-e9ac2ca5c307.json"
+SPREADSHEET_NAME = "lofi_articles_sync"
 
-# Authenticate
-scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
+# Google Sheets auth
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=scope)
 client = gspread.authorize(creds)
+sheet = client.open(SPREADSHEET_NAME).sheet1
 
-# Load CSV as DataFrame, skip blank lines
-df = pd.read_csv(CSV_FILE, skip_blank_lines=True)
+# Load sheet
+rows = sheet.get_all_records()
+df = pd.DataFrame(rows)
 
-# Drop any 'Unnamed' columns from malformed CSV headers
-df = df.loc[:, ~df.columns.str.contains('^Unnamed:')]
+# Normalize status + filter
+df["status"] = df["status"].str.lower().str.strip()
+eligible = df[(df['score'] >= 85) & (df['status'] != 'published')]
 
-# Add missing 'approved' column if not present
-if "approved" not in df.columns:
-    df["approved"] = ""
+count = 0
 
-# Define keyword-weight pairs
-KEYWORDS = {
-    "lo-fi": 20,
-    "chillhop": 15,
-    "instrumental": 10,
-    "nostalgia": 10,
-    "beat tape": 10,
-    "visual": 5,
-    "ambient": 10,
-    "retro": 5,
-    "japanese": 10,
-    "game boy": 15,
-    "loop": 5,
-    "vaporwave": 10,
-    "diary": 5
-}
+for idx, row in eligible.iterrows():
+    title = row['title']
+    date = row['date']
+    url = row['url']
+    description = row.get('snippet', '').strip()
+    tags = row.get('tags', '')
+    tag_list = [t.strip() for t in tags.split(',') if t.strip()]
 
-# Scoring function
-def calculate_score(row):
-    if pd.notnull(row.get("score")) and row.get("score", 0) > 0:
-        return row['score']
-    text = f"{row.get('title', '')} {row.get('snippet', '')}".lower()
-    score = 50
-    for kw, weight in KEYWORDS.items():
-        if kw in text:
-            score += weight
-    return min(score, 100)
+    # Slug generation with fallback hash for duplicates
+    domain = urlparse(url).netloc.replace('.', '-')
+    base_slug = slugify(f"{title.lower()}-{domain}")
+    slug_hash = hashlib.md5(url.encode()).hexdigest()[:6]
+    slug = f"{base_slug}-{slug_hash}"
+    filename = f"{date}-{slug}.md"
+    filepath = os.path.join(POSTS_DIR, filename)
 
-# Apply scoring logic
-df['score'] = df.apply(calculate_score, axis=1)
+    if os.path.exists(filepath):
+        print(f"⚠️ Skipped (exists): {filename}")
+        continue
 
-# Final clean-up: remove NaNs
-df = df.replace({float('inf'): '', float('-inf'): '', pd.NA: '', None: ''}).fillna('')
+    image_path = f"/assets/img/blog/{slug}.webp"
 
-# Sync to Google Sheets
-sheet = client.open(SHEET_NAME).sheet1
-sheet.clear()
-sheet.update([df.columns.values.tolist()] + df.values.tolist())
+    # Build frontmatter
+    frontmatter = f"""---
+layout: post
+title: "{title}"
+date: {date}
+description: "{description}"
+image: {image_path}
+tags:
+"""
+    for tag in tag_list:
+        frontmatter += f"  - {tag}\n"
+    frontmatter += "unpublished: true\n---\n\n"
+    frontmatter += f"_Auto-generated from: [{url}]({url})_\n\n"
+    frontmatter += "> TODO: Expand this post with full commentary, visuals, and embed links.\n"
 
-print(f"✅ Synced {len(df)} articles to Google Sheet: {SHEET_NAME}")
+    # Write post
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(frontmatter)
+
+    print(f"✅ Generated: {filename}")
+    count += 1
+
+    # Mark row as published
+    sheet.update_cell(idx + 2, df.columns.get_loc("status") + 1, "published")
+
+print(f"✅ {count} post(s) generated.")
