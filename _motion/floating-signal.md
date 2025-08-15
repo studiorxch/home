@@ -1,9 +1,9 @@
 ---
 layout: motion-post
-title: "Floating Signal"
-date: 2025-08-08
-tags: [loop, ambient, 3d, perfume]
-video: /assets/motion/floating-signal.webm
-thumbnail: /assets/motion/floating-signal-256.webp
-summary: "A slow-looping perfume sphere suspended in soft marble light. Built for sensory storytelling."
+title: "Jeweled Moth"
+date: 2025-08-14
+tags: [loop, ambient, 3d, jewelry]
+video: /assets/motion/jeweled-moth.webm
+thumbnail: /assets/motion/jeweled-moth-256.webp
+summary: "A slow-looping moth emerging from within its jeweled cocoon. Built for sensory storytelling."
 ---

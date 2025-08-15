@@ -10,8 +10,12 @@ permalink: /
   image=page.image
   title="Tap In.<br>Stay Weird.<br>Broadcast the Vibe.."
 %}
+
+<hr style="border: none; border-top: 1px dotted #222;">
+
 {% include components/feature-grid.html %}
 
+<hr style="border: none; border-top: 1px dotted #222;">
 <h3 style="margin-left: 1em">
 <img src="/assets/ui/record.svg" alt="Vinyl Record" class="icon-sm">
 Now Spinning: StudioRich Visual Mixes
@@ -26,8 +30,12 @@ https://www.youtube.com/embed/d_ERqZwROAk?si=94CKxDrn897Bssoi,
 https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
 " %}
 
+<hr style="border: none; border-top: 1px dotted #222;">
+
 <section class="welcome">
-  <div class="welcome">
+
 <p>Welcome to StudioRich (sometimes written as ‘Studio Rich’) a Brooklyn-based creative lab fusing lo-fi music, experimental visuals, and street-smart storytelling. From Stranger Vibes soundtracks to melting boombox art, we blend nostalgia, kung fu, graffiti, and ambient field recordings into collectible experiences. Explore our music catalog, digital merch drops, and live-streamed vibes — all handcrafted with a rebellious spirit and a touch of humor. StudioRich is where city noise becomes rhythm, and every beat has a backstory.</p>
-</div></section>
+</section>
+
+<hr style="border: none; border-top: 1px dotted #222;">
 {% include components/schedule.html %}

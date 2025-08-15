@@ -1,8 +1,8 @@
 ---
-title: "City Nights Zine"
+title: "Classifieds"
 filename: "city_nights.pdf"
 folder: "zines"
-icon: "/assets/img/icons/folder-zine.webp"
+icon: "/assets/img/icons/studio-rich-folder-yellow-512.webp"
 url: "/assets/zines/city_nights.pdf"
 kind: "application/pdf"
 size: "8.7 MB"

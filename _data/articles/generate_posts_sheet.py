@@ -1,11 +1,10 @@
-# generate_posts_from_sheet.py
-
 import pandas as pd
 import os
 from slugify import slugify
 from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
+from urllib.parse import urlparse
 
 # Setup paths and sheet info
 POSTS_DIR = "/Users/studio/Sites/studiorich/home/_posts"
@@ -22,56 +21,49 @@ sheet = client.open(SPREADSHEET_NAME).sheet1
 rows = sheet.get_all_records()
 df = pd.DataFrame(rows)
 
-count = 0  # ← Add this at the top of your post generation loop
-
-# inside your loop when a post is successfully written:
-with open(filepath, "w", encoding="utf-8") as f:
-    f.write(post_content)
-    print(f"✅ Generated: {filename}")
-    count += 1  # ← Increment after each post
-
-# after loop ends
-print(f"✅ {count} post(s) generated.")
-
-
-
 # Filter for eligible posts
 eligible = df[(df['score'] >= 85) & (df['status'].str.lower() != 'published')]
 
-for _, row in eligible.iterrows():
+count = 0  # Track how many posts are generated
+
+for idx, row in eligible.iterrows():
     title = row['title']
     date = row['date']
-    description = row.get('snippet') or ""
-    tags = row.get('tags', '').split(',') if 'tags' in row else []
-    slug = slugify(title)
+    url = row['url']
+    description = row.get('snippet', '')
+    tags = row.get('tags', '')
+    tag_list = [tag.strip() for tag in tags.split(',')] if tags else []
+
+    # Generate unique slug using domain
+    domain = urlparse(url).netloc.replace('.', '-')
+    slug = slugify(f"{title.lower()}-{domain}")
     filename = f"{date}-{slug}.md"
     filepath = os.path.join(POSTS_DIR, filename)
 
-    # Image logic
+    # Image path logic
     image_path = f"/assets/img/blog/{slug}.webp"
 
-    # Build markdown content
+    # Build frontmatter
     frontmatter = f"""---
 layout: post
-title: \"{title}\"
+title: "{title}"
 date: {date}
-description: \"{description}\"
+description: "{description}"
 image: {image_path}
 tags:
 """
-    for tag in tags:
-        frontmatter += f"  - {tag.strip()}\n"
+    for tag in tag_list:
+        frontmatter += f"  - {tag}\n"
     frontmatter += "unpublished: true\n---\n"
 
-    # Save file
+    # Save markdown post
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(frontmatter)
 
     print(f"✅ Generated: {filename}")
+    count += 1
 
-    # Update Google Sheet status to 'published'
-    row_index = df.index[df['title'] == title].tolist()[0] + 2  # +2 accounts for header + 0-index
-    sheet.update_cell(row_index, df.columns.get_loc("status") + 1, "published")
+    # Update Google Sheet: mark as published
+    sheet.update_cell(idx + 2, df.columns.get_loc("status") + 1, "published")
 
 print(f"✅ {count} post(s) generated.")
-

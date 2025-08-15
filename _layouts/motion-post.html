@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="motion-post">
+  <h1>{{ page.title }}</h1>
+  <video
+    src="{{ page.video }}"
+    poster="{{ page.thumbnail }}"
+    controls
+    loop
+    preload="auto"
+    style="width: 100%; max-width: 960px;"
+  ></video>
+
+  <p>{{ page.summary }}</p>
+
+  {% if page.tags %}
+    <p><strong>Tags:</strong>
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+</article>
