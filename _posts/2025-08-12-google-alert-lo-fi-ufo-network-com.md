@@ -3,7 +3,8 @@ layout: post
 title: "Google Alert – Lo-Fi"
 date: 2025-08-12
 description: "News - 10 new results for [Lo-Fi]"
-image: /assets/img/blog/google-alert-lo-fi-ufo-network-com.webp
+image: /assets/img/blog/default.webp
+tags:
 tags:
   - lo-fi
   - discovery

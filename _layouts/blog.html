@@ -7,7 +7,7 @@ layout: default
 
   <a href="{{ post.url }}" class="blog-card">
     <div class="blog-thumb">
-      {% if post.unpublished %}
+      {% if post.published == false %}
       <div class="unpublished-flag">UNPUBLISHED</div>
       {% endif %}
 
