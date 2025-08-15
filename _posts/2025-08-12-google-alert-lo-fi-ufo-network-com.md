@@ -10,6 +10,7 @@ tags:
   -  #StudioRichCore
   - news
 unpublished: true
+published: false
 ---
 
 ### Lo-Fi Sightings from the Web – August 12, 2025
