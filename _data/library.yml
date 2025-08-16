@@ -1,3 +1,20 @@
+- title: Before the Pocket S01
+  slug: before-the-pocket-s01
+  has_cover: true
+  has_loop: true
+  mood:
+    - glitchy
+    - analog
+    - nostalgic
+    - eerie
+    - mechanical
+    - lo-fi noir
+  genre:
+    - lo-fi
+    - glitch
+    - electronic
+  duration: "2:31"
+
 - title: Bottle Memory Error 03
   slug: bottle-memory-error-03
   has_cover: true
