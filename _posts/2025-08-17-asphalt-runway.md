@@ -4,8 +4,8 @@ title: Asphalt Runway
 subtitle: Minimal Glitch, Vintage Grit
 date: 2025-08-17
 description: "Tape hiss, foley glitches, and vintage ruin loops — Asphalt Runway is fashion show minimalism re-imagined as New York grit."
-image: /assets/img/blog/Asphalt-runway/still-01.webp
-permalink: /blog/Asphalt-runway/
+image: /assets/img/blog/asphalt-runway/still-01.webp
+permalink: /blog/asphalt-runway/
 tags: [minimal, glitch, lo-fi, electronic, runway, visual-beat-loop]
 image_ready: true
 ---
@@ -23,10 +23,10 @@ Think **clinical glitch beats** cut with **ambient street noise**, synths pulsin
 <!-- Storyboard / Thumbnails -->
 <figure class="ar-thumbgrid">
   <div class="ar-grid">
-    <img src="/assets/img/blog/Asphalt-runway/still-01.webp" alt="Three figures walking down a ruined NYC street" loading="lazy">
-    <img src="/assets/img/blog/Asphalt-runway/still-02.webp" alt="Rubble lot with fire escapes and drifting paper" loading="lazy">
-    <img src="/assets/img/blog/Asphalt-runway/still-03.webp" alt="Running figure between brick alleys" loading="lazy">
-    <img src="/assets/img/blog/Asphalt-runway/still-04.webp" alt="Night grid lights over cracked asphalt" loading="lazy">
+    <img src="/assets/img/blog/asphalt-runway/still-01.webp" alt="Three figures walking down a ruined NYC street" loading="lazy">
+    <img src="/assets/img/blog/asphalt-runway/still-02.webp" alt="Rubble lot with fire escapes and drifting paper" loading="lazy">
+    <img src="/assets/img/blog/asphalt-runway/still-03.webp" alt="Running figure between brick alleys" loading="lazy">
+    <img src="/assets/img/blog/asphalt-runway/still-04.webp" alt="Night grid lights over cracked asphalt" loading="lazy">
   </div>
   <figcaption>
     Stills from <em>Asphalt Runway</em> — a 32-bar loop cut from ruin-heavy footage. One minute made to replay endlessly.
