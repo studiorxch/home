@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Ashphalt Runway
+title: Asphalt Runway
 subtitle: Minimal Glitch, Vintage Grit
 date: 2025-08-17
-description: "Tape hiss, foley glitches, and vintage ruin loops — Ashphalt Runway is fashion show minimalism re-imagined as New York grit."
-image: /assets/img/blog/ashphalt-runway/still-01.webp
-permalink: /blog/ashphalt-runway/
+description: "Tape hiss, foley glitches, and vintage ruin loops — Asphalt Runway is fashion show minimalism re-imagined as New York grit."
+image: /assets/img/blog/Asphalt-runway/still-01.webp
+permalink: /blog/Asphalt-runway/
 tags: [minimal, glitch, lo-fi, electronic, runway, visual-beat-loop]
 image_ready: true
 ---
 
-# Ashphalt Runway — Minimal Glitch, Vintage Grit
+# Asphalt Runway — Minimal Glitch, Vintage Grit
 
-A one-minute loop, cut for social feeds and late-night screens. **Ashphalt Runway** takes **tape hiss, glitch FX, and runway-ready synth pulses** and sets them against a montage of **1970s–90s New York ruins** — fire escapes, brick alleys, empty lots turned into landing strips. Where _fashion minimalism_ collides with _urban collapse_, this track turns **asphalt into a catwalk**.
+A one-minute loop, cut for social feeds and late-night screens. **Asphalt Runway** takes **tape hiss, glitch FX, and runway-ready synth pulses** and sets them against a montage of **1970s–90s New York ruins** — fire escapes, brick alleys, empty lots turned into landing strips. Where _fashion minimalism_ collides with _urban collapse_, this track turns **asphalt into a catwalk**.
 
 ---
 
@@ -23,13 +23,13 @@ Think **clinical glitch beats** cut with **ambient street noise**, synths pulsin
 <!-- Storyboard / Thumbnails -->
 <figure class="ar-thumbgrid">
   <div class="ar-grid">
-    <img src="/assets/img/blog/ashphalt-runway/still-01.webp" alt="Three figures walking down a ruined NYC street" loading="lazy">
-    <img src="/assets/img/blog/ashphalt-runway/still-02.webp" alt="Rubble lot with fire escapes and drifting paper" loading="lazy">
-    <img src="/assets/img/blog/ashphalt-runway/still-03.webp" alt="Running figure between brick alleys" loading="lazy">
-    <img src="/assets/img/blog/ashphalt-runway/still-04.webp" alt="Night grid lights over cracked asphalt" loading="lazy">
+    <img src="/assets/img/blog/Asphalt-runway/still-01.webp" alt="Three figures walking down a ruined NYC street" loading="lazy">
+    <img src="/assets/img/blog/Asphalt-runway/still-02.webp" alt="Rubble lot with fire escapes and drifting paper" loading="lazy">
+    <img src="/assets/img/blog/Asphalt-runway/still-03.webp" alt="Running figure between brick alleys" loading="lazy">
+    <img src="/assets/img/blog/Asphalt-runway/still-04.webp" alt="Night grid lights over cracked asphalt" loading="lazy">
   </div>
   <figcaption>
-    Stills from <em>Ashphalt Runway</em> — a 32-bar loop cut from ruin-heavy footage. One minute made to replay endlessly.
+    Stills from <em>Asphalt Runway</em> — a 32-bar loop cut from ruin-heavy footage. One minute made to replay endlessly.
   </figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ If your feed gravitates toward our **[visual beat loop aesthetics](/tags/visual-
   allowfullscreen>
 </iframe>
 
-Prefer the audio loop direct? Spin it in our **[track archive](/tracks/runway-ashphalt/)**: **[Ashphalt Runway](/tracks/runway-ashphalt/)**.
+Prefer the audio loop direct? Spin it in our **[track archive](/tracks/runway-Asphalt/)**: **[Asphalt Runway](/tracks/runway-Asphalt/)**.
 
 ---
 
@@ -66,7 +66,7 @@ Prefer the audio loop direct? Spin it in our **[track archive](/tracks/runway-as
 
 This project sharpened into our most cut-heavy loop to date. The original draft stretched 3–4 minutes, but trimming it down to a tight 32-bar cycle brought the energy into focus. Every splice hits like a flash, every flash like a step down the runway.
 
-## Ashphalt Runway is built on that tension: ruin imagery stitched to glitch rhythm, vintage grit riding against electronic pulse. The loop is deliberate — one minute made to replay endlessly, a reel meant to live forever in the scroll — and in memory.
+## Asphalt Runway is built on that tension: ruin imagery stitched to glitch rhythm, vintage grit riding against electronic pulse. The loop is deliberate — one minute made to replay endlessly, a reel meant to live forever in the scroll — and in memory.
 
 ## File It Under
 
