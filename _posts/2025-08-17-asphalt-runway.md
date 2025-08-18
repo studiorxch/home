@@ -4,7 +4,7 @@ title: Ashphalt Runway
 subtitle: Minimal Glitch, Vintage Grit
 date: 2025-08-17
 description: "Tape hiss, foley glitches, and vintage ruin loops — Ashphalt Runway is fashion show minimalism re-imagined as New York grit."
-image: /assets/img/blog/board_asphalt_runway.webp
+image: /assets/img/blog/ashphalt-runway/still-01.webp
 permalink: /blog/ashphalt-runway/
 tags: [minimal, glitch, lo-fi, electronic, runway, visual-beat-loop]
 image_ready: true

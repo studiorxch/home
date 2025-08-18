@@ -24,7 +24,7 @@ Whatever its function, this artifact _feels like it mattered_. And that's enough
 ## 🎧 Featured Track: Before the Pocket
 
 This original loop soundtracks the mystery: rotary clicks, cassette whispers, and the ambient residue of failed startups. It’s the device’s forgotten memory rendered in lo-fi noir.
-
+<img src="/assets/img/covers/before-the-pocket-s01.webp">
 [→ Listen now](/tracks/before-the-pocket-s01/?autoplay=1)
 
 ---
