@@ -8,6 +8,8 @@ image: /assets/img/blog/asphalt-runway/still-01.webp
 permalink: /blog/asphalt-runway/
 tags: [minimal, glitch, lo-fi, electronic, runway, visual-beat-loop]
 image_ready: true
+redirect_from:
+  - https://studiorich.shop/blog/ashphalt-runway/
 ---
 
 # Asphalt Runway — Minimal Glitch, Vintage Grit
