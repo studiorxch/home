@@ -58,7 +58,7 @@ If your feed gravitates toward our **[visual beat loop aesthetics](/tags/visual-
   allowfullscreen>
 </iframe>
 
-Prefer the audio loop direct? Spin it in our **[track archive](/tracks/runway-Asphalt/)**: **[Asphalt Runway](/tracks/runway-Asphalt/)**.
+Prefer the audio loop direct? Spin it in our **[track archive](/tracks/asphalt-runway/)**: **[Asphalt Runway](/tracks/asphalt-runway/)**.
 
 ---
 
