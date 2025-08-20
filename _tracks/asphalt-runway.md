@@ -4,6 +4,7 @@ title: Asphalt Runway
 permalink: /tracks/asphalt-runway/
 description: "A minimal electronic track built from tape hiss, glitch FX, and runway-ready synth pulses. Featuring foley-forward beatwork, distorted vocal fragments, and halftime bridge swells, this is fashion show minimalism recast as ambient anxiety."
 image: /assets/img/covers/asphalt-runway.webp
+youtube: https://www.youtube.com/watch?v=10v7T27w-Wk
 image_ready: true
 date: 2025-08-17
 duration: "3:09"
