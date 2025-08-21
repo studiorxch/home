@@ -14,7 +14,7 @@ tags:
   - lofillens
 ---
 
-## <img src="/assets/ui/sparkles.svg" alt="Sparkles icon" style="width: 1em; vertical-align: middle;" /> _Stars of the Lid – Music for Nitrous Oxide (30th Anniversary Remastered)_
+## <img src="/assets/ui/sparkles.svg" alt="Sparkles icon" class="icon-sm" /> _Stars of the Lid – Music for Nitrous Oxide (30th Anniversary Remastered)_
 
 **Why we care:** This debut ambient drone masterpiece, originally recorded on a 4‑track in ‘93–‘94, now returns in pristine form for the first time on vinyl. The reissue—remastered by Grammy‑winning engineer Francesco Donadello—offers an entry into a music world that redefined immersive listening.
 

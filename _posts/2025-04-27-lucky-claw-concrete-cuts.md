@@ -32,6 +32,6 @@ redirect_from:
 
 ---
 
-## <img src="/assets/ui/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## <img src="/assets/ui/cube.svg" alt="Cube icon" class="icon-sm" /> Filed Under
 
 #BeatTapeCulture #ConcreteCuts #FieldRecordings #GritHop #SubwayBeats

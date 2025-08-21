@@ -76,7 +76,7 @@ Together, these elements remind us that HollowBookCo isn’t just relaunching �
 
 - <img src="/assets/ui/hollow-book.svg" alt="Link" class="icon-sm"> HollowBookCo archive → [studiorich.shop/hollowbookco/](https://studiorich.shop/hollowbookco/)
 - <img src="/assets/ui/headphones.svg" alt="Link" class="icon-sm"> Lo-fi beats loop archive → [/library/](/library/)
-- <img src="/assets/ui/5-point-rounded-star.svg" alt="Link" class="icon-sm"> Visual beat loop aesthetics → [/tags/visual-beat-loop/](/tags/visual-beat-loop/)
+- <img src="/assets/ui/5-point-rounded-star.svg" alt="Link" class="icon-sm"> Visual beat loop aesthetics → [/tag/visual-beat-loop/](/tag/visual-beat-loop/)
 
 ---
 

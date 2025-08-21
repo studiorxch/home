@@ -18,6 +18,6 @@ tags: [cassettevibes, chillhop, lofi, nostalgia, vinyl]
 
 ---
 
-## <img src="/assets/ui/cube.svg" alt="Cube icon" style="width: 1em; vertical-align: middle;" /> Filed Under
+## <img src="/assets/ui/cube.svg" alt="Cube icon" class="icon-sm" /> Filed Under
 
 #CassetteVibes #ChillHop #Lofi #nostalgia #vinyl

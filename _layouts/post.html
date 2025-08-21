@@ -17,8 +17,8 @@ subtitle=page.subtitle kicker=page.kicker %}
       </p>
 
       <!--tags-->
-      {% if page.tags %} {% assign linked_tags = "lofi,ambient,chillhop" |
-      split: "," %}
+      {% if page.tags %} {% assign linked_tags = "lofi, ambient, chillhop,
+      visual-beat-loop, nostalgia, weird-internet" | split: "," %}
       <p class="blog-meta">
         Tags: {% for tag in page.tags %} {% assign normalized = tag | downcase |
         replace: ' ', '-' %} {% assign is_linkable = false %} {% for linked in

@@ -21,7 +21,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/musicnote.svg" alt="Music note icon" style="width: 1em; vertical-align: middle;" /> The Sound
+## <img src="/assets/ui/musicnote.svg" alt="Music note icon" class="icon-sm" /> The Sound
 
 _Chainlink Shuffle_ started as an accordion experiment and spiraled into something stranger:
 
@@ -34,7 +34,7 @@ The result? A lo‑fi groove that feels like a puppet dance ritual at sunset. We
 
 ---
 
-## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> Visual Beat Loop Aesthetic
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> Visual Beat Loop Aesthetic
 
 We paired the track with a full‑video visual — a Gummo‑tinged roadside capture filtered through our lo‑fi field lens.  
 Think _Harmony Korine meets dusty beat tape_.
@@ -54,15 +54,15 @@ File it under:
 
 ---
 
-## <img src="/assets/ui/musicnote.webp" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/musicnote.webp" alt="Music Note icon" class="icon-sm" /> StudioRich Take
 
 This track embodies what we love: making the unusual feel essential. It’s lo‑fi dance you can’t quite explain but can’t stop nodding to.
 
 We’d call it:
 
-- **Sound + visual culture crossover** → [see more here](/tags/crossovers/)
+- **Sound + visual culture crossover** → [see more here](/tag/crossovers/)
 - **Lo‑fi beats loop archive** → [explore more drops](/tracks/)
-- **Visual beat loop aesthetics** → [browse the collection](/tags/visual-beat-loop/)
+- **Visual beat loop aesthetics** → [browse the collection](/tag/visual-beat-loop/)
 
 ---
 

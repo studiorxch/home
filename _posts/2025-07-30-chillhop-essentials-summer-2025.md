@@ -41,7 +41,7 @@ It’s both a **summer postcard** and a **lo-fi sanctuary**.
 
 ## <img src="/assets/ui/sparkles.svg" alt="Sparkles icon" class="icon-sm"> StudioRich Take
 
-We love how these compilations **mirror our own visual beat loop aesthetics** — each track a vignette, each cover art an instant throwback. **Summer 2025** nails that balance: nostalgic, yet forward-flowing.
+We love how these compilations **mirror our own - **[visual beat loop aesthetics](/tag/visual-beat-loop/)\***\* — each track a vignette, each cover art an instant throwback. **Summer 2025\*\* nails that balance: nostalgic, yet forward-flowing.
 
 For StudioRich, this is a reminder that lo-fi is not just background — it’s a seasonal marker, **sound + visual culture crossovers** wrapped in a vibe.
 

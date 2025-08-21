@@ -24,7 +24,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/car.svg" alt="Car icon" style="width: 1em; vertical-align: middle;" /> Cruise Control for the Soul
+## <img src="/assets/ui/car.svg" alt="Car icon" class="icon-sm" /> Cruise Control for the Soul
 
 <img src="/assets/img/blog/cyberpunk-lofi-drive-01.jpg" alt="Neon street in Night City at dusk" width="50%">
 <img src="/assets/img/blog/cyberpunk-lofi-drive-02.jpg" alt="Neon street in Night City at dusk" width="50%">
@@ -39,7 +39,7 @@ Now it’s baked in. And it slaps.
 
 ---
 
-## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> What You’ll Hear + See
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> What You’ll Hear + See
 
 - Lo-fi instrumental grooves with no dialogue interruptions
 - Night City lit like a Blade Runner watercolor
@@ -54,7 +54,7 @@ Great for:
 
 ---
 
-## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
 
 Sometimes the future is loud. But sometimes, it just hums.
 
@@ -68,7 +68,7 @@ File it under:
 
 ---
 
-## <img src="/assets/ui/book-open.svg" alt="Book Open icon" style="width: 1em; vertical-align: middle;" /> Credits + Watch
+## <img src="/assets/ui/book-open.svg" alt="Book Open icon" class="icon-sm" /> Credits + Watch
 
 - [IGN Feature](https://www.ign.com/videos/cyberpunk-2077-1-hour-of-lo-fi-music-and-auto-drive-4k-gameplay)
 - [YouTube Link](https://www.youtube.com/watch?v=Qk3b3cuwHb8)

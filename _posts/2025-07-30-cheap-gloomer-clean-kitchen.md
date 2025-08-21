@@ -18,7 +18,7 @@ tags:
 
 Is Self-Deprecating Cowboy-Surf Wizardry
 
-**Filed under:** [Weird Internet Music Culture](/tags/weird-internet/)
+**Filed under:** [Weird Internet Music Culture](/tag/weird-internet/)
 
 When a record gets called “cowboy-surf wizardry,” it’s hard not to lean in. Cheap Gloomer’s _A Clean Kitchen_ is a jangling, self-deprecating ride through lo-fi surf riffs, cowboy twang, and the kind of DIY wizard energy that feels like it could’ve only been summoned online.
 
@@ -47,8 +47,8 @@ Like all great lo-fi curios, it doesn’t need to take itself seriously to matte
 ## <img src="/assets/ui/folder.svg" alt="Folder icon" class="icon-sm">Explore Further
 
 - <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm"> Lo-fi beats loop archive → [/tracks/](/tracks/)
-- <img src="/assets/ui/octopus.svg" alt="Octopus icon" class="icon-sm"> Weird internet music culture → [/tags/weird-internet/](/tags/weird-internet/)
-- <img src="/assets/ui/magic-eye.svg" alt="Magic Eye icon" class="icon-sm"> Sound + visual culture crossovers → [/tags/crossovers/](/tags/crossovers/)
+- <img src="/assets/ui/octopus.svg" alt="Octopus icon" class="icon-sm"> Weird internet music culture → [/tag/weird-internet/](/tag/weird-internet/)
+- <img src="/assets/ui/magic-eye.svg" alt="Magic Eye icon" class="icon-sm"> Sound + visual culture crossovers → [/tag/crossovers/](/tag/crossovers/)
 
 ---
 

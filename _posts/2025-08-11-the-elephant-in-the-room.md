@@ -20,7 +20,7 @@ A lo-fi dance march built for shadowy basements and blinking EXIT signs. **The E
 
 Think **underground procession**: a distorted accordion drone, sub-kick heartbeat, and **industrial hiss** widening into heavy, syncopated swing. The choruses slam back after sudden silences; the bridges breathe with **filter-swept ostinatos** and modular spirals. When the final downbeat hits, it’s **bit-crushed catharsis**.
 
-If your feed gravitates toward our **[lo-fi beats loop archive](/tracks/)** and the darker side of **[visual beat loop aesthetics](/tags/visual-beat-loop/)**, this lives right in that pocket — a tidy **[sound + visual culture crossover](/tags/crossovers/)** with teeth.
+If your feed gravitates toward our **[lo-fi beats loop archive](/tracks/)** and the darker side of **[visual beat loop aesthetics](/tag/visual-beat-loop/)**, this lives right in that pocket — a tidy **[sound + visual culture crossover](/tag/crossovers/)** with teeth.
 
 ---
 

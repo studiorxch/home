@@ -20,7 +20,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/dot-matrix-heart.svg" alt="Dot Matrix icon" style="width: 1em; vertical-align: middle;" /> Analog Hearts, Digital Dreams
+## <img src="/assets/ui/dot-matrix-heart.svg" alt="Dot Matrix icon" class="icon-sm" /> Analog Hearts, Digital Dreams
 
 Weddings tend to be high-gloss. But this one leaned grayscale — powered by a 1998 Game Boy Camera, some brilliant hacking, and a love for pixelated memory. Photographer Brendan Barry crafted a custom booth that captured lo-fi portraits with that unmistakable dot-matrix warmth.
 
@@ -28,7 +28,7 @@ The setup? An analog rig that prints photos from 2-bit sensors, channeling retro
 
 ---
 
-## <img src="/assets/ui/gameboy.svg" alt="Gameboy icon" style="width: 1em; vertical-align: middle;" /> What It Felt Like
+## <img src="/assets/ui/gameboy.svg" alt="Gameboy icon" class="icon-sm" /> What It Felt Like
 
 Imagine stepping into a moment and leaving with a memory that looks like early Pokémon dialogue — soft, square, and soulfully imperfect. No filters needed. Just time, tech, and a little visual poetry.
 
@@ -36,7 +36,7 @@ This isn’t just a wedding trend. It’s a reminder: nostalgia isn't a glitch �
 
 ---
 
-## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
 
 We love when lo-fi crosses formats — from music to image to lived moment. This project feels like a beat made visual. A perfect fit for StudioRich ethos.
 
@@ -49,7 +49,7 @@ File it under:
 
 ---
 
-## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" style="width: 1em; vertical-align: middle;" /> Original Story + Credits
+## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" class="icon-sm" /> Original Story + Credits
 
 [PetaPixel Feature](https://petapixel.com/2025/07/23/game-boy-camera-powers-lo-fi-wedding-photo-booth-like-youve-never-seen/)  
 Photography by Brendan Barry  

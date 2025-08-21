@@ -27,9 +27,9 @@ Her “graduation” doesn’t end the stream—it reframes it. The beats contin
 
 ## <img src="/assets/ui/splatter.svg" alt="Splatter icon" class="icon-sm" /> Why It Matters
 
-- Marks the end of an era in **[nostalgic ambient playlists](/tags/nostalgic/)**.
-- Reinforces lo‑fi’s role in **[sound + visual culture crossovers](/tags/crossovers/)**.
-- Creates a new opening for future **[visual beat loop aesthetics](/tags/visual-beat-loop/)** in digital storytelling.
+- Marks the end of an era in **[nostalgic ambient playlists](/tag/nostalgic/)**.
+- Reinforces lo‑fi’s role in **[sound + visual culture crossovers](/tag/crossovers/)**.
+- Creates a new opening for future **[visual beat loop aesthetics](/tag/visual-beat-loop/)** in digital storytelling.
 
 ---
 

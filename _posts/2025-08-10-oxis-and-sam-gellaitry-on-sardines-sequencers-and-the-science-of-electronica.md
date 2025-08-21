@@ -19,7 +19,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Sound Meets Science
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> Sound Meets Science
 
 When Oxis and Sam Gellaitry sit down to talk music, the conversation bends like a filter sweep. One minute it’s about sardines (the pantry staple), the next it’s a deep dive into the modular labyrinth of sequencers, signal flow, and how tempo maps onto human physiology.
 
@@ -27,7 +27,7 @@ These are artists who see music not just as entertainment, but as an experiment 
 
 ---
 
-## <img src="/assets/ui/grid-sampler.svg" alt="Grid Sampler icon" style="width: 1em; vertical-align: middle;" /> Sequencers, Sardines, and Synapses
+## <img src="/assets/ui/grid-sampler.svg" alt="Grid Sampler icon" class="icon-sm" /> Sequencers, Sardines, and Synapses
 
 Oxis treats a step sequencer like a chef’s knife: precise, essential, endlessly reconfigurable. Sam Gellaitry speaks about rhythm patterns like they’re living organisms — evolving, adapting, responding to the pulse of a crowd.
 
@@ -41,7 +41,7 @@ The sardine talk isn’t random either. Both see food rituals as part of their c
 
 ---
 
-## <img src="/assets/ui/lightbulb.svg" alt="Lightbulb icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/lightbulb.svg" alt="Lightbulb icon" class="icon-sm" /> StudioRich Take
 
 We love this kind of cross-logic: where gear talk sits comfortably beside life’s small joys. It’s exactly the kind of **sound + visual culture crossover** we file away for rainy day loops.
 

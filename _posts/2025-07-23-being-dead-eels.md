@@ -17,7 +17,7 @@ tags: [indie, lo-fi, pitchfork, artrock, oddpop]
 
 ---
 
-## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
 
 “Eels” is deceptively simple — a lofi handshake wrapped in slacker rock and schoolyard chants. But underneath the surface wiggle, there’s a layered musicianship and narrative cleverness that’s rare.
 
@@ -27,7 +27,7 @@ This isn’t background music. It’s _weird_ in the best way. It earns your pau
 
 ---
 
-## <img src="/assets/ui/speaker.svg" alt="Speaker icon" style="width: 1em; vertical-align: middle;" /> For the Fans Of:
+## <img src="/assets/ui/speaker.svg" alt="Speaker icon" class="icon-sm" /> For the Fans Of:
 
 - Deerhoof meets Wet Leg
 - Early Beck with more sunscreen
@@ -35,7 +35,7 @@ This isn’t background music. It’s _weird_ in the best way. It earns your pau
 
 ---
 
-## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> File It Under
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm" /> File It Under
 
 #AltCampfireSongs  
 #BasementCarnivalRock  

@@ -35,7 +35,7 @@ Think **clinical glitch beats** cut with **ambient street noise**, synths pulsin
   </figcaption>
 </figure>
 
-If your feed gravitates toward our **[visual beat loop aesthetics](/tags/visual-beat-loop/)** or the **glitch-minimal archive** in the **[lo-fi beats loop index](/tracks/)**, this sits dead-center: a **sound + visual crossover** that doubles as a runway show on broken streets.
+If your feed gravitates toward our **[visual beat loop aesthetics](/tag/visual-beat-loop/)** or the **glitch-minimal archive** in the **[lo-fi beats loop index](/tracks/)**, this sits dead-center: a **sound + visual crossover** that doubles as a runway show on broken streets.
 
 ---
 

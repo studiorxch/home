@@ -23,7 +23,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> Lo-Fi That Freezes Time
+## <img src="/assets/ui/record.svg" alt="Record icon" class="icon-sm" /> Lo-Fi That Freezes Time
 
 _Miracle_ doesn’t just play—it settles in. Norwegian artist Fig Tape crafts a track that floats between ambient hush and indie electronics, gently braided together by lo-fi textures and winterlight melancholy.
 
@@ -31,7 +31,7 @@ It’s the kind of loop that feels like the end of a film, or the start of a ver
 
 ---
 
-## <img src="/assets/ui/headphones.svg" alt="Headphones icon" style="width: 1em; vertical-align: middle;" /> Listen In
+## <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm" /> Listen In
 
 You’ll hear:
 
@@ -47,7 +47,7 @@ Great for:
 
 ---
 
-## <img src="/assets/ui/eye.svg" alt="Eye icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/eye.svg" alt="Eye icon" class="icon-sm" /> StudioRich Take
 
 There’s restraint here—and that’s the magic. _Miracle_ shows how much power exists in less. No over-arrangement, no forced peaks. Just soft persistence and shimmer.
 
@@ -61,7 +61,7 @@ File it under:
 
 ---
 
-## <img src="/assets/ui/record.svg" alt="Record icon" style="width: 1em; vertical-align: middle;" /> More from Record of the Day
+## <img src="/assets/ui/record.svg" alt="Record icon" class="icon-sm" /> More from Record of the Day
 
 [Full Feature – Miracle](https://www.recordoftheday.com/record-of-the-day/2025-07-21/miracle2025)
 

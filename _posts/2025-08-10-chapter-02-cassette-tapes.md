@@ -16,7 +16,7 @@ tags:
 category: reading-room
 ---
 
-# <img src="/assets/ui/tape-cassette.svg" alt="Cassette icon" style="width: 1em; vertical-align: middle;" /> The Reading Room
+# <img src="/assets/ui/tape-cassette.svg" alt="Cassette icon" class="icon-sm" /> The Reading Room
 
 ### Chapter 02 — _Cassette Tapes for the Mind_
 
@@ -28,7 +28,7 @@ It began with a 1993 study claiming that listening to 10 minutes of Mozart could
 
 ---
 
-## <img src="/assets/ui/bullseye.svg" alt="Bullseye icon" style="width: 1em; vertical-align: middle;" /> From Lab Claim to Living Room
+## <img src="/assets/ui/bullseye.svg" alt="Bullseye icon" class="icon-sm" /> From Lab Claim to Living Room
 
 By the late ’90s:
 
@@ -40,7 +40,7 @@ The Harvard follow-up? Less magical. Later studies revealed the gains were short
 
 ---
 
-## <img src="/assets/ui/tape-cassette.svg" alt="Cassette icon" style="width: 1em; vertical-align: middle;" /> Cassette as Cognitive Totem
+## <img src="/assets/ui/tape-cassette.svg" alt="Cassette icon" class="icon-sm" /> Cassette as Cognitive Totem
 
 For a generation, these tapes were tangible promises.  
 They lived in backpacks, desk drawers, and glove compartments — portable “focus zones” before playlists and Bluetooth headphones.
@@ -55,7 +55,7 @@ They weren’t just audio products; they were **ritual objects** — as much abo
 
 ---
 
-## <img src="/assets/ui/tape-cassette.svg" alt="Tape Loop icon" style="width: 1em; vertical-align: middle;" /> Lo-Fi’s Direct Ancestors
+## <img src="/assets/ui/tape-cassette.svg" alt="Tape Loop icon" class="icon-sm" /> Lo-Fi’s Direct Ancestors
 
 Fast-forward to the 2020s, and the DNA is obvious.  
 The cassette tapes of the ’90s are the analog grandparents of **lo-fi livestreams**: both promise focus through sound, both pair imagery with audio to sell a mood, and both thrive on repetition.
@@ -69,7 +69,7 @@ Both tap into a simple truth confirmed by modern research: instrumental, enjoyab
 
 ---
 
-## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" style="width: 1em; vertical-align: middle;" /> Closing Notes
+## <img src="/assets/ui/hollow-book.svg" alt="Hollow Book icon" class="icon-sm" /> Closing Notes
 
 The 1990s productivity cassette was never just about Mozart or Baroque.  
 It was about **believing you could tune your brain like an instrument** — that sound could sharpen your mind the way coffee sharpens your mornings.

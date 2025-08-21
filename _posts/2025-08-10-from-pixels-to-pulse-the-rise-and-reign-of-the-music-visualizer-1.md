@@ -18,7 +18,7 @@ tags:
 
 ---
 
-## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" style="width: 1em; vertical-align: middle;" /> Sound You Can See
+## <img src="/assets/ui/musicnote.svg" alt="Music Note icon" class="icon-sm" /> Sound You Can See
 
 It started as a side show — Winamp’s pulsing swirls, iTunes’ kaleidoscope tunnels, Windows Media Player’s lava lamp blobs. A nice-to-have for anyone who left their computer idling while a playlist looped.
 
@@ -26,7 +26,7 @@ Somewhere between then and now, music visualizers stopped being background noise
 
 ---
 
-## <img src="/assets/ui/magic-eye.svg" alt="Magic Eye icon" style="width: 1em; vertical-align: middle;" /> From Screensavers to Synesthesia
+## <img src="/assets/ui/magic-eye.svg" alt="Magic Eye icon" class="icon-sm" /> From Screensavers to Synesthesia
 
 The earliest visualizers were tied to the limits of their era’s tech — pixel grids, basic waveform tracking, crude color cycles. Today’s tools are practically boundless: AI-assisted shaders, real-time particle systems, and entire VR worlds built from a song’s sonic DNA.
 
@@ -34,7 +34,7 @@ It’s not just spectacle. A great visualizer deepens connection, syncing your p
 
 ---
 
-## <img src="/assets/ui/dreamy-clouds.svg" alt="Dreamy Clouds icon" style="width: 1em; vertical-align: middle;" /> StudioRich Take
+## <img src="/assets/ui/dreamy-clouds.svg" alt="Dreamy Clouds icon" class="icon-sm" /> StudioRich Take
 
 Visualizers are the purest form of _visual beat loop aesthetics_ — a living loop that fuses motion with music. They bridge the same space we chase in our own loops: not just listening, not just watching, but drifting inside both.
 

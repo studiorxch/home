@@ -20,6 +20,6 @@ tags: [lo‑fi, vinyl, retro‑gaming, soundtracks, crossovers]
 
 You might link phrases like these in the body copy:
 
-- _visual beat loop aesthetics_ → `/tags/visual-beat-loop/`
-- _sound + visual culture crossovers_ → `/tags/crossovers/`
-- _nostalgic ambient playlists_ → `/tags/nostalgic/`
+- **[visual beat loop aesthetics](/tag/visual-beat-loop/)**
+- **[sound + visual culture crossovers](/tag/crossovers/)**
+- **[nostalgic ambient playlists](/tag/nostalgic/)**
