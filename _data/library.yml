@@ -1,3 +1,20 @@
+- title: Tensil
+  slug: tensil
+  has_cover: true
+  has_loop: true
+  mood:
+    - Meditative
+    - Threaded
+    - Weightless
+    - Dreamy
+    - Textural
+    - Soft Tension
+  genre:
+    - lo-fi
+    - downtempo
+    - ambient
+  duration: "1:35"
+
 - title: Asphalt Runway
   slug: asphalt-runway
   has_cover: true
