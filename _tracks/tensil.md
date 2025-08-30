@@ -54,4 +54,6 @@ prompt_tmp: |
   [everything thins to pad + sub + threadlike echo repeats]  
   [final melodic note stretches and unravels]  
   [tape stop with a single breath of silence]
+
+youtube: https://www.youtube.com/shorts/XVAep27DxNw
 ---
