@@ -9,6 +9,10 @@ _site/
 blog-automator-*.json
 .env
 
+#SHOP
+admin/
+
+
 # Generated or synced data
 _data/articles/*.csv
 
