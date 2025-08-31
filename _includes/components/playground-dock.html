@@ -1,23 +1,36 @@
-<div class="dock-combo" id="dock">
-  <div class="cover-wrap">
-    <img id="np-cover" alt="Now playing cover" />
-    <button class="cover-pp" type="button" aria-label="Play/Pause">▶</button>
-  </div>
+<div class="dock-combo no-select" id="dock">
+  <!-- Play/Pause (text icon for now; you can swap to an SVG later) -->
+  <button class="dock-pp" id="ppBtn" aria-label="Play/Pause" title="Play/Pause">
+    ▶
+  </button>
 
-  <div class="dock-icons">
-    <!-- cassette = Stranger Vibes -->
-    <button class="dock-item" data-playlist="stranger">
+  <!-- Playlist icons -->
+  <div class="dock-icons" id="dockIcons">
+    <!-- Stranger Vibes -->
+    <button
+      class="dock-item"
+      id="pl-stranger"
+      data-pl="stranger"
+      aria-label="Play Stranger Vibes"
+      title="Stranger Vibes"
+    >
       <img src="/assets/img/icons/tape-cassette.webp" alt="Stranger Vibes" />
     </button>
-    <!-- peace token = Releases -->
-    <button class="dock-item" data-playlist="releases">
-      <img src="/assets/img/icons/peace-token-512.webp" alt="Releases" />
+
+    <!-- Peace Token (new releases) -->
+    <button
+      class="dock-item"
+      id="pl-releases"
+      data-pl="releases"
+      aria-label="Play Peace Token"
+      title="Peace Token"
+    >
+      <img src="/assets/img/icons/peace-token-512.webp" alt="Peace Token" />
     </button>
   </div>
 </div>
 
-<!-- Progress stripe pinned to bottom of the window -->
-<div id="dock-progress"><div id="progress-bar"></div></div>
-
-<!-- The audio element the player controls -->
-<audio id="audio" preload="auto" crossorigin="anonymous"></audio>
+<!-- Global bottom progress strip -->
+<div id="dock-progress" aria-hidden="true">
+  <div id="progress-bar"></div>
+</div>
