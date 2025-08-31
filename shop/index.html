@@ -12,7 +12,9 @@ title: Shop
       alt="{{ p.name | default: p.sync_product.name }}"
       loading="lazy"
     />
-    <div class="meta"><h3>{{ p.name | default: p.sync_product.name }}</h3></div>
+    <div class="meta">
+      <h3>{{ p.name | default: p.sync_product.name }}</h3>
+    </div>
   </a>
   {% endfor %} {% else %}
   <p>No products yet.</p>
@@ -21,21 +23,16 @@ title: Shop
 
 <script>
   const API = "https://studiorich-api.vercel.app/api/printful";
-
   (async () => {
     let products = [];
     try {
-      // Live refresh (fast path)
       products = await (await fetch(`${API}/products`)).json();
-    } catch (e) {
-      // Optional client fallback (requires a public copy at /assets/data/printful.json)
+    } catch {
       try {
         products = await (await fetch("/assets/data/printful.json")).json();
       } catch (_) {}
     }
-
     if (!Array.isArray(products) || !products.length) return;
-
     const grid = document.getElementById("shop-grid");
     grid.innerHTML = products
       .map((p) => {

@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /events.ics
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//StudioRich//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+{% assign events = site.events | sort: "date" %}
+{% for e in events %}
+BEGIN:VEVENT
+UID:{{ e.url | absolute_url }}
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+DTSTART:{{ e.date | date: "%Y%m%dT%H%M%S" }}
+{% if e.end %}DTEND:{{ e.end | date: "%Y%m%dT%H%M%S" }}{% endif %}
+SUMMARY:{{ e.title | replace: ",","\\, " }}
+DESCRIPTION:{{ e.description | strip_newlines | replace: ",","\\, " }}
+LOCATION:{{ e.location | default: "" | replace: ",","\\, " }}{% if e.city %}\\, {{ e.city | replace: ",","\\, " }}{% endif %}
+URL:{{ e.url | absolute_url }}
+END:VEVENT
+{% endfor %}
+END:VCALENDAR

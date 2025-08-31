@@ -1,0 +1,23 @@
+<div class="dock-combo" id="dock">
+  <div class="cover-wrap">
+    <img id="np-cover" alt="Now playing cover" />
+    <button class="cover-pp" type="button" aria-label="Play/Pause">▶</button>
+  </div>
+
+  <div class="dock-icons">
+    <!-- cassette = Stranger Vibes -->
+    <button class="dock-item" data-playlist="stranger">
+      <img src="/assets/img/icons/tape-cassette.webp" alt="Stranger Vibes" />
+    </button>
+    <!-- peace token = Releases -->
+    <button class="dock-item" data-playlist="releases">
+      <img src="/assets/img/icons/peace-token-512.webp" alt="Releases" />
+    </button>
+  </div>
+</div>
+
+<!-- Progress stripe pinned to bottom of the window -->
+<div id="dock-progress"><div id="progress-bar"></div></div>
+
+<!-- The audio element the player controls -->
+<audio id="audio" preload="auto" crossorigin="anonymous"></audio>

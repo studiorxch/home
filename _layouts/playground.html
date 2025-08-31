@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+    {% if jekyll.environment == "production" %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+  </head>
+  <body class="playground">
+    {% include components/nav.html %}
+
+    <main class="rail" id="rail" tabindex="0" aria-label="Playground carousel">
+      {% assign slides = site.playground | sort:'path' %} {% for s in slides %}
+      <section
+        class="slide"
+        data-fit="{{ s.fit | default:'cover' }}"
+        data-pos="{{ s.pos | default:'center-bottom' }}"
+        data-focus="{{ s.focus | default:'graphic' }}"
+        style="--zoom: {{ s.zoom | default: 1 }}"
+        aria-roledescription="slide"
+        aria-label="{{ s.title | escape }}"
+      >
+        <div class="frame">
+          <img
+            class="media"
+            src="{{ s.img }}"
+            alt="{{ s.title | escape }}"
+            loading="lazy"
+          />
+          {% if s.tags %}
+          <div class="tags" aria-hidden="true">
+            {% for t in s.tags %}
+            <a
+              class="tag"
+              href="{{ t.href }}"
+              target="_blank"
+              rel="noopener"
+              style="left: {{ t.x }}%; top: {{ t.y }}%;"
+              aria-label="{{ t.label | default:'View item' }}"
+            >
+              <span class="tag-tooltip">{{ t.label | default:'View' }}</span>
+            </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+        {% if s.text_style == 'below' %}
+        <div class="caption-below">
+          <div class="caption-inner">
+            {% if s.eyebrow %}
+            <div class="eyebrow">{{ s.eyebrow }}</div>
+            {% endif %}
+            <h2 class="title">{{ s.title }}</h2>
+            {% if s.body %}
+            <p class="body">{{ s.body }}</p>
+            {% endif %} {% if s.cta %}
+            <div class="cta-row">
+              {% for c in s.cta %}
+              <a class="cta" href="{{ c.href }}" target="_blank" rel="noopener"
+                ><small>{{ c.label }}</small> {{ c.text }}</a
+              >
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% else %}
+        <div class="cap">
+          <div class="cap-grid">
+            <div class="cap-box">
+              <div class="caption-inner">
+                {% if s.eyebrow %}
+                <div class="eyebrow">{{ s.eyebrow }}</div>
+                {% endif %}
+                <h2 class="title">{{ s.title }}</h2>
+                {% if s.body %}
+                <p class="body">{{ s.body }}</p>
+                {% endif %} {% if s.cta %}
+                <div class="cta-row">
+                  {% for c in s.cta %}
+                  <a
+                    class="cta"
+                    href="{{ c.href }}"
+                    target="_blank"
+                    rel="noopener"
+                    ><small>{{ c.label }}</small> {{ c.text }}</a
+                  >
+                  {% endfor %}
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </section>
+      {% endfor %}
+    </main>
+
+    <div class="counter" id="counter"><span class="pill">1 / 1</span></div>
+    <div class="nav" id="dots" role="tablist" aria-controls="rail"></div>
+
+    {% include components/playground-dock.html %}
+
+    <!-- Edges -->
+    <div class="edge left" id="edge-left">
+      <button aria-label="Previous">‹</button>
+    </div>
+    <div class="edge right" id="edge-right">
+      <button aria-label="Next">›</button>
+    </div>
+
+    <script type="module">
+      // Parallax-lite & controls (your existing script block – unchanged logic)
+      const rail = document.getElementById("rail");
+      const slides = Array.from(rail.querySelectorAll(".slide"));
+      const dots = document.getElementById("dots");
+      const counterEl = document.getElementById("counter");
+      const pill = counterEl?.querySelector(".pill");
+      const edgeL = document.getElementById("edge-left");
+      const edgeR = document.getElementById("edge-right");
+
+      function makeDots() {
+        dots.innerHTML = "";
+        slides.forEach((_, i) => {
+          const b = document.createElement("button");
+          b.className = "dot";
+          b.setAttribute("role", "tab");
+          b.addEventListener("click", () => go(i));
+          dots.appendChild(b);
+        });
+      }
+      makeDots();
+
+      addEventListener("mousemove", (e) => {
+        const band = 80;
+        edgeL.classList.toggle("show", e.clientX < band);
+        edgeR.classList.toggle("show", innerWidth - e.clientX < band);
+      });
+      edgeL
+        .querySelector("button")
+        .addEventListener("click", () => go(idx - 1));
+      edgeR
+        .querySelector("button")
+        .addEventListener("click", () => go(idx + 1));
+
+      rail.addEventListener(
+        "wheel",
+        (e) => {
+          if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+            rail.scrollLeft += e.deltaY;
+            e.preventDefault();
+          }
+        },
+        { passive: false }
+      );
+
+      let isDown = false,
+        startX = 0,
+        startScroll = 0,
+        lastX = 0,
+        lastT = 0,
+        vel = 0;
+      const px = (e) => (e.touches ? e.touches[0].clientX : e.clientX);
+      const now = () => performance.now();
+      const friction = 0.95;
+
+      function pointerDown(e) {
+        isDown = true;
+        rail.classList.add("dragging");
+        startX = px(e);
+        startScroll = rail.scrollLeft;
+        lastX = startX;
+        lastT = now();
+        vel = 0;
+      }
+      function pointerMove(e) {
+        if (!isDown) return;
+        const x = px(e),
+          t = now();
+        rail.scrollLeft = startScroll - (x - startX);
+        vel = ((lastX - x) / (t - lastT)) * 16;
+        lastX = x;
+        lastT = t;
+      }
+      function pointerUp() {
+        if (!isDown) return;
+        isDown = false;
+        rail.classList.remove("dragging");
+        (function fling(v) {
+          if (Math.abs(v) < 0.1) return;
+          rail.scrollLeft += v;
+          v *= friction;
+          requestAnimationFrame(() => fling(v));
+        })(vel * 14);
+      }
+
+      rail.addEventListener("pointerdown", pointerDown);
+      addEventListener("pointermove", pointerMove);
+      addEventListener("pointerup", pointerUp);
+
+      rail.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") go(idx + 1);
+        if (e.key === "ArrowLeft") go(idx - 1);
+      });
+
+      let idx = 0;
+      const prefersReduced = matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      function updateUI(i) {
+        if (pill) pill.textContent = `${i + 1} / ${slides.length}`;
+        slides.forEach((s, n) => s.classList.toggle("is-active", n === i));
+        [...dots.children].forEach((d, n) =>
+          d.setAttribute("aria-current", n === i ? "true" : "false")
+        );
+      }
+      function go(i) {
+        idx = (i + slides.length) % slides.length;
+        slides[idx].scrollIntoView({
+          behavior: prefersReduced ? "auto" : "smooth",
+          inline: "center",
+        });
+        updateUI(idx);
+      }
+
+      function onScroll() {
+        const x = rail.scrollLeft,
+          w = rail.clientWidth;
+        let best = Infinity,
+          nearest = 0;
+        slides.forEach((s, i) => {
+          const d = Math.abs((s.offsetLeft - x) / w);
+          if (d < best) {
+            best = d;
+            nearest = i;
+          }
+        });
+        if (nearest !== idx) {
+          idx = nearest;
+          updateUI(idx);
+        }
+      }
+      rail.addEventListener("scroll", onScroll, { passive: true });
+      addEventListener("resize", onScroll);
+
+      // Counter: auto-hide
+      setTimeout(() => counterEl.classList.add("is-hidden"), 3500);
+      ["scroll", "keydown", "pointerdown", "touchstart"].forEach((evt) =>
+        rail.addEventListener(evt, () => counterEl.classList.add("is-hidden"), {
+          once: true,
+          passive: true,
+        })
+      );
+
+      updateUI(0);
+      requestAnimationFrame(onScroll);
+    </script>
+
+    <script src="/assets/js/player-playground.js" defer></script>
+  </body>
+</html>

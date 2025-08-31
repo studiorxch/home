@@ -3,10 +3,10 @@
   "description": "Phase 1 \u2013 2-hour lo-fi playlist with loops + visuals",
   "tracks": [
     {
-      "title": "Skatepark Ruins",
-      "file": "/assets/loops/skatepark-ruins-loop.mp3",
-      "link": "/tracks/skatepark-ruins/",
-      "cover": "/assets/img/covers/skatepark-ruins.webp",
+      "title": "Basement Cipher",
+      "file": "/assets/loops/basement-cipher-loop.mp3",
+      "link": "/tracks/basement-cipher/",
+      "cover": "/assets/img/covers/basement-cipher.webp",
       "duration": "1:54"
     },
     {

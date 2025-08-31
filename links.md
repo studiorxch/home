@@ -50,6 +50,14 @@ title="Links" %}
     </ul>
   </section>
 
+  <ul class="link-list no-bullets">
+      <li>
+        <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
+          <img src="/assets/img/logos/youtube.svg" alt="YouTube">
+          <span>YouTube</span>
+        </a>
+      </li>
+
   <!-- Embeds -->
   <iframe width="100%" height="315"
     src="https://www.youtube.com/embed/videoseries?list=PL52xhhjGMqGb8xoVatUjepBeLIomu21DG" allowfullscreen></iframe>

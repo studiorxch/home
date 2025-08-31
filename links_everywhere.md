@@ -47,6 +47,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 
 <h3><img src="/assets/ui/sparkles.svg" alt="Sparkles icon" class="icon-sm">  Creator & Network Hubs</h3>
 <ul class="link-list no-bullets">
+  <li><a href="https://www.redbubble.com/people/studioRich" target="_blank"><img src="/assets/img/logos/redbubble.svg" alt="Redbubble"><span>Redbubble</span></a></li>
   <li><a href="https://x.com/studiorxch" target="_blank"><img src="/assets/img/logos/x.svg" alt="X"><span>X (Twitter)</span></a></li>
   <li><a href="https://www.threads.net/@_studiorich" target="_blank"><img src="/assets/img/logos/threads.svg" alt="Threads"><span>Threads</span></a></li>
   <li><a href="https://bsky.app/profile/studiorich.shop" target="_blank"><img src="/assets/img/logos/bluesky.svg" alt="Bluesky"><span>Bluesky</span></a></li>

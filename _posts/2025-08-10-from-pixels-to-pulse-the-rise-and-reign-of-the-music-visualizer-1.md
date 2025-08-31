@@ -36,7 +36,7 @@ It’s not just spectacle. A great visualizer deepens connection, syncing your p
 
 ## <img src="/assets/ui/dreamy-clouds.svg" alt="Dreamy Clouds icon" class="icon-sm" /> StudioRich Take
 
-Visualizers are the purest form of _visual beat loop aesthetics_ — a living loop that fuses motion with music. They bridge the same space we chase in our own loops: not just listening, not just watching, but drifting inside both.
+Visualizers are the purest form of- **[visual beat loop aesthetics](/tag/visual-beat-loop/)** — a living loop that fuses motion with music. They bridge the same space we chase in our own loops: not just listening, not just watching, but drifting inside both.
 
 When a waveform bends and bursts in time with the bass, it’s not just data. It’s design, memory, and mood made tangible.
 

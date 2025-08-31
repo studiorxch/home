@@ -38,4 +38,3 @@ https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
 </section>
 
 <hr style="border: none; border-top: 1px dotted #222;">
-{% include components/schedule.html %}

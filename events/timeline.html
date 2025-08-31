@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Events Timeline"
+permalink: /events/timeline/
+---
+
+{% include components/hero.html image="/assets/img/events/default.webp"
+title="Events Timeline" %}
+
+<main class="container-text">
+  <div
+    class="view-toggle"
+    style="margin: 1rem 0 1.25rem; display: flex; gap: 0.5rem"
+  >
+    <a href="/events/" class="btn">List View</a>
+    <a
+      href="/events/timeline/"
+      class="btn"
+      style="background: rgba(255, 255, 255, 0.08)"
+      >Timeline</a
+    >
+  </div>
+  <div id="timeline-embed" style="width: 100%; height: 72vh"></div>
+</main>
+
+<link
+  rel="preload"
+  href="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"
+  as="script"
+/>
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new TL.Timeline("timeline-embed", "/events.timeline.json", {
+      initial_zoom: 2,
+      timenav_height_percentage: 28,
+      hash_bookmark: true,
+    });
+  });
+</script>

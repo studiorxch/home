@@ -28,8 +28,6 @@ twitter_username: "studiorxch"
 github_username: "studiorxch"
 repository: studiorxch/home
 
-# Add custom collections if needed (example: Blog, Music, etc.)
-
 blog_subtitles:
   - "Sound + Visual Culture in Loops"
   - "Where Lo-Fi Lives, Breathes, and Crosses Formats"
@@ -40,26 +38,40 @@ blog_subtitles:
 collections:
   desktop:
     output: false
-  events: # Stranger Vibes, Spa Therapy, Ramen Town
+
+  events:
     output: true
     permalink: /events/:slug/
+
+  future: true # so future-dated events appear in dev
+
   files:
     output: false
+
+  playground:
+    output: true
+    permalink: /playground/:name/
+
   tracks: # Music Library
     output: true
     permalink: /tracks/:name/
+
   shop: # Shop
     output: true
     permalink: /shop/:title/
   redirects:
     output: true
 
+# Ensure future-dated items build (for Upcoming)
+
 defaults:
-  scope:
-    path: ""
-  values:
-    last_modified_at: 2025-06-12
-    sitemap: true
+  - scope:
+      path: "_events"
+      type: events
+    values:
+      layout: event
+      sitemap: true
+      last_modified_at: 2025-06-12
 
 include:
   - /assets/ui
@@ -94,6 +106,7 @@ exclude:
   - node_modules/
   - vendor/
   - _site/
+  - events.timeline.json
 
 # Add custom settings as needed
 favicon: "/assets/img/logo/favicon.ico" # Make sure to upload your favicon if you want one

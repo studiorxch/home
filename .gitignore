@@ -16,7 +16,7 @@ _data/articles/*.csv
 _tracks.zip
 _tracks/_unreleased/
 _album/_unreleased/
-
+_events/_archived
 
 # DEV 
 _dev

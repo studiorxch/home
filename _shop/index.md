@@ -45,6 +45,7 @@ redirect_from:
   - /refund-policy
   - /services/login_with_shop/authorize
   - /terms
+redirect_to: /playground/
 ---
 
 <section class="hero" style="background-image: url(/assets/img/shop/default.webp);">
@@ -83,3 +84,50 @@ redirect_from:
     <li><a href="https://www.redbubble.com/people/studiorich/shop" target="_blank"><img src="/assets/ui/splatter.svg" alt="Splatter icon" class="icon-sm">  Redbubble (Art Prints & More)</a></li>
   </ul>
 </section>
+<div class="container-text">
+<section class="shop-grid">
+  <h2><img src="/assets/ui/grid-sampler.svg" class="icon-sm" alt=""> New in Store</h2>
+
+  <div id="shop-grid" class="grid">
+    {% assign products = site.data.printful %}
+    {% if products and products.size > 0 %}
+      {% for p in products %}
+        <a class="tile" href="/shop/{{ p.id }}/">
+          <img src="{{ p.thumbnail_url | default: p.thumbnail | default: p.sync_product.thumbnail }}" alt="{{ p.name | default: p.sync_product.name }}" loading="lazy">
+          <div class="meta"><h3>{{ p.name | default: p.sync_product.name }}</h3></div>
+        </a>
+      {% endfor %}
+    {% else %}
+      <p>No products yet.</p>
+    {% endif %}
+  </div>
+</section>
+</div>
+<script>
+const API = "https://studiorich-api.vercel.app/api/printful";
+(async () => {
+  try {
+    const products = await (await fetch(`${API}/products`)).json();
+    if (!Array.isArray(products) || !products.length) return;
+    const grid = document.getElementById("shop-grid");
+    grid.innerHTML = products.map(p=>{
+      const id = p.id;
+      const name = p.name || p.sync_product?.name || "Untitled";
+      const thumb = p.thumbnail_url || p.thumbnail || p.sync_product?.thumbnail || "";
+      return `
+        <a class="tile" href="/shop/${id}/">
+          <img src="${thumb}" alt="${name}" loading="lazy">
+          <div class="meta"><h3>${name}</h3></div>
+        </a>`;
+    }).join("");
+  } catch {}
+})();
+</script>
+
+<style>
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin:1rem 0}
+.tile{display:block;border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fff}
+.tile img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover}
+.tile .meta{padding:.6rem}
+.tile h3{margin:0;font-size:.95rem;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+</style>

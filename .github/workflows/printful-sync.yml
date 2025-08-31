@@ -1,56 +1,52 @@
 name: Printful Sync
 on:
-  schedule: [{ cron: "0 6 * * *" }] # daily 06:00 UTC
+  schedule: [{ cron: "0 6 * * *" }] # 6:00 UTC daily
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    env:
-      API_URL: https://studiorich-api.vercel.app/api/printful
-      PRINTFUL_STORE_ID: ${{ secrets.PRINTFUL_STORE_ID }} # set this in repo secrets
-      PRINTFUL_KEY: ${{ secrets.PRINTFUL_KEY }} # set this in repo secrets
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
 
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      - name: Fetch products (API first, Printful fallback)
-        shell: bash
-        run: |
-          set -e
+      # fetch Printful data into _data and assets/data
+      - run: |
           mkdir -p _data assets/data
+          curl -s "https://studiorich-api.vercel.app/api/printful/products" \
+            | tee _data/printful.json > assets/data/printful.json
 
-          echo "→ Trying StudioRich API…"
-          if curl -fsS "$API_URL/products" -o /tmp/products.json; then
-            echo "✓ API responded"
-          else
-            echo "✗ API failed — falling back to Printful /sync/products"
-            curl -fsS "https://api.printful.com/sync/products" \
-              -H "Authorization: Bearer ${PRINTFUL_KEY}" \
-              -H "X-PF-Store-Id: ${PRINTFUL_STORE_ID}" \
-              -o /tmp/products-full.json
-            # flatten to array
-            jq '.result // []' /tmp/products-full.json > /tmp/products.json
-          fi
+      # ⬇️ add the shop meta step right after
+      - name: Write shop meta
+        run: |
+          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          COUNT=$(jq 'length' _data/printful.json || echo 0)
+          echo "{\"updated_at\":\"$TS\",\"count\":$COUNT}" > _data/shop_meta.json
 
-          # Ensure it’s an array; if the API returned {error:…}, coerce to []
-          if jq -e 'type=="array"' /tmp/products.json >/dev/null 2>&1; then
-            echo "✓ Valid product array"
-          else
-            echo "⚠ Non-array response; coercing to []"
-            echo "[]" > /tmp/products.json
-          fi
-
-          # Write both SEO and client fallback files
-          cp /tmp/products.json _data/printful.json
-          cp /tmp/products.json assets/data/printful.json
+      # generate static product pages (optional step we had before)
+      - name: Generate static product pages
+        run: |
+          mkdir -p _shop
+          jq -c '.[]' _data/printful.json | while read -r row; do
+            id=$(echo "$row" | jq -r '.id')
+            name=$(echo "$row" | jq -r '.name // .sync_product.name // "Untitled"')
+            thumb=$(echo "$row" | jq -r '.thumbnail_url // .thumbnail // .sync_product.thumbnail // empty')
+            cat > "_shop/${id}.md" <<EOF
+---
+layout: product
+title: "${name//\"/\\\"}"
+permalink: /shop/${id}/
+product_id: ${id}
+thumbnail: "${thumb}"
+---
+EOF
+          done
 
       - name: Commit
         run: |
           git config user.name "printful-bot"
           git config user.email "printful-bot@users.noreply.github.com"
-          git add _data/printful.json assets/data/printful.json
+          git add _data/printful.json assets/data/printful.json _data/shop_meta.json _shop/*.md
           git commit -m "chore: nightly Printful sync" || echo "No changes"
           git push
