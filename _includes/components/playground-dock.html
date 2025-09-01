@@ -1,36 +1,34 @@
+<!-- /_includes/components/playground-dock.html -->
 <div class="dock-combo no-select" id="dock">
-  <!-- Play/Pause (text icon for now; you can swap to an SVG later) -->
-  <button class="dock-pp" id="ppBtn" aria-label="Play/Pause" title="Play/Pause">
-    ▶
-  </button>
+  <!-- compact Play/Pause button -->
+  <button id="ppBtn" class="dock-pp" aria-label="Play/Pause">▶</button>
 
-  <!-- Playlist icons -->
-  <div class="dock-icons" id="dockIcons">
+  <!-- playlist icons -->
+  <div class="dock-icons">
     <!-- Stranger Vibes -->
     <button
       class="dock-item"
-      id="pl-stranger"
       data-pl="stranger"
-      aria-label="Play Stranger Vibes"
-      title="Stranger Vibes"
+      aria-label="Play ‘Stranger Vibes’"
     >
-      <img src="/assets/img/icons/tape-cassette.webp" alt="Stranger Vibes" />
+      <img
+        src="/assets/img/icons/tape-cassette-512.webp"
+        alt="Stranger Vibes"
+      />
     </button>
-
-    <!-- Peace Token (new releases) -->
+    <!-- Peace Token (releases) -->
     <button
       class="dock-item"
-      id="pl-releases"
       data-pl="releases"
-      aria-label="Play Peace Token"
-      title="Peace Token"
+      aria-label="Play ‘Peace Token’"
     >
       <img src="/assets/img/icons/peace-token-512.webp" alt="Peace Token" />
     </button>
   </div>
 </div>
 
-<!-- Global bottom progress strip -->
-<div id="dock-progress" aria-hidden="true">
-  <div id="progress-bar"></div>
-</div>
+<!-- full-width progress (hidden until playing) -->
+<div id="dock-progress"><div id="progress-bar"></div></div>
+
+<!-- a single shared audio element -->
+<audio id="audio" preload="auto" style="display: none"></audio>
