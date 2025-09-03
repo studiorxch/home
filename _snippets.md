@@ -16,16 +16,18 @@ bundle exec jekyll serve --drafts --future
 # ALL
 
 git add .
-git commit -m "playground/shop first view"
+git commit -m "playground meta"
 git push origin main
 
 ---
 
 # Blog Only
 
-git add assets/img/blog \_posts
+```
+git add assets/img/blog _posts
 git commit -m "Blog content commit"
 git push -u origin main
+```
 
 # Music Track Only
 
@@ -48,15 +50,6 @@ git push origin main
 
 ```
 
-# Events Only
-
-```
-
-git add assets/img/events _events includes/components
-git commit -m "Initial events commt"
-git push -u origin main
-```
-
 # Playground Only
 
 ```
@@ -64,3 +57,7 @@ git add _playground assets/img/playground
 git commit -m "Playground update"
 git push origin main
 ```
+
+E toggles edit mode (drag & double-click to add pins).
+
+⌘E / Ctrl+E now copies a ready-to-paste YAML block like this:

@@ -1,0 +1,44 @@
+{% comment %} Meta/SEO head include (Liquid-safe) {% endcomment %} {% assign
+base_title = page.seo_title | default: page.title | default: site.title %} {%-
+assign append_site = page.append_site_title -%} {%- if append_site == nil -%}{%
+assign append_site = true %}{% endif %} {%- if append_site and base_title !=
+site.title -%} {%- capture full_title -%}{{ base_title }} | {{ site.title }}{%-
+endcapture -%} {%- else -%} {%- assign full_title = base_title -%} {%- endif -%}
+{% assign share = page.image | default: '/assets/img/default-share.jpg' %} {%
+assign ogtype = page.og_type | default: 'website' %}
+
+<title>{{ full_title }}</title>
+<meta
+  name="description"
+  content="{{ page.description | default: site.description }}"
+/>
+<meta name="twitter:site" content="@studiorxch" />
+
+{% if jekyll.environment == "production" %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+{% else %}
+<meta name="robots" content="noindex,nofollow,noarchive" />
+{% endif %}
+
+<meta property="og:type" content="{{ ogtype }}" />
+<meta property="og:title" content="{{ page.og_title | default: base_title }}" />
+<meta
+  property="og:description"
+  content="{{ page.og_description | default: page.description | default: site.description }}"
+/>
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:image" content="{{ site.url }}{{ share }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+  name="twitter:title"
+  content="{{ page.twitter_title | default: base_title }}"
+/>
+<meta
+  name="twitter:description"
+  content="{{ page.twitter_description | default: page.description | default: site.description }}"
+/>
+<meta
+  name="twitter:image"
+  content="{{ site.url }}{{ page.image_jpg | default: share }}"
+/>

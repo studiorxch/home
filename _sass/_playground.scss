@@ -20,6 +20,28 @@
   --accent: #ff5252;
 }
 
+/* Edit mode visuals */
+:root.edit-mode .tag {
+  outline: 2px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+}
+:root.edit-mode .tag::after {
+  content: "✥";
+  position: absolute;
+  inset: auto auto -18px 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.8;
+}
+:root.edit-mode .tag {
+  outline: 2px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  cursor: grab;
+}
+:root.edit-mode .tag:active {
+  cursor: grabbing;
+}
+
 /* Scope EVERYTHING else to the playground page only */
 body.playground {
   /* Page base (only affects /playground) */
@@ -75,13 +97,38 @@ body.playground {
     background: var(--bg);
     will-change: transform, filter;
   }
+  /* image at 1, markers at 2, captions/dock above that */
   .frame {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    background: var(--bg);
+    position: absolute;
+    inset: 0;
   }
+  /* stacking order */
+  .frame .media {
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1; /* optional gradient; keep < tags */
+  }
+  .frame .tags {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: auto;
+  }
+  .frame .tag {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+  }
+
   .media {
     width: 100%;
     height: 100%;
@@ -93,6 +140,13 @@ body.playground {
     user-select: none;
   }
   /* focus helpers */
+
+  /* If you want full-height slides, put height on the slide, not on .frame */
+  .slide {
+    position: relative;
+    min-height: 100svh;
+  }
+
   .slide[data-focus="graphic"] .media {
     object-position: center 60%;
   }
@@ -317,13 +371,14 @@ body.playground {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 64px;
-    z-index: 80;
+    width: 80px;
+    z-index: 30;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.2s;
+    pointer-events: none;
   }
   .edge.left {
     left: 0;
@@ -343,6 +398,7 @@ body.playground {
     display: grid;
     place-items: center;
     cursor: pointer;
+    pointer-events: auto;
   }
   .edge:hover,
   .edge.show {
@@ -528,6 +584,49 @@ body.playground {
     min-height: 100vh; /* still fill at least one viewport */
     overflow-y: auto; /* enable vertical scrolling INSIDE the slide */
     -webkit-overflow-scrolling: touch;
+  }
+
+  .text-overlay {
+    position: absolute;
+    z-index: 3; /* above markers if needed; set 3 to be below */
+    inset: auto 0 6rem 0; /* default: bottom strip; tweak as you like */
+    max-width: clamp(36ch, 40vw, 60ch);
+    margin: 0 clamp(1rem, 4vw, 3rem);
+    padding: clamp(0.75rem, 1.5vw, 1rem) clamp(0.9rem, 2vw, 1.25rem);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    background: color-mix(in oklab, black 38%, transparent);
+    border-radius: 16px;
+  }
+  .text-overlay.left {
+    left: clamp(1rem, 4vw, 3rem);
+    right: auto;
+  }
+  .text-overlay.right {
+    right: clamp(1rem, 4vw, 3rem);
+    left: auto;
+  }
+
+  .text-overlay .eyebrow {
+    letter-spacing: 0.12em;
+    opacity: 0.85;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .text-overlay .title {
+    margin: 0.25rem 0 0.25rem;
+    font-size: clamp(1.25rem, 2.6vw, 2rem);
+    line-height: 1.1;
+  }
+  .text-overlay .body {
+    opacity: 0.9;
+    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  }
+  .text-overlay .cta-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.65rem;
   }
 
   /* Responsive */
