@@ -9,6 +9,25 @@ append_site_title: true
 
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+/* DEBUG: minimal, flat, high-specificity */
+body.playground .slide{position:relative;min-height:100svh}
+body.playground .frame{position:absolute;inset:0}
+body.playground .frame .media{width:100%;height:100%;object-fit:cover;display:block}
+body.playground .frame .tags{position:absolute;inset:0;z-index:3;pointer-events:none}
+body.playground .frame .tag{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
+body.playground .text-overlay{
+  position:absolute;z-index:4; /* above tags */
+  inset:auto 0 6rem 0;max-width:60ch;margin:0 2.5rem;padding:1rem 1.25rem;
+  color:#fff;background:rgba(0,0,0,.4);backdrop-filter:blur(6px);
+  pointer-events:none;outline:2px solid magenta; /* TEMP so you can see it */
+}
+body.playground .text-overlay .caption-inner{pointer-events:auto}
+body.playground .text-overlay.left{left:2.5rem;right:auto}
+body.playground .text-overlay.right{right:2.5rem;left:auto}
+</style>
+
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +44,7 @@ append_site_title: true
 
     <main class="rail" id="rail" tabindex="0" aria-label="Playground carousel">
       {% assign slides = site.playground | sort:'path' %} {% for s in slides %}
+
       <section
         id="slide-{{ forloop.index }}"
         class="slide"
@@ -63,39 +83,51 @@ append_site_title: true
           </div>
           {% endif %}
         </div>
+{% assign text_style = s.text_style | default: 'overlay' %}
 
-        {% assign text_style = s.text_style | default: 'cap' %} {% if text_style
-        == 'overlay' %}
-        <div class="text-overlay {{ s.text_pos | default:'left' }}">
-          {% if s.eyebrow %}
-          <div class="eyebrow">{{ s.eyebrow }}</div>
-          {% endif %}
-          <h2 class="title">{{ s.title }}</h2>
-          {% if s.body %}
-          <p class="body">{{ s.body }}</p>
-          {% endif %} {% if s.cta %}
-          <div class="cta-row">
-            {% for c in s.cta %}
-            <a class="cta" href="{{ c.href }}" target="_blank" rel="noopener"
-              ><small>{{ c.label }}</small> {{ c.text }}</a
-            >
-            {% endfor %}
-          </div>
-          {% endif %}
+{% if text_style == 'overlay' %}
+  <div class="text-overlay {{ s.text_pos | default:'left' }}">
+    <div class="caption-inner">
+      {% if s.eyebrow %}
+        <div class="eyebrow">{{ s.eyebrow }}</div>
+      {% endif %}
+      <h2 class="title">{{ s.title }}</h2>
+      {% if s.body %}
+        <p class="body">{{ s.body }}</p>
+      {% endif %}
+      {% if s.cta %}
+        <div class="cta-row">
+          {% for c in s.cta %}
+            <a class="cta" href="{{ c.href }}" target="_blank" rel="noopener">
+              <small>{{ c.label }}</small> {{ c.text }}
+            </a>
+          {% endfor %}
         </div>
-        {% elsif text_style == 'below' %} {% comment %} your existing
-        caption-below block here {% endcomment %} {% else %} {% comment %} your
-        existing cap block here {% endcomment %} {% endif %}
+      {% endif %}
+    </div>
+  </div>
+
+{% elsif text_style == 'below' %}
+  <!-- your caption-below block here -->
+
+{% else %}
+  <!-- your cap block here -->
+{% endif %}
+
+
+
+
       </section>
       {% endfor %}
     </main>
+
 
     <div class="counter" id="counter">
       <span class="pill">1 / {{ slides | size }}</span>
     </div>
     <div class="nav" id="dots" role="tablist" aria-controls="rail"></div>
 
-    {% include components/playground-dock.html %}
+
 
     <div class="edge left" id="edge-left">
       <button aria-label="Previous">‹</button>
@@ -109,5 +141,10 @@ append_site_title: true
     <script src="/assets/js/player-playground.js" defer></script>
     <script src="/assets/js/carousel-playground.js" defer></script>
     <script src="/assets/js/playground-edit.js" defer></script>
+
+    <button id="ppBtnFloating" class="pp-fab">▶</button>
+    <audio id="audio"></audio>
+    <script src="/assets/js/player-fab.js" defer></script>
+
   </body>
 </html>

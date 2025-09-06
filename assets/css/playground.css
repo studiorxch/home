@@ -1,0 +1,68 @@
+/* Playground overlay essentials (no nesting) */
+body.playground {
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+body.playground .slide {
+  position: relative;
+  flex: 0 0 100vw;
+  min-height: 100svh;
+}
+body.playground .frame {
+  position: absolute;
+  inset: 0;
+}
+body.playground .frame .media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Image + pins */
+body.playground .frame{position:absolute;inset:0}
+body.playground .frame .media{width:100%;height:100%;object-fit:cover;display:block}
+body.playground .frame .tags{position:absolute;inset:0;z-index:3;pointer-events:none}
+body.playground .frame .tag{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
+
+/* Overlay ABOVE pins */
+body.playground .text-overlay{
+  position:absolute; z-index:4;       /* higher than .tags (3) */
+  inset:auto 0 6rem 0;
+  max-width: clamp(36ch, 40vw, 60ch);
+  margin: 0 clamp(1rem, 4vw, 3rem);
+  padding: clamp(.75rem, 1.5vw, 1rem) clamp(.9rem, 2vw, 1.25rem);
+  color:#fff; backdrop-filter: blur(6px);
+  background: rgba(0,0,0,.38);
+  pointer-events:none;                /* container lets clicks pass */
+}
+body.playground .text-overlay .caption-inner{pointer-events:auto}
+body.playground .text-overlay.left{left:clamp(1rem,4vw,3rem);right:auto}
+body.playground .text-overlay.right{right:clamp(1rem,4vw,3rem);left:auto}
+
+/* (optional) make sure the slide is positioned to host the absolute overlay */
+body.playground .slide{position:relative;min-height:100svh}
+
+
+body.playground .text-overlay .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+  font-size: 0.8rem;
+}
+body.playground .text-overlay .title {
+  margin: 0.25rem 0;
+  font-weight: 800;
+  font-size: clamp(1.25rem, 2.6vw, 2rem);
+  line-height: 1.1;
+}
+body.playground .text-overlay .body {
+  opacity: 0.9;
+  line-height: 1.6;
+}
+body.playground .text-overlay .cta-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.65rem;
+}
