@@ -66,4 +66,3 @@ title="Links" %}
 
     <img src="/assets/ui/headphones.svg" alt="Headphones icon" class="icon-sm"> Find us on → <a href="/links-everywhere">all platforms</a>
 
-</div>

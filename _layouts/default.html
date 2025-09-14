@@ -4,23 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {% if page.title == 'Home' %}
-    <title>{{ site.title }}</title>
+    {% comment %} Meta/SEO head include (Liquid-safe) {% endcomment %}
+    {% assign base_title = page.seo_title | default: page.title | default: site.title %}
+    {% assign append_site = page.append_site_title %}
+    {% if append_site == nil %}{% assign append_site = true %}{% endif %}
+    {% if append_site and base_title != site.title %}
+      {% capture full_title %}{{ base_title }} | {{ site.title }}{% endcapture %}
     {% else %}
-    <title>{{ page.title }} | {{ site.title }}</title>
+      {% assign full_title = base_title %}
     {% endif %}
+    {% assign share = page.image | default: '/assets/img/default-share.jpg' %}
+    {% assign ogtype = page.og_type | default: 'website' %}
 
-    <meta
-      name="description"
-      content="{{ page.description | default: site.description }}"
-    />
+    <title>{{ full_title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
     <meta name="twitter:site" content="@studiorxch" />
 
     {% if jekyll.environment == "production" %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+      <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     {% else %}
-    <!-- Canonical disabled during dev to avoid localhost indexing -->
+      <meta name="robots" content="noindex,nofollow,noarchive" />
     {% endif %}
+
+    <meta property="og:type" content="{{ ogtype }}" />
+    <meta property="og:title" content="{{ page.og_title | default: base_title }}" />
+    <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ share }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.twitter_title | default: base_title }}" />
+    <meta name="twitter:description" content="{{ page.twitter_description | default: page.description | default: site.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image_jpg | default: share }}" />
 
     <!-- 📎 Identity Domains -->
     <link rel="me" href="https://richielau.com" />
@@ -32,29 +47,14 @@
     <link rel="me" href="https://studiorich.bandcamp.com" />
     <link rel="me" href="https://www.beatport.com/artist/studiorich/1278105" />
     <link rel="me" href="https://www.deezer.com/us/artist/294319151" />
-    <link
-      rel="me"
-      href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich"
-    />
-    <link
-      rel="me"
-      href="https://music.apple.com/us/artist/studiorich/1785907828"
-    />
-    <link
-      rel="me"
-      href="https://music.youtube.com/channel/UCvLh5_MPChww6fgXlsOG9qA"
-    />
+    <link rel="me" href="https://music.amazon.co.uk/artists/B0DQR9S993/studiorich" />
+    <link rel="me" href="https://music.apple.com/us/artist/studiorich/1785907828" />
+    <link rel="me" href="https://music.youtube.com/channel/UCvLh5_MPChww6fgXlsOG9qA" />
     <link rel="me" href="https://music.youtube.com/@Studio-Rich" />
     <link rel="me" href="https://www.mixcloud.com/studiorich" />
     <link rel="me" href="https://www.musixmatch.com/artist/StudioRich" />
-    <link
-      rel="me"
-      href="https://www.pandora.com/artist/studiorich/ARZ563fvKk56m6Z"
-    />
-    <link
-      rel="me"
-      href="https://open.spotify.com/artist/55NPQkvFCSFrE7eZuzlzqT"
-    />
+    <link rel="me" href="https://www.pandora.com/artist/studiorich/ARZ563fvKk56m6Z" />
+    <link rel="me" href="https://open.spotify.com/artist/55NPQkvFCSFrE7eZuzlzqT" />
     <link rel="me" href="https://soundcloud.com/studiorich" />
     <link rel="me" href="https://tidal.com/browse/artist/studiorich" />
 
@@ -80,48 +80,10 @@
     <link rel="me" href="https://ko-fi.com/studiorich" />
     <link rel="me" href="https://patreon.com/StudioRich" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta
-      property="og:description"
-      content="{{ page.description | default: site.description }}"
-    />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta
-      property="og:image"
-      content="{{ site.url }}{{ page.image | default: '/assets/img/default-share.jpg' }}"
-    />
-    <meta property="og:type" content="music.song" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    <meta
-      property="twitter:description"
-      content="{{ page.description | default: site.description }}"
-    />
-    <meta
-      property="og:image"
-      content="{{ site.url }}{{ page.image_jpg | default: page.image }}"
-    />
-
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="{{ '/assets/img/logos/favicon.ico' | relative_url }}"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="{{ '/assets/img/logos/apple-touch-icon.png' | relative_url }}"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="{{ '/assets/img/logos/favicon-32x32.png' | relative_url }}"
-    />
+    <link rel="icon" href="{{ '/assets/img/logos/favicon.ico' | relative_url }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/logos/apple-touch-icon.png' | relative_url }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/logos/favicon-32x32.png' | relative_url }}" />
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -139,23 +101,61 @@
     </script>
 
     <!-- Analytics + Fonts -->
-    {% if jekyll.environment == "production" and site.google_analytics %} {%
-    include google-analytics.html %} {% endif %}
+    {% if jekyll.environment == "production" and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 
     <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100,400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100,400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;1,100&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    {% include components/nav.html %} {{ content }} {% include
-    components/footer.html %}
+    {% include components/nav.html %}
+
+    {%- comment -%}
+      Header area:
+      - If page.hero !== false  ➜ include full hero (default)
+      - Else if page.compact_header ➜ render compact header
+      - If page.show_rxch is true ➜ show RXCH block under header
+    {%- endcomment -%}
+
+    {% if page.hero != false %}
+      {% assign hero_image    = page.image %}
+      {% assign hero_title    = page.hero_title    | default: page.title %}
+      {% assign hero_subtitle = page.hero_subtitle | default: page.description %}
+      {% assign hero_class    = page.hero_class    | default: 'hero--default' %}
+
+      {% include components/hero.html
+           image=hero_image
+           title=hero_title
+           subtitle=hero_subtitle
+           class=hero_class %}
+    {% endif %}
+
+    {%- if page.show_rxch -%}
+      <section id="rxch-studio" aria-label="Genie RXCH">
+        <div class="rxch-orb" role="button" aria-label="Talk to RXCH"></div>
+        <form id="rxch-chat" autocomplete="off">
+          <input id="rxch-input" type="text"
+            placeholder="Ask RXCH for a playlist… e.g., dreamy 20 min under 90 bpm"
+            aria-label="Ask RXCH for a playlist" />
+          <button id="rxch-send" type="submit" aria-label="Send">➤</button>
+        </form>
+        <div id="rxch-results" aria-live="polite"></div>
+      </section>
+    {%- endif -%}
+
+    <main class="main">
+      {{ content }}
+    </main>
+
+    {% include components/footer.html %}
+
+    {%- if page.scripts -%}
+      {%- for s in page.scripts -%}
+        <script defer src="{{ s | relative_url }}"></script>
+      {%- endfor -%}
+    {%- endif -%}
   </body>
 </html>

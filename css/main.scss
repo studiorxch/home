@@ -1,17 +1,22 @@
 ---
 ---
 
+@import "variables";
 @import "base";
-@import "blog";
-@import "buttons";
-@import "desktop";
-@import "features";
-@import "footer";
-@import "mobile";
 @import "nav";
+@import "footer";
+@import "library";
 @import "playground";
-@import "reading-room";
 @import "shop";
 @import "tracks";
-@import "variables";
 @import "waveform";
+@import "mobile";
+
+/* RXCH */
+@import "rxch/genie";
+@import "rxch/orb";
+@import "rxch/cards";
+
+/* shim for legacy imports */
+@import "rxch/genie";
+@import "library";

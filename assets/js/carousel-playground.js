@@ -1,3 +1,4 @@
+// carousel-playground.js
 // Carousel + controls; calls PlaygroundTags.update() when slides change
 (() => {
     const rail = document.getElementById('rail');
@@ -9,6 +10,40 @@
     const edgeL = document.getElementById('edge-left');
     const edgeR = document.getElementById('edge-right');
     const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+    function editingActive(e) {
+        // ignore when a tag is dragged or when the event started on a tag
+        if (document.body.dataset.editDragging === '1') return true;
+        if (e && (e.target.closest && e.target.closest('.tag'))) return true;
+        return false;
+    }
+
+    function pointerDown(e) {
+        if (editingActive(e)) return;      // NEW
+        // existing code...
+    }
+    function pointerMove(e) {
+        if (!isDown || editingActive(e)) return;   // NEW
+        // existing code...
+    }
+    function pointerUp(e) {
+        if (editingActive(e)) { isDown = false; return; }  // NEW
+        // existing code...
+    }
+
+    rail.addEventListener('wheel', (e) => {
+        if (editingActive(e)) return;       // NEW
+        // existing code...
+    }, { passive: false });
+
+    rail.addEventListener('keydown', (e) => {
+        if (editingActive(e)) return;       // NEW
+        // existing code...
+    });
+
+
+
 
     function makeDots() {
         if (!dots) return;

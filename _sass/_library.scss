@@ -1,0 +1,15 @@
+/* _sass/_library.scss (or _base.scss) */
+.page-hero--compact {
+  padding-block: 5rem 2rem;           /* clears the header */
+  background: #0a0a0a;                /* black-on-black vibe */
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.page-hero--compact h1 { margin: 0 0 .5rem; }
+.page-hero--compact p  { opacity: .8; margin: 0; }
+
+
+
+/* ensures anchors behave like cards and images keep size */
+.track-grid .track-card { display: block; text-decoration: none; }
+.track-grid .track-cover { display: block; width: 100%; height: auto; }
+.filter-bar button.disabled { opacity: .35; pointer-events: none; }

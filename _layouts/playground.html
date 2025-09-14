@@ -1,150 +1,158 @@
----
-title: Playground
-description: Shop + lookbook carousel for StudioRich.
-og_type: website
-image: /assets/img/og/playground.webp
-seo_title: StudioRich Playground
-append_site_title: true
----
 
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-/* DEBUG: minimal, flat, high-specificity */
-body.playground .slide{position:relative;min-height:100svh}
-body.playground .frame{position:absolute;inset:0}
-body.playground .frame .media{width:100%;height:100%;object-fit:cover;display:block}
-body.playground .frame .tags{position:absolute;inset:0;z-index:3;pointer-events:none}
-body.playground .frame .tag{position:absolute;transform:translate(-50%,-50%);pointer-events:auto}
-body.playground .text-overlay{
-  position:absolute;z-index:4; /* above tags */
-  inset:auto 0 6rem 0;max-width:60ch;margin:0 2.5rem;padding:1rem 1.25rem;
-  color:#fff;background:rgba(0,0,0,.4);backdrop-filter:blur(6px);
-  pointer-events:none;outline:2px solid magenta; /* TEMP so you can see it */
-}
-body.playground .text-overlay .caption-inner{pointer-events:auto}
-body.playground .text-overlay.left{left:2.5rem;right:auto}
-body.playground .text-overlay.right{right:2.5rem;left:auto}
-</style>
-
-
   <head>
+    {% seo %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <meta name="theme-color" content="#0a0a0a" />
 
-    {% include meta-head.html %} {% include head-links.html %} {% if
-    jekyll.environment == "production" and site.google_analytics %} {% include
-    google-analytics.html %} {% endif %} {% include jsonld-website.html %} {%
-    include jsonld-playground-collection.html %}
+    {% include meta-head.html %}
+    {% include head-links.html %}
+    {% if jekyll.environment == "production" and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+    {% include jsonld-website.html %}
+    {% include jsonld-playground-collection.html %}
   </head>
 
   <body class="playground">
     {% include components/nav.html %}
+{% include components/feature-grid.html %}
 
     <main class="rail" id="rail" tabindex="0" aria-label="Playground carousel">
-      {% assign slides = site.playground | sort:'path' %} {% for s in slides %}
+      {% assign slides = site.playground | sort:'path' %}
 
-      <section
-        id="slide-{{ forloop.index }}"
-        class="slide"
-        data-fit="{{ s.fit | default:'cover' }}"
-        data-pos="{{ s.pos | default:'center-bottom' }}"
-        data-focus="{{ s.focus | default:'graphic' }}"
-        style="--zoom: {{ s.zoom | default: 1 }}"
-        aria-roledescription="slide"
-        aria-label="{{ s.title | escape }}"
-      >
-        <div class="frame">
-          <img
-            class="media"
-            src="{{ s.img }}"
-            alt="{{ s.title | escape }}"
-            loading="lazy"
-            width="{{ s.width | default: '' }}"
-            height="{{ s.height | default: '' }}"
-            style="object-fit: {{ s.fit | default:'cover' }}; object-position: {{ s.pos | default:'center bottom' }};"
-          />
-          {% if s.tags %}
-          <div class="tags">
-            {% for t in s.tags %}
-            <a
-              class="tag"
-              data-x="{{ t.x | divided_by: 100.0 }}"
-              data-y="{{ t.y | divided_by: 100.0 }}"
-              href="{{ t.href }}"
-              target="_blank"
-              rel="noopener"
-              aria-label="{{ t.label | default:'View item' }}"
-            >
-              <span class="tag-tooltip">{{ t.label | default:'View' }}</span>
-            </a>
-            {% endfor %}
+      {% for s in slides %}
+        {% assign hero = s.image | default: s.img %}
+
+        <section
+          id="slide-{{ forloop.index }}"
+          class="slide"
+          data-fit="{{ s.fit | default:'cover' }}"
+          data-pos="{{ s.pos | default:'center-bottom' }}"
+          data-focus="{{ s.focus | default:'graphic' }}"
+          style="--zoom: {{ s.zoom | default: 1 }}"
+          aria-roledescription="slide"
+          aria-label="{{ s.title | escape }}"
+        >
+          <div class="frame">
+            {% if hero %}
+              <img
+                class="media"
+                src="{{ hero | relative_url }}"
+                alt="{{ s.title | escape }}"
+                loading="lazy"
+                {% if s.width %}width="{{ s.width }}"{% endif %}
+                {% if s.height %}height="{{ s.height }}"{% endif %}
+                style="object-fit: {{ s.fit | default:'cover' }}; object-position: {{ s.pos | default:'center bottom' }};"
+              />
+            {% endif %}
+
+            {% if s.tags %}
+              <div class="tags">
+                {% for t in s.tags %}
+                  {% assign cat = t.category | default:'info' %}
+                  <a class="tag tag--{{ cat }}"
+                     style="left: {{ t.x }}%; top: {{ t.y }}%;{% if t.icon %} --icon: url('{{ t.icon | relative_url }}');{% endif %}"
+                     href="{{ t.href | default:'#' }}"
+                     data-category="{{ cat }}"
+                     {% if t.ref %}data-ref="{{ t.ref }}"{% endif %}
+                     {% if t.cover %}data-cover="{{ t.cover | relative_url }}"{% endif %}
+                     role="button" aria-label="{{ t.label | default:'View' }}">
+                    <span class="tag__icon" aria-hidden="true"></span>
+                    {% if t.label %}<span class="tag__tooltip">{{ t.label }}</span>{% endif %}
+                  </a>
+                {% endfor %}
+              </div>
+            {% endif %}
           </div>
+
+          {% assign text_style = s.text_style | default:'overlay' %}
+          {% if text_style == 'overlay' %}
+            <div class="text-overlay {{ s.text_pos | default:'left' }}">
+              <div class="caption-inner">
+                {% if s.lines %}
+                  <div class="mta-lines" aria-label="Subway lines">
+                    {% for L in s.lines %}
+                      <span class="mta-bullet line-{{ L | downcase }}">{{ L }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+                {% if s.eyebrow %}<div class="eyebrow">{{ s.eyebrow }}</div>{% endif %}
+                <h2 class="title">{{ s.title }}</h2>
+
+                {% if s.playlist_ref %}
+                  <button class="panel-play"
+                          data-playlist-ref="{{ s.playlist_ref }}"
+                          aria-label="Play this capsule">▶</button>
+                {% endif %}
+
+                {% if s.body %}<p class="body">{{ s.body }}</p>{% endif %}
+
+                {% if s.cta %}
+                  <div class="cta-row">
+                    {% for c in s.cta %}
+                      <a class="cta" href="{{ c.href }}" target="_blank" rel="noopener">
+                        <small>{{ c.label }}</small> {{ c.text }}
+                      </a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
           {% endif %}
-        </div>
-{% assign text_style = s.text_style | default: 'overlay' %}
-
-{% if text_style == 'overlay' %}
-  <div class="text-overlay {{ s.text_pos | default:'left' }}">
-    <div class="caption-inner">
-      {% if s.eyebrow %}
-        <div class="eyebrow">{{ s.eyebrow }}</div>
-      {% endif %}
-      <h2 class="title">{{ s.title }}</h2>
-      {% if s.body %}
-        <p class="body">{{ s.body }}</p>
-      {% endif %}
-      {% if s.cta %}
-        <div class="cta-row">
-          {% for c in s.cta %}
-            <a class="cta" href="{{ c.href }}" target="_blank" rel="noopener">
-              <small>{{ c.label }}</small> {{ c.text }}
-            </a>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-
-{% elsif text_style == 'below' %}
-  <!-- your caption-below block here -->
-
-{% else %}
-  <!-- your cap block here -->
-{% endif %}
-
-
-
-
-      </section>
+        </section>
       {% endfor %}
     </main>
-
 
     <div class="counter" id="counter">
       <span class="pill">1 / {{ slides | size }}</span>
     </div>
     <div class="nav" id="dots" role="tablist" aria-controls="rail"></div>
 
+    <div class="edge left" id="edge-left"><button aria-label="Previous">‹</button></div>
+    <div class="edge right" id="edge-right"><button aria-label="Next">›</button></div>
 
+    {% include nowbar.html %}
 
-    <div class="edge left" id="edge-left">
-      <button aria-label="Previous">‹</button>
-    </div>
-    <div class="edge right" id="edge-right">
-      <button aria-label="Next">›</button>
-    </div>
-
-    <!-- Order matters: tags → player → carousel → edit -->
+    <!-- pins and slides first -->
     <script src="/assets/js/playground-tags.js" defer></script>
-    <script src="/assets/js/player-playground.js" defer></script>
     <script src="/assets/js/carousel-playground.js" defer></script>
+    <script src="/assets/js/station-chamber.js" defer></script>
     <script src="/assets/js/playground-edit.js" defer></script>
 
-    <button id="ppBtnFloating" class="pp-fab">▶</button>
-    <audio id="audio"></audio>
-    <script src="/assets/js/player-fab.js" defer></script>
+    <!-- unified player stack -->
+    <script src="/assets/js/master-playlist.js"></script>         <!-- defines SRC -->
+    <script src="/assets/js/player-unified.js" defer></script>    <!-- binds <audio> + nowbar -->
+    <script src="/assets/js/tags-controller.js" defer></script>   <!-- ⭐/👕/ℹ️ behaviour -->
 
+    <audio id="audio"></audio>
+
+    <div class="nowbar">
+      <button id="npPrev" class="np-btn">⏮</button>
+      <div class="np-meta">
+        <div id="npPlaylist" class="np-playlist">—</div>
+        <div id="npTrack" class="np-track">Nothing queued</div>
+      </div>
+      <button id="npNext" class="np-btn">⏭</button>
+    </div>
+
+    <!-- Right music drawer -->
+    <div id="npQueue" class="np-queue" hidden>
+      <header><strong id="npQueueTitle">Queue</strong><button id="npQueueClose">×</button></header>
+      <ul id="npQueueList"></ul>
+    </div>
+
+    <!-- Left context drawer -->
+    <div id="ctxPanel" class="ctx-panel" hidden>
+      <header class="ctx-head">
+        <strong id="ctxTitle">Station</strong>
+        <button id="ctxClose">×</button>
+      </header>
+      <div class="ctx-body" id="ctxBody"></div>
+    </div>
   </body>
 </html>

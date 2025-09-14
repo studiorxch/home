@@ -1,0 +1,22 @@
+<audio id="audio"></audio>
+
+<div class="nowbar" id="nowbar">
+  <button id="npPrev" class="np-btn" aria-label="Previous">⏮</button>
+  <div class="np-meta">
+    <div id="npPlaylist" class="np-playlist">—</div>
+    <div id="npTrack" class="np-track">Nothing queued</div>
+  </div>
+  <button id="npNext" class="np-btn" aria-label="Next">⏭</button>
+  <button id="npToggle" class="np-btn" aria-label="Play/Pause">⏯</button>
+  <div class="np-time"><span id="npCur">0:00</span> / <span id="npDur">0:00</span></div>
+  <input id="npSeek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek">
+</div>
+
+<!-- Right music drawer -->
+<div id="npQueue" class="np-queue" hidden>
+  <header>
+    <strong id="npQueueTitle">Queue</strong>
+    <button id="npQueueClose" aria-label="Close queue">×</button>
+  </header>
+  <ul id="npQueueList"></ul>
+</div>

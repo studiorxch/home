@@ -20,6 +20,7 @@
 
 # Site settings
 # site_title: "StudioRich | Lo-Fi Experiences"
+title: "StudioRich"
 email: "hello@studiorich.shop"
 description: "StudioRich (Studio Rich) blends lo-fi music, urban visuals, and collectible NFT drops. Discover the upcoming StudioRich Player — a desktop portal for rhythm and story."
 baseurl: ""
@@ -27,13 +28,6 @@ url: "https://studiorich.shop"
 twitter_username: "studiorxch"
 github_username: "studiorxch"
 repository: studiorxch/home
-
-blog_subtitles:
-  - "Sound + Visual Culture in Loops"
-  - "Where Lo-Fi Lives, Breathes, and Crosses Formats"
-  - "Archives of Lo-Fi Memory, Weird Internet, and Beat Culture"
-  - "Filed Under: Loops, Pixels, and Subcultures"
-  - "Lo-Fi Soundscapes and Visual Beat Loop Aesthetics"
 
 collections:
   desktop:
@@ -107,6 +101,13 @@ exclude:
   - vendor/
   - _site/
   - events.timeline.json
+    - .history/
+  - ".history"
+  - ".history/*"
+  - .DS_Store
+  - node_modules
+  - README.md
+  - package-lock.json
 
 # Add custom settings as needed
 favicon: "/assets/img/logo/favicon.ico" # Make sure to upload your favicon if you want one

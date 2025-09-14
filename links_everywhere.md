@@ -41,6 +41,8 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/img/logos/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
   <li><a href="https://www.facebook.com/StudioRichNYC/" target="_blank"><img src="/assets/img/logos/facebook.svg" alt="Facebook"><span>Facebook</span></a></li>
   <li><a href="https://www.snapchat.com/add/studiorich" target="_blank"><img src="/assets/img/logos/snapchat.svg" alt="Snapchat"><span>Snapchat</span></a></li>
+    <li><a href="https://www.tumblr.com/studiorich" target="_blank"><img src="/assets/img/logos/tumblr.svg" alt="Twitch"><span>Tumblr</span></a></li>
+
   <li><a href="https://www.twitch.tv/studiorich" target="_blank"><img src="/assets/img/logos/twitch.svg" alt="Twitch"><span>Twitch</span></a></li>
   <li><a href="https://www.youtube.com/@Studio-Rich" target="_blank"><img src="/assets/img/logos/youtube.svg" alt="YouTube"><span>YouTube</span></a></li>
 </ul>
@@ -59,7 +61,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 
 <h3><img src="/assets/ui/record.svg" alt="Record icon" class="icon-sm"> More Platforms</h3>
 <p style="text-align:center; font-size: 0.65rem; opacity: 0.6; margin-top: 0.5rem;">(May Require App or Regional Access)</p>
-<ul class="link-list">
+<ul class="link-list no-bullets">
   <li><a href="https://www.boomplay.com/artists/103729360" target="_blank"><img src="/assets/img/logos/boomplay.svg" alt="Boomplay"><span>Boomplay <em>(Africa / App Required)</em></span></a></li>
   <li><a href="https://www.qobuz.com/us-en/interpreter/studiorich/25018851" target="_blank"><img src="/assets/img/logos/qobuz.svg" alt="Qobuz"><span>Qobuz <em>(Europe / Hi-Fi)</em></span></a></li>
 
@@ -73,5 +75,3 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 
   </section>
 
-  <iframe allow="autoplay" width="100%" height="300" src="https://www.iheart.com/artist/studiorich-45140302/?embed=true"
-    frameborder="0"></iframe>

@@ -28,6 +28,12 @@ image: /assets/img/covers/live-stream.webp
 
 <button id="toggleChat">🗨️ Hide Chat</button>
 
+{% include components/youtube-carousel.html video_urls="
+https://www.youtube.com/embed/3_U9pLLI6Tk?si=BYnfC3PxRpDiQJ_r,
+https://www.youtube.com/embed/u5tCaLsFW-M?si=WmKxX14EHcumI1Tf,
+https://www.youtube.com/embed/d_ERqZwROAk?si=94CKxDrn897Bssoi,
+https://www.youtube.com/embed/vKIr3HJiAVo?si=tA7LJDEHNItI64PV
+" %}
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggleBtn = document.getElementById('toggleChat');

@@ -88,6 +88,27 @@
             window.PlaygroundTags?.update();
             wireSlide(slide); // rebind for the new node
         }, { passive: true });
+
+        // in pointerdown for the pin
+        pin.addEventListener('pointerdown', (e) => {
+            if (!document.documentElement.classList.contains('edit-mode')) return;
+            e.preventDefault();
+            e.stopPropagation();
+            pin.setPointerCapture(e.pointerId);
+            pin.dataset.__drag = '1';
+            document.body.dataset.editDragging = '1';   // <-- flag
+            pin.classList.add('is-dragging');           // optional, for z-index
+        });
+
+        // in pointerup / pointercancel
+        pin.addEventListener('pointerup', () => {
+            if (!pin.dataset.__drag) return;
+            delete pin.dataset.__drag;
+            delete document.body.dataset.editDragging;  // <-- clear flag
+            pin.classList.remove('is-dragging');
+            window.PlaygroundTags?.update();
+        });
+
     }
 
     // Export YAML ready for front-matter
