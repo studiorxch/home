@@ -3,7 +3,8 @@ layout: default
 title: About StudioRich
 permalink: /about/
 description: "Learn the story behind StudioRich - a lo-fi audio collective blending sound therapy and visual storytelling."
-image: /assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp
+image_previous: /assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp
+image: /assets/img/hero/studio-rich-homepage-hero.webp
 redirect_from:
   - /pages/about-us
   - /origin
@@ -29,7 +30,8 @@ redirect_from:
 <p>Whether through animated cover loops, character-driven story arcs, or custom-coded engines that turn music curation into something tactile and strange, every release invites listeners into a world that feels handmade, human, and a little unruly.</p>
 
 <hr>
-<p><a href="/presskit/" class="cta-button">Press & Project Kit</a> <a href="/motion/" class="cta-button">Motion Gallery</a>
+<p><a href="/presskit/" class="cta-button">Press & Project Kit</a> <br>
+<a href="https://tiktok.com/@studio.rich" class="cta-button" target="new">Motion Gallery</a>
 </p>
 
   <h3><img src="/assets/ui/link.svg" alt="Link" class="icon-sm"> Contact & Links</h3>
