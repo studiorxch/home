@@ -4,19 +4,22 @@
 @import "variables";
 @import "base";
 @import "nav";
-@import "footer";
+
+/* Page modules */
+@import "playground";   /* rail, slides, feature grid */
 @import "library";
-@import "playground";
-@import "shop";
 @import "tracks";
 @import "waveform";
-@import "mobile";
+@import "shop";
+
+/* Player last so it wins overlaps */
+@import "player";
 
 /* RXCH */
 @import "rxch/genie";
 @import "rxch/orb";
 @import "rxch/cards";
 
-/* shim for legacy imports */
-@import "rxch/genie";
-@import "library";
+/* Footer & mobile last */
+@import "footer";
+@import "mobile";

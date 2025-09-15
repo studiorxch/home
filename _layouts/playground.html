@@ -124,35 +124,55 @@
     <script src="/assets/js/station-chamber.js" defer></script>
     <script src="/assets/js/playground-edit.js" defer></script>
 
+        {% include player-src.html %}
+
     <!-- unified player stack -->
     <script src="/assets/js/master-playlist.js"></script>         <!-- defines SRC -->
-    <script src="/assets/js/player-unified.js" defer></script>    <!-- binds <audio> + nowbar -->
+    <script src="/assets/js/player-unified.js" defer></script>
     <script src="/assets/js/tags-controller.js" defer></script>   <!-- ⭐/👕/ℹ️ behaviour -->
 
-    <audio id="audio"></audio>
+   <audio id="audio" preload="metadata"></audio>
 
-    <div class="nowbar">
-      <button id="npPrev" class="np-btn">⏮</button>
-      <div class="np-meta">
-        <div id="npPlaylist" class="np-playlist">—</div>
-        <div id="npTrack" class="np-track">Nothing queued</div>
-      </div>
-      <button id="npNext" class="np-btn">⏭</button>
-    </div>
+   <div class="nowbar">
+  <button id="npPrev" class="np-btn" aria-label="Previous" disabled>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M7 12L20 4v16L7 12zM4 4h2v16H4z" fill="currentColor"/>
+    </svg>
+  </button>
 
-    <!-- Right music drawer -->
-    <div id="npQueue" class="np-queue" hidden>
-      <header><strong id="npQueueTitle">Queue</strong><button id="npQueueClose">×</button></header>
-      <ul id="npQueueList"></ul>
-    </div>
+  <button id="npPlay" class="np-btn" aria-label="Play/Pause">
+    <svg id="iconPlay" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M8 5v14l11-7-11-7z" fill="currentColor"/>
+    </svg>
+  </button>
 
-    <!-- Left context drawer -->
-    <div id="ctxPanel" class="ctx-panel" hidden>
-      <header class="ctx-head">
-        <strong id="ctxTitle">Station</strong>
-        <button id="ctxClose">×</button>
-      </header>
-      <div class="ctx-body" id="ctxBody"></div>
+  <div class="np-meta">
+    <div id="npPlaylist" class="np-playlist">Playlist • —</div>
+    <div id="npTrack" class="np-track">Nothing queued</div>
+  </div>
+
+  <button id="npNext" class="np-btn" aria-label="Next" disabled>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M17 12L4 4v16l13-8zM18 4h2v16h-2z" fill="currentColor"/>
+    </svg>
+  </button>
+</div>
+
+
+<!-- If your include already sets window.SRC, keep it.
+     If not, you can inline a tiny default list here. -->
+<script>
+  window.SRC = window.SRC || [
+    // swap these for real tracks that exist on PRODUCTION
+    { title: "Echoes Under the Arches", artist: "StudioRich", url: "/assets/audio/playtracks/echoes-under-the-arches.mp3" },
+    { title: "Straight to Canvas", artist: "StudioRich", url: "/assets/audio/playtracks/straight-to-canvas.mp3" },
+    { title: "T-Shirt in Transit", artist: "StudioRich", url: "/assets/audio/playtracks/t-shirt-in-transit.mp3" }
+  ];
+</script>
+<script src="/assets/js/player-lite.js" defer></script>
+
+
+
     </div>
   </body>
 </html>

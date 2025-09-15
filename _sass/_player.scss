@@ -1,0 +1,88 @@
+/* ================================
+   StudioRich — Player (Nowbar + Drawers)
+   ================================ */
+
+:root{ --nowbar-h:52px; }
+
+/* Reserve footer space on playground */
+body.playground{ padding-bottom:var(--nowbar-h); }
+
+/* Nowbar */
+.nowbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:60;
+  display:grid; grid-template-columns:max-content max-content 1fr max-content; /* ◀ ⏯ [meta] ▶ */
+  gap:.75rem; align-items:center;
+  padding:.5rem .75rem; height:var(--nowbar-h);
+  background:rgba(10,10,10,.82); border-top:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(8px);
+}
+.nowbar *{ max-width:100%; }
+
+.np-btn{
+  inline-size:36px; aspect-ratio:1/1; display:grid; place-items:center; cursor:pointer;
+  border-radius:999px;
+  background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18);
+  color:#fff;
+}
+#npPlay{ font-weight:700; }
+
+.np-meta{ min-width:0; white-space:nowrap; overflow:hidden; cursor:pointer; }
+.np-playlist{ opacity:.85; }
+.np-track{ font-weight:600; text-overflow:ellipsis; overflow:hidden; }
+
+/* Queue drawer (right) */
+.np-queue{
+  position:fixed; right:.9rem; bottom:calc(var(--nowbar-h) + .9rem); z-index:65;
+  width:min(460px, 92vw); max-height:60vh; overflow:auto;
+  background:rgba(12,12,12,.95); color:#fff; border:1px solid rgba(255,255,255,.14);
+  border-radius:.75rem; box-shadow:0 12px 28px rgba(0,0,0,.45); padding:.5rem;
+}
+.np-queue[hidden]{ display:none; }
+.np-queue header{ display:flex; align-items:center; justify-content:space-between; padding:.25rem .25rem .5rem; }
+#npQueueList{ list-style:none; margin:0; padding:0; }
+#npQueueList li{ display:flex; align-items:center; gap:.5rem; padding:.4rem .5rem; border-radius:.5rem; }
+#npQueueList li.is-active{ background:rgba(255,255,255,.08); }
+#npQueueList button{ all:unset; cursor:pointer; flex:1 1 auto; }
+
+/* Context panel (left) */
+.ctx-panel{
+  position:fixed; left:.9rem; bottom:calc(var(--nowbar-h) + .9rem); z-index:65;
+  width:min(500px, 92vw); max-height:60vh; overflow:auto;
+  background:rgba(12,12,12,.95); color:#fff; border:1px solid rgba(255,255,255,.14);
+  border-radius:.75rem; box-shadow:0 12px 28px rgba(0,0,0,.45); padding:.5rem;
+}
+.ctx-panel[hidden]{ display:none; }
+.ctx-head{ display:flex; align-items:center; gap:.5rem; justify-content:space-between; padding:.25rem .25rem .5rem; }
+.ctx-body{ padding:.25rem; }
+
+/* Toast */
+.sr-toast{
+  position:fixed; left:50%; bottom:calc(var(--nowbar-h) + 20px); transform:translateX(-50%);
+  background:rgba(0,0,0,.85); color:#fff; padding:.5rem .75rem;
+  border-radius:.5rem; border:1px solid rgba(255,255,255,.15); z-index:90; font-size:.9rem;
+}
+
+/* Small-screen tweaks */
+@media (max-width:700px){
+  .np-btn{ inline-size:34px; }
+  .nowbar{ padding:.45rem .6rem; font-size:.82rem; }
+  .ctx-panel, .np-queue{ max-height:66vh; }
+}
+
+
+.nowbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:9999;
+  display:grid; grid-template-columns: auto auto 1fr auto;
+  gap:.5rem; align-items:center; padding:.5rem .75rem;
+  background:rgba(0,0,0,.82); color:#fff;
+  border-top:1px solid rgba(255,255,255,.12); backdrop-filter:blur(8px);
+  font: 500 14px/1.2 Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+.np-btn{
+  inline-size:36px; aspect-ratio:1/1; display:grid; place-items:center;
+  border-radius:999px; background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18); color:#fff; cursor:pointer;
+}
+.np-meta{ min-width:0; white-space:nowrap; overflow:hidden; }
+.np-track{ font-weight:600; text-overflow:ellipsis; overflow:hidden; }
+body{ padding-bottom:56px; } /* keep content above bar */
