@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Origins
+title: About StudioRic
 permalink: /about/
 description: "Learn the story behind StudioRich - a lo-fi audio collective blending sound therapy and visual storytelling."
 image: /assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp

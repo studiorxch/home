@@ -1,16 +1,17 @@
 ---
 ---
 
+// SCSS imports only — no HTML or Liquid here
 @import "variables";
 @import "base";
 @import "nav";
 
 /* Page modules */
-@import "playground";   /* rail, slides, feature grid */
+@import "playground";
 @import "library";
 @import "tracks";
 @import "waveform";
-@import "shop";
+@import "blog";   // <-- keep this
 
 /* Player last so it wins overlaps */
 @import "player";

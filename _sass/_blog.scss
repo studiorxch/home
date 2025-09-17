@@ -98,14 +98,16 @@
   padding: 0;
 }
 
-.blog-card {
+.blog-card { 
+  display: block;           /* <- add this */
   position: relative;
-  aspect-ratio: 4 / 5; /* Portrait shape */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: #000;
   color: #fff;
   text-decoration: none;
 }
+
 
 .blog-card:hover {
   transform: translateY(-2px);
