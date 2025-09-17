@@ -1,0 +1,38 @@
+{%- comment -%}
+Feature Dock (right-side “notices”)
+Params:
+  - count:    how many items from site.data.featured (default: all)
+  - cols:     number of columns on desktop (default: 2)
+  - size:     square tile size in px (default: 96)
+  - show_blog:true/false to append latest post as a wide tile
+{%- endcomment -%}
+
+{%- assign items = site.data.featured | default: empty -%}
+{%- assign n     = include.count | default: items.size -%}
+{%- assign cols  = include.cols  | default: 2 -%}
+{%- assign size  = include.size  | default: 96 -%}
+
+<aside class="feature-dock"
+       aria-label="{{ include.aria_label | default: 'Highlights' }}"
+       style="--dock-cols: {{ cols }}; --notice-size: {{ size }}px;">
+  {%- for f in items limit:n -%}
+    <a class="notice-card"
+       href="{{ f.href | relative_url }}"
+       aria-label="{{ f.title | escape }}"
+       style="--bg: url('{{ f.image | relative_url }}');">
+      {%- if f.eyebrow %}<span class="notice-eyebrow">{{ f.eyebrow }}</span>{% endif -%}
+      {%- if f.title   %}<span class="notice-title">{{ f.title }}</span>{% endif -%}
+    </a>
+  {%- endfor -%}
+
+  {%- if include.show_blog and site.posts.size > 0 -%}
+    {%- assign recent = site.posts | first -%}
+    <a class="notice-card notice-card--blog"
+       href="{{ recent.url | relative_url }}"
+       aria-label="{{ recent.title | escape }}"
+       style="--bg: url('{{ recent.image | default: "/assets/img/hero/studio-rich-homepage-hero.webp" | relative_url }}'); grid-column: 1 / -1;">
+      <span class="notice-eyebrow">Filed under: Late Night Reads</span>
+      <span class="notice-title">{{ recent.title }}</span>
+    </a>
+  {%- endif -%}
+</aside>

@@ -1,19 +1,17 @@
 
 // includes/player-src.html
 
+{% comment %} Build queue from full-length playtracks {% endcomment %}
 <script>
 window.SRC = [
-{% assign picks = site.data.library
-  | where: "has_loop", true
-  | where: "has_cover", true
-  | slice: 0, 20 %}  {# increase 12 → 20 (or whatever) #}
-{% for t in picks %}
+{% assign tracks = site.data.playtracks | slice: 0, 20 %}
+{% for t in tracks %}
   {
     id: {{ t.slug | jsonify }},
     title: {{ t.title | jsonify }},
     artist: {{ t.artist | default: "StudioRich" | jsonify }},
-    url: {{ ("assets/audio/playtracks/" | append: t.slug | append: ".mp3") | relative_url | jsonify }},
-    cover: {{ ("/assets/img/covers/" | append: t.slug | append: ".webp") | relative_url | jsonify }}
+    url: {{ t.url | relative_url | jsonify }},
+    cover: {{ (t.cover | default: "/assets/img/covers/default.webp") | relative_url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ];

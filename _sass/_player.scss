@@ -86,3 +86,27 @@ body.playground{ padding-bottom:var(--nowbar-h); }
 .np-meta{ min-width:0; white-space:nowrap; overflow:hidden; }
 .np-track{ font-weight:600; text-overflow:ellipsis; overflow:hidden; }
 body{ padding-bottom:56px; } /* keep content above bar */
+#npLoop[data-active="true"] {
+  box-shadow: 0 0 0 2px rgba(255,255,255,.28) inset;
+}
+
+
+/* Feature slide layout */
+.slide--features .feature-wrap{
+  position: absolute;
+  left: 0; right: 0;
+  bottom: calc(var(--nowbar-h) + 1rem);
+  padding: 0 clamp(1rem, 4vw, 2rem);
+  z-index: 4;                 /* over the image, under pins/counter if needed */
+}
+
+.slide--features .feature-grid{
+  /* your existing .feature-grid styles already handle layout */
+}
+
+/* (Optional) slightly dim the bg under the grid for legibility */
+.slide--features .frame::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.55) 65%, rgba(0,0,0,.75));
+}

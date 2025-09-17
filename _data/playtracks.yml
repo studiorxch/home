@@ -1,0 +1,17 @@
+- slug: echoes-under-the-arches
+  title: "Echoes Under the Arches"
+  artist: "StudioRich"
+  url: "/assets/audio/playtracks/echoes-under-the-arches.mp3"
+  cover: "/assets/img/covers/echoes-under-the-arches.webp"
+
+- slug: straight-to-canvas
+  title: "Straight to Canvas"
+  artist: "StudioRich"
+  url: "/assets/audio/playtracks/straight-to-canvas.mp3"
+  cover: "/assets/img/covers/straight-to-canvas.webp"
+
+- slug: t-shirt-in-transit
+  title: "T-Shirt in Transit"
+  artist: "StudioRich"
+  url: "/assets/audio/playtracks/t-shirt-in-transit.mp3"
+  cover: "/assets/img/covers/t-shirt-in-transit.webp"

@@ -19,10 +19,31 @@
 
   <body class="playground">
     {% include components/nav.html %}
-{% include components/feature-grid.html %}
 
     <main class="rail" id="rail" tabindex="0" aria-label="Playground carousel">
       {% assign slides = site.playground | sort:'path' %}
+
+
+      <section id="slide-0"
+         class="slide slide--features"
+         data-focus="graphic"
+         aria-roledescription="slide"
+         aria-label="Featured">
+          <div class="frame">
+            <img class="media"
+                src="/assets/img/hero/studio-rich-homepage-hero.webp"
+                alt="Featured"
+                loading="lazy"
+                style="object-fit: cover; object-position: center;" />
+          </div>
+
+        {% comment %} Right-side notice tiles {% endcomment %}
+{% include components/feature-dock.html count=12 cols=1 size=0 show_blog=true %}
+
+      </section>
+
+
+
 
       {% for s in slides %}
         {% assign hero = s.image | default: s.img %}
@@ -124,14 +145,29 @@
     <script src="/assets/js/station-chamber.js" defer></script>
     <script src="/assets/js/playground-edit.js" defer></script>
 
-        {% include player-src.html %}
+    {% include player-src.html %}
+    <script>console.log("SRC tracks:", Array.isArray(window.SRC) ? window.SRC.length : "none");</script>
+
+    <script src="/assets/js/player-lite.js" defer></script>
+    <script>
+      if (!Array.isArray(window.SRC) || window.SRC.length === 0) {
+        window.SRC = [
+          { title: "Echoes Under the Arches", artist: "StudioRich", url: "/assets/audio/playtracks/echoes-under-the-arches.mp3" },
+          { title: "Straight to Canvas",      artist: "StudioRich", url: "/assets/audio/playtracks/straight-to-canvas.mp3" },
+          { title: "T-Shirt in Transit",      artist: "StudioRich", url: "/assets/audio/playtracks/t-shirt-in-transit.mp3" }
+        ];
+      }
+    </script>
+
 
     <!-- unified player stack -->
-    <script src="/assets/js/master-playlist.js"></script>         <!-- defines SRC -->
-    <script src="/assets/js/player-unified.js" defer></script>
+    <!-- <script src="/assets/js/master-playlist.js"></script> -->
+    <!-- <script src="/assets/js/player-unified.js" defer></script> -->
+
     <script src="/assets/js/tags-controller.js" defer></script>   <!-- ⭐/👕/ℹ️ behaviour -->
 
-   <audio id="audio" preload="metadata"></audio>
+  <audio id="audio" preload="metadata" loop></audio>
+
 
    <div class="nowbar">
   <button id="npPrev" class="np-btn" aria-label="Previous" disabled>
@@ -158,18 +194,6 @@
   </button>
 </div>
 
-
-<!-- If your include already sets window.SRC, keep it.
-     If not, you can inline a tiny default list here. -->
-<script>
-  window.SRC = window.SRC || [
-    // swap these for real tracks that exist on PRODUCTION
-    { title: "Echoes Under the Arches", artist: "StudioRich", url: "/assets/audio/playtracks/echoes-under-the-arches.mp3" },
-    { title: "Straight to Canvas", artist: "StudioRich", url: "/assets/audio/playtracks/straight-to-canvas.mp3" },
-    { title: "T-Shirt in Transit", artist: "StudioRich", url: "/assets/audio/playtracks/t-shirt-in-transit.mp3" }
-  ];
-</script>
-<script src="/assets/js/player-lite.js" defer></script>
 
 
 

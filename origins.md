@@ -1,10 +1,9 @@
 ---
 layout: default
-title: About StudioRich
+title: Origins
 permalink: /about/
 description: "Learn the story behind StudioRich - a lo-fi audio collective blending sound therapy and visual storytelling."
-image_previous: /assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp
-image: /assets/img/hero/studio-rich-homepage-hero.webp
+image: /assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp
 redirect_from:
   - /pages/about-us
   - /origin
@@ -13,7 +12,7 @@ redirect_from:
   - /blogs/news/soft-served-dreams-pre-release-now-available
 ---
 
-{% include components/hero.html image="/assets/img/hero/origin-mascot-rx0-crazy-bad-hey-hero.webp" title="Origin" subitle="--needs fixing--"%}
+
 
 <p class="image-caption">Our mascot in Whiteout RX-0 Mode — a lo-fi signal runner moving between memory and motion.</p>
 
