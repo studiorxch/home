@@ -8,9 +8,6 @@ redirect_from:
   - /pages/links
 ---
 
-{% include components/hero.html
-image="/assets/img/hero/graffiti-mascot-wing-chun-ink-hero.webp"
-title="Links" %}
 
 <div class="container">
 
@@ -47,16 +44,16 @@ title="Links" %}
           <span>Spotify</span>
         </a>
       </li>
-    </ul>
-  </section>
-
-  <ul class="link-list no-bullets">
       <li>
         <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
           <img src="/assets/img/logos/youtube.svg" alt="YouTube">
           <span>YouTube</span>
         </a>
       </li>
+          </ul>
+  </section>
+
+
 
   <!-- Embeds -->
   <iframe width="100%" height="315"

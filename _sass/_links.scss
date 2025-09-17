@@ -1,0 +1,45 @@
+/* Links Everywhere page */
+.link-hub { max-width: 900px; margin: 4rem auto; padding: 0 1rem; }
+
+.link-hub h3 { margin: 2rem 0 0.75rem; display:flex; align-items:center; gap:.5rem; }
+.link-hub h3 .icon-sm { width:20px; height:20px; vertical-align:middle; }
+
+.link-list { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  gap: 10px 14px; 
+  margin: 0; padding: 0; 
+}
+.link-list.no-bullets { list-style: none; }
+
+.link-list li { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  padding: 10px 12px; 
+  background:#0f0f0f; 
+  border-radius: 10px; 
+}
+
+.link-list li a { 
+  display:flex; 
+  align-items:center; 
+  gap:10px; 
+  color:#fff; 
+  text-decoration:none; 
+}
+
+/* 🔒 stop SVG/logo explosions */
+.link-list li img {
+  width: 28px;            /* control the icon size */
+  height: 28px;           /* force a box so odd SVGs don’t stretch */
+  max-width: none;        /* override global img { max-width:100% } */
+  flex: 0 0 28px;         /* don’t grow */
+  display: inline-block;  /* avoid global display:block; rules */
+  object-fit: contain;
+}
+
+/* optional: slightly larger for “Global Platforms” row */
+.link-hub .link-list.global li img { width: 32px; height: 32px; flex-basis: 32px; }
+
+.link-list li span { line-height:1.2; font-weight:600; }

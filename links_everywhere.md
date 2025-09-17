@@ -6,11 +6,6 @@ permalink: /links-everywhere/
 image: /assets/img/hero/scratch-graffiti-black-hero.webp
 ---
 
-{% include components/hero.html
-  image=page.image
-  title="Find StudioRich Everywhere"
-  subtitle="A full directory of platforms where our music lives—regional, global, niche, and next-gen."
-%}
 
   <section class="link-hub">
 <h2>Connect with StudioRich</h2>
