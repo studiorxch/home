@@ -16,7 +16,7 @@ bundle exec jekyll serve --drafts --future
 # ALL
 
 git add .
-git commit -m "playground update"
+git commit -m "origins update"
 git push origin main
 
 ---
@@ -32,8 +32,8 @@ git push -u origin main
 # Music Track Only
 
 ```
-git add _tracks/ assets/loops assets/img/covers _data/library.yml
-git commit -m "New track: add md, loop, cover, library update"
+git add _playground/
+git commit -m "Playground update"
 git push origin main
 
 ```

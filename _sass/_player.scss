@@ -1,6 +1,8 @@
 /* ================================
    StudioRich — Player (Nowbar + Drawers)
    ================================ */
+/* kill legacy nowbar anywhere it still sneaks in */
+.nowbar{ display:none !important; }
 
 :root{ --nowbar-h:52px; }
 
@@ -110,3 +112,92 @@ body{ padding-bottom:56px; } /* keep content above bar */
   position:absolute; inset:0;
   background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.55) 65%, rgba(0,0,0,.75));
 }
+
+
+#npLoop[data-active="true"] { box-shadow: 0 0 0 2px #fccc0a inset; }
+
+
+/* Floating Player Pill */
+.player-pill{
+  position: fixed;
+  left: clamp(12px, 2vw, 20px);
+  bottom: clamp(12px, 2vh, 20px);
+  z-index: 80;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .7rem;
+  border-radius: 999px;
+  background: rgba(10,10,10,.82);
+  border: 1px solid rgba(255,255,255,.14);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  backdrop-filter: blur(8px);
+}
+
+.pill-btn{
+  inline-size: 36px; aspect-ratio: 1/1;
+  display: grid; place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.pill-meta{
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.05;
+}
+.pill-list{ opacity: .85; font-size: .85rem; }
+.pill-track{ font-weight: 600; text-overflow: ellipsis; overflow: hidden; max-width: 42vw; }
+
+@media (max-width: 700px){
+  .pill-track{ max-width: 58vw; }
+}
+
+/* simple loop “active” state */
+#npLoop[data-active="true"]{
+  background: rgba(0,200,120,.20);
+  border-color: rgba(0,200,120,.35);
+}
+
+
+/* --- Pill --- */
+.np-pill{
+  position: fixed;
+  left: 16px; bottom: 16px; z-index: 70;
+  display: grid; grid-auto-flow: column; align-items: center; gap: 8px;
+  padding: 8px 12px; border-radius: 999px;
+  background: rgba(0,0,0,.65);
+  border: 1px solid rgba(255,255,255,.14);
+  color: #fff; backdrop-filter: blur(8px);
+}
+.np-pill .np-btn{
+  inline-size: 34px; aspect-ratio: 1 / 1;
+  display: grid; place-items: center; border-radius: 999px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18);
+  color: #fff; font-weight: 700; cursor: pointer;
+}
+.np-pill .np-loop.is-on{ background: rgba(255,255,255,.18); }
+.np-pill .np-meta{ min-width: 0; }
+.np-pill .np-playlist{ opacity: .85; font-size: .85rem; }
+.np-pill .np-track{ font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* --- Captions bottom-left, clearing the pill --- */
+body.playground .text-overlay{
+  position: absolute; z-index: 4;
+  left: clamp(1rem, 4vw, 3rem); right: auto;
+  bottom: clamp(72px, 9vh, 120px); top: auto;
+  max-width: clamp(36ch, 40vw, 60ch);
+  margin: 0;
+  padding: clamp(.75rem, 1.5vw, 1rem) clamp(.9rem, 2vw, 1.25rem);
+  color: #fff; background: rgba(0,0,0,.38); backdrop-filter: blur(6px);
+}
+
+/* Hard-disable any legacy nowbar that might sneak in */
+.nowbar { display: none !important; }

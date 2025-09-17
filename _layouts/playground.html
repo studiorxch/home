@@ -38,7 +38,7 @@
           </div>
 
         {% comment %} Right-side notice tiles {% endcomment %}
-{% include components/feature-dock.html count=12 cols=1 size=0 show_blog=true %}
+{% include components/feature-dock.html count=6 cols=1 size=72 show_blog=true collapsed=true %}
 
       </section>
 
@@ -137,7 +137,7 @@
     <div class="edge left" id="edge-left"><button aria-label="Previous">‹</button></div>
     <div class="edge right" id="edge-right"><button aria-label="Next">›</button></div>
 
-    {% include nowbar.html %}
+
 
     <!-- pins and slides first -->
     <script src="/assets/js/playground-tags.js" defer></script>
@@ -145,10 +145,11 @@
     <script src="/assets/js/station-chamber.js" defer></script>
     <script src="/assets/js/playground-edit.js" defer></script>
 
-    {% include player-src.html %}
-    <script>console.log("SRC tracks:", Array.isArray(window.SRC) ? window.SRC.length : "none");</script>
 
-    <script src="/assets/js/player-lite.js" defer></script>
+    
+
+
+    <!-- fallback if no tracks were found -->
     <script>
       if (!Array.isArray(window.SRC) || window.SRC.length === 0) {
         window.SRC = [
@@ -156,8 +157,13 @@
           { title: "Straight to Canvas",      artist: "StudioRich", url: "/assets/audio/playtracks/straight-to-canvas.mp3" },
           { title: "T-Shirt in Transit",      artist: "StudioRich", url: "/assets/audio/playtracks/t-shirt-in-transit.mp3" }
         ];
+        console.warn("Player: fallback queue loaded");
       }
     </script>
+
+
+
+
 
 
     <!-- unified player stack -->
@@ -166,37 +172,32 @@
 
     <script src="/assets/js/tags-controller.js" defer></script>   <!-- ⭐/👕/ℹ️ behaviour -->
 
-  <audio id="audio" preload="metadata" loop></audio>
-
-
-   <div class="nowbar">
-  <button id="npPrev" class="np-btn" aria-label="Previous" disabled>
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path d="M7 12L20 4v16L7 12zM4 4h2v16H4z" fill="currentColor"/>
-    </svg>
-  </button>
-
-  <button id="npPlay" class="np-btn" aria-label="Play/Pause">
-    <svg id="iconPlay" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path d="M8 5v14l11-7-11-7z" fill="currentColor"/>
-    </svg>
-  </button>
-
-  <div class="np-meta">
-    <div id="npPlaylist" class="np-playlist">Playlist • —</div>
-    <div id="npTrack" class="np-track">Nothing queued</div>
-  </div>
-
-  <button id="npNext" class="np-btn" aria-label="Next" disabled>
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path d="M17 12L4 4v16l13-8zM18 4h2v16h-2z" fill="currentColor"/>
-    </svg>
-  </button>
-</div>
-
-
 
 
     </div>
+
+
+
+{%- comment -%} Build window.SRC from _data/playtracks.yml {%- endcomment -%}
+{% include player-src.html %}
+
+{%- comment -%} Optional fallback if _data/playtracks.yml is empty {%- endcomment -%}
+<script>
+  if (!Array.isArray(window.SRC) || window.SRC.length === 0) {
+    window.SRC = [
+      { title: "Echoes Under the Arches", artist: "StudioRich", url: "/assets/audio/playtracks/echoes-under-the-arches.mp3" },
+      { title: "Straight to Canvas",      artist: "StudioRich", url: "/assets/audio/playtracks/straight-to-canvas.mp3" },
+      { title: "T-Shirt in Transit",      artist: "StudioRich", url: "/assets/audio/playtracks/t-shirt-in-transit.mp3" }
+    ];
+    console.warn("Player: fallback queue loaded");
+  }
+</script>
+
+{%- comment -%} Player logic (reads window.SRC) {%- endcomment -%}
+<script src="/assets/js/player-lite.js" defer></script>
+
+{%- comment -%} The pill UI and the <audio id="audio"> element {%- endcomment -%}
+{% include player-pill.html %}
+
   </body>
 </html>
