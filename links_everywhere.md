@@ -32,7 +32,7 @@ image: /assets/img/hero/scratch-graffiti-black-hero.webp
 <!-- 📱 Social & Short-Form -->
 <h3><img src="/assets/ui/satelitedish.svg" alt="Satelite Dish icon" class="icon-sm"> Social & Short‑Form</h3>
 <ul class="link-list no-bullets">
-  <li><a href="https://www.tiktok.com/@Studi.Rich" target="_blank"><img src="/assets/img/logos/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
+  <li><a href="https://www.tiktok.com/@Studio.Rich" target="_blank"><img src="/assets/img/logos/tiktok.svg" alt="TikTok"><span>TikTok</span></a></li>
   <li><a href="https://www.instagram.com/_studiorich" target="_blank"><img src="/assets/img/logos/instagram.svg" alt="Instagram"><span>Instagram</span></a></li>
   <li><a href="https://www.facebook.com/StudioRichNYC/" target="_blank"><img src="/assets/img/logos/facebook.svg" alt="Facebook"><span>Facebook</span></a></li>
   <li><a href="https://www.snapchat.com/add/studiorich" target="_blank"><img src="/assets/img/logos/snapchat.svg" alt="Snapchat"><span>Snapchat</span></a></li>

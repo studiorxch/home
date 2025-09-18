@@ -44,12 +44,6 @@ redirect_from:
           <span>Spotify</span>
         </a>
       </li>
-      <li>
-        <a href="https://www.youtube.com/@Studio-Rich" target="_blank">
-          <img src="/assets/img/logos/youtube.svg" alt="YouTube">
-          <span>YouTube</span>
-        </a>
-      </li>
           </ul>
   </section>
 

@@ -1,15 +1,26 @@
-<audio id="audio" preload="metadata"></audio>
-
-<div class="np-pill" id="npPill" role="region" aria-label="Player">
-  <button id="npLoop" class="np-btn np-loop" aria-label="Loop off" title="Loop: Off"><img src="/assets/ui/repeat-loop.svg" alt="Loop" width="18" height="18" /></button>
+<div class="player-pill" role="region" aria-label="Player">
+  <button id="npLoop" class="pill-btn" aria-label="Loop"><img src="/assets/ui/repeat-loop.svg" alt="" width="16" height="16"></button>
   <button id="npPlay" class="pill-btn" aria-label="Play/Pause">
-  <!-- show/hide via JS -->
-  <svg id="iconPlay"  viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg>
-  <svg id="iconPause" viewBox="0 0 24 24" width="18" height="18" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
-</button>
+    <svg id="iconPlay"  viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7-11-7z" fill="currentColor"/></svg>
+    <svg id="iconPause" viewBox="0 0 24 24" width="18" height="18" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+  </button>
 
-  <div class="np-meta" id="npMeta">
-    <div id="npPlaylist" class="np-playlist">Playlist • —</div>
-    <div id="npTrack" class="np-track">Nothing queued</div>
+  <!-- cover -->
+  <img id="npCover" class="pill-cover" alt="" width="32" height="32" hidden>
+
+  <!-- meta -->
+  <div class="pill-meta">
+    <span id="npPlaylist" class="pill-list"></span>
+    <span id="npTrack" class="pill-track">Nothing queued</span>
   </div>
+
+  <!-- time -->
+  <div class="pill-time" aria-live="polite">
+    <span id="npCur">0:00</span>
+    <span class="slash">/</span>
+    <span id="npDur">0:00</span>
+  </div>
+
+  <!-- hidden audio element lives here -->
+  <audio id="audio" preload="metadata"></audio>
 </div>

@@ -1,47 +1,52 @@
-// assets/js/player-lite.js
-
 (function () {
-    const $ = (id) => document.getElementById(id);
-    // --- selectors (be strict) ---
-    const audio = document.getElementById('audio') || document.querySelector('audio');
-    const btnPlay = document.getElementById('npPlay');
-    const btnLoop = document.getElementById('npLoop');
-    const elPl = document.getElementById('npPlaylist');
-    const elTrack = document.getElementById('npTrack');
+    const $ = id => document.getElementById(id);
 
-    const iconPlay = document.getElementById('iconPlay');
-    const iconPause = document.getElementById('iconPause');
-
-    function updatePlayIcon() {
-        if (!iconPlay || !iconPause || !audio) return;
-        const playing = !audio.paused && !audio.ended;
-        iconPlay.style.display = playing ? 'none' : '';
-        iconPause.style.display = playing ? '' : 'none';
-    }
-
+    const audio = $('audio') || document.querySelector('audio');
+    const btnPlay = $('npPlay');
+    const btnLoop = $('npLoop');
+    const elPl = $('npPlaylist');
+    const elTrack = $('npTrack');
+    const elCover = $('npCover');
+    const elCur = $('npCur');
+    const elDur = $('npDur');
+    const iconPlay = $('iconPlay');
+    const iconPause = $('iconPause');
 
     let QUEUE = Array.isArray(window.SRC) ? window.SRC.slice() : [];
     let index = 0;
 
-    // --- helpers ---
-    function fmtTitle(t) {
-        if (!t) return 'Nothing queued';
-        const title = t.title || 'Untitled';
-        const artist = t.artist || 'RXCH';
-        return `${title} — ${artist}`;
-    }
+    // --- utils ---
+    const fmtTime = (sec = 0) => {
+        if (!isFinite(sec) || sec < 0) sec = 0;
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return `${m}:${s.toString().padStart(2, '0')}`;
+    };
 
-    function updateMetaLabels() {
-        if (elPl) elPl.textContent = `Playlist • ${Math.max(QUEUE.length, 0)}`;
-        if (elTrack) elTrack.textContent = fmtTitle(QUEUE[index]);
-    }
+    const updatePlayIcon = () => {
+        if (!audio || !iconPlay || !iconPause) return;
+        const playing = !audio.paused && !audio.ended;
+        iconPlay.style.display = playing ? 'none' : '';
+        iconPause.style.display = playing ? '' : 'none';
+    };
 
-    function updateLoopUI() {
+    const updateLoopUI = () => {
         if (!btnLoop || !audio) return;
         btnLoop.dataset.active = audio.loop ? 'true' : 'false';
         btnLoop.setAttribute('aria-label', audio.loop ? 'Loop on' : 'Loop off');
         btnLoop.title = audio.loop ? 'Loop: On' : 'Loop: Off';
-    }
+    };
+
+    const updateMetaLabels = () => {
+        if (elPl) elPl.textContent = '⋅˚₊‧⧘∘';      // no “3”, no bullet
+        if (elTrack) elTrack.textContent = QUEUE[index]?.title || 'Nothing queued';
+    };
+
+    const updateTimes = () => {
+        if (!audio) return;
+        if (elCur) elCur.textContent = fmtTime(audio.currentTime);
+        if (elDur) elDur.textContent = fmtTime(audio.duration);
+    };
 
     // --- core ---
     function load(i, autoplay = false) {
@@ -49,65 +54,54 @@
         index = Math.max(0, Math.min(i, QUEUE.length - 1));
         const t = QUEUE[index];
 
-        // honor per-track loop flag if present
-        audio.loop = !!(t && t.loop);
+        // set cover
+        if (elCover) {
+            if (t.cover) { elCover.src = t.cover; elCover.hidden = false; }
+            else { elCover.hidden = true; }
+        }
+
+        // loop per track (default false unless track.loop true)
+        audio.loop = !!t.loop;
 
         audio.src = t.url;
-        audio.preload = 'auto';
+        audio.preload = 'metadata';
 
         updateMetaLabels();
         updateLoopUI();
+        // reset time UI immediately
+        if (elCur) elCur.textContent = '0:00';
+        if (elDur) elDur.textContent = '0:00';
 
-        if (autoplay) {
-            audio.play().catch(() => {/* gesture required */ });
-        }
+        if (autoplay) audio.play().catch(() => { });
     }
 
     function togglePlay() {
         if (!audio || !QUEUE.length) return;
-        // first click & no src? ensure something is loaded
         if (!audio.src) { load(index || 0, true); return; }
-        if (audio.paused) audio.play().catch(() => { });
-        else audio.pause();
+        (audio.paused ? audio.play() : audio.pause()).catch(() => { });
     }
 
-    // --- wire up buttons ---
-    if (btnPlay) btnPlay.addEventListener('click', togglePlay);
-
-    if (btnLoop) {
-        btnLoop.addEventListener('click', () => {
-            if (!audio) return;
-            audio.loop = !audio.loop;
-            updateLoopUI();
-        });
-    }
+    // --- events (single block) ---
+    function onEnded() { updatePlayIcon(); /* if (!audio.loop) next(); */ }
+    function onPlay() { updateMetaLabels(); updatePlayIcon(); }
+    function onPause() { updateMetaLabels(); updatePlayIcon(); }
+    function onError() { console.warn('Audio error – skipping', QUEUE[index]); }
+    function onMeta() { updateTimes(); }       // duration available
+    function onTick() { updateTimes(); }       // progress
 
     if (audio) {
-        audio.addEventListener('play', () => { updateMetaLabels(); updatePlayIcon(); });
-        audio.addEventListener('pause', () => { updateMetaLabels(); updatePlayIcon(); });
-        audio.addEventListener('ended', () => { updatePlayIcon(); /* existing ended logic */ });
+        audio.addEventListener('ended', onEnded);
+        audio.addEventListener('play', onPlay);
+        audio.addEventListener('pause', onPause);
+        audio.addEventListener('error', onError);
+        audio.addEventListener('loadedmetadata', onMeta);
+        audio.addEventListener('timeupdate', onTick);
     }
 
-    // --- audio events ---
-    if (audio) {
-        audio.addEventListener('ended', () => {
-            // if you ever bring back next/prev, skip here when not looping
-            if (!audio.loop) { /* next(); */ }
-        });
-        audio.addEventListener('play', updateMetaLabels);
-        audio.addEventListener('pause', updateMetaLabels);
-        audio.addEventListener('error', () => {
-            console.warn('Audio error – skipping', QUEUE[index]);
-            // if you restore next(), you could auto-skip here.
-        });
-    }
+    // buttons
+    btnPlay?.addEventListener('click', togglePlay);
+    btnLoop?.addEventListener('click', () => { if (audio) { audio.loop = !audio.loop; updateLoopUI(); } });
 
     // --- boot ---
-    if (QUEUE.length) {
-        load(0, false);   // prepare first track (no autoplay)
-    } else {
-        updateMetaLabels(); // shows “Nothing queued”
-        console.warn('Player: window.SRC is empty');
-    }
-
+    if (QUEUE.length) load(0, false); else updateMetaLabels();
 })();
