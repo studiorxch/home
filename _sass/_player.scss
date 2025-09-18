@@ -127,7 +127,7 @@ body{ padding-bottom:56px; } /* keep content above bar */
   grid-auto-flow: column;
   align-items: center;
   gap: .5rem;
-  padding: .5rem .7rem;
+  padding: .5rem 1rem;
   border-radius: 999px;
   background: rgba(10,10,10,.82);
   border: 1px solid rgba(255,255,255,.14);
@@ -152,9 +152,10 @@ body{ padding-bottom:56px; } /* keep content above bar */
   white-space: nowrap;
   overflow: hidden;
   line-height: 1.05;
+  padding-right: .25rem;
 }
 .pill-list{ opacity: .85; font-size: .85rem; }
-.pill-track{ font-weight: 600; text-overflow: ellipsis; overflow: hidden; max-width: 42vw; }
+.pill-track{ font-weight: 600; text-overflow: ellipsis; overflow: hidden; max-width: min(56vw, 720px);  }
 
 @media (max-width: 700px){
   .pill-track{ max-width: 58vw; }
@@ -201,3 +202,8 @@ body.playground .text-overlay{
 
 /* Hard-disable any legacy nowbar that might sneak in */
 .nowbar { display: none !important; }
+
+
+.feature-dock{
+  padding-right: clamp(12px, 2vw, 20px); /* add a little gutter from the viewport edge */
+}

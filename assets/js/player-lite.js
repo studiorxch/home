@@ -2,97 +2,112 @@
 
 (function () {
     const $ = (id) => document.getElementById(id);
-
-    // assume $ = id selector helper
-    const audio = document.getElementById('audio');   // safer than $('audio')
+    // --- selectors (be strict) ---
+    const audio = document.getElementById('audio') || document.querySelector('audio');
     const btnPlay = document.getElementById('npPlay');
     const btnLoop = document.getElementById('npLoop');
     const elPl = document.getElementById('npPlaylist');
     const elTrack = document.getElementById('npTrack');
 
-    if (btnLoop && audio) {
-        btnLoop.addEventListener('click', () => {
-            audio.loop = !audio.loop;
-            btnLoop.dataset.active = audio.loop ? "true" : "false";
-        });
+    const iconPlay = document.getElementById('iconPlay');
+    const iconPause = document.getElementById('iconPause');
+
+    function updatePlayIcon() {
+        if (!iconPlay || !iconPause || !audio) return;
+        const playing = !audio.paused && !audio.ended;
+        iconPlay.style.display = playing ? 'none' : '';
+        iconPause.style.display = playing ? '' : 'none';
     }
 
 
     let QUEUE = Array.isArray(window.SRC) ? window.SRC.slice() : [];
     let index = 0;
 
+    // --- helpers ---
     function fmtTitle(t) {
         if (!t) return 'Nothing queued';
         const title = t.title || 'Untitled';
-        const artist = t.artist || 'StudioRich';
+        const artist = t.artist || 'RXCH';
         return `${title} — ${artist}`;
     }
 
-    function updateLabels() {
+    function updateMetaLabels() {
         if (elPl) elPl.textContent = `Playlist • ${Math.max(QUEUE.length, 0)}`;
         if (elTrack) elTrack.textContent = fmtTitle(QUEUE[index]);
     }
 
     function updateLoopUI() {
-        const on = !!audio.loop;
-        btnLoop?.setAttribute('aria-label', on ? 'Loop on' : 'Loop off');
-        btnLoop?.setAttribute('title', on ? 'Loop: On' : 'Loop: Off');
-        btnLoop?.classList.toggle('is-on', on);
+        if (!btnLoop || !audio) return;
+        btnLoop.dataset.active = audio.loop ? 'true' : 'false';
+        btnLoop.setAttribute('aria-label', audio.loop ? 'Loop on' : 'Loop off');
+        btnLoop.title = audio.loop ? 'Loop: On' : 'Loop: Off';
     }
 
+    // --- core ---
     function load(i, autoplay = false) {
         if (!audio || !QUEUE.length) return;
         index = Math.max(0, Math.min(i, QUEUE.length - 1));
         const t = QUEUE[index];
 
-        // per-track loop preference (optional)
-        audio.loop = !!t.loop;
+        // honor per-track loop flag if present
+        audio.loop = !!(t && t.loop);
 
         audio.src = t.url;
         audio.preload = 'auto';
 
-        updateLabels();
+        updateMetaLabels();
         updateLoopUI();
 
         if (autoplay) {
-            audio.play().catch(() => {/* waits for user gesture */ });
+            audio.play().catch(() => {/* gesture required */ });
         }
     }
 
-    function toggle() {
+    function togglePlay() {
         if (!audio || !QUEUE.length) return;
+        // first click & no src? ensure something is loaded
+        if (!audio.src) { load(index || 0, true); return; }
         if (audio.paused) audio.play().catch(() => { });
         else audio.pause();
     }
 
-    // Events
-    btnPlay?.addEventListener('click', toggle);
-    btnLoop?.addEventListener('click', () => { audio.loop = !audio.loop; updateLoopUI(); });
+    // --- wire up buttons ---
+    if (btnPlay) btnPlay.addEventListener('click', togglePlay);
 
-    audio?.addEventListener('ended', () => { /* loop handled by element; do nothing */ });
-    audio?.addEventListener('play', updateLabels);
-    audio?.addEventListener('pause', updateLabels);
-    audio?.addEventListener('error', () => {
-        console.warn('Audio error – bad source?', QUEUE[index]);
-    });
-
-    // Boot
-    if (!QUEUE.length) {
-        console.warn('Player: window.SRC is empty');
-        updateLabels(); updateLoopUI();
-    } else {
-        load(0, false);
+    if (btnLoop) {
+        btnLoop.addEventListener('click', () => {
+            if (!audio) return;
+            audio.loop = !audio.loop;
+            updateLoopUI();
+        });
     }
 
-    // Tiny API
-    window.Player = {
-        setQueue(list, startAt = 0) {
-            QUEUE = (list || []).filter(Boolean);
-            index = Math.max(0, Math.min(startAt, Math.max(0, QUEUE.length - 1)));
-            load(index, false);
-        },
-        toggle,
-        current: () => QUEUE[index],
-        length: () => QUEUE.length
-    };
+    if (audio) {
+        audio.addEventListener('play', () => { updateMetaLabels(); updatePlayIcon(); });
+        audio.addEventListener('pause', () => { updateMetaLabels(); updatePlayIcon(); });
+        audio.addEventListener('ended', () => { updatePlayIcon(); /* existing ended logic */ });
+    }
+
+    // --- audio events ---
+    if (audio) {
+        audio.addEventListener('ended', () => {
+            // if you ever bring back next/prev, skip here when not looping
+            if (!audio.loop) { /* next(); */ }
+        });
+        audio.addEventListener('play', updateMetaLabels);
+        audio.addEventListener('pause', updateMetaLabels);
+        audio.addEventListener('error', () => {
+            console.warn('Audio error – skipping', QUEUE[index]);
+            // if you restore next(), you could auto-skip here.
+        });
+    }
+
+    // --- boot ---
+    if (QUEUE.length) {
+        load(0, false);   // prepare first track (no autoplay)
+    } else {
+        updateMetaLabels(); // shows “Nothing queued”
+        console.warn('Player: window.SRC is empty');
+    }
+
 })();
