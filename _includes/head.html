@@ -44,11 +44,14 @@
   <meta name="author" content="{{ site.author | default: 'StudioRich' }}" />
   <meta name="twitter:site" content="@studiorxch" />
 
-  {% if jekyll.environment == "production" %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  {% else %}
-    <meta name="robots" content="noindex,nofollow,noarchive" />
-  {% endif %}
+{% if site.url contains "dev." %}
+  <meta name="robots" content="noindex,nofollow,noarchive">
+{% elsif jekyll.environment == "production" %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+{% else %}
+  <meta name="robots" content="noindex,nofollow,noarchive">
+{% endif %}
+
 
   <!-- Open Graph -->
   <meta property="og:type" content="{{ ogtype }}" />

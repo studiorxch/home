@@ -1,4 +1,4 @@
-{% if jekyll.environment != "production" %}
+{% if site.url contains "dev." or jekyll.environment != "production" %}
 User-agent: *
 Disallow: /
 {% else %}
@@ -6,4 +6,3 @@ User-agent: *
 Allow: /
 Sitemap: https://www.studiorich.shop/sitemap.xml
 {% endif %}
-
