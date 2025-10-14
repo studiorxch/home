@@ -55,10 +55,16 @@ window.addEventListener("DOMContentLoaded", () => {
         setStatus("Sending magic link...", "info");
 
         try {
+            // --- Dynamic redirect URL (adjusts between dev and prod) ---
+            const redirectUrl = window.location.hostname.includes("dev.")
+                ? "https://dev.studiorich.shop"
+                : "https://studiorich.shop";
+
             await sendSignInLinkToEmail(auth, email, {
-                url: window.location.origin,
+                url: redirectUrl,
                 handleCodeInApp: true
             });
+
             window.localStorage.setItem("emailForSignIn", email);
             setStatus("✅ Magic link sent! Check your inbox.", "success");
         } catch (err) {
