@@ -18,4 +18,11 @@
 
   <script src="/assets/js/theme-toggle.js?v=3"></script>
   <script src="/assets/js/subscribe-form.js" defer></script>
+
+  {% if jekyll.environment != "production" %}
+<div style="position:fixed;bottom:8px;right:10px;font-size:11px;color:#0f0;background:#111;padding:4px 6px;border-radius:4px;opacity:.7;z-index:9999;">
+  ⚙️ DEV: {{ site.url }}
+</div>
+{% endif %}
+
 </body>

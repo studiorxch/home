@@ -1,5 +1,5 @@
 # --- site basics ---
-title: 'StudioRich'
+title: 'StudioRich DEV'
 email: 'hello@studiorich.shop'
 description: 'StudioRich (Studio Rich) blends lo-fi music, urban visuals, and collectible NFT drops. Discover the upcoming StudioRich Player — a desktop portal for rhythm and story.'
 baseurl: '' # keep empty for root deploy
@@ -67,7 +67,10 @@ defaults:
 
 # --- data & assets ---
 data_dir: data
-sass: { sass_dir: _sass }
+sass:
+  sass_dir: _sass
+  style: expanded
+
 include:
   - assets/data
   - assets/ui # relative path (no leading slash)

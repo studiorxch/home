@@ -1,27 +1,5 @@
 <!-- _includes/head.html -->
 <head>
-  <style>
-.map-mask {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  margin: 0 auto;
-  background: radial-gradient(circle at center, #ddd 0%, #fafafa 100%);
-  overflow: hidden;
-}
-.map-temp {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-</style>
-
-
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -117,4 +95,12 @@
   {% if jekyll.environment == "production" and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
+
+  <!-- Environment Indicator for JS -->
+  {% if jekyll.environment == "production" %}
+<script>window.ENV = "production";</script>
+{% else %}
+<script>window.ENV = "development";</script>
+{% endif %}
+
 </head>
