@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include components/hero.html image=page.image title=page.title
+{% include hero.html image=page.image title=page.title
 subtitle=page.subtitle kicker=page.kicker %}
 
 <article class="blog-post-container">
@@ -69,7 +69,7 @@ subtitle=page.subtitle kicker=page.kicker %}
           {% endif %}
         </div>
         <!--- share this -->
-        {% include components/share-buttons.html type="blog" %}
+        {% include share-buttons.html type="blog" %}
         <!--- share this -->
       </footer>
     </div>

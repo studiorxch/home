@@ -1,20 +1,20 @@
 ---
 layout: default
-title: "Events"
+title: 'Events'
 permalink: /events/
 ---
 
-{% include components/hero.html image="/assets/img/events/default.webp"
-title="Events" %} {% include components/schedule.html %}
+{% include hero.html image="/assets/img/events/default.webp" title="Events" %} {% include
+schedule.html %}
 <main class="container-text">
   <section>
     <h2>Upcoming</h2>
-    {% assign now = site.time | date: "%s" %} {% assign sorted = site.events |
-    sort: "date" %} {% assign upcoming_count = 0 %}
+    {% assign now = site.time | date: "%s" %} {% assign sorted = site.events | sort: "date" %} {%
+    assign upcoming_count = 0 %}
     <div class="event-grid">
-      {% for event in sorted %} {% assign ts = event.date | date: "%s" %} {% if
-      ts >= now %} {% assign upcoming_count = upcoming_count | plus: 1 %} {%
-      include components/event-card.html event=event %} {% endif %} {% endfor %}
+      {% for event in sorted %} {% assign ts = event.date | date: "%s" %} {% if ts >= now %} {%
+      assign upcoming_count = upcoming_count | plus: 1 %} {% include event-card.html event=event %}
+      {% endif %} {% endfor %}
     </div>
     {% if upcoming_count == 0 %}
     <p>No upcoming events yet. Check back soon.</p>
@@ -24,9 +24,9 @@ title="Events" %} {% include components/schedule.html %}
   <section style="margin-top: 2rem">
     <h2>Past</h2>
     <div class="event-grid">
-      {% assign reversed = sorted | reverse %} {% for event in reversed %} {%
-      assign ts = event.date | date: "%s" %} {% if ts < now %} {% include
-      components/event-card.html event=event %} {% endif %} {% endfor %}
+      {% assign reversed = sorted | reverse %} {% for event in reversed %} {% assign ts = event.date
+      | date: "%s" %} {% if ts < now %} {% include event-card.html event=event %} {% endif %} {%
+      endfor %}
     </div>
   </section>
 </main>

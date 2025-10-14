@@ -1,4 +1,9 @@
+{% if jekyll.environment != "production" %}
 User-agent: *
-Disallow:
-
+Disallow: /
+{% else %}
+User-agent: *
+Allow: /
 Sitemap: https://www.studiorich.shop/sitemap.xml
+{% endif %}
+

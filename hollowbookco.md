@@ -2,23 +2,12 @@
 layout: default
 title: The Café at HollowBookCo
 permalink: /hollowbookco/
-description: "Sounds for shelves and shadows."
+description: 'Sounds for shelves and shadows.'
 image: /assets/img/hero/the-cafe-at-hollowbookco-hero.webp
-tags:
-  [
-    lofi,
-    ambient,
-    bookstore,
-    cat,
-    library,
-    chill music,
-    hollow book,
-    HollowBookCo,
-    StudioRich,
-  ]
+tags: [lofi, ambient, bookstore, cat, library, chill music, hollow book, HollowBookCo, StudioRich]
 ---
 
-{% include components/hero.html image="/assets/img/hero/the-cafe-at-hollowbookco-hero.webp" title="The Café at HollowBookCo"
+{% include hero.html image="/assets/img/hero/the-cafe-at-hollowbookco-hero.webp" title="The Café at HollowBookCo"
   subtitle="Sounds for shelves and shadows." %}
 
 <div class="container-text">

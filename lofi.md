@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Lo-Fi Universe – StudioRich"
+title: 'Lo-Fi Universe – StudioRich'
 permalink: /lofi/
-description: "A guided entry into StudioRich’s lo-fi drops: dreamy music, glitch art, NFTs, and collectible moodscapes."
+description: 'A guided entry into StudioRich’s lo-fi drops: dreamy music, glitch art, NFTs, and collectible moodscapes.'
 image: /assets/img/hero/lofi-loopmaker-mascot-underground-hero.webp
 redirect_from:
   - /lo-
@@ -12,7 +12,7 @@ redirect_from:
   - /pages/unleash-your-creativity-with-designlab
 ---
 
-{% include components/hero.html
+{% include hero.html
   image=page.image
   title="Welcome to StudioRich Lo-Fi"
   subtitle="From chill beats to collectible audio-visual loops — this is where our lo-fi story begins."

@@ -1,6 +1,16 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "webrick", "~> 1.8"         # needed on Ruby 3+
-# gem "faraday-retry"            # only add if you truly need it AND it doesn't fight github-pages’ Faraday
-# Do NOT add a separate `gem "jekyll"` line here
+gem "webrick", "~> 1.8"
+
+gem "jekyll", "~> 4.3"
+gem "jekyll-sass-converter", "~> 3.0" # Dart Sass
+gem "sass-embedded", "~> 1.80"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"        # ⬅ add
+  gem "jekyll-redirect-from"  # ⬅ add
+end
+
+# gem "faraday-retry" # only if a plugin requires it

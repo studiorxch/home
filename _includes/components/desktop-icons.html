@@ -1,9 +1,0 @@
-{% if site.desktop %} {% assign sorted_icons = site.desktop | sort: "title" %}
-{% for file in sorted_icons %}
-<div class="icon" data-folder="{{ file.title | downcase }}">
-  <img src="{{ file.icon }}" alt="{{ file.title }}" />
-  <span>{{ file.title }}</span>
-</div>
-{% endfor %} {% else %}
-<p>No desktop items found.</p>
-{% endif %}

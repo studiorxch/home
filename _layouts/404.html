@@ -2,65 +2,15 @@
 layout: default
 ---
 
-{% include components/hero.html image=page.image title=page.title subtitle=page.subtitle %}
-
-
-<article class="blog-post-container">
-  <div class="blog-layout">
-
-    <div class="blog-content">
-  
-    <p class="blog-meta">
-      <a href="/blog/">StudioRich</a> /
+<main id="page-404" class="error-layout">
+  <section class="error-container">
+    <h1 class="glitch" data-text="404">404</h1>
+    <p class="glitch-sub" data-text="Transmission Interrupted">
+      Transmission Interrupted
     </p>
-
-
-<!--tags-->
-{% if page.tags %}
-  {% assign linked_tags = "lofi,ambient,chillhop" | split: "," %}
-  <p class="blog-meta">
-    Tags:
-    {% for tag in page.tags %}
-      {% assign normalized = tag | downcase | replace: ' ', '-' %}
-      {% assign is_linkable = false %}
-      {% for linked in linked_tags %}
-        {% if normalized == linked %}
-          {% assign is_linkable = true %}
-        {% endif %}
-      {% endfor %}
-      {% if is_linkable %}
-        <a href="/tag/{{ normalized }}/" class="post-tag">{{ tag }}</a>
-      {% else %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endif %}
-      {% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </p>
-{% endif %}
-<!--tags-->
-
-
-
-      <div class="blog-body">
-        {{ content }}
-      </div>
-
-
-
-
-
-      <footer class="blog-footer">
-
-
-
-      </footer>
-    </div>
-
-    {% if page.image %}
-    <div class="blog-image">
-      <img src="{{ page.image }}" alt="{{ page.title }} cover" />
-    </div>
-    {% endif %}
-
-  </div>
-</article>
+    <p class="error-message">
+     The feed cut mid-broadcast. You can still return to base.
+    </p>
+    <a href="/" class="btn-return">Recalibrate</a>
+  </section>
+</main>
