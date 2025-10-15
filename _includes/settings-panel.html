@@ -1,0 +1,31 @@
+<!-- _includes/settings-panel.html -->
+<section class="profile-panel">
+  <h4>Your Profile</h4>
+  <div class="avatar-block">
+    <div id="userAvatar" class="avatar"></div>
+    <p id="userEmail"></p>
+  </div>
+
+  <label>Name (optional)</label>
+  <input id="userName" type="text" placeholder="Enter your name" />
+
+  <label>Birthday (optional)</label>
+  <input id="userBirthday" type="date" />
+
+  <button id="saveProfileBtn">Save</button>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const name = localStorage.getItem("userName");
+  const birthday = localStorage.getItem("userBirthday");
+  if (name) document.getElementById("userName").value = name;
+  if (birthday) document.getElementById("userBirthday").value = birthday;
+
+  document.getElementById("saveProfileBtn").onclick = () => {
+    localStorage.setItem("userName", document.getElementById("userName").value);
+    localStorage.setItem("userBirthday", document.getElementById("userBirthday").value);
+    alert("✅ Profile saved locally.");
+  };
+});
+</script>

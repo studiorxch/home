@@ -12,6 +12,8 @@
   <!-- ⚙️ Unified Control Hub -->
   <div class="user-menu">
     <button id="userMenuToggle" aria-label="User menu" class="user-avatar">
+      <span id="userBadge" class="user-badge" style="display:none;">●</span>
+
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
         <path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2"/>
@@ -35,6 +37,7 @@
 
       <hr />
       <div class="auth-panel">
+      {% include settings-panel.html %}
         <label for="emailLogin">Sign In</label>
         <input id="emailInput" type="email" placeholder="Enter your email" />
         <button id="magicLinkBtn">Magic Link</button>

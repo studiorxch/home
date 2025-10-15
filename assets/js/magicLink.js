@@ -91,3 +91,47 @@ window.addEventListener("DOMContentLoaded", () => {
             });
     }
 });
+
+
+// --- New Section: Persistent User Session ---
+import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+const userInfo = document.getElementById("userInfo");
+const signOutBtn = document.getElementById("signOutBtn");
+const userBadge = document.getElementById("userBadge");
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // Save to localStorage
+        localStorage.setItem("user", JSON.stringify({ email: user.email }));
+
+        // Update UI
+        updateUI(user.email);
+        if (userBadge) userBadge.style.display = "inline-block";
+    } else {
+        localStorage.removeItem("user");
+        resetUI();
+        if (userBadge) userBadge.style.display = "none";
+    }
+});
+
+function updateUI(email) {
+    if (userInfo) userInfo.textContent = `Signed in as ${email}`;
+    signOutBtn.style.display = "block";
+    emailInput.style.display = magicBtn.style.display = "none";
+}
+
+function resetUI() {
+    if (userInfo) userInfo.textContent = "";
+    signOutBtn.style.display = "none";
+    emailInput.style.display = magicBtn.style.display = "inline-block";
+}
+
+// Sign-out handler
+signOutBtn.addEventListener("click", async () => {
+    await signOut(auth);
+    resetUI();
+    setStatus("👋 Signed out successfully", "info");
+});
+
+
