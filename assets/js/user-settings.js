@@ -6,6 +6,7 @@
 
 import { auth } from "/assets/js/firebase-init.js";
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
 export function toast(msg) {
     let t = document.getElementById("toast");
     if (!t) return console.warn("Toast container missing.");
@@ -41,3 +42,4 @@ export function getLocalPrefs() {
 export function saveLocalPrefs(prefs) {
     localStorage.setItem("sr_prefs", JSON.stringify(prefs));
 }
+
