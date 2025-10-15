@@ -15,17 +15,24 @@
   <button id="saveProfileBtn">Save</button>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const name = localStorage.getItem("userName");
-  const birthday = localStorage.getItem("userBirthday");
-  if (name) document.getElementById("userName").value = name;
-  if (birthday) document.getElementById("userBirthday").value = birthday;
+<script type="module">
+import { toast } from "/assets/js/user-settings.js";
 
-  document.getElementById("saveProfileBtn").onclick = () => {
-    localStorage.setItem("userName", document.getElementById("userName").value);
-    localStorage.setItem("userBirthday", document.getElementById("userBirthday").value);
-    alert("✅ Profile saved locally.");
-  };
+document.addEventListener("DOMContentLoaded", () => {
+  const nameInput = document.getElementById("userName");
+  const birthdayInput = document.getElementById("userBirthday");
+  const saveBtn = document.getElementById("saveProfileBtn");
+
+  // preload saved data
+  const savedName = localStorage.getItem("userName");
+  const savedBirthday = localStorage.getItem("userBirthday");
+  if (savedName) nameInput.value = savedName;
+  if (savedBirthday) birthdayInput.value = savedBirthday;
+
+  saveBtn.addEventListener("click", () => {
+    localStorage.setItem("userName", nameInput.value);
+    localStorage.setItem("userBirthday", birthdayInput.value);
+    toast("✅ Profile saved.");
+  });
 });
 </script>

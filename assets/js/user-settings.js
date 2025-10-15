@@ -43,3 +43,5 @@ export function saveLocalPrefs(prefs) {
     localStorage.setItem("sr_prefs", JSON.stringify(prefs));
 }
 
+// expose globally so inline buttons or HTML onclick can access
+window.toast = toast;

@@ -15,8 +15,13 @@
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 9999;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform: translate(-50%, 10px);
 
   &.show {
     opacity: 1;
+    transform: translate(-50%, 0);
   }
 }

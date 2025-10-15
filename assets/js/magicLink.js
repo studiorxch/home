@@ -132,6 +132,7 @@ signOutBtn.addEventListener("click", async () => {
     await signOut(auth);
     resetUI();
     setStatus("👋 Signed out successfully", "info");
+
+    // toast confirmation
+    if (window.toast) window.toast("👋 Signed out");
 });
-
-
