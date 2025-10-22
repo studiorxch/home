@@ -56,7 +56,11 @@ async function addRowToNotion(row) {
 }
 
 async function main() {
-    const csvPath = path.join(__dirname, "articles.csv");
+    const target = process.argv[2] || "lofi"; // default
+    const csvPath = path.join(__dirname, `${target}_articles.csv`);
+
+    console.log(`📥 Syncing from: ${csvPath}`);
+
 
     if (!fs.existsSync(csvPath)) {
         console.error("❌ CSV file not found:", csvPath);

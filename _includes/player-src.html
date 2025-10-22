@@ -1,15 +1,29 @@
-{% comment %} Build queue from full-length playtracks {% endcomment %}
+{%- comment -%}
+Order:
+1) Inline `page.tracks` (sync) → guarantees the player has something.
+2) If `page.playlist_ref` exists, fetch JSON and replace when it arrives.
+3) Else fall back to site-wide `site.data.playtracks`.
+{%- endcomment -%}
+
+{%- assign inline_tracks = page.tracks | default: site.data.playtracks -%}
 <script>
-window.SRC = [
-{% assign tracks = site.data.playtracks | slice: 0, 20 %}
-{% for t in tracks %}
-  {
-    id: {{ t.slug | jsonify }},
-    title: {{ t.title | jsonify }},
-    artist: {{ t.artist | default: "StudioRich" | jsonify }},
-    url: {{ t.url | relative_url | jsonify }},
-    cover: {{ (t.cover | default: "/assets/img/covers/default.webp") | relative_url | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
-{% endfor %}
-];
+  window.SRC = {{ inline_tracks | jsonify | default: '[]' }};
 </script>
+
+{% if page.playlist_ref %}
+  <script>
+    (function(){
+      var url = '{{ page.playlist_ref | relative_url }}';
+      fetch(url).then(function(r){ return r.ok ? r.json() : []; })
+        .then(function(list){
+          if (Array.isArray(list) && list.length) {
+            window.SRC = list;
+            document.dispatchEvent(new CustomEvent('tracksready', {detail:{count:list.length}}));
+          } else {
+            console.warn('Player: empty/invalid playlist_ref', url);
+          }
+        })
+        .catch(function(err){ console.warn('Player: playlist_ref failed', err); });
+    })();
+  </script>
+{% endif %}

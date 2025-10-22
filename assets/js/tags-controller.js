@@ -39,7 +39,7 @@ function setMiniContext({ title, lines = [] } = {}) {
     const L = document.getElementById('ctxMiniLines');
     if (!t || !L) return;
     t.textContent = title || '—';
-    L.innerHTML = lines.map(x => `<span class="mta-bullet line-${String(x).toLowerCase()}">${x}</span>`).join('');
+    L.innerHTML = lines.map(x => `<span class="route-bullet line-${String(x).toLowerCase()}">${x}</span>`).join('');
 }
 
 // Example: when a slide becomes active
@@ -51,7 +51,7 @@ document.addEventListener('sr:slide', (e) => {
     const ctxTitle = document.getElementById('ctxTitle');
     const ctxLines = document.getElementById('ctxHeadLines');
     if (ctxTitle) ctxTitle.textContent = s.eyebrow || s.title || 'Station';
-    if (ctxLines) ctxLines.innerHTML = (s.lines || []).map(x => `<span class="mta-bullet line-${String(x).toLowerCase()}">${x}</span>`).join('');
+    if (ctxLines) ctxLines.innerHTML = (s.lines || []).map(x => `<span class="route-bullet line-${String(x).toLowerCase()}">${x}</span>`).join('');
 });
 
 

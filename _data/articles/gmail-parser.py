@@ -17,9 +17,18 @@ PASSWORD = os.getenv("GMAIL_PASS")
 
 # Compute absolute path to data CSV
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CSV_FILE = os.path.join(BASE_DIR, "_data/articles/articles.csv")
+CSV_FILE = os.path.join(BASE_DIR, "_data/articles/lofi_articles.csv")
 
-HEADERS = ["date", "title", "url", "snippet", "source", "keyword_source", "status", "flags"]
+HEADERS = [
+    "date",
+    "title",
+    "url",
+    "snippet",
+    "source",
+    "keyword_source",
+    "status",
+    "flags",
+]
 
 # Hard-block list
 BLOCK_TERMS = ["cryptocurrency", "token", "nft", "web3"]
@@ -27,10 +36,13 @@ BLOCK_DOMAINS = ["lofichain", "lofitoon"]
 
 # Clean filename
 
+
 def clean(text):
-    return "".join(c for c in text if c.isalnum() or c in (' ', '-', '_')).rstrip()
+    return "".join(c for c in text if c.isalnum() or c in (" ", "-", "_")).rstrip()
+
 
 # Unwrap Google redirect URLs
+
 
 def unwrap_google_url(url):
     if "google.com/url" in url:
@@ -40,7 +52,9 @@ def unwrap_google_url(url):
             return unquote(qs["url"][0])
     return url
 
+
 # Write row to CSV
+
 
 def save_article(row):
     is_new = not os.path.exists(CSV_FILE)
@@ -50,7 +64,9 @@ def save_article(row):
             writer.writerow(HEADERS)
         writer.writerow(row)
 
+
 # Parse latest emails
+
 
 def fetch_alerts():
     mail = imaplib.IMAP4_SSL(IMAP_SERVER)
@@ -76,12 +92,17 @@ def fetch_alerts():
         else:
             body = msg.get_payload(decode=True).decode(errors="ignore")
 
-        matches = re.findall(r'https://www.google.com/url\?[^\s\)]+', body)
+        matches = re.findall(r"https://www.google.com/url\?[^\s\)]+", body)
 
         for match in matches:
             final_url = unwrap_google_url(match)
             snippet = body.strip().split("\n")[0]
-            status = "trash" if any(term in snippet.lower() for term in BLOCK_TERMS) or any(domain in final_url.lower() for domain in BLOCK_DOMAINS) else "pending"
+            status = (
+                "trash"
+                if any(term in snippet.lower() for term in BLOCK_TERMS)
+                or any(domain in final_url.lower() for domain in BLOCK_DOMAINS)
+                else "pending"
+            )
             flags = "crypto_block" if "trash" in status else ""
 
             row = [
@@ -92,13 +113,14 @@ def fetch_alerts():
                 "Google Alert",
                 "lofi",
                 status,
-                flags
+                flags,
             ]
             save_article(row)
             new_articles += 1
 
     mail.logout()
     print(f"Saved {new_articles} new articles to {CSV_FILE}")
+
 
 if __name__ == "__main__":
     fetch_alerts()

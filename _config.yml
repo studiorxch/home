@@ -1,96 +1,102 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# ==========================================================
+# StudioRich — Production Config (studiorich.shop)
+# ==========================================================
 
-# Site settings
-# site_title: "StudioRich | Lo-Fi Experiences"
-title: "StudioRich"
-email: "hello@studiorich.shop"
-description: "StudioRich (Studio Rich) blends lo-fi music, urban visuals, and collectible NFT drops. Discover the upcoming StudioRich Player — a desktop portal for rhythm and story."
-baseurl: ""
-url: "https://studiorich.shop"
-twitter_username: "studiorxch"
-github_username: "studiorxch"
-repository: studiorxch/home
+title: 'StudioRich'
+email: 'hello@studiorich.shop'
+description: 'StudioRich blends lo-fi music, urban visuals, and collectible NFT drops. Discover the upcoming StudioRich Player — a desktop portal for rhythm and story.'
+baseurl: ''
+url: 'https://studiorich.shop'
+environment: 'production'
+twitter_username: 'studiorxch'
+github_username: 'studiorxch'
+repository: 'studiorxch/home'
+timezone: 'America/New_York'
+future: true
+safe: false
 
+# ==========================================================
+# Collections
+# ==========================================================
 collections:
-  desktop:
-    output: false
+  desktop: { output: false }
+  files: { output: false }
 
   events:
     output: true
     permalink: /events/:slug/
 
-  future: true # so future-dated events appear in dev
-
-  files:
-    output: false
-
   playground:
     output: true
     permalink: /playground/:name/
 
-  tracks: # Music Library
+  stations:
+    output: true
+    permalink: /stations/:slug/
+
+  panels:
+    output: true
+
+  tracks:
     output: true
     permalink: /tracks/:name/
 
-  shop: # Shop
+  shop:
     output: true
     permalink: /shop/:title/
+
   redirects:
     output: true
 
-# Ensure future-dated items build (for Upcoming)
-
+# ==========================================================
+# Defaults
+# ==========================================================
 defaults:
-  - scope:
-      path: "_events"
-      type: events
+  # Prevent unfinished stations from being indexed
+  - scope: { path: '_stations', type: stations }
+    values:
+      layout: station
+      indexed: false
+      robots: 'noindex,nofollow'
+      sitemap: false
+
+  - scope: { path: '_panels' }
+    values:
+      layout: default
+      indexed: false
+      robots: 'noindex,nofollow'
+      sitemap: false
+
+  - scope: { path: '_events', type: events }
     values:
       layout: event
       sitemap: true
       last_modified_at: 2025-06-12
 
+# ==========================================================
+# Data / Assets / Build
+# ==========================================================
+data_dir: data
+
+sass:
+  sass_dir: _sass
+
 include:
-  - /assets/ui
+  - assets/data
+  - assets/ui
+  - css/main.css
+  - css/main.purged.css
+  - _pages
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - jekyll-read-file
 
-sass:
-  sass_dir: _sass
-
-timezone: America/New_York
-
-whitelist:
-  - jekyll-readme-index
-  - jekyll-include-cache
-  - jekyll-read-file
-
-# Or if you're on newer Jekyll: (how new is new?)
-safe: false
-
-# Exclude unnecessary files from processing
+# ==========================================================
+# Exclusions
+# ==========================================================
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -101,19 +107,21 @@ exclude:
   - vendor/
   - _site/
   - events.timeline.json
-    - .history/
-  - ".history"
-  - ".history/*"
-  - .DS_Store
-  - node_modules
+  - .history/
+  - '.history'
+  - '.history/*'
   - README.md
   - package-lock.json
+  - node_modules
+  - '*--ghost'
+  - '*--bak'
+  - '_archive--bak'
 
-# Add custom settings as needed
-favicon: "/assets/img/logo/favicon.ico" # Make sure to upload your favicon if you want one
-
-# Google Analytics (optional, add only if you have GA setup)
-google_analytics: "G-E5KN2YJJKF"
+# ==========================================================
+# Meta / Branding
+# ==========================================================
+favicon: '/assets/img/logo/favicon.ico'
+google_analytics: 'G-E5KN2YJJKF'
 
 redirect_from:
   json: false

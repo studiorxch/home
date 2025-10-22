@@ -14,7 +14,7 @@
         container.innerHTML = '';
         (lines || []).forEach(L => {
             const span = document.createElement('span');
-            span.className = 'mta-bullet line-' + String(L).toLowerCase();
+            span.className = 'route-bullet line-' + String(L).toLowerCase();
             span.textContent = L;
             container.appendChild(span);
         });

@@ -1,64 +1,8 @@
+<!-- _layouts/event.html -->
 ---
 layout: default
 ---
-<main class="container-text event-page">
-  <article>
-    <h1>{{ page.title }}</h1>
-    <p><strong>When:</strong>
-      {{ page.date | date: "%A, %B %e, %Y · %l:%M%P" }}
-      {% if page.end %}– {{ page.end | date: "%l:%M%P" }}{% endif %}
-    </p>
-    {% if page.location or page.city %}
-      <p><strong>Where:</strong> {{ page.location }}{% if page.address %}, {{ page.address }}{% endif %}{% if page.city %}, {{ page.city }}{% endif %}</p>
-    {% endif %}
-    {% if page.price %}<p><strong>Price:</strong> {{ page.price }}</p>{% endif %}
-
-    <p class="event-ctas" style="display:flex;gap:.5rem;flex-wrap:wrap;">
-      {% if page.stream_url %}<a class="btn" href="{{ page.stream_url }}">Watch Live</a>{% endif %}
-      {% if page.tickets_url %}<a class="btn" href="{{ page.tickets_url }}">Tickets</a>{% endif %}
-      {% if page.rsvp_url %}<a class="btn" href="{{ page.rsvp_url }}">RSVP</a>{% endif %}
-      <a class="btn" href="/events.ics">Add to Calendar</a>
-    </p>
-
-    {% assign now_s = site.time | date: "%s" %}
-    {% assign start_s = page.date | date: "%s" %}
-    {% if start_s > now_s %}
-      <div id="countdown" data-start="{{ page.date | date_to_xmlschema }}" style="opacity:.8;margin:.5rem 0 1rem;"></div>
-      <script>
-        (function() {
-          const el = document.getElementById('countdown');
-          const start = new Date(el.dataset.start).getTime();
-          function tick(){
-            const t = start - Date.now();
-            if (t <= 0) { el.textContent = "Live now"; return; }
-            const d=Math.floor(t/86400000), h=Math.floor(t%86400000/3600000),
-                  m=Math.floor(t%3600000/60000), s=Math.floor(t%60000/1000);
-            el.textContent = `Starts in ${d}d ${h}h ${m}m ${s}s`;
-            requestAnimationFrame(tick);
-          }
-          tick();
-        })();
-      </script>
-    {% endif %}
-
-    {% if page.cover %}<img class="event-cover" src="{{ page.cover }}" alt="{{ page.title }}" style="width:100%;max-width:820px;border-radius:8px;margin:1rem 0;">{% endif %}
-    <div class="prose">{{ content }}</div>
-  </article>
-</main>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"MusicEvent",
-  "name":"{{ page.title | escape }}",
-  "startDate":"{{ page.date | date_to_xmlschema }}",
-  {% if page.end %}"endDate":"{{ page.end | date_to_xmlschema }}",{% endif %}
-  {% if page.location or page.city %}
-  "location":{"@type":"Place","name":"{{ page.location | escape }}","address":"{{ page.address | default: '' }} {{ page.city | default: '' }}"},
-  {% endif %}
-  "image":"{{ page.cover | absolute_url }}",
-  "description":"{{ page.description | default: page.excerpt | strip_newlines | escape }}",
-  "eventStatus":"https://schema.org/{{ page.status | default: 'EventScheduled' }}",
-  "url":"{{ page.url | absolute_url }}"
-}
-</script>
+<div class="event-placeholder">
+  <h1>{{ page.title }}</h1>
+  <p>⚠️ Event layout placeholder — to be designed.</p>
+</div>
