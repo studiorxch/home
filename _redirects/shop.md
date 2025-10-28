@@ -73,5 +73,5 @@ redirect_from:
   - /assets/ui/README%20-%20StudioRich%20SVG%20Icon%20Optimization.html
   - /(a%7Capps%7Ccommunity%7Ctools)/*
   - /pages/faq
-redirect_to: /shop
+redirect_to: https://goods.studiorich.shop
 ---
